@@ -20,8 +20,8 @@
   <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
-      <a href="">
-         <img alt="logo" src=" ">
+      <a href="overzicht-pagina.php">
+         <img alt="logo" src="img/logo-activo.jpg ">
       </a>
       </li>
       <li class="nav-item"> 
