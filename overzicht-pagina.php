@@ -34,10 +34,17 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h2>Filteren</h2>
+      <h5>Jaartal</h5>
+      <ul> 
+      <li> 2017 </li>
+      <li> 2018 </li>
+      <li> 2019 </li>
+      <li> 2020 </li>
+      <li> 2021 </li>
+      <li> 2022 </li>
+      </ul>
+      
       <h3 class="mt-4">Some Links</h3>
       <p>Lorem ipsum dolor sit ame.</p>
       <ul class="nav nav-pills flex-column">
@@ -72,9 +79,7 @@
   </div>
 </div>
 
-<div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
-</div>
+ 
 
 </body>
 </html>
