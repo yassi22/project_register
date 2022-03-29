@@ -24,11 +24,8 @@
          <img alt="logo" src=" ">
       </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
       <li class="nav-item"> 
-      <button class="button button5 w-6">Nieuw project toevoegen</button>
+      <button class="button button5">Nieuw project toevoegen</button>
       </li>
     </ul>
   </div>
