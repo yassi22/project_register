@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
   <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
