@@ -62,7 +62,38 @@
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
   <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
 </div></li>
-      </ul>
+      </ul>  
+
+      <h5>Diensten</h5>
+      <ul> 
+      <li> 2017  
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      <li> 2018 <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      <li> 2019<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div> </li>
+      <li> 2020 <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      <li> 2021 <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      <li> 2022 <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      </ul> 
+
+
          
       
     </div>
