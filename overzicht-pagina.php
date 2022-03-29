@@ -37,31 +37,34 @@
       <h2>Filteren</h2>
       <h5>Jaartal</h5>
       <ul> 
-      <li> 2017 </li>
-      <li> 2018 </li>
-      <li> 2019 </li>
-      <li> 2020 </li>
-      <li> 2021 </li>
-      <li> 2022 </li>
+      <li> 2017  
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      <li> 2018 <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      <li> 2019<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div> </li>
+      <li> 2020 <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      <li> 2021 <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      <li> 2022 <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
       </ul>
+         
       
-      <h3 class="mt-4">Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
       <h2>TITLE HEADING</h2>
