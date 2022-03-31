@@ -71,6 +71,21 @@ body{
 
  .zoekknop:hover{ 
      color:#F48424;
+ } 
+
+ .knopdetail{ 
+     background-color: #F48424;
+     font-family: 'Raleway' sans-serif; 
+     font-weight: medium; 
+     border-radius: 50px; 
+     color:white;  
+     width:100%; 
+     font-size:20px;
+ }
+
+ .knopdetail:hover{ 
+     background-color:#4B96D0; 
+     color:white;
  }
    
    
