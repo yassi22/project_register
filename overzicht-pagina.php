@@ -37,31 +37,36 @@
       <h2>Filteren</h2>
       <h5>Jaartal</h5>
       <ul> 
-      <li> 2017  
+      
 <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
-      <li> 2018 <div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault">    <li> 2017  </li> </label>
+</div> 
+
+       <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
-      <li> 2019<div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault">   <li> 2018 </li> </label>
+</div> 
+
+      <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div> </li>
-      <li> 2020 <div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault">   <li> 2019 </li> </label>
+</div>  
+      <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
-      <li> 2021 <div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault">    <li> 2020  </li></label>
+</div> 
+
+       <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
-      <li> 2022 <div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault">    <li> 2021  </li></label>
+</div>  
+
+        <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
+  <label class="form-check-label" for="flexSwitchCheckDefault">    <li> 2022 </li></label>
+</div> 
+
       </ul>   
 
       <hr>  
@@ -69,51 +74,63 @@
     
       <h5>Diensten</h5>
       <ul> 
-      <li> 2017  
+   
 <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
-      <li> 2018 <div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault"><li> Online betaal module </li> </label>
+</div> 
+
+  <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
-      <li> 2019<div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault">   <li> Badges </li> </label>
+</div> 
+
+    <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div> </li>
-      <li> 2020 <div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> E-tickets </li> </label>
+</div>  
+
+  <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
-      <li> 2021 <div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Uitnodigings trajcet </li> </label>
+</div> 
+
+    <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
-      <li> 2022 <div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
+  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Congress online </li> </label>
+</div>  
+
+    
+    <div class="form-check form-switch">  
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" /> 
+  <label class="form-check-label" for="flexSwitchCheckDefault">  <li> Helpdesk </li> </label>
+</div>  
+ 
+
       </ul> 
  
 <hr> 
 
       <h5>Categorie</h5>
       <ul> 
-      <li> Medische eventen  
+  
 <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
-      <li> Hybride eventen <div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Medische eventen  </li> </label>
+</div> 
+
+    <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div></li>
-      <li> Congress online eventen<div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault">   <li> Hybride eventen </li> </label>
+</div> 
+
+ 
+   <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
-</div> </li>
-      </ul> 
+  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Congress online eventen </li> </label>
+</div>  
+
+  </ul> 
 
 
          
