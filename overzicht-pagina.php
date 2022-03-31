@@ -62,8 +62,11 @@
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
   <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
 </div></li>
-      </ul>  
+      </ul>   
 
+      <hr>  
+
+    
       <h5>Diensten</h5>
       <ul> 
       <li> 2017  
@@ -91,6 +94,25 @@
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
   <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
 </div></li>
+      </ul> 
+ 
+<hr> 
+
+      <h5>Categorie</h5>
+      <ul> 
+      <li> Medische eventen  
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      <li> Hybride eventen <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div></li>
+      <li> Congress online eventen<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label class="form-check-label" for="flexSwitchCheckDefault"> </label>
+</div> </li>
       </ul> 
 
 
