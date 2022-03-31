@@ -34,8 +34,7 @@
  
 
  
-
-<div class="container mt-5"> 
+<div class="container  "> 
   
   <div class="row">
     <div class="col-sm-4">
@@ -143,12 +142,10 @@
 </div>
 
 
-
+ 
+    <div class="container mx-auto"> 
+    <h2>Projecten</h2>   
     
-    <h2>Projecten</h2>  
-
-    
-    <div class="container justify-content-center">
     <div class="row"> 
  
     <div class="col-md-4">
@@ -191,9 +188,7 @@
 
   </div>
 </div> 
-
-
  
+</body> 
 
-</body>
 </html>
