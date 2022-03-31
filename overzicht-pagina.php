@@ -34,9 +34,10 @@
  
 
  
-<div class="container  "> 
+<div class="container-fluid  "> 
   
-  <div class="row">
+  <div class="row"> 
+    <div class="col-md-4 d-flex flex-row-reverse ">
     <div class="col-sm-4">
       <h2>Filteren</h2>
       <h5>Jaartal</h5>
@@ -49,7 +50,7 @@
 
        <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault">   <li> 2018 </li> </label>
+  <label class="form-check-label" for="flexSwitchCheckDefault">   <li class="text-center"> 2018 </li> </label>
 </div> 
 
       <div class="form-check form-switch">
@@ -137,58 +138,47 @@
   </ul>    
       
     </div> 
+</div>
  
+ 
+  <div class="col-md-6">
+    <h2>Projecten</h2>   
+    
+    <div class="card-group">
+  <div class="card">
+    <img src="img/DDDonline.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+     
+ 
+</div>
+
+ 
+</div>
 </div> 
 </div>
 
-
- 
-    <div class="container mx-auto"> 
-    <h2>Projecten</h2>   
-    
-    <div class="row"> 
- 
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="img/DDDonline.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="overzicht.php" alt="foto van evenement" class="btn btn-primary">Go somewhere</a>
-  </div>  
-  
-</div>   
-  </div>   
-
-  <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="img/DDDonline.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="overzicht.php" alt="foto van evenement" class="btn btn-primary">Go somewhere</a>
-  </div>  
-  
-</div>  
-  </div>  
-
-
-  <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="img/DDDonline.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="overzicht.php" alt="foto van evenement" class="btn btn-primary">Go somewhere</a>
-  </div>  
-  
-</div>  
-  </div>  
-
-
-  </div>
-</div> 
- 
 </body> 
 
 </html>
