@@ -48,8 +48,13 @@ body{
        color:#878787; 
        font-family: 'Robot', sans-serif; 
    }
+  
+   
 
-
- 
+ .logo { 
+      margin-top:1vw;
+      margin: 0 auto;
+     width: 250px;
+ }
    
    

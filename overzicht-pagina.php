@@ -21,7 +21,7 @@
     <ul class="navbar-nav">
       <li class="nav-item">
       <a href="overzicht-pagina.php">
-         <img alt="logo" src="img/logo-activo.jpg ">
+         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
       </li>
       <li class="nav-item"> 
