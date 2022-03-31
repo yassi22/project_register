@@ -18,16 +18,16 @@
 
 <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
   <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
+     
+      
       <a href="overzicht-pagina.php">
          <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
-      </li>
-      <li class="nav-item"> 
-      <button class="button button5">Nieuw project toevoegen</button>
-      </li>
-    </ul>
+      
+       
+      <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Nieuw project toevoegen</a>
+ 
+     
   </div>
 </nav> 
 

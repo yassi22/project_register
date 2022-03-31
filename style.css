@@ -5,7 +5,7 @@ body{
 } 
 
 
-.button {
+.knop { 
     background-color: #057494; /* Green */
     border: none;
     color: white;
@@ -17,14 +17,17 @@ body{
     margin: 4px 2px;
     cursor: pointer; 
     border-radius: 50px;
-    width:300px; 
     font-family: 'Raleway', sans-serif;
    font-weight: 500;
    font-size: 22px;
    line-height: 26px;
    color: #FFFFFF;
   
-  } 
+  }  
+
+  .knop:hover { 
+      color:#F48424;
+  }
 
    li { 
        list-style: none; 
