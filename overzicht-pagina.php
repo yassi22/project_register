@@ -29,9 +29,14 @@
       </li>
     </ul>
   </div>
-</nav>
+</nav> 
 
-<div class="container mt-5">
+ 
+
+ 
+
+<div class="container mt-5"> 
+  
   <div class="row">
     <div class="col-sm-4">
       <h2>Filteren</h2>
@@ -130,18 +135,22 @@
   <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Congress online eventen </li> </label>
 </div>  
 
-  </ul> 
-
-
-         
+  </ul>    
       
-    </div>
+    </div> 
+
+    
     <div class="col-sm-8">
-      <h2>Projecten</h2>
-      <h5>Title description, Dec 7, 2020</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Projecten</h2> 
+      
+      <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> 
 
       <h2 class="mt-5">TITLE HEADING</h2>
       <h5>Title description, Sep 2, 2020</h5>
