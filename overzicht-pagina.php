@@ -144,8 +144,8 @@
   <div class="col-md-6">
     <h2>Projecten</h2>   
     
-    <div class="card-group">
-  <div class="card">
+    <div class="card-group m-2 ">
+  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/DDDonline.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -153,7 +153,8 @@
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
+  
+  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -161,7 +162,7 @@
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
+  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
