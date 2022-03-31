@@ -148,8 +148,8 @@
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/DDDonline.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title titel">Card title</h5>
+      <p class="card-text omschrijf">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -157,16 +157,44 @@
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <h5 class="card-title titel">Card title</h5>
+      <p class="card-text omschrijf">This card has supporting text below as a natural lead-in to additional content.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <h5 class="card-title titel">Card title</h5>
+      <p class="card-text omschrijf">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div> 
+
+<div class="card-group m-2 ">
+  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
+    <img src="img/DDDonline.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title titel">Card title</h5>
+      <p class="card-text omschrijf">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  
+  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
+    <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title titel">Card title</h5>
+      <p class="card-text omschrijf">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
+    <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title titel">Card title</h5>
+      <p class="card-text omschrijf">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
