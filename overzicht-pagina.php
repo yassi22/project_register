@@ -132,11 +132,13 @@
  
    <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Congress online eventen </li> </label>
-</div>  
+  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Congress online eventen </li> </label> 
 
+</div>  
+<button type="button" class="btn btn zoekknop mt-4 mx-auto " type="submit">Resultaat</button>
   </ul>    
-      
+  
+
     </div> 
 </div>
  
