@@ -1,0 +1,91 @@
+body{ 
+    padding:0; 
+    margin:0;
+    background-color: #F4F4F4;
+} 
+
+
+.knop { 
+    background-color: #057494;  
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 26px;
+   color: #FFFFFF;
+  
+  }  
+
+  .knop:hover { 
+      color:#F48424;
+  }
+
+   li { 
+       list-style: none; 
+       margin: 0 'auto';
+   } 
+
+   h2 { 
+       font-family: 'Raleway', sans-serif; 
+       color:#057494; 
+       font-weight: bold; 
+       
+
+   }  
+
+   .titel {
+       font-family: 'Robot', sans-serif; 
+       font-weight:semi-bold;
+   } 
+
+   .omschrijf { 
+       color:#878787; 
+       font-family: 'Robot', sans-serif; 
+   }
+  
+   
+
+ .logo { 
+      margin-top:1vw;
+      margin: 0 auto;
+     width: 250px;
+ } 
+
+ .zoek { 
+     width: 20% !important;;
+ } 
+
+ .zoekknop { 
+    background-color: #057494;   
+    color:white;
+ } 
+
+ .zoekknop:hover{ 
+     color:#F48424;
+ } 
+
+ .knopdetail{ 
+     background-color: #F48424;
+     font-family: 'Raleway' sans-serif; 
+     font-weight: medium; 
+     border-radius: 50px; 
+     color:white;  
+     width:100%; 
+     font-size:20px;
+ }
+
+ .knopdetail:hover{ 
+     background-color:#4B96D0; 
+     color:white;
+ }
+   
+   
