@@ -141,9 +141,16 @@
 </div>
  
  
-  <div class="col-md-6">
-    <h2>Projecten</h2>   
+  <div class="col-md-6"> 
+     
+    <h2>Projecten</h2>      
     
+    <div class="float-right">  
+    <form class="form-inline d-flex justify-end">
+    <input class="form-control zoek mr-sm-2 w-0" type="text" placeholder="Search"> 
+    <button class="btn my-2 my-sm-0 zoekknop" type="submit">Search</button>
+  </form>
+<div>
     <div class="card-group m-2 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/DDDonline.jpg" class="card-img-top" alt="...">

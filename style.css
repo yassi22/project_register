@@ -6,7 +6,7 @@ body{
 
 
 .knop { 
-    background-color: #057494; /* Green */
+    background-color: #057494;  
     border: none;
     color: white;
     padding: 20px;
@@ -58,6 +58,19 @@ body{
       margin-top:1vw;
       margin: 0 auto;
      width: 250px;
+ } 
+
+ .zoek { 
+     width: 20% !important;;
+ } 
+
+ .zoekknop { 
+    background-color: #057494;   
+    color:white;
+ } 
+
+ .zoekknop:hover{ 
+     color:#F48424;
  }
    
    
