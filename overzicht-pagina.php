@@ -37,17 +37,18 @@
 <div class="container-fluid  "> 
   
   <div class="row"> 
-    <div class="col-md-4 d-flex flex-row-reverse ">
-    <div class="col-sm-4">
-      <h2>Filteren</h2>
-      <h5>Jaartal</h5>
+    <div class="col-md-4 d-flex justify-content-end margin-right-2">
+    <div class="col-sm-6 verplaats">
+      <h2>Filteren</h2> 
+      <h5 class="text-center">Jaartal</h5> 
       <ul> 
       
-<div class="form-check form-switch">
+       
+<div class="form-check  form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
   <label class="form-check-label" for="flexSwitchCheckDefault">    <li> 2017  </li> </label>
 </div> 
-
+ 
        <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
   <label class="form-check-label" for="flexSwitchCheckDefault">   <li class="text-center"> 2018 </li> </label>
@@ -71,13 +72,13 @@
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
   <label class="form-check-label" for="flexSwitchCheckDefault">    <li> 2022 </li></label>
 </div> 
-
+ 
       </ul>   
 
       <hr>  
 
-    
-      <h5>Diensten</h5>
+     
+    <h5 class="text-center">Diensten</h5>
       <ul> 
    
 <div class="form-check form-switch">
@@ -116,7 +117,7 @@
  
 <hr> 
 
-      <h5>Categorie</h5>
+      <h5 class="text-center">Categorie</h5>
       <ul> 
   
 <div class="form-check form-switch">
