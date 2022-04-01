@@ -44,13 +44,13 @@ body{
    }  
 
    .titel {
-       font-family: 'Robot', sans-serif !important; 
+       font-family: 'Roboto', sans-serif !important; 
        font-weight:semi-bold;
    } 
 
    .omschrijf { 
        color:#878787; 
-       font-family: 'Robot', sans-serif !important; 
+       font-family: 'Roboto', sans-serif !important; 
    }
   
    
@@ -62,11 +62,16 @@ body{
  } 
 
  .zoek { 
-     width: 20% !important; 
+     max-width: 320px;
+     width: 100%;
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
  } 
 
  .zoekknop { 
-    background-color: #057494;   
+    background-color: #057494;  
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; 
     color:white;
  } 
 
@@ -74,6 +79,17 @@ body{
      background-color:#4B96D0; 
      color:white;
  } 
+
+ .project-card {
+     display: flex;
+     flex-direction: column;
+     /* Maak de card content flex content van boven naar beneden */
+ }
+
+    .project-card .knopdetail {
+        margin-top: auto;
+        /* Duw de knop in de project-card altijd helemaal naar beneden */
+    }
 
  .knopdetail{ 
      background-color: #F48424;
@@ -103,7 +119,8 @@ body{
  }  
  
  .zoek-verplaats{ 
-     margin-right: 1vw !important;
+     margin-right: 1vw !important; 
+     
  }
 
   
