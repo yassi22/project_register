@@ -45,15 +45,20 @@
   <div class="row"> 
 
  
-  <div class="col-md-12 d-flex justify-content-center"> 
+  <div class="col-md-4 d-flex justify-content-center"> 
     
       <section class="mx-auto"> 
         <h2>Project Details</h2> 
       </section>
 
- <div> 
-<div class="jumbotron shadow p-3 mb-5 bg-white rounded d-flex justify-conten-center mt-4">
-   
+ <div class="col-md-10"> 
+<div class="jumbotron shadow p-3 mb-5 bg-white rounded d-flex justify-conten-center mt-4"> 
+    <ul>
+      <li> <p>Project naam</p> </li>  
+       <li> <p>Project datum</p> </li>    
+        <li> <p>Website link</p> </li>   
+</u>
+  
   
 </div>
 </div>
