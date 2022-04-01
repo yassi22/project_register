@@ -164,10 +164,10 @@
 <div>
     <div class="card-group m-6 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/ns-voorbeeld.png" class="card-img-top embed-responsive-item rounded" alt="...">
+    <img src="img/Hoek&Blok-logo.png" class="card-img-top embed-responsive-item rounded" alt="schermafbeelding Hoek en Blok Personeelsevent">
     <div class="card-body project-card">
-      <h5 class="card-title titel">DDD Online</h5> 
-     <p class="card-text omschrijf">  1-04-2022 </p> 
+      <h5 class="card-title titel">Hoek en Blok Personeelsevent</h5> 
+     <p class="card-text omschrijf">  8-01-21 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
     </div>
   </div>
