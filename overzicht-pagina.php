@@ -141,7 +141,7 @@
   <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Congress online eventen </li> </label> 
 
 </div>  
-<button type="button" class="btn mt-4 text-center " type="submit">Resultaat</button>
+<button type="button" class="btn mt-4 text-center resultaat-knop " type="submit">Resultaat</button>
   </ul>    
   
 
@@ -162,9 +162,9 @@
       </section>
  
 <div>
-    <div class="card-group m-2 ">
+    <div class="card-group m-6 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/ns-voorbeeld.png" class="card-img-top" alt="...">
+    <img src="img/ns-voorbeeld.png" class="card-img-top rounded" alt="...">
     <div class="card-body project-card">
       <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
@@ -173,16 +173,17 @@
   </div>
   
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
+    <img src="img/DDDonline.jpg"  class="card-img-top rounded " alt="...">
     <div class="card-body project-card">
     <h5 class="card-title titel">DDD Online</h5>
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
-  </div>
+  </div> 
+
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
+    <img src="img/DDDonline.jpg"  class="card-img-top rounded" alt="...">
     <div class="card-body project-card">
     <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
@@ -194,7 +195,7 @@
 
 <div class="card-group m-2 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg" class="card-img-top" alt="...">
+    <img src="img/DDDonline.jpg" class="card-img-top rounded" alt="...">
     <div class="card-body project-card">
     <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
@@ -204,7 +205,7 @@
   </div>
   
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
+    <img src="img/DDDonline.jpg"  class="card-img-top rounded " alt="...">
     <div class="card-body project-card">
     <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
@@ -213,7 +214,7 @@
     </div>
   </div>
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg"  class="card-img-top" alt="...">
+    <img src="img/DDDonline.jpg"  class="card-img-top rounded" alt="...">
     <div class="card-body project-card">
     <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
