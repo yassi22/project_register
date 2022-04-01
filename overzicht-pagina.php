@@ -145,12 +145,14 @@
  
   <div class="col-md-6"> 
      
-    <h2>Projecten</h2>      
+      
     
-    <div class="float-right">  
-    <form class="form-inline d-flex justify-end">
+    <div class="float-right">   
+    <h2 class="mt-8">Projecten</h2>  
+    <form class="form-inline d-flex justify-content-end mr-4"> 
+     
     <input class="form-control zoek mr-sm-2 w-0" type="text" placeholder="Search"> 
-    <button class="btn my-2 my-sm-0 zoekknop" type="submit">Search</button>
+    <button class="btn my-2 my-sm-0 zoekknop " type="submit">Search</button>
   </form>
 <div>
     <div class="card-group m-2 ">
@@ -161,7 +163,6 @@
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum:2022 </p> 
       <a href="#" class="btn knopdetail">Meer detials</a>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
   
