@@ -132,6 +132,12 @@ body{
  .zoek-verplaats{ 
      margin-right: 1vw !important; 
      
- }
+ } 
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
 
   

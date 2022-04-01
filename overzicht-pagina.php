@@ -164,7 +164,7 @@
 <div>
     <div class="card-group m-6 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/ns-voorbeeld.png" class="card-img-top rounded" alt="...">
+    <img src="img/ns-voorbeeld.png" class="card-img-top embed-responsive-item rounded" alt="...">
     <div class="card-body project-card">
       <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf">  1-04-2022 </p> 
@@ -173,7 +173,7 @@
   </div>
   
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/ECSJ-logo.png"  class="card-img-top rounded " alt="scherm-afbeelding ECSJ">
+    <img src="img/ECSJ-logo.png"  class="card-img-top rounded embed-responsive-item  " alt="scherm-afbeelding ECSJ">
     <div class="card-body project-card">
     <h5 class="card-title titel">ECSJ Leiden</h5>
      <p class="card-text omschrijf">  10-07-22 </p> 
