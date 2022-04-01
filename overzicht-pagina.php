@@ -172,7 +172,7 @@
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum:2022 </p> 
       <a href="#" class="btn knopdetail">Meer detials</a>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      
     </div>
   </div>
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
@@ -182,7 +182,7 @@
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum:2022 </p> 
       <a href="#" class="btn knopdetail">Meer detials</a>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      
     </div>
   </div>
 </div> 
@@ -195,7 +195,7 @@
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum:2022 </p> 
       <a href="#" class="btn knopdetail">Meer detials</a>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+       
     </div>
   </div>
   
@@ -206,7 +206,7 @@
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum:2022 </p> 
       <a href="#" class="btn knopdetail">Meer detials</a>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+       
     </div>
   </div>
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
@@ -216,7 +216,7 @@
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum:2022 </p> 
       <a href="#" class="btn knopdetail">Meer detials</a>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      
     </div>
   </div>
 </div>
