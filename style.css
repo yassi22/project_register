@@ -62,7 +62,7 @@ body{
  } 
 
  .zoek { 
-     width: 20% !important;;
+     width: 20% !important; 
  } 
 
  .zoekknop { 
@@ -100,4 +100,10 @@ body{
 
  .verplaats-cards { 
      margin-right: 8vw !important;
+ }  
+ 
+ .zoek-verplaats{ 
+     margin-right: 1vw !important; 
  }
+
+  
