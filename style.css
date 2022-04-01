@@ -8,7 +8,6 @@ body{
 .knop { 
     background-color: #057494;  
     border: none;
-    color: white;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -138,6 +137,56 @@ body{
     width: 100%;
     height: 200px;
     object-fit: cover;
+} 
+
+.knop-verwijder { 
+background-color:#F48424; 
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: 'Raleway',
+    sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}   
+ 
+
+.knop-verwijder:hover {
+    background-color:#4B96D0;
+    color:white;
+} 
+
+
+.knop-aanpassen{ 
+background-color:#4B96D0;
+border: none;
+padding: 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 50px;
+font-family: 'Raleway',
+sans-serif;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+color: #FFFFFF;
+} 
+
+.knop-aanpassen:hover { 
+background-color:#057494;
+color:white;
 }
 
   

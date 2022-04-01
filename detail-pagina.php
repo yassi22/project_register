@@ -32,8 +32,8 @@
       
        <div class=" d-flex justify-content-between">
       <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug naar overzicht</a> 
-      <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Project aanpassen </a>
-      <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Project verwijderen</a> 
+      <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project aanpassen </a>
+      <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-verwijder" role="button">Project verwijderen</a> 
       </div>
   </div>
 </nav> 
