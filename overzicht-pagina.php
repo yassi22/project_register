@@ -145,7 +145,8 @@
  
  
   <div class="col-md-8"> 
-    <div class="float-right verplaats-cards">   
+    <div class="float-right verplaats-cards">    
+      
     <h2 class="mt-8">Projecten</h2>   
  
     <div class="zoek-verplaats">
@@ -154,7 +155,7 @@
     <button class="btn my-2 my-sm-0 zoekknop " type="submit">Search</button>
   </form> 
 </div>
-
+ 
 <div>
     <div class="card-group m-2 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
