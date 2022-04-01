@@ -45,19 +45,13 @@
   <div class="row"> 
 
  
-  <div class="col-md-8"> 
-    <div class="float-right verplaats-cards">   
-      <section class="d-flex align-items-center justify-content-between"> 
-        <h2>Projecten</h2> 
-        <div class="zoek-verplaats"> 
-          <form class=" d-flex"> 
-            <input class="form-control zoek mr-sm-2" type="text" placeholder="Project zoeken"> 
-            <button class="btn my-2 my-sm-0 zoekknop " type="submit">Zoek</button>
-          </form> 
-        </div>
+  <div class="col-md-12 d-flex justify-content-center"> 
+    
+      <section class="d-flex justify-content-center"> 
+        <h2>Project Details</h2> 
+     
       </section>
  
-<div>
     <div class="card-group m-6 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/Hoek&Blok-logo.png" class="card-img-top embed-responsive-item rounded" alt="schermafbeelding Hoek en Blok Personeelsevent">
@@ -68,66 +62,17 @@
     </div>
   </div>
   
-  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/ECSJ-logo.png"  class="card-img-top rounded embed-responsive-item  " alt="scherm-afbeelding ECSJ">
-    <div class="card-body project-card">
-    <h5 class="card-title titel">ECSJ Leiden</h5>
-     <p class="card-text omschrijf">  10-07-22 </p> 
-      <a href="#" class="btn knopdetail">Meer details</a>
-      
-    </div>
-  </div> 
-
-  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/bleckmann-logo.png"  class="card-img-top rounded" alt="scherm-afbeelding Bleckmann 160 jaar">
-    <div class="card-body project-card">
-    <h5 class="card-title titel">Embrace 160 years Bleckmann</h5> 
-     <p class="card-text omschrijf">  29-6-22 </p> 
-      <a href="#" class="btn knopdetail">Meer details</a>
-      
-    </div>
-  </div>
-</div> 
-
-<div class="card-group m-2 ">
-  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/enexis-energie-event.png" class="card-img-top rounded" alt="schermafbeelding Enexis Transition">
-    <div class="card-body project-card">
-    <h5 class="card-title titel">Enexis Transition</h5> 
-     <p class="card-text omschrijf">  10-02-2022 </p> 
-      <a href="#" class="btn knopdetail">Meer details</a>
-       
-    </div>
-  </div>
   
-  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/Eniginia-event.png"  class="card-img-top rounded " alt="schermafbeelding eniginia event">
-    <div class="card-body project-card">
-    <h5 class="card-title titel">Enginia Event 2021</h5> 
-     <p class="card-text omschrijf">  12-01-21 </p> 
-      <a href="#" class="btn knopdetail">Meer details</a>
-       
-    </div>
-  </div>
-  <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/JA21-logo.png"  class="card-img-top rounded" alt="schermafbeelding JA21">
-    <div class="card-body project-card">
-    <h5 class="card-title titel">JA21 ALV</h5> 
-     <p class="card-text omschrijf"> 21-05-22 </p> 
-      <a href="#" class="btn knopdetail">Meer details</a>
-      
-    </div>
-  </div>
-</div>
-     
+</div> 
+
+ 
  
 </div>
 
  
 </div>
 </div> 
-</div>
-
+  
 </body> 
 
 </html>
