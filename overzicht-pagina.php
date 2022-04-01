@@ -167,26 +167,26 @@
     <img src="img/ns-voorbeeld.png" class="card-img-top rounded" alt="...">
     <div class="card-body project-card">
       <h5 class="card-title titel">DDD Online</h5> 
-     <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
+     <p class="card-text omschrijf">  1-04-2022 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
     </div>
   </div>
   
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg"  class="card-img-top rounded " alt="...">
+    <img src="img/ECSJ-logo.png"  class="card-img-top rounded " alt="scherm-afbeelding ECSJ">
     <div class="card-body project-card">
-    <h5 class="card-title titel">DDD Online</h5>
-     <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
+    <h5 class="card-title titel">ECSJ Leiden</h5>
+     <p class="card-text omschrijf">  10-07-22 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
   </div> 
 
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg"  class="card-img-top rounded" alt="...">
+    <img src="img/bleckmann-logo.png"  class="card-img-top rounded" alt="scherm-afbeelding Bleckmann 160 jaar">
     <div class="card-body project-card">
-    <h5 class="card-title titel">DDD Online</h5> 
-     <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
+    <h5 class="card-title titel">Embrace 160 years Bleckmann</h5> 
+     <p class="card-text omschrijf">  29-6-22 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
@@ -195,29 +195,29 @@
 
 <div class="card-group m-2 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg" class="card-img-top rounded" alt="...">
+    <img src="img/enexis-energie-event.png" class="card-img-top rounded" alt="schermafbeelding Enexis Transition">
     <div class="card-body project-card">
-    <h5 class="card-title titel">DDD Online</h5> 
-     <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
+    <h5 class="card-title titel">Enexis Transition</h5> 
+     <p class="card-text omschrijf">  10-02-2022 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
        
     </div>
   </div>
   
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg"  class="card-img-top rounded " alt="...">
+    <img src="img/Eniginia-event.png"  class="card-img-top rounded " alt="schermafbeelding eniginia event">
     <div class="card-body project-card">
-    <h5 class="card-title titel">DDD Online</h5> 
-     <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
+    <h5 class="card-title titel">Enginia Event 2021</h5> 
+     <p class="card-text omschrijf">  12-01-21 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
        
     </div>
   </div>
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg"  class="card-img-top rounded" alt="...">
+    <img src="img/JA21-logo.png"  class="card-img-top rounded" alt="schermafbeelding JA21">
     <div class="card-body project-card">
-    <h5 class="card-title titel">DDD Online</h5> 
-     <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
+    <h5 class="card-title titel">JA21 ALV</h5> 
+     <p class="card-text omschrijf"> 21-05-22 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
