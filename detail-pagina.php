@@ -30,10 +30,11 @@
          <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
       
-       
-      <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Project toevoegen</a>
- 
-     
+       <div class=" d-flex justify-content-between">
+      <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug naar overzicht</a> 
+      <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Project aanpassen </a>
+      <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Project verwijderen</a> 
+      </div>
   </div>
 </nav> 
 
