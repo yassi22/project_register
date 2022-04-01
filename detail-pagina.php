@@ -52,8 +52,8 @@
         <h2>Project Details</h2> 
       </section>
 
- <div class="col-md-5 justify-content-center"> 
-<div class="jumbotron shadow p-3 mb-5 bg-white rounded d-flex justify-conten-center mt-4  w-100 h-100 "> 
+ <div class="col-md-5 "> 
+<div class="jumbotron shadow p-3 mb-5 bg-white rounded d-flex justify-conten-center mt-4  jumbo-grote"> 
     <ul>
       <li> 
         <p class="text-secondary">Project naam</p> 
@@ -72,7 +72,34 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue, tellus at tincidunt suscipit, diam odio venenatis ligula, scelerisque ultricies magna leo nec arcu. Quisque fringilla vestibulum arcu, nec ornare elit sagittis quis. Phasellus leo dolor, consectetur et ullamcorper at, suscipit sed felis. Praesent blandit fringilla luctus.</p>   
       </li> 
     </ul>
-  
+  <div class="v-lijn"></div>  
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/JA21-logo.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/Hoek&Blok-logo.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/bleckmann-logo.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
   
 </div>
 </div>

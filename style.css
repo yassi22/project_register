@@ -187,6 +187,17 @@ color: #FFFFFF;
 .knop-aanpassen:hover { 
 background-color:#057494;
 color:white;
+} 
+
+.v-lijn { 
+    border-left: 3px solid #CACACA;
+    height: 600px;
+  
+} 
+
+.jumbotron { 
+    max-width: 900px;
+    width: 100%;
 }
 
   
