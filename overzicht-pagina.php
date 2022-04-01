@@ -155,8 +155,8 @@
         <h2>Projecten</h2> 
         <div class="zoek-verplaats"> 
           <form class=" d-flex"> 
-            <input class="form-control zoek mr-sm-2" type="text" placeholder="Search"> 
-            <button class="btn my-2 my-sm-0 zoekknop " type="submit">Search</button>
+            <input class="form-control zoek mr-sm-2" type="text" placeholder="Project zoeken"> 
+            <button class="btn my-2 my-sm-0 zoekknop " type="submit">Zoek</button>
           </form> 
         </div>
       </section>
