@@ -45,19 +45,32 @@
   <div class="row"> 
 
  
-  <div class="col-md-4 d-flex justify-content-center"> 
+  <div class="col-md-5"> 
     
       <section class="mx-auto"> 
         <h2>Project Details</h2> 
       </section>
 
- <div class="col-md-10"> 
-<div class="jumbotron shadow p-3 mb-5 bg-white rounded d-flex justify-conten-center mt-4"> 
+ <div class="col-md-5 justify-content-center"> 
+<div class="jumbotron shadow p-3 mb-5 bg-white rounded d-flex justify-conten-center mt-4  w-100 h-100 "> 
     <ul>
-      <li> <p>Project naam</p> </li>  
-       <li> <p>Project datum</p> </li>    
-        <li> <p>Website link</p> </li>   
-</u>
+      <li> 
+        <p class="text-secondary">Project naam</p> 
+        <p>Lorem ipsum dolor sit amet,</p>   
+      </li>   
+      <li> 
+        <p class="text-secondary">Project datum</p> 
+        <p>1-04-22</p>   
+      </li>     
+      <li> 
+        <p class="text-secondary">Website links</p> 
+        <p>https://www.google.com/</p>   
+      </li>   
+        <li> 
+        <p class="text-secondary">Omschrijving</p> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue, tellus at tincidunt suscipit, diam odio venenatis ligula, scelerisque ultricies magna leo nec arcu. Quisque fringilla vestibulum arcu, nec ornare elit sagittis quis. Phasellus leo dolor, consectetur et ullamcorper at, suscipit sed felis. Praesent blandit fringilla luctus.</p>   
+      </li> 
+    </ul>
   
   
 </div>
