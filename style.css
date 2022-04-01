@@ -26,7 +26,8 @@ body{
   }  
 
   .knop:hover { 
-      color:#F48424;
+      background-color:#4B96D0; 
+      color:white;
   }
 
    li { 
@@ -70,7 +71,8 @@ body{
  } 
 
  .zoekknop:hover{ 
-     color:#F48424;
+     background-color:#4B96D0; 
+     color:white;
  } 
 
  .knopdetail{ 
