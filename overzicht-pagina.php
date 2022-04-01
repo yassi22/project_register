@@ -37,7 +37,7 @@
 <div class="container-fluid  "> 
   
   <div class="row"> 
-    <div class="col-md-4 d-flex justify-content-end margin-right-2">
+    <div class="col-md-3 d-flex justify-content-end margin-right-2">
     <div class="col-sm-6 verplaats">
       <h2>Filteren</h2> 
       <h5 class="text-center">Jaartal</h5> 
@@ -98,7 +98,7 @@
 
   <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Uitnodigings trajcet </li> </label>
+  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Uitnodigingstrajcet </li> </label>
 </div> 
 
     <div class="form-check form-switch">
@@ -144,8 +144,8 @@
 </div>
  
  
-  <div class="col-md-6"> 
-    <div class="float-right">   
+  <div class="col-md-8"> 
+    <div class="float-right verplaats-cards">   
     <h2 class="mt-8">Projecten</h2>  
     <form class="form-inline d-flex justify-content-end mr-4"> 
      
@@ -155,12 +155,12 @@
 <div>
     <div class="card-group m-2 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/DDDonline.jpg" class="card-img-top" alt="...">
+    <img src="img/ns-voorbeeld.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Klantnaam DDD </p> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
-      <a href="#" class="btn knopdetail">Meer detials</a>
+      <a href="#" class="btn knopdetail">Meer details</a>
     </div>
   </div>
   
@@ -170,7 +170,7 @@
     <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
-      <a href="#" class="btn knopdetail">Meer detials</a>
+      <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
   </div>
@@ -180,7 +180,7 @@
     <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
-      <a href="#" class="btn knopdetail">Meer detials</a>
+      <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
   </div>
@@ -193,7 +193,7 @@
     <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
-      <a href="#" class="btn knopdetail">Meer detials</a>
+      <a href="#" class="btn knopdetail">Meer details</a>
        
     </div>
   </div>
@@ -204,7 +204,7 @@
     <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
-      <a href="#" class="btn knopdetail">Meer detials</a>
+      <a href="#" class="btn knopdetail">Meer details</a>
        
     </div>
   </div>
@@ -214,7 +214,7 @@
     <h5 class="card-title titel">DDD Online</h5> 
      <p class="card-text omschrijf"> Klantnaam:DDD </p> 
      <p class="card-text omschrijf"> Datum 1-04-2022 </p> 
-      <a href="#" class="btn knopdetail">Meer detials</a>
+      <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
   </div>

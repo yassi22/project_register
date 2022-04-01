@@ -91,9 +91,13 @@ body{
  }
     
  .verplaats { 
-     margin-right:1vw !important; 
+     margin-right:6vw !important; 
  }
     
  .jaartallen { 
      text-align: center !important;
+ } 
+
+ .verplaats-cards { 
+     margin-right: 8vw !important;
  }
