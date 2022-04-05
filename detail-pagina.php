@@ -71,9 +71,11 @@
         <p class="text-secondary">Omschrijving</p> 
         <p class="text-max">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue, tellus at tincidunt suscipit, diam odio venenatis ligula, scelerisque ultricies magna leo nec arcu. Quisque fringilla vestibulum arcu, nec ornare elit sagittis quis. Phasellus leo dolor, consectetur et ullamcorper at, suscipit sed felis. Praesent blandit fringilla luctus.</p>   
       </li> 
-    </ul> 
-      <div class="v-lijn"></div>   
-      
+    </ul>  
+
+      <div class="v-lijn"></div>    
+
+     
  <div id="carouselExampleControls" class="carousel slide mr-2" data-mdb-ride="carousel">
   <div class="carousel-inner rounded ">
     <div class="carousel-item active  ">
@@ -94,15 +96,28 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button> 
-  <button type="button" class="btn btn-primary d-flex knop-download mt-2 ">Download</button> 
-</div> 
+      
  
-
-
-
 </div>
  
+<div class="d-flex justify-content-start ">  
+  
+  <button type="button" class="btn btn-primary d-flex knop-download mt-2 ">Download</button>  
+ <div>
+  <ul> 
+<h4>Diensten </h4>
+      <li>     
+        <p>Lorem ipsum dolor sit amet,</p>   
+      </li>   
+    
+    </ul> 
+</div>
+</div>
+
  
+  
+
+</div>
 
 
  

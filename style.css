@@ -40,7 +40,15 @@ body{
        font-weight: bold;  
        
 
-   }  
+   }   
+
+h4 {
+    font-family: 'Raleway', sans-serif !important;
+    color: #057494;
+    font-weight: bold;
+
+
+}
 
    .titel {
        font-family: 'Roboto', sans-serif !important; 
@@ -191,7 +199,7 @@ color:white;
 
 .v-lijn { 
     border-left: 3px solid #CACACA;
-    height: 600px;
+    height:700px;
   
 }  
 
