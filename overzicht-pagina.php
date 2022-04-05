@@ -45,7 +45,7 @@
   <div class="row"> 
     <div class="col-md-3 d-flex justify-content-end margin-right-2">
     <div class="col-sm-6 verplaats">
-      <h2>Filteren</h2> 
+      <h2>Criteria</h2> 
       <h5 class="text-center">Jaartal</h5> 
       
       <ul> 
@@ -103,7 +103,7 @@
 
   <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Uitnodigingstrajcet </li> </label>
+  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Uitnodigingstraject </li> </label>
 </div> 
 
     <div class="form-check form-switch">
@@ -127,18 +127,18 @@
   
 <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Medische eventen  </li> </label>
+  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Medische evenementen  </li> </label>
 </div> 
 
     <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault">   <li> Hybride eventen </li> </label>
+  <label class="form-check-label" for="flexSwitchCheckDefault">   <li> Hybride evenementen </li> </label>
 </div> 
 
  
    <div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Congress online eventen </li> </label> 
+  <label class="form-check-label" for="flexSwitchCheckDefault"> <li> Congress online evenementen </li> </label> 
 
 </div>  
 <button type="button" class="btn mt-4 text-center resultaat-knop " type="submit">Resultaat</button>
@@ -166,17 +166,17 @@
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/Hoek&Blok-logo.png" class="card-img-top embed-responsive-item rounded" alt="schermafbeelding Hoek en Blok Personeelsevent">
     <div class="card-body project-card">
+         <p class="card-text omschrijf">  8-01-21 </p> 
       <h5 class="card-title titel">Hoek en Blok Personeelsevent</h5> 
-     <p class="card-text omschrijf">  8-01-21 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
     </div>
   </div>
   
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/ECSJ-logo.png"  class="card-img-top rounded embed-responsive-item  " alt="scherm-afbeelding ECSJ">
-    <div class="card-body project-card">
+    <div class="card-body project-card"> 
+       <p class="card-text omschrijf">  10-07-22 </p> 
     <h5 class="card-title titel">ECSJ Leiden</h5>
-     <p class="card-text omschrijf">  10-07-22 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
@@ -184,45 +184,47 @@
 
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
     <img src="img/bleckmann-logo.png"  class="card-img-top rounded" alt="scherm-afbeelding Bleckmann 160 jaar">
-    <div class="card-body project-card">
+    <div class="card-body project-card"> 
+      <p class="card-text omschrijf">  29-6-22 </p> 
     <h5 class="card-title titel">Embrace 160 years Bleckmann</h5> 
-     <p class="card-text omschrijf">  29-6-22 </p> 
       <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
   </div>
 </div> 
 
-<div class="card-group m-2 ">
+ <div class="card-group m-6 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/enexis-energie-event.png" class="card-img-top rounded" alt="schermafbeelding Enexis Transition">
-    <div class="card-body project-card">
-    <h5 class="card-title titel">Enexis Transition</h5> 
-     <p class="card-text omschrijf">  10-02-2022 </p> 
+    <img src="img/Hoek&Blok-logo.png" class="card-img-top embed-responsive-item rounded" alt="schermafbeelding Hoek en Blok Personeelsevent">
+    <div class="card-body project-card"> 
+      <p class="card-text omschrijf">  8-01-21 </p> 
+      <h5 class="card-title titel">Hoek en Blok Personeelsevenementen</h5> 
       <a href="#" class="btn knopdetail">Meer details</a>
-       
     </div>
   </div>
   
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/Eniginia-event.png"  class="card-img-top rounded " alt="schermafbeelding eniginia event">
-    <div class="card-body project-card">
-    <h5 class="card-title titel">Enginia Event 2021</h5> 
-     <p class="card-text omschrijf">  12-01-21 </p> 
+    <img src="img/ECSJ-logo.png"  class="card-img-top rounded embed-responsive-item  " alt="scherm-afbeelding ECSJ">
+    <div class="card-body project-card"> 
+       <p class="card-text omschrijf">  10-07-22 </p> 
+    <h5 class="card-title titel">ECSJ Leiden</h5>
       <a href="#" class="btn knopdetail">Meer details</a>
-       
+      
     </div>
-  </div>
+  </div> 
+
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/JA21-logo.png"  class="card-img-top rounded" alt="schermafbeelding JA21">
-    <div class="card-body project-card">
-    <h5 class="card-title titel">JA21 ALV</h5> 
-     <p class="card-text omschrijf"> 21-05-22 </p> 
+    <img src="img/bleckmann-logo.png"  class="card-img-top rounded" alt="scherm-afbeelding Bleckmann 160 jaar">
+    <div class="card-body project-card"> 
+       <p class="card-text omschrijf">  29-6-22 </p> 
+    <h5 class="card-title titel">Embrace 160 years Bleckmann</h5> 
+     
       <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
   </div>
-</div>
+</div> 
+
      
  
 </div>
