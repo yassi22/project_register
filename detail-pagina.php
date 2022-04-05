@@ -49,7 +49,7 @@
   
 
  <div class="col-md-12  justify-content-center   ">  
-      <section class="mx-auto"> 
+      <section class=" d-flex  justify-content-center mx-auto"> 
         <h2>Project Details</h2> 
       </section>
 <div class="jumbotron shadow p-3 mb-5 bg-white rounded d-flex justify-content-center mt-4  jumbo-grote"> 
