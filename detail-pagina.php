@@ -95,14 +95,16 @@
   <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-  </button> 
-      
- 
+  </button>
+</div>
+
+
+
 </div>
  
-<div class="d-flex justify-content-start ">  
+<div class="d-flex align-items-start jusity-content-start ">  
   
-  <button type="button" class="btn btn-primary d-flex knop-download mt-2 ">Download</button>  
+  <button type="button" class="btn btn-primary d-flex mt-2 ">Download</button>  
  <div>
   <ul> 
 <h4>Diensten </h4>
@@ -114,20 +116,16 @@
 </div>
 </div>
 
- 
-  
 
 </div>
 
+</div>
+
+</div>
+
+</div>
 
  
-</div>
-</div>
- 
-
- 
-</div>
-</div>
 
  
 </body> 
