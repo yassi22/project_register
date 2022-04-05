@@ -195,29 +195,29 @@
 
  <div class="card-group m-6 ">
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/Hoek&Blok-logo.png" class="card-img-top embed-responsive-item rounded" alt="schermafbeelding Hoek en Blok Personeelsevent">
+    <img src="img/JA21-logo.png" class="card-img-top embed-responsive-item rounded" alt="schermafbeelding Hoek en Blok Personeelsevent">
     <div class="card-body project-card"> 
       <p class="card-text omschrijf">  8-01-21 </p> 
-      <h5 class="card-title titel">Hoek en Blok Personeelsevenementen</h5> 
+      <h5 class="card-title titel">Ja21</h5> 
       <a href="#" class="btn knopdetail">Meer details</a>
     </div>
   </div>
   
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/ECSJ-logo.png"  class="card-img-top rounded embed-responsive-item  " alt="scherm-afbeelding ECSJ">
+    <img src="img/enexis-energie-event.png"  class="card-img-top rounded embed-responsive-item  " alt="scherm-afbeelding ECSJ">
     <div class="card-body project-card"> 
        <p class="card-text omschrijf">  10-07-22 </p> 
-    <h5 class="card-title titel">ECSJ Leiden</h5>
+    <h5 class="card-title titel">Enexis energie event</h5>
       <a href="#" class="btn knopdetail">Meer details</a>
       
     </div>
   </div> 
 
   <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-    <img src="img/bleckmann-logo.png"  class="card-img-top rounded" alt="scherm-afbeelding Bleckmann 160 jaar">
+    <img src="img/DDDonline.jpg"  class="card-img-top rounded" alt="scherm-afbeelding Bleckmann 160 jaar">
     <div class="card-body project-card"> 
        <p class="card-text omschrijf">  29-6-22 </p> 
-    <h5 class="card-title titel">Embrace 160 years Bleckmann</h5> 
+    <h5 class="card-title titel">DDD online</h5> 
      
       <a href="#" class="btn knopdetail">Meer details</a>
       
