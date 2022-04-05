@@ -193,16 +193,19 @@ color:white;
     border-left: 3px solid #CACACA;
     height: 600px;
   
+}  
+
+.jumbotron {
+    max-width: 1000px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+.text-max { 
+    width: 300px;
 } 
 
-.jumbotron { 
-    max-width: 900px;
-    width: 100%; 
-    margin:0 auto;
-} 
+.knop-download{ 
+max-height: 50px; 
 
-
-
-
-
-  
+}

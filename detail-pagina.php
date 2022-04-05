@@ -52,7 +52,8 @@
       <section class=" d-flex  justify-content-center mx-auto"> 
         <h2>Project Details</h2> 
       </section>
-<div class="jumbotron shadow p-3 mb-5 bg-white rounded d-flex justify-content-center mt-4  jumbo-grote"> 
+<div class="jumbotron shadow p-3 mb-5 bg-white rounded  mt-4  jumbo-grote">  
+  <div class="d-flex justify-content-start">
     <ul>
       <li> 
         <p class="text-secondary">Project naam</p> 
@@ -66,48 +67,53 @@
         <p class="text-secondary">Website links</p> 
         <p>https://www.google.com/</p>   
       </li>   
-        <li> 
+        <li > 
         <p class="text-secondary">Omschrijving</p> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue, tellus at tincidunt suscipit, diam odio venenatis ligula, scelerisque ultricies magna leo nec arcu. Quisque fringilla vestibulum arcu, nec ornare elit sagittis quis. Phasellus leo dolor, consectetur et ullamcorper at, suscipit sed felis. Praesent blandit fringilla luctus.</p>   
+        <p class="text-max">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue, tellus at tincidunt suscipit, diam odio venenatis ligula, scelerisque ultricies magna leo nec arcu. Quisque fringilla vestibulum arcu, nec ornare elit sagittis quis. Phasellus leo dolor, consectetur et ullamcorper at, suscipit sed felis. Praesent blandit fringilla luctus.</p>   
       </li> 
-    </ul>
-  <div class="v-lijn"></div>  
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="img/JA21-logo.png" alt="First slide">
+    </ul> 
+      <div class="v-lijn"></div>   
+      
+ <div id="carouselExampleControls" class="carousel slide mr-2" data-mdb-ride="carousel">
+  <div class="carousel-inner rounded ">
+    <div class="carousel-item active  ">
+      <img src="img/DDDonline.jpg" class="d-block w-100" alt="Wild Landscape"/>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/Hoek&Blok-logo.png" alt="Second slide">
+    <div class="carousel-item rounded ">
+      <img src="img/bleckmann-logo.png" class="d-block    w-100" alt="Camera"/>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/bleckmann-logo.png" alt="Third slide">
+    <div class="carousel-item  ">
+      <img src="img/twinning.jpg" class="d-block w-100  " alt="Exotic Fruits"/>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    <span class="visually-hidden">Next</span>
+  </button> 
+  <button type="button" class="btn btn-primary d-flex knop-download mt-2 ">Download</button> 
+</div> 
+ 
+
+
+
 </div>
-  
-</div>
-</div>
+ 
+ 
 
 
  
 </div>
 </div>
  
+
+ 
+</div>
+</div>
+
  
 </body> 
 
