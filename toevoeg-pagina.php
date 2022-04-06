@@ -98,15 +98,16 @@
                 <label for="file-upload" class="custom-file-upload">
                   <i class="fa fa-cloud-upload"></i> Nieuwe schermafbeelding
                 </label>
-                <input type="file" id="file-upload" name="file1"> 
+                <input type="file" id="file-upload" name="file1"> <br><br>
                 <a class="btn verstuur-knop" href="#">Verstuur</a> 
               </form>
   
               </div> 
 
-              <div>
-                <h4 class="text-left">Diensten</h4>
-                <ul>
+             
+              <h4 class="text-left">Diensten</h4> 
+                <div class="d-flex justfiy-content-start flex-column mb-3"> 
+                
 
                   <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
@@ -152,22 +153,27 @@
                   </div>
 
 
-                </ul>
-
-              </div>  
- 
-              <div> 
+               
+                </div> 
+           
+              <div class="mb-3"> 
               <h4 class="text-left">Categorie</h4>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                   <label class="form-check-label" for="flexRadioDefault1">
-                    Default radio
+                   Medische evenement
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Hybride evenement
+                  </label>
+                </div> 
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Congress online evenement
                   </label>
                 </div>
               </div>
@@ -180,13 +186,25 @@
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                   <label class="form-check-label" for="flexRadioDefault1">
-                    Default radio
+                    2017
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    2018
+                  </label>
+                </div> 
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    2019
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    2020
                   </label>
                 </div>
               </div>

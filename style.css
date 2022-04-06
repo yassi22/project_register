@@ -342,11 +342,11 @@ input[type=text] {
 
 .verstuur-knop { 
     
-    background-color: #F48424;
+    background-color: #057494;
     border-radius: 50px;
     color:white;
     font-family: 'Raleway',sans-serif;
-
+    height: 38px;
     font-size: 18px;
     line-height: 26px;
 }  
