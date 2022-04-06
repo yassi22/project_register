@@ -98,7 +98,7 @@
                 <label for="file-upload" class="custom-file-upload">
                   <i class="fa fa-cloud-upload"></i> Nieuwe schermafbeelding
                 </label>
-                <input type="file" name="file1"> 
+                <input type="file" id="file-upload" name="file1"> 
                 <a class="btn verstuur-knop" href="#">Verstuur</a> 
               </form>
   
