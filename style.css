@@ -203,6 +203,35 @@ color:white;
   
 }  
 
+/* Border tussen kolommen */
+.details .col + .col {
+    border-left: 2px solid #CACACA;
+}
+
+/* Lijst met details */
+.details-list li {
+    list-style: disc;
+}
+
+/* Afbeeldingen in carrousel even hoog */
+.carousel-detail .carousel-item {
+    position: relative;
+    padding-bottom: 54%;
+
+    background-color: #f0f0f0;
+}
+
+    .carousel-detail .carousel-item img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
 .jumbotron {
     max-width: 1000px !important;
     width: 100% !important;
