@@ -88,29 +88,6 @@
             </div>
             <div class="col col-6 py-4 px-5">
               <div class="mb-5">
-                <div id="carouselExampleControls" class="carousel carousel-detail mb-2 slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item  rounded-3 active">
-                      <img src="img/DDDonline.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item  rounded-3">
-                      <img src="img/twinning.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item  rounded-3">
-                      <img src="img/bleckmann-logo.png" class="d-block w-100" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
 
                 <a class="btn btn-primary" href="#">Download schermafbeelding</a>
               </div>
