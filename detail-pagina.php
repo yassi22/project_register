@@ -92,7 +92,7 @@
                   </button>
                 </div>
 
-                <a class="btn btn-primary" href="#">Download schermafbeelding</a>
+                <a class="btn  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
               </div>
 
               <h4>Diensten</h4>
