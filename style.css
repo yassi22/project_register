@@ -286,4 +286,20 @@ input[type=text] {
     background-color: #F4F4F4 !important;
     resize: none;
 
-  }
+  } 
+
+   
+
+  .opslaan-knop { 
+    background-color: #057494;
+    border-radius: 50px; 
+    color:white; 
+    font-family: 'Raleway', sans-serif; 
+    font-size: 18px;
+    line-height: 26px;
+} 
+
+.opslaan-knop:hover { 
+ background-color: #4B96D0 !important; 
+ color:white;
+} 
