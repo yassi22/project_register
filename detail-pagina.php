@@ -45,13 +45,12 @@
   
   <div class="row"> 
 
- 
-  
 
  <div class="col-md-12  justify-content-center   ">  
       <section class=" d-flex  justify-content-center mx-auto"> 
         <h2>Project Details</h2> 
-      </section>
+      </section> 
+
 <div class="jumbotron shadow p-3 mb-5 bg-white rounded  mt-4  jumbo-grote">  
   <div class="d-flex justify-content-start">
     <ul>
@@ -72,6 +71,7 @@
         <p class="text-max">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue, tellus at tincidunt suscipit, diam odio venenatis ligula, scelerisque ultricies magna leo nec arcu. Quisque fringilla vestibulum arcu, nec ornare elit sagittis quis. Phasellus leo dolor, consectetur et ullamcorper at, suscipit sed felis. Praesent blandit fringilla luctus.</p>   
       </li> 
     </ul>  
+
 
       <div class="v-lijn"></div>    
 
@@ -97,11 +97,8 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-
-
-</div>
  
+
 <div class="d-flex align-items-start jusity-content-start ">  
   
   <button type="button" class="btn btn-primary d-flex mt-2 ">Download</button>  
@@ -115,6 +112,13 @@
     </ul> 
 </div>
 </div>
+
+
+
+
+</div>
+ 
+
 
 
 </div>
