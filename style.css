@@ -305,4 +305,12 @@ input[type=text] {
 }  
 
 
- 
+.preview > div {
+    display: inline-block;
+    text-align:center;
+  }
+  
+  .preview2 > div {
+    display: inline-block; 
+    text-align:center;
+  }
