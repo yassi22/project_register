@@ -59,27 +59,27 @@
 
               <form>
                 <div class="form-group mb-4">
-                  <label class="invoer-naam" for="Projectnaam">Project naam</label>
+                  <label class="invoer-naam label-categorie" for="Projectnaam">Project naam</label>
                   <input type="text" class="form-control" id="Projectnaam1"  
                     placeholder="Voer een projectnaam in">
 
                 </div> 
 
                 <div class="form-group mb-4">
-                  <label class="invoer-naam" for="Projectdatum1">Project datum</label>
+                  <label class="invoer-naam label-categorie" for="Projectdatum1">Project datum</label>
                   <input type="date" class="form-control" id="Projectdatum1">
 
                 </div> 
                 
                 <div class="form-group mb-4">
-                  <label class="invoer-naam" for="Websitelink1">Website Link</label>
+                  <label class="invoer-naam label-categorie" for="Websitelink1">Website Link</label>
                   <input type="text" class="form-control" id="Websitelink1"  
                     placeholder="Voer een website link in">
 
                 </div> 
 
-                <div class="form-group mb-4">
-                  <label class="invoer-naam" for="Omschrijving1">Omschrijving</label>
+                <div class="form-group mb-4 ">
+                  <label class="invoer-naam label-categorie" for="Omschrijving1">Omschrijving</label>
                   <textarea class="form-control" id="Omschrijving1" placeholder="Vul een omschrijving in"rows="3"></textarea>
                 </div>
 
@@ -91,7 +91,7 @@
             <div class="col col-6 py-4 px-5">
               <div class="mb-5">
  
-              Preview
+              <p class="text-schermafbeelding">Schermafbeeldingen </p> 
               <div class="preview"></div>
 
               <form action="#" method="POST" enctype="multipart/form-data">
@@ -160,19 +160,19 @@
               <h4 class="text-left">Categorie</h4>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <label class="form-check-label label-categorie" for="flexRadioDefault1">
                    Medische evenement
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <label class="form-check-label label-categorie " for="flexRadioDefault1">
                     Hybride evenement
                   </label>
                 </div> 
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <label class="form-check-label label-categorie " for="flexRadioDefault1">
                     Congress online evenement
                   </label>
                 </div>
@@ -185,25 +185,25 @@
               <h4 class="text-left">Jaartal</h4>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <label class="form-check-label label-categorie" for="flexRadioDefault1">
                     2017
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label label-categorie" for="flexRadioDefault1">
                     2018
                   </label>
                 </div> 
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <input class="form-check-input  " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label label-categorie" for="flexRadioDefault1">
                     2019
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label label-categorie" for="flexRadioDefault1">
                     2020
                   </label>
                 </div>

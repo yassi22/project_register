@@ -31,7 +31,8 @@ body{
 
    li { 
        list-style: none; 
-       margin: 0 'auto';
+       margin: 0 'auto'; 
+       font-family: 'Roboto' , sans-serif;
    } 
 
    h2 { 
@@ -263,7 +264,7 @@ line-height: 26px;
 
 .invoer-naam {
     color:black; 
-    font-family: 'Robot', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
 } 
 
@@ -308,12 +309,12 @@ input[type=text] {
 .preview > div {
     display: inline-block;
     text-align:center;
+    font-family: 'Roboto', sans-serif; 
+    margin:5px;  
+    
   }
   
-  .preview2 > div {
-    display: inline-block; 
-    text-align:center;
-  } 
+
 
 
   input[type="file"] {
@@ -354,6 +355,14 @@ input[type=text] {
 .verstuur-knop:hover { 
     background-color: #4B96D0;
     color: #FFFFFF;
+} 
+
+.label-categorie { 
+    font-family: 'Roboto' ,sans-serif;
+} 
+
+.text-schermafbeelding{ 
+    font-family: 'Roboto', sans-serif;
 }
 
 
