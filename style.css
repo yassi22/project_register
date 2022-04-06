@@ -259,4 +259,31 @@ line-height: 26px;
 .download-knop:hover { 
  background-color: #4B96D0 !important; 
  color:white;
-}
+} 
+
+.invoer-naam {
+    color:black; 
+    font-family: 'Robot', sans-serif;
+    font-size: 18px;
+} 
+
+
+input[type=text] {
+     
+    background-color: #F4F4F4;
+     border: 1px solid #C8C8C8; 
+  } 
+
+ 
+  input[type=date] {
+     
+     background-color: #F4F4F4;
+     border: 1px solid #C8C8C8; 
+  }
+
+  textarea {
+    border: 1px solid #C8C8C8 !important;
+    background-color: #F4F4F4 !important;
+    resize: none;
+
+  }

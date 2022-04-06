@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Project register - Project details</title>
+  <title>Project register - Project toevoegen</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,7 +12,9 @@
   <!-- Load Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
   <style>
     .fakeimg {
@@ -31,9 +33,12 @@
       </a>
 
       <div class="d-flex justify-content-between">
-        <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug naar overzicht</a>
-        <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project aanpassen</a>
-        <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-verwijder" role="button">Project verwijderen</a>
+        <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug naar
+          overzicht</a>
+        <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen"
+          role="button">Project aanpassen</a>
+        <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-verwijder"
+          role="button">Project verwijderen</a>
       </div>
     </div>
   </nav>
@@ -42,31 +47,44 @@
   <div class="container-fluid">
     <div class="justify-content-center">
       <section class=" d-flex  justify-content-center mx-auto">
-        <h2>Project details</h2>
+        <h2>Project Toevoegen</h2>
       </section>
 
       <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
         <div>
           <div class="row g-0 details">
             <div class="col col-6 py-4 px-5">
-              <ul class="ps-0">
-                <li>
-                  <p class="text-secondary mb-0">Project naam</p>
-                  <p>Lorem ipsum dolor sit amet,</p>
-                </li>
-                <li>
-                  <p class="text-secondary mb-0">Project datum</p>
-                  <p>1-04-22</p>
-                </li>
-                <li>
-                  <p class="text-secondary mb-0">Website links</p>
-                  <p>https://www.google.com/</p>
-                </li>
-                <li>
-                  <p class="text-secondary mb-0">Omschrijving</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue, tellus at tincidunt suscipit, diam odio venenatis ligula, scelerisque ultricies magna leo nec arcu. Quisque fringilla vestibulum arcu, nec ornare elit sagittis quis. Phasellus leo dolor, consectetur et ullamcorper at, suscipit sed felis. Praesent blandit fringilla luctus.</p>
-                </li>
-              </ul>
+
+              <form>
+                <div class="form-group mb-4">
+                  <label class="invoer-naam" for="Projectnaam">Project naam</label>
+                  <input type="text" class="form-control" id="Projectnaam1"  
+                    placeholder="Voer een projectnaam in">
+
+                </div> 
+
+                <div class="form-group mb-4">
+                  <label class="invoer-naam" for="Projectdatum1">Project datum</label>
+                  <input type="date" class="form-control" id="Projectdatum1">
+
+                </div> 
+                
+                <div class="form-group mb-4">
+                  <label class="invoer-naam" for="Websitelink1">Website Link</label>
+                  <input type="text" class="form-control" id="Websitelink1"  
+                    placeholder="Voer een website link in">
+
+                </div> 
+
+                <div class="form-group mb-4">
+                  <label class="invoer-naam" for="Omschrijving1">Omschrijving</label>
+                  <textarea class="form-control" id="Omschrijving1" rows="3"></textarea>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+
             </div>
             <div class="col col-6 py-4 px-5">
               <div class="mb-5">
@@ -82,11 +100,13 @@
                       <img src="img/bleckmann-logo.png" class="d-block w-100" alt="...">
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
@@ -95,17 +115,7 @@
                 <a class="btn btn-primary" href="#">Download schermafbeelding</a>
               </div>
 
-              <h4>Diensten</h4>
-              <ul class="details-list mb-4">
-                <li>Online betaalmodule</li>
-                <li>Congress online</li>
-                <li>Event App</li>
-                <li>Badges</li>
-                <li>Uitnodigingstraject</li>
-              </ul>
-
-              <h4>Categorie</h4>
-              <p>Congres Online evenementen</p>
+            
             </div>
           </div>
         </div>
