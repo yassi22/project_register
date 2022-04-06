@@ -93,17 +93,15 @@
  
               Preview
               <div class="preview"></div>
-              Preview2
-              <div class="preview2"></div>
 
               <form action="#" method="POST" enctype="multipart/form-data">
-                <input type="file" name="file1">
-                <input type="file" name="file2">
-                <input type="submit">
+                <label for="file-upload" class="custom-file-upload">
+                  <i class="fa fa-cloud-upload"></i> Nieuwe schermafbeelding
+                </label>
+                <input type="file" name="file1"> 
+                <a class="btn verstuur-knop" href="#">Verstuur</a> 
               </form>
-
-
-                <a class="btn btn-primary" href="#">Download schermafbeelding</a>
+  
               </div>
 
             

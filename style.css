@@ -313,4 +313,48 @@ input[type=text] {
   .preview2 > div {
     display: inline-block; 
     text-align:center;
-  }
+  } 
+
+
+  input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+
+    background-color: #F48424;
+    border-radius: 50px;
+    color:white;
+    font-family: 'Raleway',sans-serif;
+
+    font-size: 18px;
+    line-height: 26px;
+}  
+
+.custom-file-upload:hover { 
+    background-color: #4B96D0;
+    color: #FFFFFF;
+}
+
+
+.verstuur-knop { 
+    
+    background-color: #F48424;
+    border-radius: 50px;
+    color:white;
+    font-family: 'Raleway',sans-serif;
+
+    font-size: 18px;
+    line-height: 26px;
+}  
+
+.verstuur-knop:hover { 
+    background-color: #4B96D0;
+    color: #FFFFFF;
+}
+
+
+
