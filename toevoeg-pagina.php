@@ -84,7 +84,7 @@
                 </div>
 
 
-                <button type="submit" class="btn   opslaan-knop">Wijzigingen opslaan</button>
+                <button type="submit" class="btn   opslaan-knop">Project toevoegen</button>
               </form>
 
             </div>
