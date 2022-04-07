@@ -52,19 +52,19 @@
               <ul class="ps-0">
                 <li>
                   <p class="text-secondary mb-0">Project naam</p>
-                  <p>Lorem ipsum dolor sit amet,</p>
+                  <p>ECSJ 2022 Leiden</p>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Project datum</p>
-                  <p>1-04-22</p>
+                  <p>07-10-22</p>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Website links</p>
-                  <p>https://www.google.com/</p>
+                  <p>https://ecsj2022tickets.eu/</p>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue, tellus at tincidunt suscipit, diam odio venenatis ligula, scelerisque ultricies magna leo nec arcu. Quisque fringilla vestibulum arcu, nec ornare elit sagittis quis. Phasellus leo dolor, consectetur et ullamcorper at, suscipit sed felis. Praesent blandit fringilla luctus.</p>
+                  <p>The European Conference of Science Journalism is a conference for professional science journalists and related professions. In addition, it is a moment in time to meet each other in real life, if that is possible, and to continue discussing the profession of science journalist.</p>
                 </li>
               </ul>
             </div>
@@ -73,13 +73,13 @@
                 <div id="carouselExampleControls" class="carousel carousel-detail mb-2 slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item  rounded-3 active">
-                      <img src="img/DDDonline.jpg" class="d-block w-100" alt="...">
+                      <img src="img/ECSJ-1.png " class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item  rounded-3">
-                      <img src="img/twinning.jpg" class="d-block w-100" alt="...">
+                      <img src="img/ECSJ-2.png " class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item  rounded-3">
-                      <img src="img/bleckmann-logo.png" class="d-block w-100" alt="...">
+                      <img src="img/ECSJ-5.png " class="d-block w-100" alt="...">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -97,9 +97,7 @@
 
               <h4>Diensten</h4>
               <ul class="details-list mb-4">
-                <li>Online betaalmodule</li>
                 <li>Congress online</li>
-                <li>Event App</li>
                 <li>Badges</li>
                 <li>Uitnodigingstraject</li>
               </ul>

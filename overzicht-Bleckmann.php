@@ -52,19 +52,19 @@
               <ul class="ps-0">
                 <li>
                   <p class="text-secondary mb-0">Project naam</p>
-                  <p>Lorem ipsum dolor sit amet,</p>
+                  <p>Embrace 160 years Bleckmann</p>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Project datum</p>
-                  <p>1-04-22</p>
+                  <p>29-06-22</p>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Website links</p>
-                  <p>https://www.google.com/</p>
+                  <p>https://embracebleckmann.com/</p>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue, tellus at tincidunt suscipit, diam odio venenatis ligula, scelerisque ultricies magna leo nec arcu. Quisque fringilla vestibulum arcu, nec ornare elit sagittis quis. Phasellus leo dolor, consectetur et ullamcorper at, suscipit sed felis. Praesent blandit fringilla luctus.</p>
+                  <p>Welkom op Embrace, Het feest waar we met iedereen die zich inzet voor Bleckmann, iedereen die onze vier kernwaarden in zijn of haar DNA heeft en deze omarmd, ons 160 jarig jubileum vieren.</p>
                 </li>
               </ul>
             </div>
@@ -73,13 +73,13 @@
                 <div id="carouselExampleControls" class="carousel carousel-detail mb-2 slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item  rounded-3 active">
-                      <img src="img/DDDonline.jpg" class="d-block w-100" alt="...">
+                      <img src="img/bleckmann-1.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item  rounded-3">
-                      <img src="img/twinning.jpg" class="d-block w-100" alt="...">
+                    <img src="img/bleckmann-2.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item  rounded-3">
-                      <img src="img/bleckmann-logo.png" class="d-block w-100" alt="...">
+                    <img src="img/bleckmann-3.png" class="d-block w-100" alt="...">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -98,8 +98,6 @@
               <h4>Diensten</h4>
               <ul class="details-list mb-4">
                 <li>Online betaalmodule</li>
-                <li>Congress online</li>
-                <li>Event App</li>
                 <li>Badges</li>
                 <li>Uitnodigingstraject</li>
               </ul>
