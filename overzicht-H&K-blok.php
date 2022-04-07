@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">
 
+
   <!-- Load Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,30 @@
   </style>
 </head>
 
-<body>
+<body> 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button"  id="btnClose" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button"  id="btnSave" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+
+ 
 
   <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
     <div class="container-fluid">
@@ -33,12 +57,15 @@
       <div class="d-flex justify-content-between">
         <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug naar overzicht</a>
         <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project aanpassen</a>
-        <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-verwijder" role="button">Project verwijderen</a>
-      </div>
+        <button class="btn btn-lg d-flex justify-content-end knop-verwijder" data-toggle="modal" data-target="#myModal"  role="button">Project verwijderen</button>
+      </div> 
+       
     </div>
   </nav>
 
-
+   
+ 
+ 
   <div class="container-fluid">
     <div class="justify-content-center">
       <section class=" d-flex  justify-content-center mx-auto">
@@ -108,7 +135,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> 
+
+  
 </body>
 
 </html>
