@@ -168,7 +168,7 @@
     <div class="card-body project-card">
          <p class="card-text omschrijf">  8-01-21 </p> 
       <h5 class="card-title titel">Hoek en Blok Personeelsevent</h5> 
-      <a href="#" class="btn knopdetail">Meer details</a>
+      <a href="overzicht-H&K-blok.php" class="btn knopdetail">Meer details</a>
     </div>
   </div>
   
@@ -177,7 +177,7 @@
     <div class="card-body project-card"> 
        <p class="card-text omschrijf">  10-07-22 </p> 
     <h5 class="card-title titel">ECSJ Leiden</h5>
-      <a href="#" class="btn knopdetail">Meer details</a>
+      <a href="overzicht-ECSJE.php" class="btn knopdetail">Meer details</a>
       
     </div>
   </div> 
@@ -187,7 +187,7 @@
     <div class="card-body project-card"> 
       <p class="card-text omschrijf">  29-6-22 </p> 
     <h5 class="card-title titel">Embrace 160 years Bleckmann</h5> 
-      <a href="#" class="btn knopdetail">Meer details</a>
+      <a href="overzicht-Bleckmann.php" class="btn knopdetail">Meer details</a>
       
     </div>
   </div>
@@ -199,7 +199,7 @@
     <div class="card-body project-card"> 
       <p class="card-text omschrijf">  8-01-21 </p> 
       <h5 class="card-title titel">Ja21</h5> 
-      <a href="#" class="btn knopdetail">Meer details</a>
+      <a href="overzicht-JA21.php" class="btn knopdetail">Meer details</a>
     </div>
   </div>
   
@@ -208,7 +208,7 @@
     <div class="card-body project-card"> 
        <p class="card-text omschrijf">  10-07-22 </p> 
     <h5 class="card-title titel">Enexis energie event</h5>
-      <a href="#" class="btn knopdetail">Meer details</a>
+      <a href="overzicht-Eenixs.php" class="btn knopdetail">Meer details</a>
       
     </div>
   </div> 
@@ -219,7 +219,7 @@
        <p class="card-text omschrijf">  29-6-22 </p> 
     <h5 class="card-title titel">DDD online</h5> 
      
-      <a href="#" class="btn knopdetail">Meer details</a>
+      <a href="overzicht-DDD-Online.php" class="btn knopdetail">Meer details</a>
       
     </div>
   </div>
