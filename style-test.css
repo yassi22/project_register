@@ -1,0 +1,369 @@
+body{ 
+    padding:0; 
+    margin:0;
+    background-color: #F4F4F4;
+} 
+
+
+.knop { 
+    background-color: #057494;  
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 26px;
+   color: #FFFFFF;
+  
+  }  
+
+  .knop:hover { 
+      background-color:#4B96D0; 
+      color:white;
+  }
+
+   li { 
+       list-style: none; 
+       margin: 0 'auto'; 
+       font-family: 'Roboto' , sans-serif;
+   } 
+
+   h2 { 
+       font-family: 'Raleway', sans-serif !important; 
+       color:#057494; 
+       font-weight: bold;  
+       
+
+   }   
+
+h4 {
+    font-family: 'Raleway', sans-serif !important;
+    color: #057494;
+    font-weight: bold;
+
+
+}
+
+   .titel {
+       font-family: 'Roboto', sans-serif !important; 
+       font-weight:semi-bold;
+   } 
+
+   .omschrijf { 
+       color:#878787; 
+       font-family: 'Roboto', sans-serif !important; 
+   }
+  
+   
+
+ .logo { 
+      margin-top:1vw;
+      margin: 0 auto;
+      width: 250px;
+ } 
+
+ .zoek { 
+     max-width: 320px;
+     width: 100%;
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
+ } 
+
+ .zoekknop { 
+    background-color: #057494;  
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; 
+    color:white;
+ } 
+
+ .zoekknop:hover{ 
+     background-color:#4B96D0; 
+     color:white;
+ } 
+
+ .project-card {
+     display: flex;
+     flex-direction: column;
+     /* Maak de card content flex content van boven naar beneden */
+ }
+
+    .project-card .knopdetail {
+        margin-top: auto;
+        /* Duw de knop in de project-card altijd helemaal naar beneden */
+    }
+
+ .knopdetail{ 
+     background-color: #F48424;
+     font-family: 'Raleway' sans-serif; 
+     font-weight: medium; 
+     border-radius: 50px; 
+     color:white;  
+     width:100%; 
+     font-size:20px;
+ } 
+
+ .knopdetail:hover{ 
+     background-color:#4B96D0; 
+     color:white;
+ } 
+
+ .resultaat-knop{ 
+    background-color: #057494;  
+    border-radius: 10p;
+    color:white;   
+    border-radius: 5px;
+ } 
+ .resultaat-knop:hover{ 
+    background-color:#4B96D0; 
+    color:white;
+} 
+    
+ .verplaats { 
+     margin-right:6vw !important; 
+ }
+    
+ .jaartallen { 
+     text-align: center !important;
+ } 
+
+ .verplaats-cards { 
+     margin-right: 8vw !important;
+ }  
+ 
+ .zoek-verplaats{ 
+     margin-right: 1vw !important; 
+     
+ } 
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+} 
+
+.knop-verwijder { 
+background-color:#F48424; 
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: 'Raleway',
+    sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}   
+ 
+
+.knop-verwijder:hover {
+    background-color:#4B96D0;
+    color:white;
+} 
+
+
+.knop-aanpassen{ 
+background-color:#4B96D0;
+border: none;
+padding: 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 50px;
+font-family: 'Raleway',sans-serif;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+color: #FFFFFF;
+} 
+
+.knop-aanpassen:hover { 
+background-color:#057494;
+color:white;
+} 
+
+.v-lijn { 
+    border-left: 3px solid #CACACA;
+    height:700px;
+  
+}  
+
+/* Border tussen kolommen */
+.details .col + .col {
+    border-left: 2px solid #CACACA;
+}
+
+/* Lijst met details */
+.details-list li {
+    list-style: disc;
+}
+
+/* Afbeeldingen in carrousel even hoog */
+.carousel-detail .carousel-item {
+    position: relative;
+    padding-bottom: 54%;
+
+    background-color: #f0f0f0;
+}
+
+    .carousel-detail .carousel-item img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+.jumbotron {
+    max-width: 1400px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+.text-max { 
+    width: 300px;
+} 
+
+.knop-download{ 
+max-height: 50px; 
+
+} 
+
+.download-knop { 
+    background-color: #F48424;
+    border-radius: 50px; 
+    color:white; 
+    font-family: 'Raleway', sans-serif; 
+     
+    font-size: 20px;
+line-height: 26px;
+} 
+
+.download-knop:hover { 
+ background-color: #4B96D0 !important; 
+ color:white;
+} 
+
+.invoer-naam {
+    color:black; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+} 
+
+
+input[type=text] {
+     
+    background-color: #F4F4F4;
+     border: 1px solid #C8C8C8; 
+  } 
+
+ 
+  input[type=date] {
+     
+     background-color: #F4F4F4;
+     border: 1px solid #C8C8C8; 
+  }
+
+  textarea {
+    border: 1px solid #C8C8C8 !important;
+    background-color: #F4F4F4 !important;
+    resize: none;
+
+  } 
+
+   
+
+  .opslaan-knop { 
+    background-color: #057494;
+    border-radius: 50px; 
+    color:white; 
+    font-family: 'Raleway', sans-serif; 
+    font-size: 18px;
+    line-height: 26px;
+} 
+
+.opslaan-knop:hover { 
+ background-color: #4B96D0 !important; 
+ color:white;
+}  
+
+
+.preview > div {
+    display: inline-block;
+    text-align:center;
+    font-family: 'Roboto', sans-serif; 
+    margin:5px;  
+    
+  }
+  
+
+
+
+  input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+
+    background-color: #F48424;
+    border-radius: 50px;
+    color:white;
+    font-family: 'Raleway',sans-serif;
+
+    font-size: 18px;
+    line-height: 26px;
+}  
+
+.custom-file-upload:hover { 
+    background-color: #4B96D0;
+    color: #FFFFFF;
+}
+
+
+.verstuur-knop { 
+    
+    background-color: #057494;
+    border-radius: 50px;
+    color:white;
+    font-family: 'Raleway',sans-serif;
+    height: 38px;
+    font-size: 18px;
+    line-height: 26px;
+}  
+
+.verstuur-knop:hover { 
+    background-color: #4B96D0;
+    color: #FFFFFF;
+} 
+
+.label-categorie { 
+    font-family: 'Roboto' ,sans-serif;
+} 
+
+.text-schermafbeelding{ 
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
