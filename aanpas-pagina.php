@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Project register - Project toevoegen</title>
+  <title>Project register - Project aanpassen</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@ $(function () {
   <div class="container-fluid">
     <div class="justify-content-center">
       <section class=" d-flex  justify-content-center mx-auto">
-        <h2>Project toevoegen</h2>
+        <h2>Project aanpassen</h2>
       </section>
 
       <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
@@ -215,7 +215,7 @@ $(function () {
 
 
 
-                <button type="submit" class="btn   opslaan-knop">Project toevoegen</button>
+                <button type="submit" class="btn   opslaan-knop"> Wijzigingen opslaan</button>
               </form>
 
             </div>
