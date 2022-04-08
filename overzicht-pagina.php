@@ -31,7 +31,7 @@
       </a>
       
        
-      <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Project toevoegen</a>
+      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Project toevoegen</a>
  
      
   </div>
