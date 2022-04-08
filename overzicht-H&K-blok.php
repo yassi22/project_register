@@ -56,7 +56,7 @@
 
       <div class="d-flex justify-content-between">
         <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug naar overzicht</a>
-        <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project aanpassen</a>
+        <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project aanpassen</a>
         <button class="btn btn-lg d-flex justify-content-end knop-verwijder" data-toggle="modal" data-target="#myModal"  role="button">Project verwijderen</button>
       </div> 
        
