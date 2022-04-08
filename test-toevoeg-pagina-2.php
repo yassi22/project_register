@@ -57,7 +57,7 @@ $(function () {
   <div class="container-fluid">
     <div class="justify-content-center">
       <section class=" d-flex  justify-content-center mx-auto">
-        <h2>Project Toevoegen</h2>
+        <h2>Project toevoegen</h2>
       </section>
 
       <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
@@ -67,7 +67,7 @@ $(function () {
 
               <form>
                 <div class="form-group mb-4">
-                  <label class="invoer-naam label-categorie" for="Projectnaam">Project naam</label>
+                  <label class="invoer-naam label-categorie  for="Projectnaam">Project naam</label>
                   <input type="text" class="form-control" id="Projectnaam1"  
                     placeholder="Voer een projectnaam in">
 
@@ -91,26 +91,7 @@ $(function () {
                   <textarea class="form-control" id="Omschrijving1" placeholder="Vul een omschrijving in"rows="3"></textarea>
                 </div>
 
-
-                <button type="submit" class="btn   opslaan-knop">Project toevoegen</button>
-              </form>
-
-            </div>
-            <div class="col col-6 py-4 px-5">
-              <div class="mb-5">
  
-              <p class="text-schermafbeelding">Schermafbeeldingen </p> 
-              <div class="preview"></div>
-
-              <form action="#" method="POST" enctype="multipart/form-data">
-                <label for="file-upload" class="custom-file-upload">
-                  <i class="fa fa-cloud-upload"></i> Nieuwe schermafbeelding
-                </label>
-                <input type="file" id="file-upload" name="file1"> <br><br>
-              </form>
-  
-              </div> 
-
              <div class="d-flex "> 
              
                 <div class="d-flex justfiy-content-start flex-column col p-2  "> 
@@ -215,6 +196,30 @@ $(function () {
               </div>
  
             </div>
+            <div class="col col-6  ">
+              <div class="mb-5">
+ 
+              <p class="text-schermafbeelding">Schermafbeeldingen </p> 
+              <div class="preview"></div>
+
+              <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="file-upload" class="custom-file-upload">
+                  <i class="fa fa-cloud-upload"></i> Nieuwe schermafbeelding
+                </label>
+                <input type="file" id="file-upload" name="file1"> <br><br>
+              </form>
+  
+              </div> 
+
+ 
+
+
+
+                <button type="submit" class="btn   opslaan-knop">Project toevoegen</button>
+              </form>
+
+            </div>
+
            
         </div>
       </div>
