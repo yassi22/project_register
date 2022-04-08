@@ -107,7 +107,6 @@ $(function () {
                   <i class="fa fa-cloud-upload"></i> Nieuwe schermafbeelding
                 </label>
                 <input type="file" id="file-upload" name="file1"> <br><br>
-                <a class="btn verstuur-knop" href="#">Verstuur</a> 
               </form>
   
               </div> 
