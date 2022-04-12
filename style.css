@@ -52,8 +52,8 @@ h4 {
 }
 
    .titel {
-       font-family: 'Roboto', sans-serif !important; 
-       font-weight:semi-bold;
+       font-family: 'Roboto', sans-serif !important;
+       font-weight: 400;
    } 
 
    .omschrijf { 
@@ -99,6 +99,15 @@ h4 {
         /* Duw de knop in de project-card altijd helemaal naar beneden */
     }
 
+    .project-card .ratio {
+        background-color: #f4f4f4;
+    }
+
+    .project-card .ratio img {
+        object-fit: contain;
+        /* Zorg dat afbeelding in een card niet gek wordt uitgerekt */
+    }
+
  .knopdetail{ 
      background-color: #F48424;
      font-family: 'Raleway' sans-serif; 
@@ -128,25 +137,6 @@ h4 {
  .verplaats { 
      margin-right:6vw !important; 
  }
-    
- .jaartallen { 
-     text-align: center !important;
- } 
-
- .verplaats-cards { 
-     margin-right: 8vw !important;
- }  
- 
- .zoek-verplaats{ 
-     margin-right: 1vw !important; 
-     
- } 
-
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-} 
 
 .knop-verwijder { 
 background-color:#F48424; 
@@ -364,6 +354,3 @@ input[type=text] {
 .text-schermafbeelding{ 
     font-family: 'Roboto', sans-serif;
 }
-
-
-

@@ -28,8 +28,6 @@
 
   <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
     <div class="container-fluid">
-
-
       <a href="overzicht-pagina.php">
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
@@ -45,15 +43,77 @@
 
 
 
-  <div class="container-fluid  ">
+  <div class="container">
 
     <div class="row">
-      <div class="col-md-3 d-flex justify-content-end margin-right-2">
-        <div class="col-sm-6 verplaats">
+      <div class="col-md-3">
+        <h2>Criteria</h2>
+        <form>
+          <h3 class="fs-6">Jaartal</h3>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+
+          <hr>
+
+          <h3 class="fs-6">Jaartal</h3>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+
+          <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit">Toon resultaten</button>
+        </form>
+
+
+        <div class="col-sm-6 verplaats" style="display: none;">
           <h2>Criteria</h2>
           <h5 class="text-center">Jaartal</h5>
 
-          <ul>
+          <ul style->
             <div class="form-check  form-switch">
               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
               <label class="form-check-label" for="flexSwitchCheckDefault">
@@ -184,96 +244,99 @@
       </div>
 
 
-      <div class="col-md-8">
-        <div class="float-right verplaats-cards">
+      <div class="col-md-9">
           <section class="d-flex align-items-center justify-content-between">
             <h2>Projecten</h2>
-            <div class="zoek-verplaats">
-              <form class=" d-flex">
-                <input class="form-control zoek mr-sm-2" type="text" placeholder="Project zoeken">
+              <form class="d-flex">
+                <input class="form-control zoek mr-sm-2" type="text" placeholder="Zoekopdracht">
                 <button class="btn my-2 my-sm-0 zoekknop " type="submit">Zoek</button>
               </form>
-            </div>
           </section>
 
-          <div>
-            <div class="card-group m-6 ">
-              <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-                <img src="img/Hoek&Blok-logo.png" class="card-img-top embed-responsive-item rounded"
-                  alt="schermafbeelding Hoek en Blok Personeelsevent">
+          <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col d-flex align-items-stretch">
+              <div class="card shadow bg-white rounded  w-100">
                 <div class="card-body project-card">
-                  <p class="card-text omschrijf"> 8-01-21 </p>
-                  <h5 class="card-title titel">Hoek en Blok Personeelsevent</h5>
+                    <div class="ratio ratio-16x9 mb-1">
+                    <img src="img/Hoek&Blok-logo.png" alt="Schermafbeelding Hoek en Blok Personeelsevent">
+                  </div>
+                  <p class="card-text mb-1 mt-1 omschrijf">8-01-2021</p>
+                  <h3 class="card-title mb-4 fs-5 titel">Hoek en Blok Personeelsevent</h3>
                   <a href="overzicht-H&K-blok.php" class="btn knopdetail">Meer details</a>
                 </div>
               </div>
+            </div>
 
-              <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-                <img src="img/ECSJ-logo.png" class="card-img-top rounded embed-responsive-item  "
-                  alt="scherm-afbeelding ECSJ">
+            <div class="col d-flex align-items-stretch">
+              <div class="card shadow bg-white rounded  w-100">
                 <div class="card-body project-card">
-                  <p class="card-text omschrijf"> 10-07-22 </p>
-                  <h5 class="card-title titel">ECSJ Leiden</h5>
+                  <div class="ratio ratio-16x9 mb-1">
+                    <img src="img/ECSJ-logo.png" alt="Schermafbeelding ECSJ Leiden">
+                  </div>
+                  <p class="card-text mb-1 mt-1 omschrijf">10-07-2022</p>
+                  <h3 class="card-title mb-4 fs-5 titel">ECSJ Leiden</h3>
                   <a href="overzicht-ECSJE.php" class="btn knopdetail">Meer details</a>
 
                 </div>
               </div>
+            </div>
 
-              <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-                <img src="img/bleckmann-logo.png" class="card-img-top rounded"
-                  alt="scherm-afbeelding Bleckmann 160 jaar">
+            <div class="col d-flex align-items-stretch">
+              <div class="card shadow bg-white rounded  w-100">
                 <div class="card-body project-card">
-                  <p class="card-text omschrijf"> 29-6-22 </p>
-                  <h5 class="card-title titel">Embrace 160 years Bleckmann</h5>
+                  <div class="ratio ratio-16x9 mb-1">
+                    <img src="img/bleckmann-logo.png" alt="Schermafbeelding Embrace 160 years Bleckmann">
+                  </div>
+                  <p class="card-text mb-1 mt-1 omschrijf">29-6-2022</p>
+                  <h3 class="card-title mb-4 fs-5 titel">Embrace 160 years Bleckmann</h3>
                   <a href="overzicht-Bleckmann.php" class="btn knopdetail">Meer details</a>
 
                 </div>
               </div>
             </div>
 
-            <div class="card-group m-6 ">
-              <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-                <img src="img/JA21-logo.png" class="card-img-top embed-responsive-item rounded"
-                  alt="schermafbeelding Hoek en Blok Personeelsevent">
+            <div class="col d-flex align-items-stretch">
+              <div class="card shadow bg-white rounded  w-100">
                 <div class="card-body project-card">
-                  <p class="card-text omschrijf"> 8-01-21 </p>
-                  <h5 class="card-title titel">Ja21</h5>
+                  <div class="ratio ratio-16x9 mb-1">
+                    <img src="img/JA21-logo.png" alt="Schermafbeelding JA21 ALV">
+                  </div>
+                  <p class="card-text mb-1 mt-1 omschrijf">8-01-2021</p>
+                  <h3 class="card-title mb-4 fs-5 titel">JA21 ALV</h3>
                   <a href="overzicht-JA21.php" class="btn knopdetail">Meer details</a>
-                </div>
-              </div>
-
-              <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-                <img src="img/enexis-energie-event.png" class="card-img-top rounded embed-responsive-item  "
-                  alt="scherm-afbeelding ECSJ">
-                <div class="card-body project-card">
-                  <p class="card-text omschrijf"> 10-07-22 </p>
-                  <h5 class="card-title titel">Enexis energie event</h5>
-                  <a href="overzicht-Eenixs.php" class="btn knopdetail">Meer details</a>
-
-                </div>
-              </div>
-
-              <div class="card p-2 m-2 shadow p-3 mb-5 bg-white rounded">
-                <img src="img/DDDonline.jpg" class="card-img-top rounded" alt="scherm-afbeelding Bleckmann 160 jaar">
-                <div class="card-body project-card">
-                  <p class="card-text omschrijf"> 29-6-22 </p>
-                  <h5 class="card-title titel">DDD online</h5>
-
-                  <a href="overzicht-DDD-Online.php" class="btn knopdetail">Meer details</a>
-
                 </div>
               </div>
             </div>
 
+            <div class="col d-flex align-items-stretch">
+              <div class="card shadow bg-white rounded  w-100">
+                <div class="card-body project-card">
+                  <div class="ratio ratio-16x9 mb-1">
+                    <img src="img/enexis-energie-event.png" alt="Schermafbeelding Enexis Transition on-air">
+                  </div>
+                  <p class="card-text mb-1 mt-1 omschrijf">10-07-2022</p>
+                  <h3 class="card-title mb-4 fs-5 titel">Enexis energie event</h3>
+                  <a href="overzicht-Eenixs.php" class="btn knopdetail">Meer details</a>
+                </div>
+              </div>
+            </div>
 
-
+            <div class="col d-flex align-items-stretch">
+              <div class="card shadow bg-white rounded  w-100">
+                <div class="card-body project-card">
+                  <div class="ratio ratio-16x9 mb-1">
+                    <img src="img/DDDonline.jpg" alt="Schermafbeelding DDD Online 2022">
+                  </div>
+                  <p class="card-text mb-1 mt-1 omschrijf">29-6-2022</p>
+                  <h3 class="card-title mb-4 fs-5 titel">DDD Online 2022</h3>
+                  <a href="overzicht-DDD-Online.php" class="btn knopdetail">Meer details</a>
+                </div>
+              </div>
+            </div>
           </div>
-
-
-        </div>
       </div>
     </div>
-
-</body>
+  </div>
+  </body>
 
 </html>

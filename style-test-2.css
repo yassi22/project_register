@@ -375,3 +375,9 @@ input[type=text] {
     margin-bottom:3vw !important;
 
 } 
+
+
+.form-container {
+    max-width: 460px;
+    /* Maximale breedte aan form groep geven */
+}

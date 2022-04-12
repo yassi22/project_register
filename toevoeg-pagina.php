@@ -65,34 +65,27 @@
             <div class="col col-12 py-4 px-5">
 
               <form>
-                <div class="row d-flex justify-content-start">
-                  
-                  <div class="form-floating  col mb-4">  
-                    <input type="text" class="form-control w-75 h-80 place-text"  id="floatingInput" placeholder="Projectnaam">
-                    <label class="invoer-test ms-2 mb-4" for="floatingInput">Projectnaam</label>
-                  </div>
-
-
-                  <div class="form-group col-5 mb-4">
-                    <label class="invoer-naam label-categorie" for="Projectdatum1">Project datum</label>
-                    <input type="date" class="form-control" id="Projectdatum1">
-
-                  </div>
+                <div class="form-floating form-container mb-4">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Vul hier de projectnaam in">
+                  <label for="floatingInput">Projectnaam</label>
                 </div>
 
-                <div class="row d-flex justify-content-start">
-                  <div class="form-group col-5 mb-4">
+                <div class="form-group mb-4">
+                  <label class="invoer-naam label-categorie" for="Projectdatum1">Project datum</label>
+                  <input type="date" class="form-control" id="Projectdatum1">
+                </div>
+
+                  <div class="form-group mb-4">
                     <label class="invoer-naam label-categorie" for="Websitelink1">Website Link</label>
                     <input type="text" class="form-control" id="Websitelink1" placeholder="Voer een website link in">
                   </div>
 
 
-                  <div class="form-group col-5 mb-4 ">
+                  <div class="form-group mb-4 ">
                     <label class="invoer-naam label-categorie" for="Omschrijving1">Omschrijving</label>
                     <textarea class="form-control" id="Omschrijving1" placeholder="Vul een omschrijving in"
                       rows="3"></textarea>
                   </div>
-                </div>
 
 
 
