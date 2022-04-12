@@ -67,7 +67,7 @@ $(function () {
 
               <form>
                 <div class="form-group mb-4">
-                  <label class="invoer-naam label-categorie  for="Projectnaam">Project naam</label>
+                  <label class="invoer-naam label-categorie  for="Projectnaam">Projectnaam</label>
                   <input type="text" class="form-control" id="Projectnaam1"  
                     placeholder="Voer een projectnaam in">
 
