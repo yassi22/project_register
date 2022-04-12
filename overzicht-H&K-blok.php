@@ -28,21 +28,27 @@
 <body>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      <div class="modal-content border-0 rounded shadow "> 
+
+        <div class="modal-header mb-3">
+          <h5 class="modal-title" id="exampleModalLabel">Weet je zeker dat je het project wilt verwijderen? </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
+       
+        <div class="container"> 
+         <div class="row">
+          <div class="col-6 d-flex justify-content-end  ">
+          <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>  
+            </div> 
+            <div class="col-6 d-flex justify-content-start  ">
+          <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button> 
+          </div> 
+  </div>
+  </div>
     </div>
   </div>
+  </div> 
+  
 
   <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
     <div class="container-fluid">
