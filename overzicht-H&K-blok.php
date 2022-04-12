@@ -28,27 +28,40 @@
 <body>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content border-0 rounded shadow "> 
-
-        <div class="modal-header mb-3">
-          <h5 class="modal-title" id="exampleModalLabel">Weet je zeker dat je het project wilt verwijderen? </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+      <div class="modal-content border-0 rounded shadow ">
+ 
        
-        <div class="container"> 
-         <div class="row">
-          <div class="col-6 d-flex justify-content-end  ">
-          <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>  
-            </div> 
+      <div class="container-lg">  
+        <div class="d-flex justify-content-center">
+        <div class="modal-header mb-3 ">
+          <h5 class="modal-title text-center " id="exampleModalLabel">Project verwijderen </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> 
+  </div>
+  </div>
+
+
+        <div class="container ">
+          <div class="row mb-3">
+            <div class="text-center">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Weet je zeker dat je het project wilt verwijderen? </h5>
+              </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end  ">
+              <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>
+            </div>
             <div class="col-6 d-flex justify-content-start  ">
-          <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button> 
-          </div> 
-  </div>
-  </div>
+              <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-  </div> 
-  
+
 
   <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
     <div class="container-fluid">
@@ -61,8 +74,8 @@
           overzicht</a>
         <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project
           aanpassen</a>
-        <button class="btn btn-lg d-flex justify-content-end knop-verwijder" data-bs-toggle="modal" data-bs-target="#exampleModal"
-          role="button">Project verwijderen</button>
+        <button class="btn btn-lg d-flex justify-content-end knop-verwijder" data-bs-toggle="modal"
+          data-bs-target="#exampleModal" role="button">Project verwijderen</button>
       </div>
 
     </div>
