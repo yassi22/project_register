@@ -97,7 +97,7 @@
         <h2>Project details</h2>
       </section>
 
-      <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
+      <div class="jumbotron shadow mb-5 bg-white rounded  mt-4 jumbotron-detail  ">
         <div>
           <div class="row g-0 details">
             <div class="col col-6 py-4 px-5">
@@ -124,32 +124,40 @@
                 </li>
               </ul>
             </div>
-            <div class="col col-6 py-4 px-5">
-              <div class="mb-5">
-              <div class="flex flex-wrap gap-5 justify-center  mx-auto px-6">
-                        <!-- First gallery -->
-                        <a data-fancybox="gallery-a" href="img/H&K-1.png">
-                            <img class="rounded klein-formaat" src="img/H&K-1.png" />
-                        </a>
+            <div class="col col-6 py-4 px-5"> 
 
-                        <div style="display:none">
-                            <a data-fancybox="gallery-a" href="img/Hoek&Blok-logo.png">
-                            <img class="rounded" src="img/Hoek&Blok-logo.png" />
-                            </a>
-                            <a data-fancybox="gallery-a" href="img/H&K-2.png">
-                            <img class="rounded" src="img/H&K-2.png" />
-                            </a>
-                            <a data-fancybox="gallery-a" href="img/H&K-3.png">
-                            <img class="rounded" src="img/H&K-3.png" />
-                            </a>
-                            <a data-fancybox="gallery-a" href="img/H&K-4.png">
-                            <img class="rounded" src="img/H&K-4.png" />
-                            </a>
-                        </div>
-                    </div>
+              <div class=" d-flex p-2">   
 
-                <a class="btn mt-2  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
-              </div>
+                  <div class="col-sm-4 m-2 ml-2"> 
+                    <a
+                    data-fancybox="gallery"
+                    data-src="img/Hoek&Blok-logo.png"
+                    data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+                    >
+                    <img src="img/Hoek&Blok-logo.png" class="rounded plaatje-grote" />
+                    </a>
+                  </div>  
+
+                  <div class="col-sm-4 m-2">
+                    <a data-fancybox="gallery" data-src="img/H&K-1.png">
+                    <img src="img/H&K-1.png"  class="rounded plaatje-grote" />
+                    </a>
+                    </div > 
+
+                    <div class="col-sm-4 m-2">
+                    <a data-fancybox="gallery"  data-src="img/H&K-2.png">
+                    <img src=" img/H&K-2.png"  class="rounded plaatje-grote" />
+                    </a>
+                    </div> 
+       
+              </div> 
+              
+     
+                    <div class="mb-2">
+                        <a class="btn mt-2  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
+                  </div> 
+
+
 
               <h4>Diensten</h4>
               <ul class="details-list mb-4">
