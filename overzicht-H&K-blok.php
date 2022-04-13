@@ -24,7 +24,7 @@
  
 <!-- Fancy box usage script   -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script>
+     
   <style>
     .fakeimg {
       height: 200px;
@@ -98,7 +98,7 @@
         <h2>Project details</h2>
       </section>
 
-      <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
+      <div class="jumbotron shadow mb-5 bg-white rounded  mt-4 jumbotron-detail">
         <div>
           <div class="row g-0 details">
             <div class="col col-6 py-4 px-5">

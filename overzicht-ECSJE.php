@@ -15,7 +15,18 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
+ 
+  <!-- Fancy box usage link   -->
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+ 
 
+     
+<!-- Fancy box usage script   -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+     
   <style>
     .fakeimg {
       height: 200px;
@@ -50,7 +61,7 @@
         <h2>Project details</h2>
       </section>
 
-      <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
+      <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbotron-detail">
         <div>
           <div class="row g-0 details">
             <div class="col col-6 py-4 px-5">
@@ -76,33 +87,36 @@
               </ul>
             </div>
             <div class="col col-6 py-4 px-5">
-              <div class="mb-5">
-                <div id="carouselExampleControls" class="carousel carousel-detail mb-2 slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item  rounded-3 active">
-                      <img src="img/ECSJ-1.png " class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item  rounded-3">
-                      <img src="img/ECSJ-2.png " class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item  rounded-3">
-                      <img src="img/ECSJ-5.png " class="d-block w-100" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
+            <div class=" d-flex p-2">   
 
-                <a class="btn  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
-              </div>
+              <div class="col-sm-4 m-2 ml-2"> 
+              <a
+              data-fancybox="gallery"
+              data-src="img/ECSJ-1.png"
+              data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code" >
+              <img src="img/ECSJ-1.png" class="rounded plaatje-grote" />
+              </a>
+              </div>  
+
+              <div class="col-sm-4 m-2">
+              <a data-fancybox="gallery" data-src="img/ECSJ-2.png">
+              <img src="img/ECSJ-2.png"  class="rounded plaatje-grote" />
+              </a>
+              </div > 
+
+              <div class="col-sm-4 m-2">
+              <a data-fancybox="gallery"  data-src="img/ECSJ-3.png">
+              <img src=" img/ECSJ-3.png"  class="rounded plaatje-grote" />
+              </a>
+              </div> 
+
+              </div> 
+
+
+                <div class="mb-2">
+                  <a class="btn mt-2  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
+                </div> 
+
 
               <h4>Diensten</h4>
               <ul class="details-list mb-4">
@@ -113,9 +127,9 @@
 
               <h4>Categorie</h4>
               <p>Congres Online evenementen</p>
-            </div>
+            </div> 
+            
           </div>
-        </div>
       </div>
     </div>
   </div>
