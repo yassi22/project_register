@@ -63,9 +63,9 @@
                   <p class="text-secondary mb-0">Project datum</p>
                   <p>1-04-22</p>
                 </li>
-                <li>
+                <li> 
                   <p class="text-secondary mb-0">Website links</p>
-                  <p>https://ddd-online2022.nl/</p>
+                  <a href="https://ddd-online2022.nl/"><p>https://ddd-online2022.nl/</p></a>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>

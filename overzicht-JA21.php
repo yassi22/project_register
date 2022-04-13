@@ -63,9 +63,9 @@
                   <p class="text-secondary mb-0">Project datum</p>
                   <p>21-05-22</p>
                 </li>
-                <li>
+                <li> 
                   <p class="text-secondary mb-0">Website links</p>
-                  <p>https://ja21alv.nl/</p>
+                  <a href="https://ja21alv.nl/"><p>https://ja21alv.nl/</p></a>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>

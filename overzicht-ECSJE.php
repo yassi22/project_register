@@ -63,9 +63,9 @@
                   <p class="text-secondary mb-0">Project datum</p>
                   <p>07-10-22</p>
                 </li>
-                <li>
+                <li>  
                   <p class="text-secondary mb-0">Website links</p>
-                  <p>https://ecsj2022tickets.eu/</p>
+                  <a href="https://ecsj2022tickets.eu/"><p>https://ecsj2022tickets.eu/</p></a>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>

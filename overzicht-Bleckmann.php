@@ -63,9 +63,9 @@
                   <p class="text-secondary mb-0">Project datum</p>
                   <p>29-06-22</p>
                 </li>
-                <li>
+                <li>  
                   <p class="text-secondary mb-0">Website links</p>
-                  <p>https://embracebleckmann.com/</p>
+                  <a href="https://embracebleckmann.com/"><p>https://embracebleckmann.com/</p></a>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>

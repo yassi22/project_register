@@ -105,7 +105,8 @@
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Website links</p>
-                  <p>https://hoekenblokpersoneelsevent2021.nl/</p>
+                  <a href=" https://hoekenblokpersoneelsevent2021.nl/"><p>https://hoekenblokpersoneelsevent2021.nl/</p></a>
+
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>

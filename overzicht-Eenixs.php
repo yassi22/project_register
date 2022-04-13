@@ -63,9 +63,9 @@
                   <p class="text-secondary mb-0">Project datum</p>
                   <p>10-02-21</p>
                 </li>
-                <li>
+                <li> 
                   <p class="text-secondary mb-0">Website links</p>
-                  <p>https://enexis-transition.nl/</p>
+                  <a href="https://enexis-transition.nl/"><p>https://enexis-transition.nl/</p></a>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>
