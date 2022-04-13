@@ -143,19 +143,19 @@
                   <div class="col">
                     <h4 class="text-left">Categorie</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie" for="flexRadioDefault">
                         Medische evenement
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie " for="flexRadioDefault1">
                         Hybride evenement
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie " for="flexRadioDefault1">
                         Congress online evenement
                       </label>
@@ -168,7 +168,7 @@
                   <div class="col">
                     <h4 class="text-left">Jaartal</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2017
                       </label>

@@ -10,10 +10,7 @@
   <link rel="stylesheet" href="style.css">
     
   <!-- Fancy box usage link   -->
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
-    />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 
   <!-- Load Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,13 +21,15 @@
  
 <!-- Fancy box usage script   -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script>
+  
   <style>
+
     .fakeimg {
       height: 200px;
       background: #aaa;
     }
-  </style>
+  </style> 
+
 </head>
 
 <body>
@@ -127,29 +126,29 @@
             </div>
             <div class="col col-6 py-4 px-5">
               <div class="mb-5">
-                <div id="carouselExampleControls" class="carousel carousel-detail mb-2 slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item  rounded-3 active">
-                      <img src="img/H&K-1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item  rounded-3">
-                      <img src="img/H&K-2.png " class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item  rounded-3">
-                      <img src="img/H&K-3.png " class="d-block w-100" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
+              <div class="flex flex-wrap gap-5 justify-center max-w-3xl mx-auto px-6">
+                        <!-- First gallery -->
+                        <a data-fancybox="gallery-a" href="https://lipsum.app/id/60/1800x1200">
+                            <img class="rounded" src="https://lipsum.app/id/60/300x200" />
+                        </a>
+
+                        <div style="display:none">
+                            <a data-fancybox="gallery-a" href="https://lipsum.app/id/61/1800x1200">
+                            <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+                            </a>
+                            <a data-fancybox="gallery-a" href="https://lipsum.app/id/62/1800x1200">
+                            <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+                            </a>
+                            <a data-fancybox="gallery-a" href="https://lipsum.app/id/63/1800x1200">
+                            <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+                            </a>
+                            <a data-fancybox="gallery-a" href="https://lipsum.app/id/64/1800x1200">
+                            <img class="rounded" src="https://lipsum.app/id/64/120x80" />
+                            </a>
+                        </div>
+
+
+                        </div>
 
                 <a class="btn  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
               </div>

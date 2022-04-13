@@ -420,6 +420,11 @@ input[type=text] {
     overflow: auto;
     overflow-y: auto; 
     margin: 0 auto; 
- } 
+ }  
+
+
+ a[data-fancybox] img {
+    cursor: zoom-in;
+  }
 
  
