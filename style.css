@@ -425,6 +425,12 @@ input[type=text] {
 
  a[data-fancybox] img {
     cursor: zoom-in;
+  } 
+
+  .klein-formaat{ 
+      max-width: 350px;
+      max-height: 350px; 
+     
   }
 
  

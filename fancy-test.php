@@ -126,31 +126,29 @@
             </div>
             <div class="col col-6 py-4 px-5">
               <div class="mb-5">
-              <div class="flex flex-wrap gap-5 justify-center max-w-3xl mx-auto px-6">
+              <div class="flex flex-wrap gap-5 justify-center  mx-auto px-6">
                         <!-- First gallery -->
-                        <a data-fancybox="gallery-a" href="https://lipsum.app/id/60/1800x1200">
-                            <img class="rounded" src="https://lipsum.app/id/60/300x200" />
+                        <a data-fancybox="gallery-a" href="img/H&K-1.png">
+                            <img class="rounded klein-formaat" src="img/H&K-1.png" />
                         </a>
 
                         <div style="display:none">
-                            <a data-fancybox="gallery-a" href="https://lipsum.app/id/61/1800x1200">
-                            <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+                            <a data-fancybox="gallery-a" href="img/Hoek&Blok-logo.png">
+                            <img class="rounded" src="img/Hoek&Blok-logo.png" />
                             </a>
-                            <a data-fancybox="gallery-a" href="https://lipsum.app/id/62/1800x1200">
-                            <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+                            <a data-fancybox="gallery-a" href="img/H&K-2.png">
+                            <img class="rounded" src="img/H&K-2.png" />
                             </a>
-                            <a data-fancybox="gallery-a" href="https://lipsum.app/id/63/1800x1200">
-                            <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+                            <a data-fancybox="gallery-a" href="img/H&K-3.png">
+                            <img class="rounded" src="img/H&K-3.png" />
                             </a>
-                            <a data-fancybox="gallery-a" href="https://lipsum.app/id/64/1800x1200">
-                            <img class="rounded" src="https://lipsum.app/id/64/120x80" />
+                            <a data-fancybox="gallery-a" href="img/H&K-4.png">
+                            <img class="rounded" src="img/H&K-4.png" />
                             </a>
                         </div>
+                    </div>
 
-
-                        </div>
-
-                <a class="btn  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
+                <a class="btn mt-2  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
               </div>
 
               <h4>Diensten</h4>
