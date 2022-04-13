@@ -76,7 +76,7 @@
                   <p>1-04-22</p>
                 </li>
                 <li> 
-                  <p class="text-secondary mb-0">Website links</p>
+                  <p class="text-secondary mb-0">Website link</p>
                   <a href="https://ddd-online2022.nl/"><p>https://ddd-online2022.nl/</p></a>
                 </li>
                 <li>

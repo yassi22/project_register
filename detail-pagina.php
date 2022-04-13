@@ -64,7 +64,7 @@
                   <p>1-04-22</p>
                 </li>
                 <li>
-                  <p class="text-secondary mb-0">Website links</p>
+                  <p class="text-secondary mb-0">Website link</p>
                   <p>https://www.google.com/</p>
                 </li>
                 <li>

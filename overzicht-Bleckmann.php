@@ -75,7 +75,7 @@
                   <p>29-06-22</p>
                 </li>
                 <li>  
-                  <p class="text-secondary mb-0">Website links</p>
+                  <p class="text-secondary mb-0">Website link</p>
                   <a href="https://embracebleckmann.com/"><p>https://embracebleckmann.com/</p></a>
                 </li>
                 <li>

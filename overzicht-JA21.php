@@ -72,7 +72,7 @@
                   <p>21-05-22</p>
                 </li>
                 <li> 
-                  <p class="text-secondary mb-0">Website links</p>
+                  <p class="text-secondary mb-0">Website link</p>
                   <a href="https://ja21alv.nl/"><p>https://ja21alv.nl/</p></a>
                 </li>
                 <li>
