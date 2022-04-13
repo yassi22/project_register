@@ -69,12 +69,31 @@
     </div>
   </div>
 
-
-  <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
-    <div class="container-fluid">
+ 
+  <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-white rounded "> 
+    <div class="container-fluid"> 
+      
       <a href="overzicht-pagina.php">
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+ 
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+
+                    <div class="nav-item dropdown">
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Inbox</a>
+                            <a href="#" class="dropdown-item">Sent</a>
+                            <a href="#" class="dropdown-item">Drafts</a>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
 
       <div class="d-flex justify-content-between">
         <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug naar
@@ -88,8 +107,8 @@
     </div>
   </nav>
 
-
-
+   
+ 
 
   <div class="container-fluid">
     <div class="justify-content-center">
