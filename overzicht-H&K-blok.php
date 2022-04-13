@@ -27,7 +27,7 @@
 
 <body>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centerd ">
       <div class="modal-content border-0 rounded shadow ">
  
        

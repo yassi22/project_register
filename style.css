@@ -412,12 +412,14 @@ input[type=text] {
 
 .modal {
     position: absolute;
-    top:500px;
+    top:30%;
     right: 100px;
     bottom: 0;
     left: 0;
     z-index: 10040;
     overflow: auto;
-    overflow-y: auto;
- }
+    overflow-y: auto; 
+    margin: 0 auto; 
+ } 
 
+ 
