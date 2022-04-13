@@ -272,15 +272,33 @@ line-height: 26px;
 input[type=text] {
      
     background-color: #F4F4F4;
-     border: 1px solid #C8C8C8; 
+     border: 1px solid #C8C8C8;  
+     width: 50%; 
+      
   } 
 
  
   input[type=date] {
      
      background-color: #F4F4F4;
-     border: 1px solid #C8C8C8; 
-  }
+     border: 1px solid #C8C8C8;  
+     width: 50%; 
+      
+  } 
+
+
+  input[type=textarea] {
+     
+    background-color: #F4F4F4;
+    border: 1px solid #C8C8C8;  
+    width: 50%; 
+   
+ } 
+ 
+ .omschrijf-text{ 
+    width: 50%; 
+   
+ }
 
   textarea {
     border: 1px solid #C8C8C8 !important;

@@ -65,29 +65,30 @@
             <div class="col col-12 py-4 px-5">
 
               <form>
-              <div class="form-group mb-4">
-                    <label class="invoer-naam label-categorie" for="Websitelink1">Projectnaam</label>
-                    <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een projectnaam in">
-                  </div>
+                <div class="form-floating form-container mb-4">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Vul hier de projectnaam in">
+                  <label for="floatingInput">Projectnaam</label>
+                </div>
+ 
 
+                  <input type="date" id="projectdatum" name="projectdatum">
 
-                <div class="form-group mb-4">
-                  <label class="invoer-naam label-categorie" for="Projectdatum1">Project datum</label>
-                  <input type="date" class="form-control" id="Projectdatum1">
+                <div class="form-floating form-container mb-4">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Vul hier de projectnaam in">
+                  <label for="floatingInput">Projectdatum</label>
                 </div>
 
-                  <div class="form-group mb-4">
-                    <label class="invoer-naam label-categorie" for="Websitelink1">Website Link</label>
-                    <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een website link in">
-                  </div>
+                <div class="form-floating form-container mb-4">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Vul hier de projectnaam in">
+                  <label for="floatingInput">Websitelink</label>
+                </div> 
+ 
 
-
-                  <div class="form-group mb-4 ">
-                    <label class="invoer-naam label-categorie " for="Omschrijving1">Omschrijving</label>
-                    <textarea class="form-control omschrijf-text" id="Omschrijving1" placeholder="Vul een omschrijving in"
-                      rows="3"></textarea>
-                  </div>
-
+              
+                <div class="form-floating form-container mb-4"> 
+                <textarea class="form-control"    id="floatingInput" id="exampleFormControlTextarea1" placeholder="Vul hier je omschrijving in" rows="3"></textarea>
+                  <label for="floatingInput">Omschrijving</label>
+                </div>
 
 
                 <div class="row d-flex justify-content-center  ">
@@ -144,22 +145,20 @@
                   <div class="col">
                     <h4 class="text-left">Categorie</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
-                      <label class="form-check-label label-categorie" for="flexRadioDefault0">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1 checked">
+                      <label class="form-check-label label-categorie" for="flexRadioDefault">
                         Medische evenement
                       </label>
                     </div>
-
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
-                      <label class="form-check-label label-categorie " for="flexRadioDefault4">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1 checked">
+                      <label class="form-check-label label-categorie " for="flexRadioDefault1">
                         Hybride evenement
                       </label>
                     </div>
-                    
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
-                      <label class="form-check-label label-categorie " for="flexRadioDefault5">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1 checked">
+                      <label class="form-check-label label-categorie " for="flexRadioDefault1">
                         Congress online evenement
                       </label>
                     </div>
@@ -171,25 +170,25 @@
                   <div class="col">
                     <h4 class="text-left">Jaartal</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2017
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input " type="radio" name="actie" id="flexRadioDefault2">
+                      <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2018
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input  " type="radio" name="actie" id="flexRadioDefault3">
+                      <input class="form-check-input  " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2019
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input " type="radio" name="actie" id="flexRadioDefault4">
+                      <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2020
                       </label>

@@ -88,7 +88,7 @@
 
                                 <div class="form-group mb-4 ">
                                     <label class="invoer-naam label-categorie" for="Omschrijving1">Omschrijving</label>
-                                    <textarea class="form-control" id="Omschrijving1"
+                                    <textarea class="form-control omschrijf-text" id="Omschrijving1"
                                         placeholder="Vul een omschrijving in" rows="3"></textarea>
                                 </div>
 
