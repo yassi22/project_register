@@ -21,32 +21,111 @@
       height: 200px;
       background: #aaa;
     }
-  </style>
+  </style> 
+ 
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
     <div class="container-fluid">
-      <a href="overzicht-pagina.php">
+      <a href="overzicht-pagina.php" class="d-none d-md-block">
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
 
+      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex justify-content-end  d-none d-md-block" role="button">Project toevoegen</a>
 
-      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Project
-        toevoegen</a>
-
-
+      <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <svg width="51" height="42" viewBox="0 0 51 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="51" height="9.33333" rx="4.66667" fill="#4B96D0"/>
+          <rect y="32.6667" width="51" height="9.33333" rx="4.66667" fill="#057494"/>
+          <rect y="16.3333" width="51" height="9.33333" rx="4.66667" fill="#F48424"/>
+        </svg>
+      </button>
     </div>
   </nav>
 
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+      <img alt="logo" class="logo" src="img/logo-activo.jpg">
+    </h5>
+
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex mb-4 justify-content-center" role="button">Project toevoegen</a>
+
+    <h2>Criteria</h2>
+      <form>
+        <h3 class="fs-6">Jaartal</h3>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+
+        <hr>
+
+        <h3 class="fs-6">Jaartal</h3>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+
+        <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit">Toon resultaten</button>
+      </form>
+  </div>
+</div>
 
 
 
   <div class="container">
 
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3  d-none d-md-block">
         <h2>Criteria</h2>
         <form>
           <h3 class="fs-6">Jaartal</h3>
@@ -247,10 +326,19 @@
       <div class="col-md-9">
           <section class="d-flex align-items-center justify-content-between">
             <h2>Projecten</h2>
-              <form class="d-flex">
-                <input class="form-control zoek mr-sm-2" type="text" placeholder="Zoekopdracht">
-                <button class="btn my-2 my-sm-0 zoekknop " type="submit">Zoek</button>
-              </form>
+              <form class="d-flex  ">
+                <input class="form-control zoek mr-sm-2 d-none d-sm-block" type="text" placeholder="Zoekopdracht">
+                <button class="btn my-2 my-sm-0 zoekknop d-none d-sm-block " type="submit">Zoek</button>
+              </form> 
+               
+        
+              <form class="d-flex  d-block d-sm-none ms-2 ">
+              <input class="form-control zoek ml-sm-4  " type="text" placeholder="Zoekopdracht">
+                <button class="btn my-2 my-sm-0 zoekknop   " type="submit">Zoek</button>
+
+              </form> 
+
+
           </section>
 
           <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
