@@ -402,4 +402,72 @@ input[type=text] {
 
 .input-lengte { 
     width: 50% !important;
-}
+} 
+
+
+
+.modal-knop-ja { 
+    background-color:#4B96D0; 
+    border: none;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Raleway',
+    sans-serif;
+    line-height: 26px;
+    color: #FFFFFF;  
+    width:100%; 
+    max-width: 100px;
+} 
+
+.modal-knop-nee { 
+    background-color:#057494; 
+    border: none;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Raleway',sans-serif;
+    line-height: 26px;
+    color: #FFFFFF;  
+    width:100%; 
+    max-width: 100px;
+} 
+
+
+.modal-knop-nee:hover {
+    background-color:#F48424;
+    color:white;
+}  
+
+
+.modal-knop-ja:hover {
+    background-color:rgb(255, 0, 0);
+    color:white;
+}  
+
+.modal-van-titel { 
+    font-family: 'Raleway',sans-serif; 
+    font-weight: bold;
+} 
+
+.modal {
+    position: absolute;
+    top:30%;
+    right: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto; 
+    margin: 0 auto; 
+ }  
