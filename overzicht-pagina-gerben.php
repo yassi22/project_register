@@ -21,7 +21,8 @@
       height: 200px;
       background: #aaa;
     }
-  </style>
+  </style> 
+ 
 </head>
 
 <body>
@@ -326,9 +327,19 @@
           <section class="d-flex align-items-center justify-content-between">
             <h2>Projecten</h2>
               <form class="d-flex">
-                <input class="form-control zoek mr-sm-2" type="text" placeholder="Zoekopdracht">
-                <button class="btn my-2 my-sm-0 zoekknop " type="submit">Zoek</button>
-              </form>
+                <input class="form-control zoek mr-sm-2 d-none d-sm-block" type="text" placeholder="Zoekopdracht">
+                <button class="btn my-2 my-sm-0 zoekknop d-none d-sm-block " type="submit">Zoek</button>
+              </form> 
+               
+        
+              <form class="d-flex d-block d-sm-none   ">
+              
+
+
+              
+              </form> 
+
+
           </section>
 
           <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">

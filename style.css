@@ -74,7 +74,13 @@ h4 {
      width: 100%;
      border-top-right-radius: 0;
      border-bottom-right-radius: 0;
- } 
+ }  
+ .zoek-klein { 
+    max-height: 60px !important;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+ }
 
  .zoekknop { 
     background-color: #057494;  
@@ -449,5 +455,7 @@ input[type=text] {
       max-height: 350px; 
      
   }
+ 
 
+  
  
