@@ -114,8 +114,8 @@
                 </div> 
 
                    <label class="invoer-naam label-categorie" for="Projectdatum1">Website link</label> 
-                  <div class="input-group mb-3 w-50">   
-                    <span class="input-group-text" id="basic-addon3">https://example.com/</span>
+                  <div class="input-group mb-3 ">   
+                    <span class="input-group-text d-none d-md-block" id="basic-addon3">https://example.com/</span> 
                     <input type="text" class="form-control input-lengte" id="WebsiteLink" aria-describedby="basic-addon3">
                   </div>
  
@@ -237,7 +237,7 @@
                 </div>
 
 
-                <div class="col col-6  mb-5 ">
+                <div class="col col-6  mb-5  col-sm-4  ">
                   <div class="mb-5">
 
                     <p class="text-schermafbeelding">Schermafbeeldingen </p>
@@ -247,7 +247,7 @@
                       <label for="file-upload" class="custom-file-upload">
                         <i class="fa fa-cloud-upload"></i> Nieuwe schermafbeelding
                       </label>
-                      <input type="file" id="file-upload" name="file1"> <br><br>
+                      <input type="file" id="file-upload" name="file1">  
                     </form>
 
                   </div>
