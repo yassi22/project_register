@@ -76,7 +76,7 @@
                 </li>
                 <li>  
                   <p class="text-secondary mb-0">Website link</p>
-                  <a href="https://embracebleckmann.com/"><p>https://embracebleckmann.com/</p></a>
+                  <a href="https://embracebleckmann.com/" target="_blank"><p>https://embracebleckmann.com/</p></a>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>

@@ -77,7 +77,7 @@
                 </li>
                 <li> 
                   <p class="text-secondary mb-0">Website link</p>
-                  <a href="https://ddd-online2022.nl/"><p>https://ddd-online2022.nl/</p></a>
+                  <a href="https://ddd-online2022.nl/" target="_blank"><p>https://ddd-online2022.nl/</p></a>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>

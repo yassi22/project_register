@@ -75,7 +75,7 @@
                 </li>
                 <li> 
                   <p class="text-secondary mb-0">Website link</p>
-                  <a href="https://enexis-transition.nl/"><p>https://enexis-transition.nl/</p></a>
+                  <a href="https://enexis-transition.nl/" target="_blank" ><p>https://enexis-transition.nl/</p></a>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>

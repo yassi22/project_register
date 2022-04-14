@@ -258,7 +258,7 @@
               <div class="card shadow bg-white rounded  w-100">
                 <div class="card-body project-card">
                     <div class="ratio ratio-16x9 mb-1">
-                    <img src="img/Hoek&Blok-logo.png" alt="Schermafbeelding Hoek en Blok Personeelsevent">
+                    <img src="img/Hoek-Blok-logo.png" alt="Schermafbeelding Hoek en Blok Personeelsevent">
                   </div>
                   <p class="card-text mb-1 mt-1 omschrijf">8-01-2021</p>
                   <h3 class="card-title mb-4 fs-5 titel">Hoek en Blok Personeelsevent</h3>

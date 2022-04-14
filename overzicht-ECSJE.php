@@ -76,7 +76,7 @@
                 </li>
                 <li>  
                   <p class="text-secondary mb-0">Website link</p>
-                  <a href="https://ecsj2022tickets.eu/"><p>https://ecsj2022tickets.eu/</p></a>
+                  <a href="https://ecsj2022tickets.eu/" target="_blank"><p>https://ecsj2022tickets.eu/</p></a>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>

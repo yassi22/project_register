@@ -113,7 +113,7 @@
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Website link</p>
-                  <a href=" https://hoekenblokpersoneelsevent2021.nl/"><p>https://hoekenblokpersoneelsevent2021.nl/</p></a>
+                  <a href=" https://hoekenblokpersoneelsevent2021.nl/" target="_blank" ><p>https://hoekenblokpersoneelsevent2021.nl/</p></a>
 
                 </li>
                 <li>

@@ -73,7 +73,7 @@
                 </li>
                 <li> 
                   <p class="text-secondary mb-0">Website link</p>
-                  <a href="https://ja21alv.nl/"><p>https://ja21alv.nl/</p></a>
+                  <a href="https://ja21alv.nl/" target="_blank"><p>https://ja21alv.nl/</p></a>
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Omschrijving</p>
