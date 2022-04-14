@@ -74,13 +74,14 @@
                 <div class="form-group mb-4">
                   <label class="invoer-naam label-categorie" for="Projectdatum1">Project datum</label>
                   <input type="date" class="form-control" id="Projectdatum1">
-                </div>
+                </div> 
 
-                  <div class="form-group mb-4">
-                    <label class="invoer-naam label-categorie" for="Websitelink1">Website Link</label>
-                    <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een website link in">
+                   <label class="invoer-naam label-categorie" for="Projectdatum1">Website link</label> 
+                  <div class="input-group mb-3 w-50">   
+                    <span class="input-group-text" id="basic-addon3">https://example.com/</span>
+                    <input type="text" class="form-control input-lengte" id="WebsiteLink" aria-describedby="basic-addon3">
                   </div>
-
+ 
 
                   <div class="form-group mb-4 ">
                     <label class="invoer-naam label-categorie " for="Omschrijving1">Omschrijving</label>

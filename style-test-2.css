@@ -273,7 +273,7 @@ input[type=text] {
      
     background-color: #F4F4F4;
      border: 1px solid #C8C8C8;  
-     width: 50%; 
+     width: 50% !important; 
       
   } 
 
@@ -398,4 +398,9 @@ input[type=text] {
 .form-container {
     max-width: 460px;
     /* Maximale breedte aan form groep geven */
+} 
+
+
+.input-lengte { 
+    width: 50% !important;
 }
