@@ -37,7 +37,7 @@
 
   <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
     <div class="container-fluid">
-      <a href="overzicht-pagina.php">
+      <a href="overzicht-pagina.php" class="d-none d-md-block">
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
 
