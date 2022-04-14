@@ -156,7 +156,7 @@
                    <label class="invoer-naam label-categorie" for="Projectdatum1">Website link</label> 
                   <div class="input-group mb-3 ">   
                     <span class="input-group-text d-none d-md-block" id="basic-addon3">https://example.com/</span> 
-                    <input type="text" class="form-control input-lengte" id="WebsiteLink" aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="WebsiteLink" aria-describedby="basic-addon3">
                   </div>
  
 
