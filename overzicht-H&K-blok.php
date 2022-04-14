@@ -42,9 +42,11 @@
       <div class="container-lg">  
         <div class="d-flex justify-content-center">
         <div class="modal-header mb-3 ">
-          <h5 class="modal-title text-center " id="exampleModalLabel">Project verwijderen </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h4 class="modal-title text-center" id="exampleModalLabel">Project verwijderen </h4>
         </div> 
+          <div class="d-flex justify-content-end ml-4 mt-1"> 
+        <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button> 
+          </div>
   </div>
   </div>
 
