@@ -168,9 +168,9 @@
 
 
 
-                <div class="row d-flex justify-content-start  ">
+                <div class="row d-flex justify-content-start    ">
 
-                  <div class="col-3">
+                  <div class="col-md-3 col-sm-6 ">
                     <h4 class="text-left">Diensten</h4>
 
                     <div class="form-check form-switch">
@@ -191,7 +191,7 @@
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                  Online betaalmodule
+                      Online betaalmodule
                       </label>
                     </div>
 
@@ -241,7 +241,7 @@
 
                   </div>
 
-                  <div class="col-3">
+                  <div class="col-md-3 col-sm-6">
                     <h4 class="text-left">Categorie</h4>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
@@ -274,7 +274,7 @@
                   </div>
  
                   
-                      <div class="col-3">
+                      <div class="col-md-3 col-sm-6">
                     <h4 class="text-left">Jaartal</h4>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
@@ -311,7 +311,7 @@
 
                 
 
-                <div class="col-3 ">
+                <div class="col-md-3 col-sm-6 ">
                   <div class="mb-5">
 
                     <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4 >
