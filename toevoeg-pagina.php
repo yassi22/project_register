@@ -241,7 +241,7 @@
 
                   </div>
 
-                  <div class="col-md-3 col-sm-6">
+                  <div class="col-md-4 col-sm-6">
                     <h4 class="text-left">Categorie</h4>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
@@ -274,7 +274,7 @@
                   </div>
  
                   
-                      <div class="col-md-3 col-sm-6">
+                      <div class="col-md-4 col-sm-6">
                     <h4 class="text-left">Jaartal</h4>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
@@ -311,7 +311,7 @@
 
                 
 
-                <div class="col-md-3 col-sm-6 ">
+                <div class="col-md-4 col-sm-6 ">
                   <div class="mb-5">
 
                     <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4 >
