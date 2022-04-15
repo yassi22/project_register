@@ -35,58 +35,37 @@
 
 <body> 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centerd ">
-      <div class="modal-content border-0 rounded shadow ">
- 
-       
-      <div class="container-lg">  
-        <div class="d-flex justify-content-center">
-        <div class="modal-header mb-3 ">
-          <h4 class="modal-title text-center" id="exampleModalLabel">Project verwijderen </h4>
-        </div> 
-          <div class="d-flex justify-content-end ml-4 mt-1"> 
-        <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button> 
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-4" id="exampleModalLabel">Project verwijderen</h2>
+            <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button> 
           </div>
-  </div>
-  </div>
-
-
-        <div class="container ">
-          <div class="row mb-3">
-            <div class="text-center">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Weet je zeker dat je het project wilt verwijderen? </h5>
-              </div>
-            </div>
-            <div class="col-6 d-flex justify-content-end  ">
-              <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>
-            </div>
-            <div class="col-6 d-flex justify-content-start  ">
-              <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button>
-            </div>
-
+          <div class="modal-body text-center">
+            <p class="mb-0">Weet je zeker dat je het project wilt verwijderen?</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>
+            <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
 
-
-
-  <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
+  <nav class="navbar navbar-expand-sm shadow  bg-white rounded ">
     <div class="container-fluid">
       <a href="overzicht-pagina.php" class="d-none d-md-block">
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
 
-      <div class="d-flex justify-content-between">
-        <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end d-none d-md-block" role="button">Terug naar
+      <div class="d-flex justify-content-between d-none d-md-block ">
+        <a href="overzicht-pagina.php" class="btn knop justify-content-end   " role="button">Terug naar
           overzicht</a>
-        <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-end d-none d-md-block knop-aanpassen" role="button">Project
+        <a href="aanpas-pagina.php" class="btn   justify-content-end    knop-aanpassen" role="button">Project
           aanpassen</a>
-          <button class="btn btn-lg d-flex justify-content-end knop-verwijder d-none d-md-block" data-bs-toggle="modal"
+          <button class="btn  x justify-content-end knop-verwijder  " data-bs-toggle="modal"
           data-bs-target="#exampleModal" role="button">Project verwijderen</button>
       </div>
 
@@ -127,56 +106,63 @@
   </div>
 </div>
 
- 
-
 
   <div class="container-fluid">
     <div class="justify-content-center">
-      <section class=" d-flex  justify-content-center mx-auto">
+      <section class=" d-flex justify-content-center mx-auto mt-4">
         <h2>Project aanpassen</h2>
       </section>
 
       <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
         <div>
           <div class="row g-0 details">
-            <div class="col col-12 py-4 px-5">
+            <div class="col col-12 py-4 px-4">
 
               <form>
-              <div class="form-group mb-4">
+                  <div class="form-group mb-4"> 
+                    <div class="col-md-6">
                     <label class="invoer-naam label-categorie" for="Websitelink1">Projectnaam</label>
-                    <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een projectnaam in">
+                    <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een projectnaam in"> 
+                    </div>
                   </div>
 
 
-                <div class="form-group mb-4">
+                <div class="form-group mb-4"> 
+                    <div class="col-md-6 col-sm-6 col-7">
                   <label class="invoer-naam label-categorie" for="Projectdatum1">Project datum</label>
-                  <input type="date" class="form-control" id="Projectdatum1">
+                  <input type="date" class="form-control" id="Projectdatum1"> 
+                   </div>
                 </div> 
 
                    <label class="invoer-naam label-categorie" for="Projectdatum1">Website link</label> 
-                  <div class="input-group mb-3 ">   
-                    <span class="input-group-text d-none d-md-block" id="basic-addon3">https://example.com/</span> 
-                    <input type="text" class="form-control" id="WebsiteLink" aria-describedby="basic-addon3">
+                  <div class="input-group mb-3 ">    
+                      
+                    <span class="input-group-text " id="basic-addon3">https://</span>  
+                    <div class="col-md-5">
+                    <input type="text" class="form-control input-lengte" id="WebsiteLink" aria-describedby="basic-addon3"> 
+                      </div>
                   </div>
  
 
-                  <div class="form-group mb-4 ">
+                  <div class="form-group mb-4 "> 
+                      <div class="col-md-6">
                     <label class="invoer-naam label-categorie " for="Omschrijving1">Omschrijving</label>
                     <textarea class="form-control omschrijf-text" id="Omschrijving1" placeholder="Vul een omschrijving in"
-                      rows="3"></textarea>
+                      rows="3"></textarea> 
+                      </div>
                   </div>
 
 
 
-                <div class="row d-flex justify-content-center  ">
+                <div class="row d-flex justify-content-start    ">
 
-                  <div class="col">
+                  <div class="col-md-3 col-sm-6 ">
                     <h4 class="text-left">Diensten</h4>
 
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> Online betaal module </li>
+                     Eventwebsite
                       </label>
                     </div>
 
@@ -184,28 +170,28 @@
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> Badges </li>
+                       Evenement platform
                       </label>
                     </div>
 
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> E-tickets </li>
+                      Online betaalmodule
                       </label>
                     </div>
 
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> Uitnodigingstraject </li>
+                      Event app
                       </label>
                     </div>
 
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> Congres online </li>
+                     Toegangscontrole
                       </label>
                     </div>
 
@@ -213,74 +199,104 @@
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> Helpdesk </li>
+                       Hostesses
+                      </label>
+                    </div> 
+
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                      <label class="form-check-label" for="flexSwitchCheckDefault">
+                       Evaluatie
                       </label>
                     </div>
+
+                      <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                      <label class="form-check-label" for="flexSwitchCheckDefault">
+                       Fotoalbum
+                      </label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                      <label class="form-check-label" for="flexSwitchCheckDefault">
+                       Abstractmodule
+                      </label>
+                    </div>
+
 
                   </div>
 
-                  <div class="col">
+                  <div class="col-md-4 col-sm-6">
                     <h4 class="text-left">Categorie</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
-                      <label class="form-check-label label-categorie" for="flexRadioDefault0">
-                        Medische evenement
+                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1 checked  " value="flexRadioDefault1">
+                      <label class="form-check-label label-categorie" for="flexRadioDefault0">  
+                        Evenement Registratie Platform
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
+                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1  checked ">
                       <label class="form-check-label label-categorie " for="flexRadioDefault4">
-                        Hybride evenement
+                       Medisch Congres Platform
                       </label>
                     </div>
                     
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
+                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie " for="flexRadioDefault5">
-                        Congress online evenement
+                      Hybride Event Platform
+                      </label>
+                    </div>
+                
+         
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1 checked">
+                      <label class="form-check-label label-categorie " for="flexRadioDefault5">
+                      Congres Online Platform
                       </label>
                     </div>
                   </div>
-
-
-
-
-                  <div class="col">
+ 
+                  
+                      <div class="col-md-4 col-sm-6">
                     <h4 class="text-left">Jaartal</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
-                      <label class="form-check-label label-categorie" for="flexRadioDefault1">
-                        2017
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input " type="radio" name="actie" id="flexRadioDefault2">
-                      <label class="form-check-label label-categorie" for="flexRadioDefault1">
-                        2018
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input  " type="radio" name="actie" id="flexRadioDefault3">
+                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1" value="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2019
                       </label>
                     </div>
+
                     <div class="form-check">
-                      <input class="form-check-input " type="radio" name="actie" id="flexRadioDefault4">
+                      <input class="form-check-input " type="radio" name="action" id="flexRadioDefault2 checked">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2020
                       </label>
                     </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input  " type="radio" name="action" id="flexRadioDefault3">
+                      <label class="form-check-label label-categorie" for="flexRadioDefault1">
+                        2021
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input " type="radio" name="action" id="flexRadioDefault4">
+                      <label class="form-check-label label-categorie" for="flexRadioDefault1">
+                        2022
+                    </label>
+                    </div>
                   </div>
 
                 </div>
+ 
 
+                    <div class="mb-5">
 
-                <div class="col col-6  mb-5  col-sm-4  ">
-                  <div class="mb-5">
-
-                    <p class="text-schermafbeelding">Schermafbeeldingen </p>
+                    <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4 >
                     <div class="preview"></div>
 
                     <form action="#" method="POST" enctype="multipart/form-data">
@@ -292,15 +308,14 @@
 
                   </div>
 
-
-
-
-
                   <button type="submit" class="btn   opslaan-knop">Wijzigingen opslaan</button>
+                     </div> 
+
+ 
               </form>
 
             </div>
-          </div>
+
 
         </div>
       </div>
