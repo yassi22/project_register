@@ -162,10 +162,11 @@
                 </li>
               </ul>
             </div>
-            <div class="col col-6 py-4 px-5">
+
+            <div class="col col-6  py-4 px-5">
             <div class=" d-flex p-2">   
 
-                    <div class="col-sm-4 m-2 ml-2"> 
+                    <div class="col-sm-4 m-2 ml-2 "> 
                     <a
                     data-fancybox="gallery"
                     data-src="img/Hoek-Blok-logo.png"
