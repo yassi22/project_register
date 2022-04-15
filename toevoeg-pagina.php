@@ -277,10 +277,10 @@
                 </div>
 
 
-                <div class="col col-6  mb-5  col-sm-4  ">
+                <div class="col  ">
                   <div class="mb-5">
 
-                    <p class="text-schermafbeelding">Schermafbeeldingen </p>
+                    <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4 >
                     <div class="preview"></div>
 
                     <form action="#" method="POST" enctype="multipart/form-data">
