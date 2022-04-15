@@ -116,10 +116,10 @@
       <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
         <div>
           <div class="row g-0 details">
-            <div class="col col-12 py-4 px-5">
+            <div class="col col-12 py-4 px-4">
 
               <form>
-                  <div class="form-group mb-4">
+                  <div class="form-group mb-4"> 
                     <div class="col-md-6">
                     <label class="invoer-naam label-categorie" for="Websitelink1">Projectnaam</label>
                     <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een projectnaam in"> 
@@ -230,21 +230,21 @@
                   <div class="col-md-4 col-sm-6">
                     <h4 class="text-left">Categorie</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
-                      <label class="form-check-label label-categorie" for="flexRadioDefault0">
+                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1 checked  " value="flexRadioDefault1">
+                      <label class="form-check-label label-categorie" for="flexRadioDefault0">  
                         Evenement Registratie Platform
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
+                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1  checked ">
                       <label class="form-check-label label-categorie " for="flexRadioDefault4">
                        Medisch Congres Platform
                       </label>
                     </div>
                     
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
+                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie " for="flexRadioDefault5">
                       Hybride Event Platform
                       </label>
@@ -252,7 +252,7 @@
                 
          
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
+                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie " for="flexRadioDefault5">
                       Congres Online Platform
                       </label>
@@ -263,28 +263,28 @@
                       <div class="col-md-4 col-sm-6">
                     <h4 class="text-left">Jaartal</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1" value="flexRadioDefault1">
+                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1" value="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2019
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input " type="radio" name="actie" id="flexRadioDefault2">
+                      <input class="form-check-input " type="radio" name="action" id="flexRadioDefault2 checked">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2020
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input  " type="radio" name="actie" id="flexRadioDefault3">
+                      <input class="form-check-input  " type="radio" name="action" id="flexRadioDefault3">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2021
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input " type="radio" name="actie" id="flexRadioDefault4">
+                      <input class="form-check-input " type="radio" name="action" id="flexRadioDefault4">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2022
                     </label>
