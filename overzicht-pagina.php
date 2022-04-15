@@ -420,19 +420,14 @@
 
 
       <div class="col-md-9">
-          <section class="d-flex align-items-center justify-content-between">
+          <section class="d-md-flex align-items-center justify-content-between ">
             <h2>Projecten</h2>
-              <form class="d-flex  ">
-                <input class="form-control zoek mr-sm-2 d-none d-sm-block" type="text" placeholder="Zoekopdracht">
-                <button class="btn my-2 my-sm-0 zoekknop d-none d-sm-block " type="submit">Zoek</button>
-              </form> 
-               
-        
-              <form class="d-flex  d-block d-sm-none ms-2 ">
-              <input class="form-control zoek ml-sm-4  " type="text" placeholder="Zoekopdracht">
-                <button class="btn my-2 my-sm-0 zoekknop   " type="submit">Zoek</button>
 
+              <form class="d-flex">
+                <input class="form-control zoek" type="text" placeholder="Zoekopdracht">
+                <button class="btn zoekknop  " type="submit">Zoek</button>
               </form> 
+              
 
 
           </section>
