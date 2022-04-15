@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://rawgit.com/andrewng330/PreviewImage/master/preview.image.min.js"></script>
+  <script src="JS/preview.image.min.js"></script>
   <link rel="stylesheet" href="style-test-2.css">
 
   <!-- Load Google fonts -->
@@ -119,39 +119,38 @@
             <div class="col col-12 py-4 px-4">
 
               <form>
-                  <div class="form-group mb-4"> 
-                    <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-12 col-md-8 col-lg-6">
+                  <div class="form-group mb-4">
                     <label class="invoer-naam label-categorie" for="Websitelink1">Projectnaam</label>
-                    <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een projectnaam in"> 
-                    </div>
+                    <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een projectnaam in">
                   </div>
 
 
                 <div class="form-group mb-4"> 
-                    <div class="col-md-6 col-sm-6 col-7">
+                    <div style="max-width: 145px;">
                   <label class="invoer-naam label-categorie" for="Projectdatum1">Project datum</label>
                   <input type="date" class="form-control" id="Projectdatum1"> 
                    </div>
                 </div> 
 
                    <label class="invoer-naam label-categorie" for="Projectdatum1">Website link</label> 
-                  <div class="input-group mb-3 ">    
-                      
-                    <span class="input-group-text " id="basic-addon3">https://</span>  
-                    <div class="col-md-5">
+
+                   <div class="input-group mb-3 ">    
+
+                    <span class="input-group-text" id="basic-addon3">https://</span>  
+                    
                     <input type="text" class="form-control input-lengte" id="WebsiteLink" aria-describedby="basic-addon3"> 
-                      </div>
                   </div>
  
 
                   <div class="form-group mb-4 "> 
-                      <div class="col-md-6">
                     <label class="invoer-naam label-categorie " for="Omschrijving1">Omschrijving</label>
                     <textarea class="form-control omschrijf-text" id="Omschrijving1" placeholder="Vul een omschrijving in"
                       rows="3"></textarea> 
-                      </div>
                   </div>
-
+                </div>
+                </div>
 
 
                 <div class="row d-flex justify-content-start    ">
@@ -230,21 +229,21 @@
                   <div class="col-md-4 col-sm-6">
                     <h4 class="text-left">Categorie</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1 checked  " value="flexRadioDefault1">
+                      <input class="form-check-input" type="radio" name="category" id="2018 " value="flexRadioDefault1">
                       <label class="form-check-label label-categorie" for="flexRadioDefault0">  
                         Evenement Registratie Platform
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1  checked ">
+                      <input class="form-check-input" type="radio" name="category" id="2019    ">
                       <label class="form-check-label label-categorie " for="flexRadioDefault4">
                        Medisch Congres Platform
                       </label>
                     </div>
                     
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1 checked">
+                      <input class="form-check-input" type="radio" name="category" id="flexRadioDefault1 ">
                       <label class="form-check-label label-categorie " for="flexRadioDefault5">
                       Hybride Event Platform
                       </label>
@@ -252,7 +251,7 @@
                 
          
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1 checked">
+                      <input class="form-check-input" type="radio" name="category" id="flexRadioDefault1 ">
                       <label class="form-check-label label-categorie " for="flexRadioDefault5">
                       Congres Online Platform
                       </label>
@@ -263,28 +262,28 @@
                       <div class="col-md-4 col-sm-6">
                     <h4 class="text-left">Jaartal</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="action" id="flexRadioDefault1" value="flexRadioDefault1 checked">
+                      <input class="form-check-input" type="radio" name="year" id="flexRadioDefault1" value="flexRadioDefault1 ">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2019
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input " type="radio" name="action" id="flexRadioDefault2 checked">
+                      <input class="form-check-input " type="radio" name="year" id="flexRadioDefault2 ">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2020
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input  " type="radio" name="action" id="flexRadioDefault3">
+                      <input class="form-check-input  " type="radio" name="year" id="flexRadioDefault3">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2021
                       </label>
                     </div>
 
                     <div class="form-check">
-                      <input class="form-check-input " type="radio" name="action" id="flexRadioDefault4">
+                      <input class="form-check-input " type="radio" name="year" id="flexRadioDefault4">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2022
                     </label>
@@ -301,7 +300,7 @@
 
                     <form action="#" method="POST" enctype="multipart/form-data">
                       <label for="file-upload" class="custom-file-upload">
-                        <i class="fa fa-cloud-upload"></i> Nieuwe schermafbeelding
+                        Nieuwe schermafbeelding
                       </label>
                       <input type="file" id="file-upload" name="file1">  
                     </form>

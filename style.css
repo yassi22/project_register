@@ -21,13 +21,13 @@ body{
    font-size: 20px;
    line-height: 26px;
    color: #FFFFFF;
-  
   }  
 
   .knop:hover { 
       background-color:#4B96D0; 
       color:white;
   }
+
 
    li { 
        list-style: none; 
@@ -204,9 +204,9 @@ color:white;
     border-left: 2px solid #CACACA;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 991px) {
 .details .col + .col {
-      border-left: 2px solid #FFFFFF;
+      border-left: none;
 }   
  
 }   
@@ -463,17 +463,6 @@ input[type=text] {
     font-weight: bold;
 } 
 
-.modal {
-    position: absolute;
-    top:30%;
-    right: 100px;
-    bottom: 0;
-    left: 0;
-    z-index: 10040;
-    overflow: auto;
-    overflow-y: auto; 
-    margin: 0 auto; 
- }  
 
 
  a[data-fancybox] img {
@@ -486,4 +475,3 @@ input[type=text] {
      
   } 
 
- 

@@ -26,10 +26,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
      
   <style>
-    .fakeimg {
+    /* .fakeimg {
       height: 200px;
       background: #aaa;
-    }
+    } */
   </style>
 </head>
 
@@ -47,7 +47,7 @@
           <div class="modal-footer justify-content-center">
             <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>
             <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button>
-          </div>
+         </div>
         </div>
       </div>
     </div>
@@ -119,7 +119,7 @@
       <div class="jumbotron shadow mb-5 bg-white rounded  mt-4 jumbotron-detail">
         <div>
           <div class="row g-0 details">
-            <div class="col col-md-6 col-sm-6 py-4 px-4">
+            <div class="col col-sm-12 col-lg-6 py-4 px-4">
               <ul class="ps-0">
                 <li>
                   <p class="text-secondary mb-0">Project naam</p>
@@ -144,10 +144,11 @@
               </ul>
             </div>
 
-            <div class="col col-md-6 col-sm-6  py-4 px-5">
-            <div class=" d-flex p-2">   
+            <div class="col col-sm-12 col-lg-6 py-4 px-5">
+            <div class=" row g-4 mb-2" >   
+         
+                    <div class="col-md-4 col-sm-6 "> 
 
-                    <div class="col-sm-4 m-2 ml-2 "> 
                     <a
                     data-fancybox="gallery"
                     data-src="img/Hoek-Blok-logo.png"
@@ -157,22 +158,22 @@
                     </a>
                     </div>  
 
-                    <div class="col-sm-4 m-2">
+                    <div class="col-md-4  col-sm-6  ">
                     <a data-fancybox="gallery" data-src="img/H-K-1.png">
                     <img src="img/H-K-1.png"  class="rounded plaatje-grote" />
                     </a>
                     </div > 
 
-                    <div class="col-sm-4 m-2">
-                    <a data-fancybox="gallery"  data-src="img/H-K-2.png">
-                    <img src=" img/H-K-2.png"  class="rounded plaatje-grote" />
-                    </a>
+                    <div class="col-md-4  col-sm-6   ">
+                      <a data-fancybox="gallery"  data-src="img/H-K-2.png">
+                       <img src=" img/H-K-2.png"  class="rounded plaatje-grote" />
+                      </a>
                     </div> 
 
                     </div> 
 
 
-                    <div class="mb-2">
+                    <div class="mb-4 ">
                       <a class="btn mt-2  bnt-primary download-knop" role="button"  href="#">Download schermafbeelding</a>
                     </div> 
 

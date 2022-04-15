@@ -450,3 +450,36 @@ input[type=text] {
     font-family: 'Raleway',sans-serif; 
     font-weight: bold;
 } 
+
+
+ .preview div {
+     position: relative;
+     max-width: 30%;
+     margin-bottom: 6px;
+ }
+
+     .preview div img {
+        width: 100% !important;
+        height: auto !important;
+
+        border-radius: 3px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
+    }
+
+    .preview div p {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 32px;
+        width: 32px;
+
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 50%;
+        background-image: url(img/icon-close.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .preview div p:hover {
+        background-color: rgba(0, 0, 0, 1);
+    }
