@@ -35,45 +35,24 @@
 
 <body> 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centerd ">
-      <div class="modal-content border-0 rounded shadow ">
- 
-       
-      <div class="container-lg">  
-        <div class="d-flex justify-content-center">
-        <div class="modal-header mb-3 ">
-          <h4 class="modal-title text-center" id="exampleModalLabel">Project verwijderen </h4>
-        </div> 
-          <div class="d-flex justify-content-end ml-4 mt-1"> 
-        <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button> 
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-4" id="exampleModalLabel">Project verwijderen</h2>
+            <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button> 
           </div>
-  </div>
-  </div>
-
-
-        <div class="container ">
-          <div class="row mb-3">
-            <div class="text-center">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Weet je zeker dat je het project wilt verwijderen? </h5>
-              </div>
-            </div>
-            <div class="col-6 d-flex justify-content-end  ">
-              <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>
-            </div>
-            <div class="col-6 d-flex justify-content-start  ">
-              <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button>
-            </div>
-
+          <div class="modal-body text-center">
+            <p class="mb-0">Weet je zeker dat je het project wilt verwijderen?</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>
+            <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
-
-
 
   <nav class="navbar navbar-expand-sm shadow  bg-white rounded ">
     <div class="container-fluid">
@@ -126,8 +105,6 @@
  
   </div>
 </div>
-
- 
 
 
   <div class="container-fluid">
