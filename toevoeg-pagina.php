@@ -306,13 +306,9 @@
                   </div>
 
                 </div>
+ 
 
-                     </div> 
-
-                
-
-                <div class="col-md-4 col-sm-6 ">
-                  <div class="mb-5">
+                    <div class="mb-5">
 
                     <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4 >
                     <div class="preview"></div>
@@ -326,15 +322,14 @@
 
                   </div>
 
-
-
-
-
                   <button type="submit" class="btn   opslaan-knop">Project toevoegen</button>
+                     </div> 
+
+ 
               </form>
 
             </div>
-          </div>
+
 
         </div>
       </div>
