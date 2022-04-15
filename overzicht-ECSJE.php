@@ -159,13 +159,15 @@
 
               <h4>Diensten</h4>
               <ul class="details-list mb-4">
-                <li>Congress online</li>
+                <li>Toegangscontrole</li>
                 <li>Badges</li>
-                <li>Uitnodigingstraject</li>
+                <li> Lanyards</li> 
+                <li> Evenement platform</li>
+                <li> Eventwebsite</li>
               </ul>
 
               <h4>Categorie</h4>
-              <p>Congres Online evenementen</p>
+              <p> Congres Online Platform   </p>
             </div> 
             
           </div>

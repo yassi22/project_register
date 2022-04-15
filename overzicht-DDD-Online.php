@@ -160,13 +160,15 @@
 
               <h4>Diensten</h4>
               <ul class="details-list mb-4">
-                <li>Congress online</li>
-                <li>Badges</li>
-                <li>Uitnodigingstraject</li>
+                <li>Evenement platform</li>
+                <li>Event app</li>
+                <li>Evaluatie</li> 
+                <li>Toegangscontrole</li>
+                <li>Hostesses</li>
               </ul>
 
               <h4>Categorie</h4>
-              <p>Congres Online evenementen</p>
+              <p>Congres Online Platform</p>
             </div>
           </div>
         </div>
