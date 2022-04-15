@@ -273,8 +273,7 @@ input[type=text] {
      
     background-color: #F4F4F4;
      border: 1px solid #C8C8C8;  
-    max-width: 450px !important;
-    width: 100%; 
+ 
       
   } 
 
@@ -283,8 +282,7 @@ input[type=text] {
      
      background-color: #F4F4F4;
      border: 1px solid #C8C8C8;  
-     max-width: 450px !important;
-     width: 100%; 
+ 
       
   } 
 
@@ -293,8 +291,7 @@ input[type=text] {
      
     background-color: #F4F4F4;
     border: 1px solid #C8C8C8;  
-    max-width: 450px !important;
-    width: 100%; 
+ 
    
  } 
  
@@ -399,13 +396,7 @@ input[type=text] {
     /* Maximale breedte aan form groep geven */
 } 
 
-
-.input-lengte { 
-    width: 250px  !important;
-} 
-
-
-
+ 
 .modal-knop-ja { 
     background-color:#4B96D0; 
     border: none;

@@ -142,28 +142,37 @@
             <div class="col col-12 py-4 px-5">
 
               <form>
-              <div class="form-group mb-4">
+                  <div class="form-group mb-4">
+                    <div class="col-md-6">
                     <label class="invoer-naam label-categorie" for="Websitelink1">Projectnaam</label>
-                    <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een projectnaam in">
+                    <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een projectnaam in"> 
+                    </div>
                   </div>
 
 
-                <div class="form-group mb-4">
+                <div class="form-group mb-4"> 
+                    <div class="col-md-6 col-sm-6 col-7">
                   <label class="invoer-naam label-categorie" for="Projectdatum1">Project datum</label>
-                  <input type="date" class="form-control" id="Projectdatum1">
+                  <input type="date" class="form-control" id="Projectdatum1"> 
+                   </div>
                 </div> 
 
                    <label class="invoer-naam label-categorie" for="Projectdatum1">Website link</label> 
-                  <div class="input-group mb-3 ">   
-                    <span class="input-group-text d-none d-md-block" id="basic-addon3">https://example.com/</span> 
-                    <input type="text" class="form-control input-lengte" id="WebsiteLink" aria-describedby="basic-addon3">
+                  <div class="input-group mb-3 ">    
+                      
+                    <span class="input-group-text " id="basic-addon3">https://</span>  
+                    <div class="col-md-5">
+                    <input type="text" class="form-control input-lengte" id="WebsiteLink" aria-describedby="basic-addon3"> 
+                      </div>
                   </div>
  
 
-                  <div class="form-group mb-4 ">
+                  <div class="form-group mb-4 "> 
+                      <div class="col-md-6">
                     <label class="invoer-naam label-categorie " for="Omschrijving1">Omschrijving</label>
                     <textarea class="form-control omschrijf-text" id="Omschrijving1" placeholder="Vul een omschrijving in"
-                      rows="3"></textarea>
+                      rows="3"></textarea> 
+                      </div>
                   </div>
 
 
@@ -277,7 +286,7 @@
                       <div class="col-md-4 col-sm-6">
                     <h4 class="text-left">Jaartal</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
+                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1" value="flexRadioDefault1">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2019
                       </label>
