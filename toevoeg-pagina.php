@@ -75,18 +75,18 @@
 
 
 
-  <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
+  <nav class="navbar navbar-expand-sm shadow  bg-white rounded ">
     <div class="container-fluid">
       <a href="overzicht-pagina.php" class="d-none d-md-block">
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
 
-      <div class="d-flex justify-content-between">
-        <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end d-none d-md-block" role="button">Terug naar
+      <div class="d-flex justify-content-between d-none d-md-block ">
+        <a href="overzicht-pagina.php" class="btn knop justify-content-end   " role="button">Terug naar
           overzicht</a>
-        <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-end d-none d-md-block knop-aanpassen" role="button">Project
+        <a href="aanpas-pagina.php" class="btn   justify-content-end    knop-aanpassen" role="button">Project
           aanpassen</a>
-          <button class="btn btn-lg d-flex justify-content-end knop-verwijder d-none d-md-block" data-bs-toggle="modal"
+          <button class="btn  x justify-content-end knop-verwijder  " data-bs-toggle="modal"
           data-bs-target="#exampleModal" role="button">Project verwijderen</button>
       </div>
 
@@ -132,7 +132,7 @@
 
   <div class="container-fluid">
     <div class="justify-content-center">
-      <section class=" d-flex  justify-content-center mx-auto">
+      <section class=" d-flex justify-content-center mx-auto mt-4">
         <h2>Project toevoegen</h2>
       </section>
 
