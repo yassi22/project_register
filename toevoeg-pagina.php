@@ -168,15 +168,15 @@
 
 
 
-                <div class="row d-flex justify-content-center  ">
+                <div class="row d-flex justify-content-start  ">
 
-                  <div class="col">
+                  <div class="col-3">
                     <h4 class="text-left">Diensten</h4>
 
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> Online betaal module </li>
+                     Eventwebsite
                       </label>
                     </div>
 
@@ -184,28 +184,28 @@
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> Badges </li>
+                       Evenement platform
                       </label>
                     </div>
 
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> E-tickets </li>
+                  Online betaalmodule
                       </label>
                     </div>
 
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> Uitnodigingstraject </li>
+                      Event app
                       </label>
                     </div>
 
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> Congres online </li>
+                     Toegangscontrole
                       </label>
                     </div>
 
@@ -213,71 +213,105 @@
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                       <label class="form-check-label" for="flexSwitchCheckDefault">
-                        <li> Helpdesk </li>
+                       Hostesses
+                      </label>
+                    </div> 
+
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                      <label class="form-check-label" for="flexSwitchCheckDefault">
+                       Evaluatie
                       </label>
                     </div>
+
+                      <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                      <label class="form-check-label" for="flexSwitchCheckDefault">
+                       Fotoalbum
+                      </label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                      <label class="form-check-label" for="flexSwitchCheckDefault">
+                       Abstractmodule
+                      </label>
+                    </div>
+
 
                   </div>
 
-                  <div class="col">
+                  <div class="col-3">
                     <h4 class="text-left">Categorie</h4>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie" for="flexRadioDefault0">
-                        Medische evenement
+                        Evenement Registratie Platform
                       </label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie " for="flexRadioDefault4">
-                        Hybride evenement
+                       Medisch Congres Platform
                       </label>
                     </div>
                     
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie " for="flexRadioDefault5">
-                        Congress online evenement
+                      Hybride Event Platform
+                      </label>
+                    </div>
+                
+         
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
+                      <label class="form-check-label label-categorie " for="flexRadioDefault5">
+                      Congres Online Platform
                       </label>
                     </div>
                   </div>
-
-
-
-
-                  <div class="col">
+ 
+                  
+                      <div class="col-3">
                     <h4 class="text-left">Jaartal</h4>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="actie" id="flexRadioDefault1 checked">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
-                        2017
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input " type="radio" name="actie" id="flexRadioDefault2">
-                      <label class="form-check-label label-categorie" for="flexRadioDefault1">
-                        2018
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input  " type="radio" name="actie" id="flexRadioDefault3">
-                      <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2019
                       </label>
                     </div>
+
                     <div class="form-check">
-                      <input class="form-check-input " type="radio" name="actie" id="flexRadioDefault4">
+                      <input class="form-check-input " type="radio" name="actie" id="flexRadioDefault2">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2020
                       </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input  " type="radio" name="actie" id="flexRadioDefault3">
+                      <label class="form-check-label label-categorie" for="flexRadioDefault1">
+                        2021
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input " type="radio" name="actie" id="flexRadioDefault4">
+                      <label class="form-check-label label-categorie" for="flexRadioDefault1">
+                        2022
+                    </label>
                     </div>
                   </div>
 
                 </div>
 
+                     </div> 
 
-                <div class="col  ">
+                
+
+                <div class="col-3 ">
                   <div class="mb-5">
 
                     <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4 >
