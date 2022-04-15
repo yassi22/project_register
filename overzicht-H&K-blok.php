@@ -34,57 +34,37 @@
 </head>
 
 <body>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centerd ">
-      <div class="modal-content border-0 rounded shadow ">
- 
-       
-      <div class="container-lg">  
-        <div class="d-flex justify-content-center">
-        <div class="modal-header mb-3 ">
-          <h4 class="modal-title text-center" id="exampleModalLabel">Project verwijderen </h4>
-        </div> 
-          <div class="d-flex justify-content-end ml-4 mt-1"> 
-        <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button> 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-4" id="exampleModalLabel">Project verwijderen</h2>
+            <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button> 
           </div>
-  </div>
-  </div>
-
-
-        <div class="container ">
-          <div class="row mb-3">
-            <div class="text-center">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Weet je zeker dat je het project wilt verwijderen? </h5>
-              </div>
-            </div>
-            <div class="col-6 d-flex justify-content-end  ">
-              <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>
-            </div>
-            <div class="col-6 d-flex justify-content-start  ">
-              <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button>
-            </div>
-
+          <div class="modal-body text-center">
+            <p class="mb-0">Weet je zeker dat je het project wilt verwijderen?</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>
+            <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
 
 
-  <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
+  <nav class="navbar navbar-expand-sm shadow  bg-white rounded ">
     <div class="container-fluid">
       <a href="overzicht-pagina.php" class="d-none d-md-block">
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
 
-      <div class="d-flex justify-content-between">
-        <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end d-none d-md-block" role="button">Terug naar
+      <div class="d-flex justify-content-between d-none d-md-block ">
+        <a href="overzicht-pagina.php" class="btn knop justify-content-end   " role="button">Terug naar
           overzicht</a>
-        <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-end d-none d-md-block knop-aanpassen" role="button">Project
+        <a href="aanpas-pagina.php" class="btn   justify-content-end    knop-aanpassen" role="button">Project
           aanpassen</a>
-          <button class="btn btn-lg d-flex justify-content-end knop-verwijder d-none d-md-block" data-bs-toggle="modal"
+          <button class="btn  x justify-content-end knop-verwijder  " data-bs-toggle="modal"
           data-bs-target="#exampleModal" role="button">Project verwijderen</button>
       </div>
 
@@ -124,14 +104,15 @@
  
   </div>
 </div>
+  
 
- 
+
 
 
 
   <div class="container-fluid">
     <div class="justify-content-center">
-      <section class=" d-flex  justify-content-center mx-auto">
+      <section class=" d-flex mt-4  justify-content-center mx-auto">
         <h2>Project details</h2>
       </section>
 
