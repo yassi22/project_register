@@ -204,6 +204,36 @@ color:white;
     border-left: 2px solid #CACACA;
 }
 
+@media only screen and (max-width: 650px) {
+.details .col + .col {
+      border-left: 2px solid #FFFFFF;
+} 
+ 
+}   
+
+
+@media only screen and (min-width: 440px) {
+ 
+ 
+.download-knop { 
+    background-color: #F48424;
+    border-radius: 50px; 
+    color:white; 
+    font-family: 'Raleway', sans-serif; 
+    font-size: 10px;
+    line-height: 26px;
+} 
+
+.download-knop:hover { 
+ background-color: #4B96D0 !important; 
+ color:white;
+} 
+ 
+}  
+ 
+ 
+
+
 /* Lijst met details */
 .details-list li {
     list-style: disc;
@@ -266,9 +296,8 @@ max-height: 50px;
     border-radius: 50px; 
     color:white; 
     font-family: 'Raleway', sans-serif; 
-     
     font-size: 20px;
-line-height: 26px;
+    line-height: 26px;
 } 
 
 .download-knop:hover { 

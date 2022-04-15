@@ -138,7 +138,7 @@
       <div class="jumbotron shadow mb-5 bg-white rounded  mt-4 jumbotron-detail">
         <div>
           <div class="row g-0 details">
-            <div class="col col-6 py-4 px-5">
+            <div class="col col-md-6 col-sm-6 py-4 px-4">
               <ul class="ps-0">
                 <li>
                   <p class="text-secondary mb-0">Project naam</p>
@@ -163,7 +163,7 @@
               </ul>
             </div>
 
-            <div class="col col-6  py-4 px-5">
+            <div class="col col-md-6 col-sm-6  py-4 px-5">
             <div class=" d-flex p-2">   
 
                     <div class="col-sm-4 m-2 ml-2 "> 
@@ -192,7 +192,7 @@
 
 
                     <div class="mb-2">
-                      <a class="btn mt-2  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
+                      <a class="btn mt-2  bnt-primary download-knop" role="button"  href="#">Download schermafbeelding</a>
                     </div> 
 
 

@@ -105,7 +105,7 @@
       <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbotron-detail">
         <div>
           <div class="row g-0 details">
-            <div class="col col-6 py-4 px-5">
+            <div class="col col-3 col-md-6 py-4 px-5">
               <ul class="ps-0">
                 <li>
                   <p class="text-secondary mb-0">Project naam</p>
