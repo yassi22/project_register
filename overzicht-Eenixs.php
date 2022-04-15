@@ -111,7 +111,7 @@
                 </li>
                 <li>
                   <p class="text-secondary mb-0">Project datum</p>
-                  <p>10-02-21</p>
+                  <p>10-02-2021</p>
                 </li>
                 <li> 
                   <p class="text-secondary mb-0">Website link</p>
