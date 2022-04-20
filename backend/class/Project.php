@@ -9,7 +9,6 @@
    
 
    /*
-   hjf
    @param mixed $id
    @param mixed $title
    @param mixed $des
@@ -82,13 +81,42 @@
  } 
  
       public function getAllPost($page){
-       if($page > 1){$page -= 1; $offset = $page * 6;}else{$offset = 0;} 
-       $sql = "SELECT * FROM posts ORDER BY created_on DESC LIMIT 7 OFFSET $offset"; 
+       if($page > 1){$page -= 1; $offset = $page * 6;}else{$offset = 0;}  
+       $sql = "SELECT * FROM projecten ORDER BY created_on DESC LIMIT 7 OFFSET $offset";
        $stmt = $this->connect()->prepare($sql);  
        $stmt->execute();  
        return $stmt->fetchAll(PDO::FETCH_OBJ);    
 
  }
+
+
+   public function getPopulairPosts($page)
+   {
+      if ($page > 1) {
+         $page -= 1;
+         $offset = $page * 6;
+      } else {
+         $offset = 0;
+      }
+      $sql = "SELECT * FROM posts ORDER BY views DESC LIMIT 7 OFFSET $offset";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->execute();
+      return $stmt->fetchAll(PDO::FETCH_OBJ);
+   }
+
+
+
+   public function getPost($id)
+   { 
+      $this->updateView($id);
+
+      $sql = "SELECT * FROM projecten WHERE id = :id";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->bindParam(":id", $id);
+      $stmt->execute();
+      return $stmt->fetch(PDO::FETCH_OBJ);
+   }   
+
     
 
    public function updateView($id){ 
@@ -100,36 +128,6 @@
    }
 
  
-
-   public function getPost($id){ 
-
-   // code die nog gebruikt kan worden!!!!!
-   // $jan = "UPDATE posts set views=(views+1) WHERE id =:id";  
-   //   $stmt = $this->connect()->prepare($jan);  
-   //   $stmt->bindParam(":id", $id);
-   //  $stmt->execute(); 
-
-   $this->updateView($id);
-
-  $sql = "SELECT * FROM posts WHERE id = :id";  
-      $stmt = $this->connect()->prepare($sql);  
-      $stmt->bindParam(":id", $id);
-      $stmt->execute(); 
-   return $stmt->fetch(PDO::FETCH_OBJ);  
-
-
-   //Kijken of de oode nog verwijderd nog moet worden
-   // var_dump($sql);
-   // $sql = "SELECT * FROM posts WHERE id = :id";  
-   // var_dump($sql); 
-   // $stmt = $this->connect()->prepare($sql);  
-   // $stmt = $this->connect()->prepare($jan); 
-
-
-   // $stmt->bindParam(":id", $id);
-   // $stmt->execute(); 
-   // return $stmt->fetch(PDO::FETCH_OBJ);  
-   }   
 
 
 
@@ -199,22 +197,7 @@
     } 
 
 
-    public function getPopulairPosts($page) 
-    {   
-      if($page > 1){$page -= 1; $offset = $page * 6;}else{$offset = 0;}  
-      $sql = "SELECT * FROM posts ORDER BY views DESC LIMIT 7 OFFSET $offset"; 
-      $stmt = $this->connect()->prepare($sql);  
-      $stmt->execute();  
-      return $stmt->fetchAll(PDO::FETCH_OBJ);    
-    }   
-
-
-    public function PopulairPosts(){ 
  
-
-
-
-    }
 
 
 
@@ -222,64 +205,3 @@
 
 
  }
- 
-  
- 
- 
- 
- ?> 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
