@@ -115,7 +115,7 @@
     
 
    public function updateView($id){ 
-      $jan = "UPDATE posts set views=(views+1) WHERE id =:id";  
+      $jan = "UPDATE projecten set views=(views+1) WHERE project_id =:id";  
       $stmt = $this->connect()->prepare($jan);  
       $stmt->bindParam(":id", $id);
       $stmt->execute(); 

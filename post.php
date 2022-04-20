@@ -76,6 +76,10 @@ $posts = $postIns->getPost($_GET['id']);
                                     <p class="text-secondary mb-0">Omschrijving</p>
                                     <p> <?php echo $posts->omschrijving ?></p>
                                 </li>
+                                <li>
+                                    <p class="text-secondary mb-0">Views</p>
+                                    <p> <?php echo $posts->views ?></p>
+                                </li>
                             </ul>
                         </div>
                         <div class="col col-6 py-4 px-5">

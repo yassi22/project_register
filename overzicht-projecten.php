@@ -463,7 +463,7 @@ require_once 'backend/autoloader.php';
                   <p class="card-text mb-1 mt-1 omschrijf"><?php echo $posts->datum; ?></p>
                   <h3 class="card-title mb-4 fs-5 titel"><?php echo $posts->projectnaam; ?></h3>
 
-                  <a class="post-pagina" href="Post.php?id=<?php echo $posts->project_id ?>">  Meer detail   </a> <br>
+                 <a href="Post.php?id=<?php echo $posts->project_id ?>" class="btn knop-detail"> Meer detail </a> 
 
                   <!-- <a href="Post.php?id=<?php echo $posts->id ?>" class="btn knopdetail"> Meer details </a> -->
                 </div>
