@@ -8,9 +8,15 @@
    private $desBool; 
    
 
+   /*
+   hjf
+   @param mixed $id
+   @param mixed $title
+   @param mixed $des
+   @return true|string|void
+*/
 
- 
-      public function updatePost($id, $title, $des){
+      public function updatePost(int $id, string $title, $des){
          
       try{ 
       $post = $this->getPost($id); 
