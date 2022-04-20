@@ -98,15 +98,9 @@
    }
 
 
-   public function getPopulairPosts($page)
+   public function getPopulairPosts()
    {
-      if ($page > 1) {
-         $page -= 1;
-         $offset = $page * 6;
-      } else {
-         $offset = 0;
-      }
-      $sql = "SELECT * FROM posts ORDER BY views DESC LIMIT 7 OFFSET $offset";
+      $sql = "SELECT * FROM posts ORDER BY views";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetchAll(PDO::FETCH_OBJ);

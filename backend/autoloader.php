@@ -11,5 +11,5 @@ spl_autoload_register('autoload');
 
 $postIns = new Post();   
 
-$postenIns = new Post(); 
+
  

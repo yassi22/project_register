@@ -450,10 +450,12 @@ require_once 'backend/autoloader.php';
 
         </section>
 
-        <?php foreach ($postIns->getAllPost() as $posts) { ?>
+
+        <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <?php foreach ($postIns->getAllPost() as $posts) { ?>
 
 
-          <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
             <div class="col d-flex align-items-stretch">
               <div class="card shadow bg-white rounded  w-100">
                 <div class="card-body project-card">
@@ -463,19 +465,19 @@ require_once 'backend/autoloader.php';
                   <p class="card-text mb-1 mt-1 omschrijf"><?php echo $posts->datum; ?></p>
                   <h3 class="card-title mb-4 fs-5 titel"><?php echo $posts->projectnaam; ?></h3>
 
-                 <a href="Post.php?id=<?php echo $posts->project_id ?>" class="btn knop-detail"> Meer detail </a> 
+                  <a href="Post.php?id=<?php echo $posts->project_id ?>" class="btn knopdetail"> Meer detail </a>
 
                   <!-- <a href="Post.php?id=<?php echo $posts->id ?>" class="btn knopdetail"> Meer details </a> -->
                 </div>
               </div>
             </div>
-          </div>
+        
 
-        <?php } ?>
-
-
+      <?php } ?>
       </div>
+
     </div>
+  </div>
   </div>
 </body>
 
