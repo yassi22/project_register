@@ -432,12 +432,20 @@
 
           </section> 
 
-          <section class="d-md-flex align-items-center justify-content-between"> 
-            
-           <h2>Sorteren</h2>
-             <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit">Sorteren</button> 
+          <section class="d-md-flex align-items-center   justify-content-end mt-2"> 
+             <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle  resultaat-knop " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Sorteren  
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Meest bekeken</a></li>
+    <li><a class="dropdown-item" href="#">Alfabetische volgorde  </a></li>
+    <li><a class="dropdown-item" href="#">Recent toegevoegd</a></li>
+  </ul>
+</div>
+          
 
-          </section> 
+  </section>  
 
           <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col d-flex align-items-stretch">
