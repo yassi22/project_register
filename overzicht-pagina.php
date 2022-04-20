@@ -430,7 +430,14 @@
               
 
 
-          </section>
+          </section> 
+
+          <section class="d-md-flex align-items-center justify-content-between"> 
+            
+           <h2>Sorteren</h2>
+             <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit">Sorteren</button> 
+
+          </section> 
 
           <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col d-flex align-items-stretch">
