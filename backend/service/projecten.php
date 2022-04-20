@@ -1,5 +1,5 @@
 <?php 
-require_once '../partial/header.php'; 
+//require_once '../partial/header.php'; 
 require_once '../autoloader.php';   
   
   
@@ -39,6 +39,6 @@ require_once '../autoloader.php';
 
 <?php 
  
-require_once '../partial/footer.php'; 
+//require_once '../partial/footer.php'; 
  
 ?> 

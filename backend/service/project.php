@@ -1,6 +1,6 @@
 <?php 
 
-require_once '../partial/header.php'; 
+//require_once '../partial/header.php'; 
 require_once '../autoloader.php'; 
  
 
@@ -52,6 +52,6 @@ if($posts->user_id != $_SESSION['id'] && $_SESSION['userright'] == 0){
 
 <?php 
 
-require_once '../partial/footer.php'; 
+//require_once '../partial/footer.php'; 
 
 ?> 
