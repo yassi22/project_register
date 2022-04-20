@@ -80,13 +80,11 @@
  
  } 
  
-      public function getAllPost($page){
-       if($page > 1){$page -= 1; $offset = $page * 6;}else{$offset = 0;}  
-       $sql = "SELECT * FROM projecten ORDER BY created_on DESC LIMIT 7 OFFSET $offset";
+      public function getAllPost(){
+       $sql = "SELECT * FROM projecten ORDER BY created_on DESC LIMIT 7 OFFSET";
        $stmt = $this->connect()->prepare($sql);  
        $stmt->execute();  
        return $stmt->fetchAll(PDO::FETCH_OBJ);    
-
  }
 
 
