@@ -76,8 +76,6 @@
        header("Location: post.php?id=$id");
      }
      
-     
- 
  } 
  
       public function getAllPost(){
@@ -86,6 +84,18 @@
        $stmt->execute();  
        return $stmt->fetchAll(PDO::FETCH_OBJ);    
  }
+
+
+     public function getPost($id)
+   { 
+      $this->updateView($id);
+
+      $sql = "SELECT * FROM projecten WHERE project_id = :id";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->bindParam(":id", $id);
+      $stmt->execute();
+      return $stmt->fetch(PDO::FETCH_OBJ);
+   }
 
 
    public function getPopulairPosts($page)
@@ -101,19 +111,6 @@
       $stmt->execute();
       return $stmt->fetchAll(PDO::FETCH_OBJ);
    }
-
-
-
-   public function getPost($id)
-   { 
-      $this->updateView($id);
-
-      $sql = "SELECT * FROM projecten WHERE id = :id";
-      $stmt = $this->connect()->prepare($sql);
-      $stmt->bindParam(":id", $id);
-      $stmt->execute();
-      return $stmt->fetch(PDO::FETCH_OBJ);
-   }   
 
     
 
