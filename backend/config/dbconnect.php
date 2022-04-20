@@ -3,7 +3,7 @@
     $DBHOST = "localhost";  //your hostname
     $DBUSER = "root";       //your username
     $DBPASS = "";           //your password
-    $DBNAME = "autoblog";   //your database name
+    $DBNAME = "project_register";   //your database name
 
         //Create Connection
         $conn = new mysqli($DBHOST, $DBUSER, $DBPASS, $DBNAME);
