@@ -81,7 +81,7 @@
  } 
  
       public function getAllPost(){
-       $sql = "SELECT * FROM projecten ORDER BY created_on DESC LIMIT 7 OFFSET";
+       $sql = "SELECT * FROM projecten";
        $stmt = $this->connect()->prepare($sql);  
        $stmt->execute();  
        return $stmt->fetchAll(PDO::FETCH_OBJ);    
