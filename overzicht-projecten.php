@@ -6,23 +6,31 @@ if (isset($_GET['order'])) {
 
   $var1 = $_GET['order'];
 }
+
+$status = "Resultaten";
  
 
 if(isset($var1)){
 switch ($var1) {
   case "mostViews":
+    $status = "Meest bekeken";
     $projects = $postIns->getPopulairPosts();
     break;
   case "sortAlpha":
     $projects = $postIns->getAlphaPost(); 
     break;
-  case "sortRecent":
+  case "sortRecent": 
     $projects = $postIns->getRecentPost(); 
     break;
   default:
     $projects = $postIns->getAllPost();
 }
- }
+
+} else {
+  $projects = $postIns->getAllPost();
+}
+
+
         
       // If statment wat nog gebruikt kan worden
       //if (isset($var1) && $var1) {
@@ -461,7 +469,7 @@ switch ($var1) {
       <div class="col-md-9">
         <section class="d-md-flex align-items-center justify-content-between ">
           <h2>Projecten</h2>
-
+            <p> <?php echo $status; ?> </p>
           <form class="d-flex">
             <input class="form-control zoek" type="text" placeholder="Zoekopdracht">
             <button class="btn zoekknop  " type="submit">Zoek</button>
@@ -483,7 +491,7 @@ switch ($var1) {
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=mostViews">Meest bekeken</a></li>
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=sortAlpha">Alfabetische volgorde </a></li>
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=sortRecent">Recent toegevoegd</a></li>
-              <li><a class="dropdown-item" href="overzicht-projecten.php?order=default">Default</a></li>
+              <li><a class="dropdown-item" href="overzicht-projecten.php">Default</a></li>
             </ul>
 
 
