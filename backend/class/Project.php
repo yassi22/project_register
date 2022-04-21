@@ -65,7 +65,7 @@
  
    public function getDefault()
    {
-      $sql = "SELECT * FROM posts";
+      $sql = "SELECT * FROM projecten";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetchAll(PDO::FETCH_OBJ);
