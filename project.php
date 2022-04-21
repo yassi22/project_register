@@ -1,7 +1,7 @@
 <?php
 require_once 'backend/autoloader.php';
 
-$posts = $postIns->getPost($_GET['id']);
+$projecten = $project->getProject($_GET['id']);
 
 
 ?>
@@ -62,23 +62,23 @@ $posts = $postIns->getPost($_GET['id']);
                             <ul class="ps-0">
                                 <li>
                                     <p class="text-secondary mb-0">Project naam</p>
-                                    <p><?php echo $posts->projectnaam ?></p>
+                                    <p><?php echo $projecten->projectnaam ?></p>
                                 </li>
                                 <li>
                                     <p class="text-secondary mb-0">Project datum</p>
-                                    <p><?php echo $posts->datum ?></p>
+                                    <p><?php echo $projecten->datum ?></p>
                                 </li>
                                 <li>
                                     <p class="text-secondary mb-0">Website link</p>
-                                    <p><?php echo $posts->website_link ?></p>
+                                    <p><?php echo $projecten->website_link ?></p>
                                 </li>
                                 <li>
                                     <p class="text-secondary mb-0">Omschrijving</p>
-                                    <p> <?php echo $posts->omschrijving ?></p>
+                                    <p> <?php echo $projecten->omschrijving ?></p>
                                 </li>
                                 <li>
                                     <p class="text-secondary mb-0">Views</p>
-                                    <p> <?php echo $posts->views ?></p>
+                                    <p> <?php echo $projecten->views ?></p>
                                 </li>
                             </ul>
                         </div>

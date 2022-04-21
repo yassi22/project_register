@@ -501,7 +501,7 @@ if (isset($var1)) {
 
         <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-          <?php foreach ($projects as $posts) { ?>
+          <?php foreach ($projects as $project) { ?>
 
             <div class="col d-flex align-items-stretch">
               <div class="card shadow bg-white rounded  w-100">
@@ -509,12 +509,11 @@ if (isset($var1)) {
                   <div class="ratio ratio-16x9 mb-1">
                     <img src="img/Hoek-Blok-logo.png" alt="Schermafbeelding Hoek en Blok Personeelsevent">
                   </div>
-                  <p class="card-text mb-1 mt-1 omschrijf"><?php echo $posts->datum; ?></p>
-                  <h3 class="card-title mb-4 fs-5 titel"><?php echo $posts->projectnaam; ?></h3>
+                  <p class="card-text mb-1 mt-1 omschrijf"><?php echo $project->datum; ?></p>
+                  <h3 class="card-title mb-4 fs-5 titel"><?php echo $project->projectnaam; ?></h3>
 
-                  <a href="Post.php?id=<?php echo $posts->project_id ?>" class="btn knopdetail"> Meer detail </a>
-
-                  <!-- <a href="Post.php?id=<?php echo $posts->id ?>" class="btn knopdetail"> Meer details </a> -->
+                  <a href="Project.php?id=<?php echo $project->project_id ?>" class="btn knopdetail"> Meer detail </a>
+ 
                 </div>
               </div>
             </div>
