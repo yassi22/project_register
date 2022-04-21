@@ -14,21 +14,21 @@ if (isset($var1)) {
   switch ($var1) {
     case "mostViews":
       $status = "Meest bekeken";
-      $projects = $postIns->getPopulairPosts();
+      $projects = $projectIns->getPopulairProjects();
       break;
     case "sortAlpha":
       $status = "Alphabetische volgorde";
-      $projects = $postIns->getAlphaPost();
+      $projects = $projectIns->getAlphaProjects();
       break;
     case "sortRecent":
       $status = "Recent toegevoegd";
-      $projects = $postIns->getRecentPost();
+      $projects = $projectIns->getRecentProjects();
       break;
     default:
-      $projects = $postIns->getAllPost();
+      $projects = $projectIns->getAllProjects();
   }
 } else {
-  $projects = $postIns->getAllPost();
+  $projects = $projectIns->getAllProjects();
 }
 
 
