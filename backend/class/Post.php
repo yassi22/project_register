@@ -64,9 +64,7 @@
 
  
  public function deletePost($id){
- $sql = "DELETE FROM posts WHERE id = :id";
-     
-     
+     $sql = "DELETE FROM posts WHERE id = :id";
      $stmt = $this->connect()->prepare($sql); 
      $stmt->bindParam(':id', $id); 
      if($stmt->execute()){ 
@@ -100,7 +98,7 @@
 
    public function getPopulairPosts()
    {
-      $sql = "SELECT * FROM projecten ORDER BY views";
+      $sql = "SELECT * FROM projecten ORDER BY views DESC";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetchAll(PDO::FETCH_OBJ);

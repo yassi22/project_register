@@ -1,6 +1,21 @@
 <?php
 require_once 'backend/autoloader.php';
 
+
+if(isset($_GET['order'])){
+
+  $var1 = $_GET['order'];
+
+}
+
+
+
+if(isset($var1) && $var1){
+  $projects = $postIns->getPopulairPosts();
+} else {
+  $projects = $postIns->getAllPost();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -439,18 +454,19 @@ require_once 'backend/autoloader.php';
 
 
           <div class="dropdown">
-            <form method="POST">
-              <button class="btn btn-secondary dropdown-toggle  resultaat-knop " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Sorteren
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="Post.php?=<?php     ?>">Meest bekeken</a></li>
-                <li><a class="dropdown-item" href="#">Alfabetische volgorde </a></li>
-                <li><a class="dropdown-item" href="#">Recent toegevoegd</a></li>
-                <li><a class="dropdown-item" href="#">Default</a></li>
-              </ul>
-            </form>
-            
+
+            <button class="btn btn-secondary dropdown-toggle  resultaat-knop " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Sorteren
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="overzicht-projecten.php?order=mostViews">Meest bekeken</a></li>
+              <li><a class="dropdown-item" href="#">Alfabetische volgorde </a></li>
+              <li><a class="dropdown-item" href="#">Recent toegevoegd</a></li>
+              <li><a class="dropdown-item" href="#">Default</a></li>
+            </ul>
+
+
+
           </div>
 
 
@@ -459,9 +475,7 @@ require_once 'backend/autoloader.php';
 
 
         <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <?php foreach ($postIns->getAllPost() as $posts) { ?>
-
-
+          <?php foreach ($projects as $posts) { ?>
 
             <div class="col d-flex align-items-stretch">
               <div class="card shadow bg-white rounded  w-100">
