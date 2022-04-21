@@ -436,16 +436,22 @@ require_once 'backend/autoloader.php';
         </section>
 
         <section class="d-md-flex align-items-center   justify-content-end mt-2">
+
+
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle  resultaat-knop " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Sorteren
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Meest bekeken</a></li>
-              <li><a class="dropdown-item" href="#">Alfabetische volgorde </a></li>
-              <li><a class="dropdown-item" href="#">Recent toegevoegd</a></li>
-            </ul>
+            <form method="POST">
+              <button class="btn btn-secondary dropdown-toggle  resultaat-knop " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Sorteren
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href=" ">Meest bekeken</a></li>
+                <li><a class="dropdown-item" href="#">Alfabetische volgorde </a></li>
+                <li><a class="dropdown-item" href="#">Recent toegevoegd</a></li>
+                <li><a class="dropdown-item" href="#">Default</a></li>
+              </ul>
+            </form>
           </div>
+
 
 
         </section>
@@ -471,13 +477,13 @@ require_once 'backend/autoloader.php';
                 </div>
               </div>
             </div>
-        
 
-      <?php } ?>
+
+          <?php } ?>
+        </div>
+
       </div>
-
     </div>
-  </div>
   </div>
 </body>
 

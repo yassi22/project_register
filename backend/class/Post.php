@@ -106,6 +106,15 @@
       return $stmt->fetchAll(PDO::FETCH_OBJ);
    }
 
+
+
+   public function getDefault()
+   {
+      $sql = "SELECT * FROM posts";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->execute();
+      return $stmt->fetchAll(PDO::FETCH_OBJ);
+   }
     
 
    public function updateView($id){ 
@@ -113,7 +122,6 @@
       $stmt = $this->connect()->prepare($jan);  
       $stmt->bindParam(":id", $id);
       $stmt->execute(); 
-      return $stmt->fetch(PDO::FETCH_OBJ);  
    }
 
  

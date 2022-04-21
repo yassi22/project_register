@@ -33,8 +33,10 @@ if(isset($_POST['updatePost'])) {
       }else { 
           echo $feedback; 
       }
-    } 
-     
+    }
+
+
+
 
 
     if(isset($_POST['deletePost'])) {  
