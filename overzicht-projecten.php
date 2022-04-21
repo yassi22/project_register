@@ -477,7 +477,7 @@ if (isset($var1)) {
 
         </section>
         <section class="d-md-flex align-items-center   justify-content-between mt-2">
-          <p class="resultaat"> <?php echo $status; ?> </p>
+          <h4> <?php echo $status; ?> </h4>
           <div class="dropdown">
 
             <button class="btn btn-secondary dropdown-toggle  resultaat-knop " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">

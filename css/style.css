@@ -473,5 +473,12 @@ input[type=text] {
       max-width: 350px;
       max-height: 350px; 
      
-  } 
+  }  
+
+  .resultaat-sort { 
+   font-family: 'Raleway', sans-serif !important; 
+       color:#057494; 
+       font-weight: bold;  
+       
+  }
 
