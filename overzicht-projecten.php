@@ -9,11 +9,27 @@ if (isset($_GET['order'])) {
 
 
 
-if (isset($var1) && $var1) {
-  $projects = $postIns->getPopulairPosts();
-} else {
-  $projects = $postIns->getAllPost();
-}
+      if (isset($var1) && $var1) {
+          $projects = $postIns->getPopulairPosts();
+          } else {
+          $projects = $postIns->getAllPost(); 
+
+          }  
+ 
+
+      if (isset($var1) && $var1) {
+            $projects = $postIns->getAlphaPost();
+            } else {
+            $projects = $postIns->getAllPost();
+      }
+
+          if (isset($var1) && $var1) {
+            $projects = $postIns->getRecentPost();
+          } else {
+            $projects = $postIns->getAllPost();
+          }
+
+      
 
 ?>
 
@@ -461,7 +477,7 @@ if (isset($var1) && $var1) {
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=mostViews">Meest bekeken</a></li>
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=sortAlpha">Alfabetische volgorde </a></li>
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=sortRecent">Recent toegevoegd</a></li>
-              <li><a class="dropdown-item" href="overzicht-projecten.php?">Default</a></li>
+              <li><a class="dropdown-item" href="overzicht-projecten.php">Default</a></li>
             </ul>
 
 

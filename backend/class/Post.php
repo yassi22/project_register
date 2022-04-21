@@ -106,6 +106,25 @@
 
 
 
+   public function getAlphaPost()
+   {
+      $sql = "SELECT * FROM projecten ORDER BY projectnaam ASC";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->execute();
+      return $stmt->fetchAll(PDO::FETCH_OBJ);
+   }
+
+   public function getRecentPost()  
+   {
+      $sql = "SELECT * FROM projecten ORDER BY created_on DESC";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->execute();
+      return $stmt->fetchAll(PDO::FETCH_OBJ);
+   }
+
+
+
+
    public function getDefault()
    {
       $sql = "SELECT * FROM posts";
