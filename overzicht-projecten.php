@@ -17,9 +17,11 @@ switch ($var1) {
     $projects = $postIns->getPopulairPosts();
     break;
   case "sortAlpha":
+      $status = "Alphabetische volgorde";
     $projects = $postIns->getAlphaPost(); 
     break;
-  case "sortRecent": 
+  case "sortRecent":
+      $status = "Recent toegevoegd";
     $projects = $postIns->getRecentPost(); 
     break;
   default:
