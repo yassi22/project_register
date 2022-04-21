@@ -96,7 +96,8 @@ class Project extends DbConfig
       /* 
      De methode updateView zorgt er voor dat de kolom views word aangepast waneer een gebruiker 
      een project bekijkt.
-      */  
+      */ 
+       
    public function updateView($id)
    {
       $jan = "UPDATE projecten set views=(views+1) WHERE project_id =:id";

@@ -2,13 +2,30 @@
 require_once 'backend/autoloader.php';
 
 
+     /* 
+       Voor het sorteren van projecten word er gebruikt gemaakt 
+       van de $_GET methode op de geselecteerde methode op te halen  
+       van uit de url bar
+      */  
+
 if (isset($_GET['order'])) {
 
   $var1 = $_GET['order'];
 }
+ 
 
+
+     /* 
+     Dit stuk je code laat zien op wel onderdeel gesorteerd is
+      */  
 $status = "Resultaten";
 
+
+     /* 
+    Hier onder word bepaald of de varaibale var1 wel geset is door middel van een if statement
+    Daarnaa word er nagekeken of de varaiabel wel gevuld is 
+    Dan word er door de switch heen gelopen om te kijken wel sorteer optie geselecteer is
+      */  
 
 if (isset($var1)) {
   switch ($var1) {

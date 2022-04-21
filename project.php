@@ -1,6 +1,11 @@
 <?php
 require_once 'backend/autoloader.php';
 
+
+     /* 
+      Hieronder worden projecten op gehaald doormiddel van het project id
+      */  
+
 $projects = $projectIns->getProject($_GET['id']);
  
 
