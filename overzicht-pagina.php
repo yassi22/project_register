@@ -21,8 +21,8 @@
       height: 200px;
       background: #aaa;
     }
-  </style> 
- 
+  </style>
+
 </head>
 
 <body>
@@ -33,34 +33,37 @@
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
 
-      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex justify-content-end  d-none d-md-block" role="button">Project toevoegen</a>
+      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex justify-content-end  d-none d-md-block"
+        role="button">Project toevoegen</a>
 
-      <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <svg width="51" height="42" viewBox="0 0 51 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="51" height="9.33333" rx="4.66667" fill="#4B96D0"/>
-          <rect y="32.6667" width="51" height="9.33333" rx="4.66667" fill="#057494"/>
-          <rect y="16.3333" width="51" height="9.33333" rx="4.66667" fill="#F48424"/>
+          <rect width="51" height="9.33333" rx="4.66667" fill="#4B96D0" />
+          <rect y="32.6667" width="51" height="9.33333" rx="4.66667" fill="#057494" />
+          <rect y="16.3333" width="51" height="9.33333" rx="4.66667" fill="#F48424" />
         </svg>
       </button>
     </div>
   </nav>
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-      <img alt="logo" class="logo" src="img/logo-activo.jpg">
-    </h5>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+        <img alt="logo" class="logo" src="img/logo-activo.jpg">
+      </h5>
 
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
 
-  <div class="offcanvas-body">
-    <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex mb-4 justify-content-center" role="button">Project toevoegen</a>
+    <div class="offcanvas-body">
+      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex mb-4 justify-content-center" role="button">Project
+        toevoegen</a>
 
-    <h2>Criteria</h2>
-        <form> 
+      <h2>Criteria</h2>
+      <form>
 
-      <h3 class="fs-6">Jaartal</h3>
+        <h3 class="fs-6">Jaartal</h3>
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
           <label class="form-check-label" for="flexSwitchCheckDefault">2019</label>
@@ -74,16 +77,16 @@
 
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> 2021  </label>
+          <label class="form-check-label" for="flexSwitchCheckDefault"> 2021 </label>
         </div>
 
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
           <label class="form-check-label" for="flexSwitchCheckDefault"> 2022 </label>
         </div>
-          <hr>
+        <hr>
 
-          <h3 class="fs-6">Diensten</h3>
+        <h3 class="fs-6">Diensten</h3>
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
           <label class="form-check-label" for="flexSwitchCheckDefault">Eventwebsite</label>
@@ -97,50 +100,50 @@
 
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Online betaalmodule      </label>
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Online betaalmodule </label>
         </div>
 
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Event app      </label>
-        </div> 
-        
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Toegangscontrole      </label>
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Event app </label>
         </div>
-        
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Lanyards      </label>
-        </div> 
-
-                
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Hostesses      </label>
-        </div> 
 
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Evaluatie      </label>
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Toegangscontrole </label>
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Lanyards </label>
         </div>
 
 
-          <div class="form-check form-switch">
+        <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Fotoalbum      </label>
-        </div> 
-
-        
-          <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Abstractmodule      </label>
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Hostesses </label>
         </div>
 
-          <hr>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Evaluatie </label>
+        </div>
 
-          <h3 class="fs-6">Categorie</h3>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Fotoalbum </label>
+        </div>
+
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Abstractmodule </label>
+        </div>
+
+        <hr>
+
+        <h3 class="fs-6">Categorie</h3>
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
           <label class="form-check-label" for="flexSwitchCheckDefault">Evenement Registratie Platform</label>
@@ -148,25 +151,25 @@
 
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">   Medisch Congres Platform</label>
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Medisch Congres Platform</label>
         </div>
 
 
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">  Hybride Event Platform        </label>
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Hybride Event Platform </label>
         </div>
 
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">    Congres Online Platform      </label>
-        </div> 
-         
- 
-          <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit">Toon resultaten</button>
-        </form>
+          <label class="form-check-label" for="flexSwitchCheckDefault"> Congres Online Platform </label>
+        </div>
+
+
+        <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit">Toon resultaten</button>
+      </form>
+    </div>
   </div>
-</div>
 
 
 
@@ -175,111 +178,111 @@
     <div class="row">
       <div class="col-md-3  d-none d-md-block">
         <h2>Criteria</h2>
-        <form> 
+        <form>
 
-      <h3 class="fs-6">Jaartal</h3>
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">2019</label>
-        </div>
+          <h3 class="fs-6">Jaartal</h3>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">2019</label>
+          </div>
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">2020</label>
-        </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">2020</label>
+          </div>
 
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> 2021  </label>
-        </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> 2021 </label>
+          </div>
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> 2022 </label>
-        </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> 2022 </label>
+          </div>
           <hr>
 
           <h3 class="fs-6">Diensten</h3>
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Eventwebsite</label>
-        </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Eventwebsite</label>
+          </div>
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Evenement platform</label>
-        </div>
-
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Online betaalmodule      </label>
-        </div>
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Event app      </label>
-        </div> 
-        
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Toegangscontrole      </label>
-        </div>
-        
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Lanyards      </label>
-        </div> 
-
-                
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Hostesses      </label>
-        </div> 
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Evaluatie      </label>
-        </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Evenement platform</label>
+          </div>
 
 
           <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Fotoalbum      </label>
-        </div> 
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Online betaalmodule </label>
+          </div>
 
-        
           <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Abstractmodule      </label>
-        </div>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Event app </label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Toegangscontrole </label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Lanyards </label>
+          </div>
+
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Hostesses </label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Evaluatie </label>
+          </div>
+
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Fotoalbum </label>
+          </div>
+
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Abstractmodule </label>
+          </div>
 
           <hr>
 
           <h3 class="fs-6">Categorie</h3>
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Evenement Registratie Platform</label>
-        </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Evenement Registratie Platform</label>
+          </div>
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">   Medisch Congres Platform</label>
-        </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Medisch Congres Platform</label>
+          </div>
 
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">  Hybride Event Platform        </label>
-        </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Hybride Event Platform </label>
+          </div>
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">    Congres Online Platform      </label>
-        </div> 
-         
- 
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"> Congres Online Platform </label>
+          </div>
+
+
           <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit">Toon resultaten</button>
         </form>
 
@@ -420,117 +423,118 @@
 
 
       <div class="col-md-9">
-          <section class="d-md-flex align-items-center justify-content-between ">
-            <h2>Projecten</h2>
+        <section class="d-md-flex align-items-center justify-content-between ">
+          <h2>Projecten</h2>
 
-              <form class="d-flex">
-                <input class="form-control zoek" type="text" placeholder="Zoekopdracht">
-                <button class="btn zoekknop  " type="submit">Zoek</button>
-              </form> 
-              
+          <form class="d-flex">
+            <input class="form-control zoek" type="text" placeholder="Zoekopdracht">
+            <button class="btn zoekknop  " type="submit">Zoek</button>
+          </form>
 
 
-          </section> 
 
-          <section class="d-md-flex align-items-center   justify-content-end mt-2"> 
-             <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle  resultaat-knop " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Sorteren  
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">Meest bekeken</a></li>
-    <li><a class="dropdown-item" href="#">Alfabetische volgorde  </a></li>
-    <li><a class="dropdown-item" href="#">Recent toegevoegd</a></li>
-  </ul>
-</div>
-          
+        </section>
 
-  </section>  
+        <section class="d-md-flex align-items-center   justify-content-end mt-2">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle  resultaat-knop " type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Sorteren
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Meest bekeken</a></li>
+              <li><a class="dropdown-item" href="#">Alfabetische volgorde </a></li>
+              <li><a class="dropdown-item" href="#">Recent toegevoegd</a></li>
+            </ul>
+          </div>
 
-          <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <div class="col d-flex align-items-stretch">
-              <div class="card shadow bg-white rounded  w-100">
-                <div class="card-body project-card">
-                    <div class="ratio ratio-16x9 mb-1">
-                    <img src="img/Hoek-Blok-logo.png" alt="Schermafbeelding Hoek en Blok Personeelsevent">
-                  </div>
-                  <p class="card-text mb-1 mt-1 omschrijf">8-01-2021</p>
-                  <h3 class="card-title mb-4 fs-5 titel">Hoek en Blok Personeelsevent</h3>
-                  <a href="overzicht-H&K-blok.php" class="btn knopdetail">Meer details</a>
+
+        </section>
+
+        <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col d-flex align-items-stretch">
+            <div class="card shadow bg-white rounded  w-100">
+              <div class="card-body project-card">
+                <div class="ratio ratio-16x9 mb-1">
+                  <img src="img/Hoek-Blok-logo.png" alt="Schermafbeelding Hoek en Blok Personeelsevent">
                 </div>
-              </div>
-            </div>
-
-            <div class="col d-flex align-items-stretch">
-              <div class="card shadow bg-white rounded  w-100">
-                <div class="card-body project-card">
-                  <div class="ratio ratio-16x9 mb-1">
-                    <img src="img/ECSJ-logo.png" alt="Schermafbeelding ECSJ Leiden">
-                  </div>
-                  <p class="card-text mb-1 mt-1 omschrijf">10-07-2022</p>
-                  <h3 class="card-title mb-4 fs-5 titel">ECSJ Leiden</h3>
-                  <a href="overzicht-ECSJE.php" class="btn knopdetail">Meer details</a>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="col d-flex align-items-stretch">
-              <div class="card shadow bg-white rounded  w-100">
-                <div class="card-body project-card">
-                  <div class="ratio ratio-16x9 mb-1">
-                    <img src="img/bleckmann-logo.png" alt="Schermafbeelding Embrace 160 years Bleckmann">
-                  </div>
-                  <p class="card-text mb-1 mt-1 omschrijf">29-6-2022</p>
-                  <h3 class="card-title mb-4 fs-5 titel">Embrace 160 years Bleckmann</h3>
-                  <a href="overzicht-Bleckmann.php" class="btn knopdetail">Meer details</a>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="col d-flex align-items-stretch">
-              <div class="card shadow bg-white rounded  w-100">
-                <div class="card-body project-card">
-                  <div class="ratio ratio-16x9 mb-1">
-                    <img src="img/JA21-logo.png" alt="Schermafbeelding JA21 ALV">
-                  </div>
-                  <p class="card-text mb-1 mt-1 omschrijf">8-01-2021</p>
-                  <h3 class="card-title mb-4 fs-5 titel">JA21 ALV</h3>
-                  <a href="overzicht-JA21.php" class="btn knopdetail">Meer details</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col d-flex align-items-stretch">
-              <div class="card shadow bg-white rounded  w-100">
-                <div class="card-body project-card">
-                  <div class="ratio ratio-16x9 mb-1">
-                    <img src="img/enexis-energie-event.png" alt="Schermafbeelding Enexis Transition on-air">
-                  </div>
-                  <p class="card-text mb-1 mt-1 omschrijf">10-07-2022</p>
-                  <h3 class="card-title mb-4 fs-5 titel">Enexis energie event</h3>
-                  <a href="overzicht-Eenixs.php" class="btn knopdetail">Meer details</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col d-flex align-items-stretch">
-              <div class="card shadow bg-white rounded  w-100">
-                <div class="card-body project-card">
-                  <div class="ratio ratio-16x9 mb-1">
-                    <img src="img/DDDonline.jpg" alt="Schermafbeelding DDD Online 2022">
-                  </div>
-                  <p class="card-text mb-1 mt-1 omschrijf">29-6-2022</p>
-                  <h3 class="card-title mb-4 fs-5 titel">DDD Online 2022</h3>
-                  <a href="overzicht-DDD-Online.php" class="btn knopdetail">Meer details</a>
-                </div>
+                <p class="card-text mb-1 mt-1 omschrijf">8-01-2021</p>
+                <h3 class="card-title mb-4 fs-5 titel">Hoek en Blok Personeelsevent</h3>
+                <a href="overzicht-H&K-blok.php" class="btn knopdetail">Meer details</a>
               </div>
             </div>
           </div>
+
+          <div class="col d-flex align-items-stretch">
+            <div class="card shadow bg-white rounded  w-100">
+              <div class="card-body project-card">
+                <div class="ratio ratio-16x9 mb-1">
+                  <img src="img/ECSJ-logo.png" alt="Schermafbeelding ECSJ Leiden">
+                </div>
+                <p class="card-text mb-1 mt-1 omschrijf">10-07-2022</p>
+                <h3 class="card-title mb-4 fs-5 titel">ECSJ Leiden</h3>
+                <a href="overzicht-ECSJE.php" class="btn knopdetail">Meer details</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch">
+            <div class="card shadow bg-white rounded  w-100">
+              <div class="card-body project-card">
+                <div class="ratio ratio-16x9 mb-1">
+                  <img src="img/bleckmann-logo.png" alt="Schermafbeelding Embrace 160 years Bleckmann">
+                </div>
+                <p class="card-text mb-1 mt-1 omschrijf">29-6-2022</p>
+                <h3 class="card-title mb-4 fs-5 titel">Embrace 160 years Bleckmann</h3>
+                <a href="overzicht-Bleckmann.php" class="btn knopdetail">Meer details</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch">
+            <div class="card shadow bg-white rounded  w-100">
+              <div class="card-body project-card">
+                <div class="ratio ratio-16x9 mb-1">
+                  <img src="img/JA21-logo.png" alt="Schermafbeelding JA21 ALV">
+                </div>
+                <p class="card-text mb-1 mt-1 omschrijf">8-01-2021</p>
+                <h3 class="card-title mb-4 fs-5 titel">JA21 ALV</h3>
+                <a href="overzicht-JA21.php" class="btn knopdetail">Meer details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch">
+            <div class="card shadow bg-white rounded  w-100">
+              <div class="card-body project-card">
+                <div class="ratio ratio-16x9 mb-1">
+                  <img src="img/enexis-energie-event.png" alt="Schermafbeelding Enexis Transition on-air">
+                </div>
+                <p class="card-text mb-1 mt-1 omschrijf">10-07-2022</p>
+                <h3 class="card-title mb-4 fs-5 titel">Enexis energie event</h3>
+                <a href="overzicht-Eenixs.php" class="btn knopdetail">Meer details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch">
+            <div class="card shadow bg-white rounded  w-100">
+              <div class="card-body project-card">
+                <div class="ratio ratio-16x9 mb-1">
+                  <img src="img/DDDonline.jpg" alt="Schermafbeelding DDD Online 2022">
+                </div>
+                <p class="card-text mb-1 mt-1 omschrijf">29-6-2022</p>
+                <h3 class="card-title mb-4 fs-5 titel">DDD Online 2022</h3>
+                <a href="overzicht-DDD-Online.php" class="btn knopdetail">Meer details</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  </body>
+</body>
 
 </html>

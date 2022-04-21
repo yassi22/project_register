@@ -62,7 +62,9 @@ if (isset($var1)) {
   <!-- Load Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
   <style>
     .fakeimg {
@@ -81,9 +83,11 @@ if (isset($var1)) {
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
 
-      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex justify-content-end  d-none d-md-block" role="button">Project toevoegen</a>
+      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex justify-content-end  d-none d-md-block"
+        role="button">Project toevoegen</a>
 
-      <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <svg width="51" height="42" viewBox="0 0 51 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="51" height="9.33333" rx="4.66667" fill="#4B96D0" />
           <rect y="32.6667" width="51" height="9.33333" rx="4.66667" fill="#057494" />
@@ -103,7 +107,8 @@ if (isset($var1)) {
     </div>
 
     <div class="offcanvas-body">
-      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex mb-4 justify-content-center" role="button">Project toevoegen</a>
+      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex mb-4 justify-content-center" role="button">Project
+        toevoegen</a>
 
       <h2>Criteria</h2>
       <form>
@@ -480,12 +485,14 @@ if (isset($var1)) {
           <h4> <?php echo $status; ?> </h4>
           <div class="dropdown">
 
-            <button class="btn btn-secondary dropdown-toggle  resultaat-knop " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle  resultaat-knop " id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Sorteren
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=mostViews">Meest bekeken</a></li>
-              <li><a class="dropdown-item" href="overzicht-projecten.php?order=sortAlpha">Alfabetische volgorde </a></li>
+              <li><a class="dropdown-item" href="overzicht-projecten.php?order=sortAlpha">Alfabetische volgorde </a>
+              </li>
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=sortRecent">Recent toegevoegd</a></li>
               <li><a class="dropdown-item" href="overzicht-projecten.php">Default</a></li>
             </ul>
@@ -503,20 +510,20 @@ if (isset($var1)) {
 
           <?php foreach ($projects as $project) { ?>
 
-            <div class="col d-flex align-items-stretch">
-              <div class="card shadow bg-white rounded  w-100">
-                <div class="card-body project-card">
-                  <div class="ratio ratio-16x9 mb-1">
-                    <img src="img/Hoek-Blok-logo.png" alt="Schermafbeelding Hoek en Blok Personeelsevent">
-                  </div>
-                  <p class="card-text mb-1 mt-1 omschrijf"><?php echo $project->datum; ?></p>
-                  <h3 class="card-title mb-4 fs-5 titel"><?php echo $project->projectnaam; ?></h3>
-
-                  <a href="Project.php?id=<?php echo $project->project_id ?>" class="btn knopdetail"> Meer detail </a>
- 
+          <div class="col d-flex align-items-stretch">
+            <div class="card shadow bg-white rounded  w-100">
+              <div class="card-body project-card">
+                <div class="ratio ratio-16x9 mb-1">
+                  <img src="img/Hoek-Blok-logo.png" alt="Schermafbeelding Hoek en Blok Personeelsevent">
                 </div>
+                <p class="card-text mb-1 mt-1 omschrijf"><?php echo $project->datum; ?></p>
+                <h3 class="card-title mb-4 fs-5 titel"><?php echo $project->projectnaam; ?></h3>
+
+                <a href="Project.php?id=<?php echo $project->project_id ?>" class="btn knopdetail"> Meer detail </a>
+
               </div>
             </div>
+          </div>
 
 
           <?php } ?>

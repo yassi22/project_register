@@ -55,17 +55,6 @@ if(isset($_POST['updatePost'])) {
       } else { 
         echo $feedback;
       }
-       }  
-    
-   
+       }
 
-
-
-
-
-
-
-
-
-
-?> 
+       ?> 

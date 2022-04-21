@@ -14,10 +14,12 @@
   <!-- Load Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
   <script>
-    $(function() {
+    $(function () {
       $("input[name=file1]").previewimage({
         div: ".preview",
         imgwidth: 340,
@@ -34,7 +36,8 @@
 <body>
 
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -63,10 +66,12 @@
           overzicht</a>
         <a href="aanpas-pagina.php" class="btn   justify-content-end    knop-aanpassen" role="button">Project
           aanpassen</a>
-        <button class="btn  x justify-content-end knop-verwijder  " data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
+        <button class="btn  x justify-content-end knop-verwijder  " data-bs-toggle="modal"
+          data-bs-target="#exampleModal" role="button">Project verwijderen</button>
       </div>
 
-      <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <svg width="51" height="42" viewBox="0 0 51 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="51" height="9.33333" rx="4.66667" fill="#4B96D0" />
           <rect y="32.6667" width="51" height="9.33333" rx="4.66667" fill="#057494" />
@@ -93,9 +98,11 @@
       <div class="d-flex flex-column">
         <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-center" role="button">Terug naar
           overzicht</a>
-        <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-center knop-aanpassen" role="button">Project
+        <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-center knop-aanpassen"
+          role="button">Project
           aanpassen</a>
-        <button class="btn btn-lg d-flex justify-content-center knop-verwijder  " data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
+        <button class="btn btn-lg d-flex justify-content-center knop-verwijder  " data-bs-toggle="modal"
+          data-bs-target="#exampleModal" role="button">Project verwijderen</button>
       </div>
 
 
@@ -136,13 +143,15 @@
 
                       <span class="input-group-text" id="basic-addon3">https://</span>
 
-                      <input type="text" class="form-control input-lengte" id="WebsiteLink" aria-describedby="basic-addon3">
+                      <input type="text" class="form-control input-lengte" id="WebsiteLink"
+                        aria-describedby="basic-addon3">
                     </div>
 
 
                     <div class="form-group mb-4 ">
                       <label class="invoer-naam label-categorie " for="Omschrijving1">Omschrijving</label>
-                      <textarea class="form-control omschrijf-text" id="Omschrijving1" placeholder="Vul een omschrijving in" rows="3"></textarea>
+                      <textarea class="form-control omschrijf-text" id="Omschrijving1"
+                        placeholder="Vul een omschrijving in" rows="3"></textarea>
                     </div>
                   </div>
                 </div>
@@ -257,7 +266,8 @@
                   <div class="col-md-4 col-sm-6">
                     <h4 class="text-left">Jaartal</h4>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="year" id="flexRadioDefault1" value="flexRadioDefault1 ">
+                      <input class="form-check-input" type="radio" name="year" id="flexRadioDefault1"
+                        value="flexRadioDefault1 ">
                       <label class="form-check-label label-categorie" for="flexRadioDefault1">
                         2019
                       </label>
