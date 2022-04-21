@@ -8,44 +8,43 @@ if (isset($_GET['order'])) {
 }
 
 $status = "Resultaten";
- 
 
-if(isset($var1)){
-switch ($var1) {
-  case "mostViews":
-    $status = "Meest bekeken";
-    $projects = $postIns->getPopulairPosts();
-    break;
-  case "sortAlpha":
+
+if (isset($var1)) {
+  switch ($var1) {
+    case "mostViews":
+      $status = "Meest bekeken";
+      $projects = $postIns->getPopulairPosts();
+      break;
+    case "sortAlpha":
       $status = "Alphabetische volgorde";
-    $projects = $postIns->getAlphaPost(); 
-    break;
-  case "sortRecent":
+      $projects = $postIns->getAlphaPost();
+      break;
+    case "sortRecent":
       $status = "Recent toegevoegd";
-    $projects = $postIns->getRecentPost(); 
-    break;
-  default:
-    $projects = $postIns->getAllPost();
-}
-
+      $projects = $postIns->getRecentPost();
+      break;
+    default:
+      $projects = $postIns->getAllPost();
+  }
 } else {
   $projects = $postIns->getAllPost();
 }
 
 
-        
-      // If statment wat nog gebruikt kan worden
-      //if (isset($var1) && $var1) {
-      //    $projects = $postIns->getPopulairPosts();
-     // } if(isset($var1) && $var1){ 
-    //    $projects = $postIns->getAlphaPost(); 
-   //   } if(isset($var1) && $var1) { 
-   //     $projects = $postIns->getRecentPost(); 
-    //  } else { 
-    //    $projects = $postIns->getAllPost();
-   //   }
 
- 
+// If statment wat nog gebruikt kan worden
+//if (isset($var1) && $var1) {
+//    $projects = $postIns->getPopulairPosts();
+// } if(isset($var1) && $var1){ 
+//    $projects = $postIns->getAlphaPost(); 
+//   } if(isset($var1) && $var1) { 
+//     $projects = $postIns->getRecentPost(); 
+//  } else { 
+//    $projects = $postIns->getAllPost();
+//   }
+
+
 
 ?>
 
@@ -471,19 +470,14 @@ switch ($var1) {
       <div class="col-md-9">
         <section class="d-md-flex align-items-center justify-content-between ">
           <h2>Projecten</h2>
-            <p> <?php echo $status; ?> </p>
           <form class="d-flex">
             <input class="form-control zoek" type="text" placeholder="Zoekopdracht">
             <button class="btn zoekknop  " type="submit">Zoek</button>
           </form>
 
-
-
         </section>
-
-        <section class="d-md-flex align-items-center   justify-content-end mt-2">
-
-
+        <section class="d-md-flex align-items-center   justify-content-between mt-2">
+          <p class="resultaat"> <?php echo $status; ?> </p>
           <div class="dropdown">
 
             <button class="btn btn-secondary dropdown-toggle  resultaat-knop " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -506,6 +500,7 @@ switch ($var1) {
 
 
         <div class="row mt-1 mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
           <?php foreach ($projects as $posts) { ?>
 
             <div class="col d-flex align-items-stretch">
