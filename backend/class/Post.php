@@ -100,7 +100,7 @@
 
    public function getPopulairPosts()
    {
-      $sql = "SELECT * FROM posts ORDER BY views";
+      $sql = "SELECT * FROM projecten ORDER BY views";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetchAll(PDO::FETCH_OBJ);

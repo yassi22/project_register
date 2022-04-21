@@ -444,12 +444,13 @@ require_once 'backend/autoloader.php';
                 Sorteren
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="Post.php?sorteer=<?php    ?>">Meest bekeken</a></li>
+                  <li><a class="dropdown-item" href="Post.php?=<?php     ?>">Meest bekeken</a></li>
                 <li><a class="dropdown-item" href="#">Alfabetische volgorde </a></li>
                 <li><a class="dropdown-item" href="#">Recent toegevoegd</a></li>
                 <li><a class="dropdown-item" href="#">Default</a></li>
-              </ul> 
+              </ul>
             </form>
+            
           </div>
 
 
