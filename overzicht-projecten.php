@@ -6,30 +6,36 @@ if (isset($_GET['order'])) {
 
   $var1 = $_GET['order'];
 }
-
-
-
-      if (isset($var1) && $var1) {
-          $projects = $postIns->getPopulairPosts();
-          } else {
-          $projects = $postIns->getAllPost(); 
-
-          }  
  
 
-      if (isset($var1) && $var1) {
-            $projects = $postIns->getAlphaPost();
-            } else {
-            $projects = $postIns->getAllPost();
-      }
+if(isset($var1)){
+switch ($var1) {
+  case "mostViews":
+    $projects = $postIns->getPopulairPosts();
+    break;
+  case "sortAlpha":
+    $projects = $postIns->getAlphaPost(); 
+    break;
+  case "sortRecent":
+    $projects = $postIns->getRecentPost(); 
+    break;
+  default:
+    $projects = $postIns->getAllPost();
+}
+ }
+        
+      // If statment wat nog gebruikt kan worden
+      //if (isset($var1) && $var1) {
+      //    $projects = $postIns->getPopulairPosts();
+     // } if(isset($var1) && $var1){ 
+    //    $projects = $postIns->getAlphaPost(); 
+   //   } if(isset($var1) && $var1) { 
+   //     $projects = $postIns->getRecentPost(); 
+    //  } else { 
+    //    $projects = $postIns->getAllPost();
+   //   }
 
-          if (isset($var1) && $var1) {
-            $projects = $postIns->getRecentPost();
-          } else {
-            $projects = $postIns->getAllPost();
-          }
-
-      
+ 
 
 ?>
 
@@ -477,7 +483,7 @@ if (isset($_GET['order'])) {
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=mostViews">Meest bekeken</a></li>
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=sortAlpha">Alfabetische volgorde </a></li>
               <li><a class="dropdown-item" href="overzicht-projecten.php?order=sortRecent">Recent toegevoegd</a></li>
-              <li><a class="dropdown-item" href="overzicht-projecten.php">Default</a></li>
+              <li><a class="dropdown-item" href="overzicht-projecten.php?order=default">Default</a></li>
             </ul>
 
 
