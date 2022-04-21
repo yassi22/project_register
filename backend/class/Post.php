@@ -179,7 +179,7 @@
 
     }
   
-    public function getallPosts($pages) 
+    public function getallPosts() 
     {   
         $sql = "SELECT count(*) as count FROM posts ORDER BY created_on DESC LIMIT 7  ";  
         $stmt = $this->connect()->prepare($sql); 
