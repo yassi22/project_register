@@ -12,9 +12,7 @@
   <!-- Load Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
   <style>
     .fakeimg {
@@ -33,11 +31,9 @@
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
 
-      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex justify-content-end  d-none d-md-block"
-        role="button">Project toevoegen</a>
+      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex justify-content-end  d-none d-md-block" role="button">Project toevoegen</a>
 
-      <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <svg width="51" height="42" viewBox="0 0 51 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="51" height="9.33333" rx="4.66667" fill="#4B96D0" />
           <rect y="32.6667" width="51" height="9.33333" rx="4.66667" fill="#057494" />
@@ -437,14 +433,14 @@
 
         <section class="d-md-flex align-items-center   justify-content-end mt-2">
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle  resultaat-knop " type="button" id="dropdownMenuButton1"
-              data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle  resultaat-knop " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               Sorteren
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="#">Meest bekeken</a></li>
               <li><a class="dropdown-item" href="#">Alfabetische volgorde </a></li>
               <li><a class="dropdown-item" href="#">Recent toegevoegd</a></li>
+              <li><a class="dropdown-item" href="#">Default</a></li>
             </ul>
           </div>
 
