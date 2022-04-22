@@ -19,7 +19,8 @@ class Project extends DbConfig
    
       /* 
       De methode getAllProjects zorgt er voor dat alles uit de projecten tabel word 
-      gehaald.
+      gehaald. 
+        @return true|string|void
       */   
    public function getAllProjects()
    {
@@ -31,7 +32,9 @@ class Project extends DbConfig
 
      /* 
       De methode getProject zorgt ervoor dat een project met een specefieke id word opgehaald 
-      uit de tabel projecten
+      uit de tabel projecten 
+        @return true|string|void 
+        @param mixed $id
       */  
    public function getProject($id)
    {
@@ -46,7 +49,8 @@ class Project extends DbConfig
 
      /* 
       De methode getPopulairProjects zorgt er voor dat projecten
-      met de hoogste aantal views word opgehaald.
+      met de hoogste aantal views word opgehaald. 
+       @return true|string|void 
       */  
    public function getPopulairProjects()
    {
@@ -58,8 +62,9 @@ class Project extends DbConfig
 
      /* 
      De methode getAlhpaProjects zorgt er voor dat projecten  
-     Op Alphabetische volgorde word opgehaald
-      */  
+     Op Alphabetische volgorde word opgehaald 
+      @return true|string|void 
+      */   
 
    public function getAlphaProjects()
    {
@@ -71,8 +76,9 @@ class Project extends DbConfig
     
      /* 
      De methode getRecentProjects zorgt er voor dat meest recenten project(wat toegevoegd is)
-     word opgehaald. 
-      */  
+     word opgehaald.  
+      @return true|string|void 
+      */   
    public function getRecentProjects()
    {
       $sql = "SELECT * FROM projecten ORDER BY created_on DESC";
@@ -83,7 +89,8 @@ class Project extends DbConfig
 
      /* 
      De methode getDefault zorgt er voor de alle projecten word opgehaald. 
-     Dit is gedaan voor de sorteer onderdeel van de applicatie.
+     Dit is gedaan voor de sorteer onderdeel van de applicatie. 
+      @return true|string|void 
       */  
    public function getDefault()
    {
@@ -95,7 +102,9 @@ class Project extends DbConfig
 
       /* 
      De methode updateView zorgt er voor dat de kolom views word aangepast waneer een gebruiker 
-     een project bekijkt.
+     een project bekijkt. 
+      @return true|string|void 
+        @param mixed $id
       */ 
        
    public function updateView($id)

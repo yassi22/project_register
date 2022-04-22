@@ -1,8 +1,14 @@
         <?php
 
+        /* Hieronder bevind zich de database connectie 
+        Door middel van een functie. 
+        In de functie word er geprobeerd om connectie te maken. 
+        Zodra dat niet goed gaat door wat dan ook dan word een bericht getoont 
+        dat de connectie niet goed is.*/
+
         class Dbconfig
         {
- 
+
             protected $conn;
             public function connect()
             {
@@ -16,6 +22,6 @@
             }
         }
 
- 
+
 
         ?> 
