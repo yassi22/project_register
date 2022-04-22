@@ -12,8 +12,6 @@ $projects = $projectIns->getProject($_GET['id']);
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +26,9 @@ $projects = $projectIns->getProject($_GET['id']);
     <!-- Load Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 
     <!-- Fancy box usage link   -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
@@ -57,7 +57,8 @@ $projects = $projectIns->getProject($_GET['id']);
                             <h4 class="modal-title text-center" id="exampleModalLabel">Project verwijderen </h4>
                         </div>
                         <div class="d-flex justify-content-end ml-4 mt-1">
-                            <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close  " data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
                     </div>
                 </div>
@@ -67,14 +68,16 @@ $projects = $projectIns->getProject($_GET['id']);
                     <div class="row mb-3">
                         <div class="text-center">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Weet je zeker dat je het project wilt verwijderen? </h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Weet je zeker dat je het project wilt
+                                    verwijderen? </h5>
                             </div>
                         </div>
                         <div class="col-6 d-flex justify-content-end  ">
                             <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>
                         </div>
                         <div class="col-6 d-flex justify-content-start  ">
-                            <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button>
+                            <button type="button" class="btn btn-secondary modal-knop-nee"
+                                data-bs-dismiss="modal">Nee</button>
                         </div>
 
                     </div>
@@ -93,11 +96,14 @@ $projects = $projectIns->getProject($_GET['id']);
             </a>
 
             <div class="d-flex justify-content-between">
-                <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug naar
+                <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug
+                    naar
                     overzicht</a>
-                <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project
+                <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen"
+                    role="button">Project
                     aanpassen</a>
-                <button class="btn btn-lg d-flex justify-content-end knop-verwijder d-none d-md-block" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
+                <button class="btn btn-lg d-flex justify-content-end knop-verwijder d-none d-md-block"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
             </div>
         </div>
     </nav>
@@ -146,7 +152,8 @@ $projects = $projectIns->getProject($_GET['id']);
                             <div class=" d-flex p-2">
 
                                 <div class="col-sm-4 m-2 ml-2">
-                                    <a data-fancybox="gallery" data-src="img/H-K-1.png" data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
+                                    <a data-fancybox="gallery" data-src="img/H-K-1.png"
+                                        data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
                                         <img src="img/H-K-1.png" class="rounded plaatje-grote" />
                                     </a>
                                 </div>
@@ -167,7 +174,8 @@ $projects = $projectIns->getProject($_GET['id']);
 
 
                             <div class="mb-2">
-                                <a class="btn mt-2  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
+                                <a class="btn mt-2  bnt-primary download-knop" role="button" href="#">Download
+                                    schermafbeelding</a>
                             </div>
 
 
