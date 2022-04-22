@@ -12,6 +12,8 @@ $projects = $projectIns->getProject($_GET['id']);
 ?>
 
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +30,12 @@ $projects = $projectIns->getProject($_GET['id']);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+    <!-- Fancy box usage link   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+    <!-- Fancy box usage script   -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
     <style>
         .fakeimg {
             height: 200px;
@@ -38,6 +46,46 @@ $projects = $projectIns->getProject($_GET['id']);
 
 <body>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centerd ">
+            <div class="modal-content border-0 rounded shadow ">
+
+
+                <div class="container-lg">
+                    <div class="d-flex justify-content-center">
+                        <div class="modal-header mb-3 ">
+                            <h4 class="modal-title text-center" id="exampleModalLabel">Project verwijderen </h4>
+                        </div>
+                        <div class="d-flex justify-content-end ml-4 mt-1">
+                            <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container ">
+                    <div class="row mb-3">
+                        <div class="text-center">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Weet je zeker dat je het project wilt verwijderen? </h5>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end  ">
+                            <button type="button" class="btn btn-primary modal-knop-ja">Ja</button>
+                        </div>
+                        <div class="col-6 d-flex justify-content-start  ">
+                            <button type="button" class="btn btn-secondary modal-knop-nee" data-bs-dismiss="modal">Nee</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
     <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
         <div class="container-fluid">
             <a href="overzicht-pagina.php">
@@ -45,11 +93,11 @@ $projects = $projectIns->getProject($_GET['id']);
             </a>
 
             <div class="d-flex justify-content-between">
-                <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug
-                    naar
+                <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug naar
                     overzicht</a>
-                <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project aanpassen</a>
-                <a href="overzicht-pagina.php" class="btn btn-lg d-flex justify-content-end knop-verwijder" role="button">Project verwijderen</a>
+                <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project
+                    aanpassen</a>
+                <button class="btn btn-lg d-flex justify-content-end knop-verwijder d-none d-md-block" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
             </div>
         </div>
     </nav>
@@ -61,13 +109,13 @@ $projects = $projectIns->getProject($_GET['id']);
                 <h2>Project details</h2>
             </section>
 
-            <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
+            <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbotron-detail">
                 <div>
                     <div class="row g-0 details">
                         <div class="col col-6 py-4 px-5">
                             <ul class="ps-0">
                                 <li>
-                                    <p class="text-secondary mb-0">Projectnaam</p>
+                                    <p class="text-secondary mb-0">Project naam</p>
                                     <p><?php echo $projects->projectnaam ?></p>
                                 </li>
                                 <li>
@@ -80,8 +128,9 @@ $projects = $projectIns->getProject($_GET['id']);
                                 </li>
                                 <li>
                                     <p class="text-secondary mb-0">Website link</p>
-                                    <!--Dit is een comment voorbeeld-->
-                                    <p><?php echo $projects->website_link ?></p>
+                                    <a href="https://embracebleckmann.com/" target="_blank">
+                                        <p><?php echo $projects->website_link ?></p>
+                                    </a>
                                 </li>
                                 <li>
                                     <p class="text-secondary mb-0">Omschrijving</p>
@@ -94,44 +143,45 @@ $projects = $projectIns->getProject($_GET['id']);
                             </ul>
                         </div>
                         <div class="col col-6 py-4 px-5">
-                            <div class="mb-5">
-                                <div id="carouselExampleControls" class="carousel carousel-detail mb-2 slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item  rounded-3 active">
-                                            <img src="img/DDDonline.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item  rounded-3">
-                                            <img src="img/twinning.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item  rounded-3">
-                                            <img src="img/bleckmann-logo.png" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
+                            <div class=" d-flex p-2">
+
+                                <div class="col-sm-4 m-2 ml-2">
+                                    <a data-fancybox="gallery" data-src="img/H-K-1.png" data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
+                                        <img src="img/H-K-1.png" class="rounded plaatje-grote" />
+                                    </a>
                                 </div>
 
-                                <a class="btn  bnt-primary download-knop" role="button" href="#">Download
-                                    schermafbeelding</a>
+                                <div class="col-sm-4 m-2">
+                                    <a data-fancybox="gallery" data-src="img/H-K-2.png">
+                                        <img src="img/H-K-2.png" class="rounded plaatje-grote" />
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-4 m-2">
+                                    <a data-fancybox="gallery" data-src="img/H-K-3.png">
+                                        <img src="img/H-K-3.png" class="rounded plaatje-grote" />
+                                    </a>
+                                </div>
+
                             </div>
+
+
+                            <div class="mb-2">
+                                <a class="btn mt-2  bnt-primary download-knop" role="button" href="#">Download schermafbeelding</a>
+                            </div>
+
 
                             <h4>Diensten</h4>
                             <ul class="details-list mb-4">
+                                <li> Online betaalmodule </li>
+                                <li> Evenement platform </li>
                                 <li>Online betaalmodule</li>
-                                <li>Congress online</li>
-                                <li>Event App</li>
-                                <li>Badges</li>
-                                <li>Uitnodigingstraject</li>
+                                <li> Toegangscontrole </li>
+                                <li> Badges </li>
                             </ul>
 
                             <h4>Categorie</h4>
-                            <p>Congres Online evenementen</p>
+                            <p> Congres Online Platform </p>
                         </div>
                     </div>
                 </div>
