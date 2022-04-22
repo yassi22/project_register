@@ -67,8 +67,12 @@ $projects = $projectIns->getProject($_GET['id']);
                         <div class="col col-6 py-4 px-5">
                             <ul class="ps-0">
                                 <li>
-                                    <p class="text-secondary mb-0">Project naam</p>
+                                    <p class="text-secondary mb-0">Projectnaam</p>
                                     <p><?php echo $projects->projectnaam ?></p>
+                                </li>
+                                <li>
+                                    <p class="text-secondary mb-0">Klantnaam</p>
+                                    <p><?php echo $projects->klant_id ?></p>
                                 </li>
                                 <li>
                                     <p class="text-secondary mb-0">Project datum</p>
