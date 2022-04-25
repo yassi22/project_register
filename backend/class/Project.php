@@ -109,8 +109,8 @@ class Project extends DbConfig
        
    public function updateView($id)
    {
-      $jan = "UPDATE projecten set views=(views+1) WHERE project_id =:id";
-      $stmt = $this->connect()->prepare($jan);
+      $view = "UPDATE projecten set views=(views+1) WHERE project_id =:id";
+      $stmt = $this->connect()->prepare($view);
       $stmt->bindParam(":id", $id);
       $stmt->execute();
    }
