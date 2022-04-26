@@ -4,7 +4,7 @@ require_once '../autoloader.php';
 
 
 ?>
-  
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -125,31 +125,36 @@ require_once '../autoloader.php';
                                 <div class="row">
                                     <div class="col-sm-12 col-md-8 col-lg-6">
                                         <div class="form-group mb-4">
-                                            <label class="invoer-naam label-categorie" for="Websitelink1">Projectnaam</label>
-                                            <input type="text" class="form-control" id="Websitelink1" placeholder="Vul een projectnaam in">
+                                            <label class="invoer-naam label-categorie" id="projectnaam">Projectnaam</label>
+                                            <input type=" text" class="form-control" name="projectnaam   " placeholder="Vul een projectnaam in">
                                         </div>
 
 
                                         <div class="form-group mb-4">
                                             <div style="max-width: 145px;">
-                                                <label class="invoer-naam label-categorie" for="Projectdatum1">Project datum</label>
-                                                <input type="date" class="form-control" id="Projectdatum1">
+                                                <label class="invoer-naam label-categorie" id="datum">Project datum</label>
+                                                <input type="date" class="form-control" name="datum">
                                             </div>
                                         </div>
 
-                                        <label class="invoer-naam label-categorie" for="Projectdatum1">Website link</label>
+                                        <label class="invoer-naam label-categorie" id="websitelink">Website link</label>
 
                                         <div class="input-group mb-3 ">
 
                                             <span class="input-group-text" id="basic-addon3">https://</span>
 
-                                            <input type="text" class="form-control input-lengte" id="WebsiteLink" aria-describedby="basic-addon3">
+                                            <input type="text" class="form-control input-lengte" name="websitelink" aria-describedby="basic-addon3">
                                         </div>
 
 
                                         <div class="form-group mb-4 ">
                                             <label class="invoer-naam label-categorie " for="Omschrijving1">Omschrijving</label>
                                             <textarea class="form-control omschrijf-text" id="Omschrijving1" placeholder="Vul een omschrijving in" rows="3"></textarea>
+                                        </div>
+
+                                        <div class="form-group mb-4">
+                                            <label class="invoer-naam label-categorie" id="klantnaam">Klantnaam</label>
+                                            <input type="text" class="form-control" name="klantaam" placeholder="Vul een klantnaam">
                                         </div>
                                     </div>
                                 </div>
