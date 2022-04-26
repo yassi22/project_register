@@ -1,5 +1,5 @@
 <?php
-require_once '../autoloader.php';
+require_once 'backend/autoloader.php';
 
 
 
@@ -121,7 +121,7 @@ require_once '../autoloader.php';
                     <div class="row g-0 details">
                         <div class="col col-12 py-4 px-4">
 
-                            <form>
+                            <form method="POST">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-8 col-lg-6">
                                         <div class="form-group mb-4">
