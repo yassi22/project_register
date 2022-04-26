@@ -119,6 +119,7 @@ class Project extends DbConfig
    public function addProject($projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
    {
       try {
+
          $sql = "INSERT INTO projecten (projectnaam,datum,website_link,omschrijving,klant_id )
       VALUES (:projectnaam,:datum,:websitelink,:omschrijving,:klantnaam)";
          $stmt = $this->connect()->prepare($sql);
