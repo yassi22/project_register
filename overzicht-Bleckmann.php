@@ -25,12 +25,7 @@
 <!-- Fancy box usage script   -->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
-  <style>
-    .fakeimg {
-      height: 200px;
-      background: #aaa;
-    }
-  </style>
+
 </head>
 
 <body> 
