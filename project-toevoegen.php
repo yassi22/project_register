@@ -313,8 +313,8 @@ require_once 'backend/autoloader.php';
                                     </form>
 
                                 </div>
-
-                                <button type="submit" class="btn   opslaan-knop">Project toevoegen</button>
+  
+                                <button type="submit" class="btn  opslaan-knop" name="addProject" value="Add project">Project toevoegen</button>
                         </div>
 
 
