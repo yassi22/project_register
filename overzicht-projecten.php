@@ -94,7 +94,7 @@ if (isset($var1)) {
         <img alt="logo" class="logo" src="img/logo-activo.jpg">
       </a>
 
-      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex justify-content-end  d-none d-md-block" role="button">Project toevoegen</a>
+      <a href="project-toevoegen.php" class="btn btn-lg knop d-flex justify-content-end  d-none d-md-block" role="button">Project toevoegen</a>
 
       <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <svg width="51" height="42" viewBox="0 0 51 42" fill="none" xmlns="http://www.w3.org/2000/svg">
