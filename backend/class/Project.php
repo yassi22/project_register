@@ -4,37 +4,19 @@ require_once 'Dbconfig.php';
 
 class Project extends DbConfig
 {
+ 
 
-   private $projectnaamBool;
-   private $datumBool;
-   private $websiteBool;
-   private $omschrijvingBool;
-   private $klantnaamBool;
-
-   /*
-   @param mixed $id  
-   @param mixed $title
-   @param mixed $des
-   @return true|string|void
-*/
-
-
-   public function addProject($projectnaam, $datum, $website, $omschrijving, $klantnaam)
+   public function addProject($projectnaam)
    {
       try {
-
-         $sql = "INSERT INTO projecten (projectnaam,datum,website_link,omschrijving,klant_id ) 
-       VALUES (:projectnaam,:datum,:websitelink,:omschrijving,:klantnaam)";
+         $sql = "INSERT INTO projecten(projectnaam) 
+          VALUES (:projectnaam)";
          $stmt = $this->connect()->prepare($sql);
          $stmt->bindParam(":projectnaam", $projectnaam);
-         $stmt->bindParam(":datum", $datum);
-         $stmt->bindParam(":websitelink", $website);
-         $stmt->bindParam(":omschrijving", $omschrijving);
-         $stmt->bindParam(":klantnaam", $klantnaam);
-         var_dump($sql);
          if ($stmt->execute()) {
-            header("Location: overzicht-projecten.php");
-            // return true;
+            //header("Location: overzicht-projecten.php");
+            return true;
+            var_dump($sql);
          } else {
             throw new Exception("Er ontstond een fout tijdens het maken van een project ");
          }
@@ -42,6 +24,9 @@ class Project extends DbConfig
          return $e->getMessage();
       }
    }
+
+
+
 
 
    /* 

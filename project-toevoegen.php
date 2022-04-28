@@ -121,34 +121,16 @@ require_once 'backend/autoloader.php';
                 <div>
                     <div class="row g-0 details">
                         <div class="col col-12 py-4 px-4">
+                            <?php require_once 'handler/projectVerwerk.php'; ?>
                             <form method="POST">
                                 <div class="mb-3">
-                                    <label for="projectnaam" id="projectnaam" class="form-label">Projectnaam</label>
-                                    <input type="text" class="form-control" name="projectnaam">
+                                    <label for="projectnaam" id="projectnaam" class="form-label"> Projectnaam </label>
+                                    <input type="text" class="form-control" name="projectnaam" required>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="datum" id="datum" class="form-label">Projectdatum</label>
-                                    <input type="date" class="form-control" name="projectdatum">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="websitelink" id="websitelink" class="form-label">Websitelink</label>
-                                    <input type="text" class="form-control" name="websitelink">
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="omschrijving" id="omschrijving" class="form-label">Omschrijving</label>
-                                    <input type="text" class="form-control" name="omschrijving">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="klantnaam" id="klantnaam" class="form-label">Klantnaam</label>
-                                    <input type="text" class="form-control" name="klantnaam">
-                                </div>
+                                <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
+                            </form>
                         </div>
                     </div>
-
-                    <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
-
-                    </form>
 
                 </div>
 
