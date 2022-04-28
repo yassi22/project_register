@@ -5,9 +5,11 @@ require_once 'Dbconfig.php';
 class Project extends DbConfig
 {
 
-   private $titleBool;
-   private $desBool;
-
+   private $naamBool;
+   private $datumBool;
+   private $websitelinkBool;
+   private $omschrijvingBool;
+   private $klantnaamBool;
 
    /*
    @param mixed $id
@@ -15,6 +17,31 @@ class Project extends DbConfig
    @param mixed $des
    @return true|string|void
 */
+
+
+   public function addProject($projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
+   {
+      try {
+
+         $sql = "INSERT INTO projecten (projectnaam,datum,website_link,omschrijving,klant_id ) 
+       VALUES (:projectnaam,:datum,:websitelink,:omschrijving,:klantnaam)";
+         $stmt = $this->connect()->prepare($sql);
+         $stmt->bindParam(":projectnaam", $projectnaam);
+         $stmt->bindParam(":datum", $datum);
+         $stmt->bindParam(":websitelink", $websitelink);
+         $stmt->bindParam(":omschrijving", $omschrijving);
+         $stmt->bindParam(":klantnaam", $klantnaam);
+         var_dump($sql);
+         if ($stmt->execute()) {
+            header("Location: overzicht-projecten.php");
+            // return true;
+         } else {
+            throw new Exception("Er ontstond een fout tijdens het maken van een project ");
+         }
+      } catch (Exception $e) {
+         return $e->getMessage();
+      }
+   }
 
 
    /* 
@@ -113,30 +140,5 @@ class Project extends DbConfig
       $stmt = $this->connect()->prepare($view);
       $stmt->bindParam(":id", $id);
       $stmt->execute();
-   }
-
-
-   public function addProject($projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
-   {
-      try {
-
-         $sql = "INSERT INTO projecten (projectnaam,datum,website_link,omschrijving,klant_id ) 
-       VALUES (:projectnaam,:datum,:websitelink,:omschrijving,:klantnaam)";
-         $stmt = $this->connect()->prepare($sql);
-         $stmt->bindParam(":projectnaam", $projectnaam);
-         $stmt->bindParam(":datum", $datum);
-         $stmt->bindParam(":websitelink", $websitelink);
-         $stmt->bindParam(":omschrijving", $omschrijving);
-         $stmt->bindParam(":klantnaam", $klantnaam); 
-         var_dump($sql);
-         if ($stmt->execute()) {
-            // header("Location: posts.php?page=1"); 
-            return true;
-         } else {
-            throw new Exception("Er ontstond een fout tijdens het maken van een project ");
-         }
-      } catch (Exception $e) {
-         return $e->getMessage();
-      }
    }
 }
