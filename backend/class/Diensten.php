@@ -9,7 +9,7 @@ class Diensten extends DbConfig
     public function addDienst($dienstnaam)
     {
         try {
-            $sql = "INSERT INTO diensten (diensten_naam) 
+            $sql = "INSERT INTO diensten(diensten_naam) 
           VALUES (:dienstnaam)";
             $stmt = $this->connect()->prepare($sql);
             $stmt->bindParam(":projectnaam", $dienstnaam);

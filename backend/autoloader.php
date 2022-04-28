@@ -15,5 +15,5 @@
 
         $projectIns = new Project();
 
-        $dienstenIns = new Diensten();
+   
 ?> 
