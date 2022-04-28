@@ -116,7 +116,7 @@ if (isset($var1)) {
     </div>
 
     <div class="offcanvas-body">
-      <a href="toevoeg-pagina.php" class="btn btn-lg knop d-flex mb-4 justify-content-center" role="button">Project
+      <a href="project-toevoegen.php" class="btn btn-lg knop d-flex mb-4 justify-content-center" role="button">Project
         toevoegen</a>
 
       <h2>Criteria</h2>
