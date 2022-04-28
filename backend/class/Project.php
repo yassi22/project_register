@@ -4,15 +4,19 @@ require_once 'Dbconfig.php';
 
 class Project extends DbConfig
 {
- 
 
-   public function addProject($projectnaam)
+
+   public function addProject($projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
    {
       try {
-         $sql = "INSERT INTO projecten(projectnaam) 
-          VALUES (:projectnaam)";
+         $sql = "INSERT INTO projecten(projectnaam,datum,website_link,omschrijving,klant_id) 
+          VALUES (:projectnaam,:datum,:websitelink,:omschrijving,:klantnaam)";
          $stmt = $this->connect()->prepare($sql);
          $stmt->bindParam(":projectnaam", $projectnaam);
+         $stmt->bindParam(":datum", $datum);
+         $stmt->bindParam(":websitelink", $websitelink);
+         $stmt->bindParam(":omschrijving", $omschrijving);
+         $stmt->bindParam(":klantnaam", $klantnaam);
          if ($stmt->execute()) {
             //header("Location: overzicht-projecten.php");
             return true;

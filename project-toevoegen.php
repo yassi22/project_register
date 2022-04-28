@@ -127,6 +127,22 @@ require_once 'backend/autoloader.php';
                                     <label for="projectnaam" id="projectnaam" class="form-label"> Projectnaam </label>
                                     <input type="text" class="form-control" name="projectnaam" required>
                                 </div>
+                                <div class="mb-3">
+                                    <label for="datum" id="datum" class="form-label"> Projectdatum</label>
+                                    <input type="date" class="form-control" name="datum" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="websitelink" id="websitelink" class="form-label"> WebsiteLink </label>
+                                    <input type="text" class="form-control" name="websitelink" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="omschrijving" id="omschrijving" class="form-label"> Omschrijving </label>
+                                    <input type="text" class="form-control" name="omschrijving" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="klantnaam" id="klantnaam" class="form-label"> Klantnaam </label>
+                                    <input type="text" class="form-control" name="klantnaam" required>
+                                </div>
                                 <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
                         </div>
