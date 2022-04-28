@@ -66,7 +66,7 @@ require_once 'backend/autoloader.php';
             </a>
 
             <div class="d-flex justify-content-between d-none d-md-block ">
-                <a href="overzicht-pagina.php" class="btn knop justify-content-end   " role="button">Terug naar
+                <a href="overzicht-projecten.php" class="btn knop justify-content-end   " role="button">Terug naar
                     overzicht</a>
                 <a href="aanpas-pagina.php" class="btn   justify-content-end    knop-aanpassen" role="button">Project
                     aanpassen</a>
