@@ -5,21 +5,21 @@ require_once 'Dbconfig.php';
 class Project extends DbConfig
 {
 
-   private $naamBool;
+   private $projectnaamBool;
    private $datumBool;
-   private $websitelinkBool;
+   private $websiteBool;
    private $omschrijvingBool;
    private $klantnaamBool;
 
    /*
-   @param mixed $id
+   @param mixed $id  
    @param mixed $title
    @param mixed $des
    @return true|string|void
 */
 
 
-   public function addProject($projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
+   public function addProject($projectnaam, $datum, $website, $omschrijving, $klantnaam)
    {
       try {
 
@@ -28,7 +28,7 @@ class Project extends DbConfig
          $stmt = $this->connect()->prepare($sql);
          $stmt->bindParam(":projectnaam", $projectnaam);
          $stmt->bindParam(":datum", $datum);
-         $stmt->bindParam(":websitelink", $websitelink);
+         $stmt->bindParam(":websitelink", $website);
          $stmt->bindParam(":omschrijving", $omschrijving);
          $stmt->bindParam(":klantnaam", $klantnaam);
          var_dump($sql);
