@@ -33,9 +33,7 @@ class Project extends DbConfig
 
    public function deleteProject($id)
    {
-      $sql = "DELETE FROM projecten WHERE id = :id";
-
-
+      $sql = "DELETE FROM projecten WHERE project_id = :id";
       $stmt = $this->connect()->prepare($sql);
       $stmt->bindParam(':id', $id);
       if ($stmt->execute()) {
