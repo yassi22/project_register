@@ -10,3 +10,18 @@ if (isset($_POST['addProject'])) {
         echo $feedback;
     }
 }
+
+
+
+
+if (isset($_POST['deleteProject'])) {
+    $feedback =  $projectIns->deleteProject($_GET['id']);
+
+    if ($feedback === true) {
+        header("refresh:1.5;url=overzicht-projecten.php");
+        echo "Het projcet is verwijderd";
+        exit;
+    } else {
+        echo $feedback;
+    }
+}

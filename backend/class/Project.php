@@ -31,6 +31,21 @@ class Project extends DbConfig
 
 
 
+   public function deleteProject($id)
+   {
+      $sql = "DELETE FROM projecten WHERE id = :id";
+
+
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->bindParam(':id', $id);
+      if ($stmt->execute()) {
+         // header("Location: posts.php"); 
+         return true;
+      } else {
+         header("Location: project.php?id=$id");
+      }
+   } 
+ 
 
 
    /* 
