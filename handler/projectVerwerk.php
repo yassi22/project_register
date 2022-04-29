@@ -12,6 +12,12 @@ if (isset($_POST['addProject'])) {
     }
 
 
+    $categorieIds = ($_POST['categorien']);
+
+    foreach ($categorieIds as $categorieId) {
+        $categorie_projcetenIns->ADDcategorie($project_id, $categorieId);
+    }
+
     header("refresh:1.5;url=../overzicht-projecten.php");
     echo "Het project is aangemaakt";
     exit; 
@@ -21,9 +27,7 @@ if (isset($_POST['addProject'])) {
     // proj diensten class - functie toevoegen aan db
 
 }
-
-
-
+ 
 
 if (isset($_POST['deleteProject'])) {
     $feedback =  $projectIns->deleteProject($_GET['id']);

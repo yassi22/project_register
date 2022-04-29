@@ -19,5 +19,9 @@
 
         $projecten_dienstenIns = new Projecten_Diensten();
 
+        $categorieIns = new Categorie(); 
+
+        $categorie_projcetenIns = new Categoriee_projecten();
+
    
 ?> 

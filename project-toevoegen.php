@@ -1,7 +1,9 @@
 <?php
 require_once 'backend/autoloader.php';
 
-$diensten = $dienstenIns->getDiensten();
+$diensten = $dienstenIns->getDiensten(); 
+
+$categorien =  $categorieIns->getCategorie();
 
 ?>
 
@@ -149,6 +151,13 @@ $diensten = $dienstenIns->getDiensten();
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
                                         <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
+                                    </div>
+                                <?php } ?>
+
+                                <?php foreach ($categorien as $categorie) { ?>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
+                                        <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
                                     </div>
                                 <?php } ?>
                                 <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
