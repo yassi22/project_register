@@ -12,11 +12,13 @@ if (isset($_POST['addProject'])) {
     }
 
 
+    header("refresh:1.5;url=../overzicht-projecten.php");
+    echo "Het project is aangemaakt";
+    exit; 
+
     // id van project v
     // post heeft de dienst ids beschikbaar v
     // proj diensten class - functie toevoegen aan db
-
-
 
 }
 
