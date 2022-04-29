@@ -5,8 +5,9 @@ var_dump($_POST);
 
 if (isset($_POST['dienst'])) {
 }
- 
-$dienstenIns->getDiensten();
+
+$diensten = $dienstenIns->getDiensten();
+
 
 ?>
 
@@ -150,17 +151,14 @@ $dienstenIns->getDiensten();
                                 </div>
 
                                 <h2> Diensten </h2>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" name="diens" value="lanyards">
-                                        <label class="form-check-label" for="lanyard" id="lanyards"><?php echo $dienstenIns->diensten_naam; ?> </label>
-                                    </div> 
-                                
-                                    <div class="form-check form-switch mb-3">
-                                        <input class="form-check-input" type="checkbox" name="dienst" value="fotoalbum">
-                                        <label class="form-check-label" for="Fotoalbum" id="Fotoalbum">Fotoalbum</label>
-                                    </div>
 
-                                    <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
+                                <?php foreach ($diensten as $dienst) { ?>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" name="dienst" value="lanyards">
+                                        <label class="form-check-label" for="lanyard" id="lanyards"><?php echo $dienst->diensten_naam; ?> </label>
+                                    </div>
+                                <?php } ?>
+                                <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
                         </div>
                     </div>
