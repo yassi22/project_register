@@ -527,7 +527,7 @@ if (isset($var1)) {
                   <p class="card-text mb-1 mt-1 omschrijf"><?php echo $project->datum; ?></p>
                   <h3 class="card-title mb-4 fs-5 titel"><?php echo $project->projectnaam; ?></h3>
 
-                  <a href="Project.php?id=<?php echo $project->project_id ?>" class="btn knopdetail"> Meer detail </a>
+                  <a href="project.php?id=<?php echo $project->project_id ?>" class="btn knopdetail"> Meer detail </a>
 
                 </div>
               </div>

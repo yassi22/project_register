@@ -10,11 +10,11 @@ class Categoriee_projecten extends DbConfig
     public function ADDcategorie($id, $categorie_id)
     {
         try {
-            $sql = "INSERT INTO categoriee_projecten(categorieen_categorie_id,projecten_projcet_id) 
-          VALUES (:project_id, :categorie_id)";
+            $sql = "INSERT INTO categoriee_projecten(categorieen_categorie_id,projecten_project_id) 
+          VALUES ( :categorie_id, :project_id)";
             $stmt = $this->connect()->prepare($sql);
-            $stmt->bindParam(":project_id", $id);
             $stmt->bindParam(":categorie_id", $categorie_id);
+            $stmt->bindParam(":project_id", $id);
             if ($stmt->execute()) {
                 //header("Location: overzicht-projecten.php");
                 return true;

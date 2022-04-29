@@ -18,8 +18,8 @@ if (isset($_POST['addProject'])) {
         $categorie_projcetenIns->ADDcategorie($project_id, $categorieId);
     }
 
-    header("refresh:1.5;url=../overzicht-projecten.php");
-    echo "Het project is aangemaakt";
+    //header("refresh:1.5;url=../overzicht-projecten.php");
+    //echo "Het project is aangemaakt";
     exit; 
 
     // id van project v

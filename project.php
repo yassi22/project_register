@@ -7,7 +7,7 @@ require_once 'backend/autoloader.php';
       */
 
 $projects = $projectIns->getProject($_GET['id']);
-
+ 
 
 ?>
 
@@ -65,8 +65,7 @@ $projects = $projectIns->getProject($_GET['id']);
                             </div>
                         </div>
                         <div class="col-6 d-flex justify-content-end">
-                            <?php require_once 'handler/projectVerwerk.php'; ?>
-                            <form method="POST">
+                            <form method="POST" action="handler/projectVerwerk.php">
                                 <button type="submit" name="deleteProject" value="Delete project" class="btn btn-primary modal-knop-ja">Ja</button>
                             </form>
                         </div>
