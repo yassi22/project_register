@@ -12,7 +12,7 @@ if (isset($_POST['addProject'])) {
     }
 
 
-    $categorieIds = ($_POST['categorien']);
+    $categorieIds = ($_POST['categorie']);
 
     foreach ($categorieIds as $categorieId) {
         $categorie_projcetenIns->ADDcategorie($project_id, $categorieId);

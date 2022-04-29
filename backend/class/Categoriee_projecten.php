@@ -7,7 +7,6 @@ require_once 'Project.php';
 class Categoriee_projecten extends DbConfig
 {
 
-
     public function ADDcategorie($id, $categorie_id)
     {
         try {
