@@ -17,5 +17,7 @@
 
         $dienstenIns = new Diensten();
 
+        $projecten_dienstenIns = new Diensten();
+
    
 ?> 
