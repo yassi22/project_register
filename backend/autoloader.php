@@ -13,7 +13,9 @@
     spl_autoload_register('autoload');
 
 
-        $projectIns = new Project();
+        $projectIns = new Project(); 
+
+        $dienstenIns = new Diensten();
 
    
 ?> 

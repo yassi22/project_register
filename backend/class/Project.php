@@ -20,7 +20,6 @@ class Project extends DbConfig
          if ($stmt->execute()) {
             //header("Location: overzicht-projecten.php");
             return true;
-            var_dump($sql);
          } else {
             throw new Exception("Er ontstond een fout tijdens het maken van een project ");
          }
@@ -42,8 +41,8 @@ class Project extends DbConfig
       } else {
          header("Location: project.php?id=$id");
       }
-   } 
- 
+   }
+
 
 
    /* 
@@ -143,8 +142,4 @@ class Project extends DbConfig
       $stmt->bindParam(":id", $id);
       $stmt->execute();
    }
-
- 
-
-
 }
