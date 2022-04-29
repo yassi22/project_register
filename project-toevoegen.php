@@ -64,7 +64,7 @@ $categorien =  $categorieIns->getCategorie();
 
     <nav class="navbar navbar-expand-sm shadow  bg-white rounded ">
         <div class="container-fluid">
-            <a href="overzicht-pagina.php" class="d-none d-md-block">
+            <a href="overzicht-projecten.php" class="d-none d-md-block">
                 <img alt="logo" class="logo" src="img/logo-activo.jpg">
             </a>
 
