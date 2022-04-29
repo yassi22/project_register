@@ -17,7 +17,7 @@
 
         $dienstenIns = new Diensten();
 
-        $projecten_dienstenIns = new Diensten();
+        $projecten_dienstenIns = new Projecten_Diensten();
 
    
 ?> 

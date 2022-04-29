@@ -1,13 +1,7 @@
 <?php
 require_once 'backend/autoloader.php';
 
-var_dump($_POST);
-
-if (isset($_POST['dienst'])) {
-}
-
 $diensten = $dienstenIns->getDiensten();
-
 
 ?>
 
@@ -22,7 +16,7 @@ $diensten = $dienstenIns->getDiensten();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="JS/preview.image.min.js"></script>
-    <link rel="stylesheet" href="style-test-2.css">
+    <link rel="stylesheet" href="css/style-test-2.css">
 
     <!-- Load Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,8 +121,7 @@ $diensten = $dienstenIns->getDiensten();
                 <div>
                     <div class="row g-0 details">
                         <div class="col col-12 py-4 px-4">
-                            <?php require_once 'handler/projectVerwerk.php'; ?>
-                            <form method="POST">
+                            <form method="POST" action="handler/projectVerwerk.php">
                                 <div class="mb-3">
                                     <label for="projectnaam" id="projectnaam" class="form-label"> Projectnaam </label>
                                     <input type="text" class="form-control" name="projectnaam" required>
@@ -154,7 +147,7 @@ $diensten = $dienstenIns->getDiensten();
 
                                 <?php foreach ($diensten as $dienst) { ?>
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" name="<?php echo $dienst->diensten_naam; ?>" value="<?php echo $dienst->diensten_id; ?>">
+                                        <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
                                         <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
                                     </div>
                                 <?php } ?>

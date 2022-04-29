@@ -1,15 +1,25 @@
 <?php
-require_once 'backend/autoloader.php';
+require_once '../backend/autoloader.php';
 
-//if (isset($_POST['addProject'])) {
- //   $feedback =  $projectIns->addProject($_POST['projectnaam'], $_POST['datum'], $_POST['websitelink'], $_POST['omschrijving'], $_POST['klantnaam']);
- //   if ($feedback === true) {
+if (isset($_POST['addProject'])) {
 
-  //      echo "Het aanmaken van een project is gelukt";
-  //  } else {
-  //      echo $feedback;
-   // }
-//}
+    $project_id =  $projectIns->addProject($_POST['projectnaam'], $_POST['datum'], $_POST['websitelink'], $_POST['omschrijving'], $_POST['klantnaam']);
+
+    $dienstIds = ($_POST['diensten']);
+
+    foreach ($dienstIds as $dienstId) {
+        $projecten_dienstenIns->ADDid($project_id, $dienstId);
+    }
+
+
+    // id van project v
+    // post heeft de dienst ids beschikbaar v
+    // proj diensten class - functie toevoegen aan db
+
+
+
+}
+
 
 
 
