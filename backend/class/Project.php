@@ -33,7 +33,53 @@ class Project extends DbConfig
    }
 
 
+   public function updateProject($id,$projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
+   {
 
+      try {
+         $project = $this->getPost($id);
+         $sql = "UPDATE posts SET";
+
+         if (!empty($title) && $post->title != $title) {
+            $this->titleBool = true;
+            $sql = $sql . " title = :title";
+         }
+
+         if ($post->description != $des) {
+            if ($this->titleBool) {
+               $sql = $sql . ",";
+            }
+
+
+            $this->desBool = true;
+            $sql = $sql . " description = :des";
+         }
+
+
+
+
+         $sql = $sql . " WHERE id = :id";
+         $stmt = $this->connect()->prepare($sql);
+         $stmt->bindParam(":id", $id);
+         if ($this->titleBool)
+         $stmt->bindParam(":title", $title); 
+         if ($this->desBool)
+         $stmt->bindParam(":des", $des);
+
+         if ($stmt->execute()) {
+            //header("Location: posts.php?page=1"); 
+            return true;
+         } else {
+            throw new Exception("Onderdelen van de ingevoerde data was niet correct ");
+         }
+      } catch (Exception $e) {
+         return $e->getMessage();
+      }
+   } 
+
+   
+
+ 
    public function deleteProject($id)
    {
       $sql = "DELETE FROM projecten WHERE project_id = :id";
