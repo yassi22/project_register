@@ -154,8 +154,8 @@ $diensten = $dienstenIns->getDiensten();
 
                                 <?php foreach ($diensten as $dienst) { ?>
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" name="dienst" value="lanyards">
-                                        <label class="form-check-label" for="lanyard" id="lanyards"><?php echo $dienst->diensten_naam; ?> </label>
+                                        <input class="form-check-input" type="checkbox" name="<?php echo $dienst->diensten_naam; ?>" value="<?php echo $dienst->diensten_id; ?>">
+                                        <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
                                     </div>
                                 <?php } ?>
                                 <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
