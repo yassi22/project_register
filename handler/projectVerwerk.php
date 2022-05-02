@@ -16,10 +16,11 @@ if (isset($_POST['addProject'])) {
 
     foreach ($categorieIds as $categorieId) {
         $categorie_projcetenIns->ADDcategorie($project_id, $categorieId);
-    }
-
-    //header("refresh:1.5;url=../overzicht-projecten.php");
-    //echo "Het project is aangemaakt";
+    } 
+     
+    echo "Het project is aangemaakt";
+    header("refresh:1.5;url=../overzicht-projecten.php");
+  
     exit; 
 
     // id van project v
