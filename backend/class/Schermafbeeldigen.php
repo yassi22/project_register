@@ -5,19 +5,16 @@ require_once 'Dbconfig.php';
 class Schermafbeelding extends DbConfig{
  
 
-      public function addProject($projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
+      public function addSchermafbeelding($naamplaatje,$project_id)
    {
       try {
-         $sql = "INSERT INTO projecten(projectnaam,datum,website_link,omschrijving,klant_id) 
-          VALUES (:projectnaam,:datum,:websitelink,:omschrijving,:klantnaam)";
+         $sql = "INSERT INTO schermafbeeldigen(naam,project_id) 
+          VALUES (:naamplaatje,:projectID)";
          $db = $this->connect();
 
          $stmt = $db->prepare($sql);
-         $stmt->bindParam(":projectnaam", $projectnaam);
-         $stmt->bindParam(":datum", $datum);
-         $stmt->bindParam(":websitelink", $websitelink);
-         $stmt->bindParam(":omschrijving", $omschrijving);
-         $stmt->bindParam(":klantnaam", $klantnaam);
+         $stmt->bindParam(":naamplaatje", $naamplaatje);
+         $stmt->bindParam(":projectID", $project_id);
          if ($stmt->execute()) {
 
             return $db->lastInsertId();
