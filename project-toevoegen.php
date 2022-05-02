@@ -4,7 +4,7 @@ require_once 'backend/autoloader.php';
 $diensten = $dienstenIns->getDiensten();
 
 $categorien =  $categorieIns->getCategorie();
-    
+
 
 ?>
 
@@ -161,7 +161,10 @@ $categorien =  $categorieIns->getCategorie();
                                         <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
                                     </div>
                                 <?php } ?>
-                                <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
+                                <label for="myfile">Select a file:</label>
+                                <input type="file" id="myfile" name="myfile" > 
+                
+                                 <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
                         </div>
                     </div>
