@@ -17,6 +17,13 @@ if (isset($_POST['addProject'])) {
     foreach ($categorieIds as $categorieId) {
         $categorie_projcetenIns->ADDcategorie($project_id, $categorieId);
     } 
+
+
+    $naamplaatje =($_POST['afbeelding']); 
+
+    foreach ($naamplaatje as $plaatje) {
+        $schermafbeeldingINS->addSchermafbeelding($project_id, $plaatje);
+    } 
      
     echo "Het project is aangemaakt";
     header("refresh:1.5;url=../overzicht-projecten.php");

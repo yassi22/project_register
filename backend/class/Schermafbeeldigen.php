@@ -2,7 +2,7 @@
 
 require_once 'Dbconfig.php';
 
-class Schermafbeelding extends DbConfig{
+class Schermafbeeldingen extends DbConfig{
  
 
       public function addSchermafbeelding($naamplaatje,$project_id)
@@ -29,9 +29,18 @@ class Schermafbeelding extends DbConfig{
    }
 
 
-    public function getSchermafbeeldigen()
+    public function getALLSchermafbeeldigen()
    {
-      $sql = "SELECT * FROM Schermafbeeldigen";
+      $sql = "SELECT * FROM scherafbeeldingen";
+      $stmt = $this->connect()->prepare($sql);
+      $stmt->execute();
+      return $stmt->fetchAll(PDO::FETCH_OBJ);
+   } 
+   
+
+       public function getSchermafbeeldigen()
+   {
+      $sql = "SELECT naam FROM schermafbeeldingen";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetchAll(PDO::FETCH_OBJ);

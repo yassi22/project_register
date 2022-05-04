@@ -160,8 +160,12 @@ $categorien =  $categorieIns->getCategorie();
                                         <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
                                         <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
                                     </div>
-                                <?php } ?>
+                                <?php } ?> 
+                                 
+                                <br>
 
+                                <label for="myfile">Select a file:</label>
+                                <input type="file" id="myfile" name="afbeelding[]" > <br>
                 
                                  <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
