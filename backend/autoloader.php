@@ -23,7 +23,7 @@
 
         $categorie_projcetenIns = new Categoriee_projecten();
 
-        $schermafbeeldingINS = new Schermafbeeldingen();
+    //    $schermafbeeldingINS = new Schermafbeeldingen();
 
    
 ?> 
