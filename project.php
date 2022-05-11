@@ -84,12 +84,12 @@ $projects = $projectIns->getProject($_GET['id']);
 
     <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
         <div class="container-fluid">
-            <a href="overzicht-pagina.php">
+            <a href="overzicht-projecten.php">
                 <img alt="logo" class="logo" src="img/logo-activo.jpg">
             </a>
 
             <div class="d-flex justify-content-between">
-                <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug
+                <a href="overzicht-projecten.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug
                     naar
                     overzicht</a>
                 <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project
