@@ -7,7 +7,7 @@ require_once 'backend/autoloader.php';
       */
 
 $projects = $projectIns->getProject($_GET['id']);
- 
+
 
 ?>
 
@@ -125,7 +125,7 @@ $projects = $projectIns->getProject($_GET['id']);
                                 </li>
                                 <li>
                                     <p class="text-secondary mb-0">Website link</p>
-                                    <a href="https://embracebleckmann.com/" target="_blank">
+                                    <a href=<?php echo $projects->website_link ?> target="_blank">
                                         <p><?php echo $projects->website_link ?></p>
                                     </a>
                                 </li>
