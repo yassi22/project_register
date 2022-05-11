@@ -162,11 +162,7 @@ $categorien =  $categorieIns->getCategorie();
                                     </div>
                                 <?php } ?> 
                                  
-                                <br>
-
-                                <label for="myfile">Select a file:</label>
-                                <input type="file" id="myfile" name="afbeelding[]" > <br>
-                
+                                <br>             
                                  <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
                         </div>
