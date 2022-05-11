@@ -92,7 +92,7 @@ $projects = $projectIns->getProject($_GET['id']);
                 <a href="overzicht-projecten.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug
                     naar
                     overzicht</a>
-                <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project
+                <a href="project-aanpassen.php" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project
                     aanpassen</a>
                 <button class="btn btn-lg d-flex justify-content-end knop-verwijder d-none d-md-block" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
             </div>
