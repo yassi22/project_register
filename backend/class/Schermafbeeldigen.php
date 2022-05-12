@@ -2,10 +2,11 @@
 
 require_once 'Dbconfig.php';
 
-class Schermafbeeldingen extends DbConfig{
- 
+class Schermafbeeldingen extends DbConfig
+{
 
-      public function addSchermafbeelding($naamplaatje,$project_id)
+
+   public function addSchermafbeelding($naamplaatje, $project_id)
    {
       try {
          $sql = "INSERT INTO schermafbeeldigen(naam,project_id) 
@@ -29,29 +30,20 @@ class Schermafbeeldingen extends DbConfig{
    }
 
 
-    public function getALLSchermafbeeldigen()
+   public function getALLSchermafbeeldigen()
    {
       $sql = "SELECT * FROM scherafbeeldingen";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetchAll(PDO::FETCH_OBJ);
-   } 
-   
+   }
 
-       public function getSchermafbeeldigen()
+
+   public function getSchermafbeeldigen($id)
    {
-      $sql = "SELECT naam FROM schermafbeeldingen";
+      $sql = "SELECT naam FROM schermafbeeldingen WHERE project_id = $id";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetchAll(PDO::FETCH_OBJ);
-   } 
-
-
-
-
-
- 
-
-
-
+   }
 }
