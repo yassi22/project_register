@@ -101,7 +101,7 @@ $categorien =  $categorieIns->getCategorie();
         <div class="offcanvas-body">
 
             <div class="d-flex flex-column">
-                <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-center" role="button">Terug
+                <a href="overzicht-projecten.php" class="btn btn-lg knop d-flex justify-content-center" role="button">Terug
                     naar
                     overzicht</a>
                 <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-center knop-aanpassen" role="button">Project
