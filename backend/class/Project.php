@@ -34,7 +34,7 @@ class Project extends DbConfig
       }
    }
 
-
+ // Dit staat tijdelijk in comments hierword nog aangewerkt.
    //  public function updateProject($id, $projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
    //  {
 

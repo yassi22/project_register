@@ -12,7 +12,6 @@ class Schermafbeeldingen extends DbConfig
          $sql = "INSERT INTO schermafbeeldigen(naam,project_id) 
           VALUES (:naamplaatje,:projectID)";
          $db = $this->connect();
-
          $stmt = $db->prepare($sql);
          $stmt->bindParam(":naamplaatje", $naamplaatje);
          $stmt->bindParam(":projectID", $project_id);
