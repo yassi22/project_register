@@ -7,7 +7,8 @@
 function autoload($class)
 {
 
-    require 'class/' . $class . '.php';
+    require 'class/' . $class . '.php'; 
+
 }
 
 spl_autoload_register('autoload');
@@ -23,7 +24,7 @@ $categorieIns = new Categorie();
 
 $categorie_projcetenIns = new Categoriee_projecten();
 
-$schermafbeeldingIns = new Schermafbeeldingen();
+$schermafbeeldingenIns = new Schermafbeeldingen();
  
 
 ?> 

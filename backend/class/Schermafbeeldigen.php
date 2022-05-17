@@ -1,6 +1,7 @@
 <?php
 
 require_once 'Dbconfig.php';
+require_once 'Project.php'; 
 
 class Schermafbeeldingen extends DbConfig
 {
