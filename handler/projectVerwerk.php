@@ -22,13 +22,14 @@ if (isset($_POST['addProject'])) {
     $naamplaatje =($_POST['afbeelding']); 
 
     foreach ($naamplaatje as $plaatje) {
-        $schermafbeeldingINS->addSchermafbeelding($project_id, $plaatje);
+        $schermafbeeldingINS->addSchermafbeelding($plaatje, $project_id);
     } 
      
-    echo "Het project is aangemaakt";
-    header("refresh:1.5;url=../overzicht-projecten.php");
+    echo "Het project is aangemaakt"; 
+
+    //header("refresh:1.5;url=../overzicht-projecten.php");
   
-    exit; 
+    //exit; 
 
     // id van project v
     // post heeft de dienst ids beschikbaar v

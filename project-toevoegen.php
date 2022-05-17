@@ -115,12 +115,12 @@ $categorien =  $categorieIns->getCategorie();
 
 
     <div class="container-fluid">
-        <div class="justify-content-center">
+        <div class="justify-content-center mb-3">
             <section class=" d-flex justify-content-center mx-auto mt-4">
                 <h2>Project toevoegen</h2>
             </section>
 
-            <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
+            <div class="jumbotron shadow mb-5 bg-white rounded mt-4  jumbo-grote">
                 <div>
                     <div class="row g-0 details">
                         <div class="col col-12 py-4 px-4">
@@ -166,13 +166,10 @@ $categorien =  $categorieIns->getCategorie();
 
                                     <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4>
                                     <div class="preview"></div>
-
-                                    <form action="#" method="POST" enctype="multipart/form-data">
-                                        <label for="file-upload" class="custom-file-upload">
-                                            Nieuwe schermafbeelding
-                                        </label>
-                                        <input type="file" id="file-upload" name="file1">
-                                    </form>
+                                    <label for="file-upload" class="custom-file-upload">
+                                        Nieuwe schermafbeelding
+                                    </label>
+                                    <input type="file" id="file-upload" name="afbeelding[]">
 
                                 </div>
 
