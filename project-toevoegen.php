@@ -161,28 +161,27 @@ $categorien =  $categorieIns->getCategorie();
                                         <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
                                     </div>
                                 <?php } ?>
-
                                 <div class="mb-5">
 
-                                    <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4>
-                                    <div class="preview"></div>
-                                    <label for="file-upload" class="custom-file-upload">
-                                        Nieuwe schermafbeelding
-                                    </label>
-                                    <input type="file" id="file-upload" name="afbeelding[]">
-
+                                <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4>
+                                <div class="preview"></div>
+ 
+                                <label for="file-upload" class="custom-file-upload">
+                                    Nieuwe schermafbeelding
+                                </label>
+                                <input type="file" id="file-upload" name="file1">
+                            
                                 </div>
-
-                                <br>
-                                <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
-                            </form>
-                        </div>
+                        <br>
+                        <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
+                        </form>
                     </div>
-
                 </div>
 
             </div>
+
         </div>
+    </div>
     </div>
     </div>
 </body>
