@@ -5,7 +5,7 @@ $diensten = $dienstenIns->getDiensten();
 
 $categorien =  $categorieIns->getCategorie();
 
-$afbeelding = $schermafbeeldingIns->getSchermafbeeldigen($id,$project_id);
+$afbeelding = $schermafbeeldingenIns->addSchermafbeelding($id,$project_id);
  
 ?>
 
