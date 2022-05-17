@@ -19,7 +19,9 @@ if (isset($_POST['addProject'])) {
     } 
 
 
-    $naamplaatje =($_POST['afbeelding']); 
+    $naamplaatje =($_POST['afbeelding']);  
+
+   
 
     foreach ($naamplaatje as $plaatje) {
         $schermafbeeldingINS->addSchermafbeelding($plaatje, $project_id);
