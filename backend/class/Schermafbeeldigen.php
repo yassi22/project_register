@@ -46,3 +46,6 @@ class Schermafbeeldingen extends DbConfig
       return $stmt->fetchAll(PDO::FETCH_OBJ);
    }
 }
+ 
+
+?> 

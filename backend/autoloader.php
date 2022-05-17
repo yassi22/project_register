@@ -24,3 +24,6 @@ $categorieIns = new Categorie();
 $categorie_projcetenIns = new Categoriee_projecten();
 
 $schermafbeeldingIns = new Schermafbeeldingen();
+ 
+
+?> 
