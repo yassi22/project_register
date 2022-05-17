@@ -5,7 +5,7 @@ $diensten = $dienstenIns->getDiensten();
 
 $categorien =  $categorieIns->getCategorie();
 
- 
+
 ?>
 
 <!DOCTYPE html>
@@ -160,10 +160,24 @@ $categorien =  $categorieIns->getCategorie();
                                         <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
                                         <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
                                     </div>
-                                <?php } ?> 
-                                 
-                                <br>             
-                                 <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
+                                <?php } ?>
+
+                                <div class="mb-5">
+
+                                    <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4>
+                                    <div class="preview"></div>
+
+                                    <form action="#" method="POST" enctype="multipart/form-data">
+                                        <label for="file-upload" class="custom-file-upload">
+                                            Nieuwe schermafbeelding
+                                        </label>
+                                        <input type="file" id="file-upload" name="file1">
+                                    </form>
+
+                                </div>
+
+                                <br>
+                                <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
                         </div>
                     </div>
