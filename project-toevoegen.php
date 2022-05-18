@@ -3,7 +3,7 @@ require_once 'backend/autoloader.php';
 
 $diensten = $dienstenIns->getDiensten();
 
-$categorien =  $categorieIns->getCategorie();
+$categorien =  $categorieIns->getCategorie(); 
 
 
 ?>
