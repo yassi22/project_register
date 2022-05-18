@@ -6,24 +6,25 @@ require_once 'Project.php';
 class Schermafbeeldingen extends DbConfig
 {
  
-   public function addSchermafbeelding($naamplaatje, $project_id){
-        try {
-            $sql = "INSERT INTO schermafbeeldigen(naam,project_id) 
-            VALUES ('" . $naamplaatje . "')";
-            $db = $this->connect(); 
-            $stmt = $db->prepare($sql);
-            $stmt->bindParam(":file", $naamplaatje);
-            if ($stmt->execute()) {
-                //header("Location: overzicht-projecten.php");
+   public function addSchermafbeelding($naamplaatje, $project_id){ 
+            try {
+                $sql = "INSERT INTO schermafbeeldingen(naam,project_id) 
+                        VALUES (:bestand,:id)";
+                $db = $this->connect();
+                $stmt = $db->prepare($sql);
+                $stmt->bindParam(":bestand", $naamplaatje);
+                $stmt->bindParam(":id", $project_id); 
+                if ($stmt->execute()) {
+
                 return true;
-            } else {
-                throw new Exception("Het invoeren van een plaatje is niet gelukt");
+                } else {
+                    throw new Exception("Er ontstond een fout tijdens het maken van een project ");
+                }
+            } catch (Exception $e) {
+                return $e->getMessage();
             }
-        } catch (Exception $e) {
-            return $e->getMessage();
         }
-        
-    } 
+    
   
 
    public function getALLSchermafbeeldigen()

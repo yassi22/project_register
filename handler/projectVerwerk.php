@@ -16,36 +16,37 @@ if (isset($_POST['addProject'])) {
 
     foreach ($categorieIds as $categorieId) {
         $categorie_projcetenIns->ADDcategorie($project_id, $categorieId);
-    } 
+    }
 
-  
-        $plaatje = $_FILES['file']['name'];
-        $target_dir = "../img";
-        $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
-        // hier wordt een bestand type geselecteerd
-        $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+    $plaatje = $_FILES['bestand']['name'];
+    $target_dir = "../img/";
+    $target_file = $target_dir . basename($_FILES["bestand"]["name"]);
 
-        // een array om te kijken welke bestand type het is 
-        $extensions_arr = array("jpg", "jpeg", "png", "gif");
+    // hier wordt een bestand type geselecteerd
+    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-        // Check extension
-        if (in_array($imageFileType, $extensions_arr)) {
-        }
+    // een array om te kijken welke bestand type het is 
+    $extensions_arr = array("jpg", "jpeg", "png", "gif");
 
-        // Upload file
-        move_uploaded_file($_FILES['file']['tmp_name'], $target_dir.$plaatje);
+    // Check extension
+    if (in_array($imageFileType, $extensions_arr)) {
+    }
 
-    foreach ($plaatje as $afbeelding) {
-        $schermafbeeldingenIns->addSchermafbeelding($afbeelding, $project_id);
-    } 
+    // Upload file
+    move_uploaded_file($_FILES['bestand']['tmp_name'], $target_dir . $plaatje);
 
-  
+   
 
-    echo "Het project is aangemaakt"; 
+
+ $schermafbeeldingenIns->addSchermafbeelding($plaatje, $project_id);
+
+
+
+    echo "Het project is aangemaakt";
 
     //header("refresh:1.5;url=../overzicht-projecten.php");
-  
+
     //exit; 
 
     // id van project v
@@ -53,7 +54,7 @@ if (isset($_POST['addProject'])) {
     // proj diensten class - functie toevoegen aan db
 
 }
- 
+
 
 if (isset($_POST['deleteProject'])) {
     $feedback =  $projectIns->deleteProject($_GET['id']);
