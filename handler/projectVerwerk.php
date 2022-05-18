@@ -20,7 +20,7 @@ if (isset($_POST['addProject'])) {
 
   
         $plaatje = $_FILES['file']['name'];
-        $target_dir = "../../img";
+        $target_dir = "../img";
         $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
         // hier wordt een bestand type geselecteerd
@@ -35,8 +35,12 @@ if (isset($_POST['addProject'])) {
 
         // Upload file
         move_uploaded_file($_FILES['file']['tmp_name'], $target_dir.$plaatje);
- 
 
+    foreach ($plaatje as $afbeelding) {
+        $schermafbeeldingenIns->addSchermafbeelding($afbeelding, $project_id);
+    } 
+
+  
 
     echo "Het project is aangemaakt"; 
 
