@@ -19,12 +19,12 @@ if (isset($_POST['addProject'])) {
     } 
 
 
-    $naamplaatje =($_POST['afbeelding']);  
+    $naamplaatje =($_POST['file1']);  
 
    
 
     foreach ($naamplaatje as $plaatje) {
-        $schermafbeeldingINS->addSchermafbeelding($plaatje, $project_id);
+        $schermafbeeldingenIns->addSchermafbeelding($plaatje, $project_id);
     } 
      
     echo "Het project is aangemaakt"; 

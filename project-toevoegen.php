@@ -3,7 +3,7 @@ require_once 'backend/autoloader.php';
 
 $diensten = $dienstenIns->getDiensten();
 
-$categorien =  $categorieIns->getCategorie(); 
+$categorien =  $categorieIns->getCategorie();
 
 
 ?>
@@ -163,25 +163,25 @@ $categorien =  $categorieIns->getCategorie();
                                 <?php } ?>
                                 <div class="mb-5">
 
-                                <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4>
-                                <div class="preview"></div>
+                                    <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4>
+                                    <div class="preview"></div>
  
-                                <label for="file-upload" class="custom-file-upload">
-                                    Nieuwe schermafbeelding
-                                </label>
-                                <input type="file" id="file-upload" name="afbeelding">
-                            
-                                </div>
-                        <br>
-                        <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
-                        </form>
+                                        <label for="file-upload" class="custom-file-upload">
+                                            Nieuwe schermafbeelding
+                                        </label>
+                                        <input type="file" name="afbeelding">
+                    
+                                     <br> 
+                                     <br> 
+                                    <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
+                            </form>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
-
         </div>
-    </div>
     </div>
     </div>
 </body>

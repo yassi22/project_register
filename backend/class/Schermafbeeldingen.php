@@ -5,11 +5,10 @@ require_once 'Project.php';
 
 class Schermafbeeldingen extends DbConfig
 {
-
-
+ 
    public function addSchermafbeelding($naamplaatje, $project_id){
         $naamplaatje = $_FILES['file']['name'];
-        $target_dir = "/";
+        $target_dir = "/img";
         $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
         // hier wordt een bestand type geselecteerd
@@ -27,11 +26,10 @@ class Schermafbeeldingen extends DbConfig
 
         try {
             $sql = "INSERT INTO schermafbeeldigen(naam,project_id) 
-          VALUES (:afbeelding)";
+            VALUES ('" . $naamplaatje . "')";
             $db = $this->connect();
-
             $stmt = $db->prepare($sql);
-            $stmt->bindParam(":afbeelding", $naamplaatje);
+            $stmt->bindParam(":file", $naamplaatje);
             if ($stmt->execute()) {
                 //header("Location: overzicht-projecten.php");
                 return true;
