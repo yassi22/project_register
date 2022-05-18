@@ -166,9 +166,10 @@ $categorien =  $categorieIns->getCategorie();
                                     <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4>
 
                                     <label for="myfile">Select files:</label>
-                                    <input type="file" id="myfile" name="bestand" >
+                                    <input type="file" id="myfile" name="files[]" multiple>
                                     <br>
                                     <br>
+
                                     <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
                         </div>

@@ -18,27 +18,32 @@ if (isset($_POST['addProject'])) {
         $categorie_projcetenIns->ADDcategorie($project_id, $categorieId);
     }
 
+    $targetDir = "../img/";
+    $allowTypes = array('jpg', 'png', 'jpeg', 'gif');
 
-    $plaatje = $_FILES['bestand']['name'];
-    $target_dir = "../img/";
-    $target_file = $target_dir . basename($_FILES["bestand"]["name"]);
+    $statusMsg = $errorMsg = $insertValuesSQL = $errorUpload = $errorUploadType = '';
+    $fileNames = array_filter($_FILES['files']['name']);
+    if (!empty($fileNames)) {
+        foreach ($_FILES['files']['name'] as $key => $val) {
+            // File upload path 
+            $fileName = basename($_FILES['files']['name'][$key]);
+            $targetFilePath = $targetDir . $fileName;
 
-    // hier wordt een bestand type geselecteerd
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
-    // een array om te kijken welke bestand type het is 
-    $extensions_arr = array("jpg", "jpeg", "png", "gif");
-
-    // Check extension
-    if (in_array($imageFileType, $extensions_arr)) {
-    }
-
-    // Upload file
-    move_uploaded_file($_FILES['bestand']['tmp_name'], $target_dir.$plaatje);
-
-       
-        $schermafbeeldingenIns->addSchermafbeelding($plaatje, $project_id); 
- 
+            // Check whether file type is valid 
+            $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+            if (in_array($fileType, $allowTypes)) {
+                // Upload file to server 
+                if (move_uploaded_file($_FILES["files"]["tmp_name"][$key], $targetFilePath)) {
+                    // Image db insert sql 
+                    $insertValuesSQL .= "('" . $fileName . "', NOW()),";
+                } else {
+                    $errorUpload .= $_FILES['files']['name'][$key] . ' | ';
+                }
+            } else {
+                $errorUploadType .= $_FILES['files']['name'][$key] . ' | ';
+            }
+        } 
+         
 
     echo "Het project is aangemaakt";
 
