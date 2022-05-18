@@ -164,11 +164,9 @@ $categorien =  $categorieIns->getCategorie();
                                 <div class="mb-5">
 
                                     <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4>
-                                    <div class="preview"></div>
-                                    <label for="file-upload" class="custom-file-upload">
-                                        Nieuwe schermafbeelding
-                                    </label>
-                                    <input type="file" id="file-upload" name="bestand" multiple>
+
+                                    <label for="myfile">Select files:</label>
+                                    <input type="file" id="myfile" name="bestand" >
                                     <br>
                                     <br>
                                     <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>

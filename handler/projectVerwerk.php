@@ -34,14 +34,11 @@ if (isset($_POST['addProject'])) {
     }
 
     // Upload file
-    move_uploaded_file($_FILES['bestand']['tmp_name'], $target_dir . $plaatje);
+    move_uploaded_file($_FILES['bestand']['tmp_name'], $target_dir.$plaatje);
 
-   
-
-
- $schermafbeeldingenIns->addSchermafbeelding($plaatje, $project_id);
-
-
+       
+        $schermafbeeldingenIns->addSchermafbeelding($plaatje, $project_id); 
+ 
 
     echo "Het project is aangemaakt";
 
