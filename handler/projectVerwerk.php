@@ -22,7 +22,6 @@ if (isset($_POST['addProject'])) {
     $naamplaatje =($_POST['file1']);  
 
    
-
     foreach ($naamplaatje as $plaatje) {
         $schermafbeeldingenIns->addSchermafbeelding($plaatje, $project_id);
     } 

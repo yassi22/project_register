@@ -165,24 +165,24 @@ $categorien =  $categorieIns->getCategorie();
 
                                     <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4>
                                     <div class="preview"></div>
- 
+                                 
                                         <label for="file-upload" class="custom-file-upload">
                                             Nieuwe schermafbeelding
                                         </label>
-                                        <input type="file" name="afbeelding">
-                    
-                                     <br> 
-                                     <br> 
-                                    <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
-                            </form>
+                                        <input type="file" id="file-upload" name="file1"></input>
+                                 
+                                        <br>
+                                        <br>
+                                        <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
+                                    </form>
+                                </div>
                         </div>
+
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
     </div>
 </body>
 
