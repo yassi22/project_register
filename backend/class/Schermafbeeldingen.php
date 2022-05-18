@@ -9,7 +9,7 @@ class Schermafbeeldingen extends DbConfig
 
    public function addSchermafbeelding($naamplaatje, $project_id){
         $naamplaatje = $_FILES['file']['name'];
-        $target_dir = "paatsplaatje/";
+        $target_dir = "/";
         $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
         // hier wordt een bestand type geselecteerd
