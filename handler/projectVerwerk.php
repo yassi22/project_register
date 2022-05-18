@@ -18,14 +18,9 @@ if (isset($_POST['addProject'])) {
         $categorie_projcetenIns->ADDcategorie($project_id, $categorieId);
     } 
 
-
-    $naamplaatje =($_POST['file1']);  
-
-   
-    foreach ($naamplaatje as $plaatje) {
-
-        $naamplaatje = $_FILES['file']['name'];
-        $target_dir = "img/";
+  
+        $plaatje = $_FILES['file']['name'];
+        $target_dir = "../../img";
         $target_file = $target_dir . basename($_FILES["file"]["name"]);
 
         // hier wordt een bestand type geselecteerd
@@ -39,10 +34,10 @@ if (isset($_POST['addProject'])) {
         }
 
         // Upload file
-        move_uploaded_file($_FILES['file']['tmp_name'], $target_dir . $naamplaatje);
-        $schermafbeeldingenIns->addSchermafbeelding($plaatje, $project_id);
-    } 
-     
+        move_uploaded_file($_FILES['file']['tmp_name'], $target_dir.$plaatje);
+ 
+
+
     echo "Het project is aangemaakt"; 
 
     //header("refresh:1.5;url=../overzicht-projecten.php");
