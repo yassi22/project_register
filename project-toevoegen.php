@@ -169,7 +169,7 @@ $categorien =  $categorieIns->getCategorie();
                                         <label for="file-upload" class="custom-file-upload">
                                             Nieuwe schermafbeelding
                                         </label>
-                                        <input type="file" id="file-upload" name="file1"></input>
+                                        <input type="file" id="file-upload" name="bestand"></input>
                                  
                                         <br>
                                         <br>
