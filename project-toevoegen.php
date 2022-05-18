@@ -28,7 +28,7 @@ $categorien =  $categorieIns->getCategorie();
 
     <script>
         $(function() {
-            $("input[name=bestand]").previewimage({
+            $("input[name=bestanden]").previewimage({
                 div: ".preview",
                 imgwidth: 340,
                 imgheight: 180
