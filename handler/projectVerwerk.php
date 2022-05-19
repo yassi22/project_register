@@ -20,30 +20,30 @@ if (isset($_POST['addProject'])) {
 
 
  
-        // File upload configuration 
+        // File upload configuration  
+        
         $targetDir = "../img/";
         $allowTypes = array('jpg', 'png', 'jpeg', 'gif');
 
         $statusMsg = $errorMsg = $insertValuesSQL = $errorUpload = $errorUploadType = '';
-        $fileNames = array_filter($_FILES['files']['name']);
+        $fileNames = array_filter($_FILES['files']['name']);  
+
+
         if (!empty($fileNames)) {
             foreach ($_FILES['files']['name'] as $key => $val) {
-                // File upload path 
-                $fileName = basename($_FILES['files']['name'][$key]); 
-                $targetFilePath = $targetDir . $fileName; 
-                var_dump($filename);  
+            // File upload path   
+                
+                $fileName = basename($_FILES['files']['name'][$key]);  
+                $targetFilePath = $targetDir . $fileName;  
+           
 
-                var_dump($targetFilePath);  
-
-                var_dump(move_uploaded_file($_FILES["files"]["tmp_name"][$key], $targetFilePath));
-                exit;
                 // Check whether file type is valid 
-                $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+                $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION); 
+            
                 if (in_array($fileType, $allowTypes)) {
                     // Upload file to server 
                     if (move_uploaded_file($_FILES["files"]["tmp_name"][$key], $targetFilePath)) {
-                        // Image db insert sql  
-
+                    // Image db insert sql  
                         $insertValuesSQL .= "('" . $fileName . "'";
                     } else {
                         $errorUpload .= $_FILES['files']['name'][$key] . ' | ';
@@ -58,23 +58,21 @@ if (isset($_POST['addProject'])) {
             $errorUploadType = !empty($errorUploadType) ? 'File Type Error: ' . trim($errorUploadType, ' | ') : '';
             $errorMsg = !empty($errorUpload) ? '<br/>' . $errorUpload . '<br/>' . $errorUploadType : '<br/>' . $errorUploadType;
 
-            if (!empty($insertValuesSQL)) {
-                $insertValuesSQL = trim($insertValuesSQL, ',');
-                // Insert image file name into database 
-                $insert = $db->query("INSERT INTO schermafbeeldingen(naam,project_id) VALUES $insertValuesSQL,$project_id"); 
-                var_dump($insert); 
-                exit;
-                if ($insert) {
-                    $statusMsg = "Files are uploaded successfully." . $errorMsg;
-                } else {
-                    $statusMsg = "Sorry, there was an error uploading your file.";
-                }
+        if (!empty($insertValuesSQL)) {
+            $insertValuesSQL = trim($insertValuesSQL, ',');
+            // Insert image file name into database  
+            $insert = $db->query("INSERT INTO schermafbeeldingen (naam,project_id) VALUES $insertValuesSQL, $project_id");
+            if ($insert) {
+                $statusMsg = "Files are uploaded successfully." . $errorMsg;
             } else {
-                $statusMsg = "Upload failed! " . $errorMsg;
+                $statusMsg = "Sorry, there was an error uploading your file.";
             }
         } else {
-            $statusMsg = 'Please select a file to upload.';
+            $statusMsg = "Upload failed! " . $errorMsg;
         }
+    } else {
+        $statusMsg = 'Please select a file to upload.';
+    }  
    
 
     echo "Het project is aangemaakt";

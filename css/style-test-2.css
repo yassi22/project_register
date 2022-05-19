@@ -329,11 +329,12 @@ input[type=text] {
   }
   
 
-
-
   input[type="file"] {
-    display: none;
-}
+    display: block;
+} 
+ 
+
+
 .custom-file-upload {
     
     display: inline-block;

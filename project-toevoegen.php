@@ -27,14 +27,38 @@ $categorien =  $categorieIns->getCategorie();
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <script>
-        $(function() {
-            $("input[name=bestanden]").previewimage({
-                div: ".preview",
-                imgwidth: 340,
-                imgheight: 180
-            });
+        function previewImages() {
 
-        });
+            var preview = document.querySelector('#preview');
+
+            if (this.files) {
+                [].forEach.call(this.files, readAndPreview);
+            }
+
+            function readAndPreview(file) {
+
+                // Make sure `file.name` matches our extensions criteria
+                if (!/\.(jpe?g|png|gif)$/i.test(file.name)) {
+                    return alert(file.name + " is not an image");
+                } // else...
+
+                var reader = new FileReader();
+
+                reader.addEventListener("load", function() {
+                    var image = new Image();
+                    image.height = 100;
+                    image.title = file.name;
+                    image.src = this.result;
+                    preview.appendChild(image);
+                });
+
+                reader.readAsDataURL(file);
+
+            }
+
+        }
+
+        document.querySelector('#file-input').addEventListener("change", previewImages);
     </script>
 
 
@@ -124,7 +148,7 @@ $categorien =  $categorieIns->getCategorie();
                 <div>
                     <div class="row g-0 details">
                         <div class="col col-12 py-4 px-4">
-                            <form method="POST" action="handler/projectVerwerk.php">
+                            <form method="POST" action="handler/projectVerwerk.php" enctype="multipart/form-data">
                                 <div class="mb-3">
                                     <label for="projectnaam" id="projectnaam" class="form-label"> Projectnaam </label>
                                     <input type="text" class="form-control" name="projectnaam" required>
@@ -161,16 +185,14 @@ $categorien =  $categorieIns->getCategorie();
                                         <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
                                     </div>
                                 <?php } ?>
-                                <div class="mb-5">
-
-                                    <h4 class="text-schermafbeelding mt-3">Schermafbeeldingen </h4>
-
-                                    <label for="myfile">Select files:</label>
-                                    <input type="file" id="myfile" name="files[]" multiple>
+                                <div>
+                                    Select Image Files to Upload:
+                                    <input type="file" name="files[]" multiple>
+                                
                                     <br>
                                     <br>
-
-                                    <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
+                                </div>
+                                <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
                         </div>
                     </div>
