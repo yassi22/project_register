@@ -484,9 +484,9 @@ if (isset($var1)) {
       <div class="col-md-9">
         <section class="d-md-flex align-items-center justify-content-between ">
           <h2>Projecten</h2>
-          <form class="d-flex">
+          <form method="POST">
             <input class="form-control zoek" type="text" placeholder="Zoekopdracht">
-            <button class="btn zoekknop  " type="submit">Zoek</button>
+            <button type="submit" name="searchProject" value="Zoek project" class="btn zoekknop">Zoeken</button>
           </form>
 
         </section>

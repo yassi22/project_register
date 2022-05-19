@@ -99,3 +99,19 @@ if (isset($_POST['deleteProject'])) {
         echo $feedback;
     }
 }
+
+
+if (isset($_POST['searchProject'])) {
+    $feedback =  $projectIns->searchProject($_GET['id']);
+    if ($feedback === true) {
+        
+      return true;
+    } else {
+        echo $feedback;
+    }
+} 
+
+
+
+
+

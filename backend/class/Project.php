@@ -192,4 +192,17 @@ class Project extends DbConfig
       $stmt->bindParam(":id", $id);
       $stmt->execute();
    }
-}
+ 
+
+
+ public function searchProject($id) {
+   $sql = "SELECT * FROM projecten WHERE project_id = :id";
+   $stmt = $this->connect()->prepare($sql);
+   $stmt->bindParam(":id", $id);
+   $stmt->execute();
+   return $stmt->fetch(PDO::FETCH_OBJ);
+}  
+
+
+} 
+ ?> 
