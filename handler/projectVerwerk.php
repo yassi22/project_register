@@ -19,44 +19,44 @@ if (isset($_POST['addProject'])) {
     }
 
 
- 
-        // File upload configuration  
-        
-        $targetDir = "../img/";
-        $allowTypes = array('jpg', 'png', 'jpeg', 'gif');
 
-        $statusMsg = $errorMsg = $insertValuesSQL = $errorUpload = $errorUploadType = '';
-        $fileNames = array_filter($_FILES['files']['name']);  
+    // File upload configuration  
+
+    $targetDir = "../img/";
+    $allowTypes = array('jpg', 'png', 'jpeg', 'gif');
+
+    $statusMsg = $errorMsg = $insertValuesSQL = $errorUpload = $errorUploadType = '';
+    $fileNames = array_filter($_FILES['files']['name']);
 
 
-        if (!empty($fileNames)) {
-            foreach ($_FILES['files']['name'] as $key => $val) {
+    if (!empty($fileNames)) {
+        foreach ($_FILES['files']['name'] as $key => $val) {
             // File upload path   
-                
-                $fileName = basename($_FILES['files']['name'][$key]);  
-                $targetFilePath = $targetDir . $fileName;  
-           
 
-                // Check whether file type is valid 
-                $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION); 
-            
-                if (in_array($fileType, $allowTypes)) {
-                    // Upload file to server 
-                    if (move_uploaded_file($_FILES["files"]["tmp_name"][$key], $targetFilePath)) {
+            $fileName = basename($_FILES['files']['name'][$key]);
+            $targetFilePath = $targetDir . $fileName;
+
+
+            // Check whether file type is valid 
+            $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+
+            if (in_array($fileType, $allowTypes)) {
+                // Upload file to server 
+                if (move_uploaded_file($_FILES["files"]["tmp_name"][$key], $targetFilePath)) {
                     // Image db insert sql  
-                        $insertValuesSQL .= "('" . $fileName . "'";
-                    } else {
-                        $errorUpload .= $_FILES['files']['name'][$key] . ' | ';
-                    }
+                    $insertValuesSQL .= "('" . $fileName . "'";
                 } else {
-                    $errorUploadType .= $_FILES['files']['name'][$key] . ' | ';
+                    $errorUpload .= $_FILES['files']['name'][$key] . ' | ';
                 }
+            } else {
+                $errorUploadType .= $_FILES['files']['name'][$key] . ' | ';
             }
+        }
 
-            // Error message 
-            $errorUpload = !empty($errorUpload) ? 'Upload Error: ' . trim($errorUpload, ' | ') : '';
-            $errorUploadType = !empty($errorUploadType) ? 'File Type Error: ' . trim($errorUploadType, ' | ') : '';
-            $errorMsg = !empty($errorUpload) ? '<br/>' . $errorUpload . '<br/>' . $errorUploadType : '<br/>' . $errorUploadType;
+        // Error message 
+        $errorUpload = !empty($errorUpload) ? 'Upload Error: ' . trim($errorUpload, ' | ') : '';
+        $errorUploadType = !empty($errorUploadType) ? 'File Type Error: ' . trim($errorUploadType, ' | ') : '';
+        $errorMsg = !empty($errorUpload) ? '<br/>' . $errorUpload . '<br/>' . $errorUploadType : '<br/>' . $errorUploadType;
 
         if (!empty($insertValuesSQL)) {
             $insertValuesSQL = trim($insertValuesSQL, ',');
@@ -72,22 +72,20 @@ if (isset($_POST['addProject'])) {
         }
     } else {
         $statusMsg = 'Please select a file to upload.';
-    }  
-   
+    }
 
-    echo "Het project is aangemaakt"; 
-  
 
-} 
- 
-    //header("refresh:1.5;url=../overzicht-projecten.php");
+    echo "Het project is aangemaakt";
+}
 
-    //exit; 
+//header("refresh:1.5;url=../overzicht-projecten.php");
 
-    // id van project v
-    // post heeft de dienst ids beschikbaar v
-    // proj diensten class - functie toevoegen aan db
- 
+//exit; 
+
+// id van project v
+// post heeft de dienst ids beschikbaar v
+// proj diensten class - functie toevoegen aan db
+
 
 if (isset($_POST['deleteProject'])) {
     $feedback =  $projectIns->deleteProject($_GET['id']);
@@ -101,18 +99,16 @@ if (isset($_POST['deleteProject'])) {
 }
 
 
-if (isset($_POST['searchProject'])) {
-    $feedback =  $zoekprojectIns->searchProject($_POST['projectnaam']);
-    if ($feedback === true) {
-      header("refresh:1.5;url=overzicht-projecten.php");
-      echo "De resultaten van het projecten"; 
-      exit;
+if (isset($_GET['SearchProject'])) {
+
+    $feedback = $projectIns->searchProject($_GET['search']); 
+    var_dump($feedback);    
+
+    if ($feedback === true) { 
+        header("refresh:1.5;url=overzicht-projecten.php");
+        echo "De resultaten van het projecten";
+        exit;
     } else {
         echo $feedback;
     }
-} 
-
-
-
-
-
+}
