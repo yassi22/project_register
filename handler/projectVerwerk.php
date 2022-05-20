@@ -103,12 +103,14 @@ if (isset($_GET['SearchProject'])) {
 
     $feedback = $projectIns->searchProject($_GET['search']); 
     var_dump($feedback);    
-
+    
     if ($feedback === true) { 
         header("refresh:1.5;url=overzicht-projecten.php");
         echo "De resultaten van het projecten";
         exit;
     } else {
         echo $feedback;
-    }
+    } 
+
+
 }
