@@ -102,7 +102,7 @@ if (isset($_POST['deleteProject'])) {
 
 
 if (isset($_POST['searchProject'])) {
-    $feedback =  $projectIns->searchProject($_GET['id']);
+    $feedback =  $projectIns->searchProject($_GET['projectnaam']);
     if ($feedback === true) {
         
       return true;

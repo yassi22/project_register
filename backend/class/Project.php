@@ -195,8 +195,8 @@ class Project extends DbConfig
  
 
 
- public function searchProject($id) {
-   $sql = "SELECT * FROM projecten WHERE project_id = :id";
+ public function searchProject($pr) {
+   $sql = "SELECT * FROM projecten WHERE projectnaam = searchProject";
    $stmt = $this->connect()->prepare($sql);
    $stmt->bindParam(":id", $id);
    $stmt->execute();
