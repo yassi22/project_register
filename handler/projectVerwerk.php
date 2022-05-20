@@ -102,10 +102,11 @@ if (isset($_POST['deleteProject'])) {
 
 
 if (isset($_POST['searchProject'])) {
-    $feedback =  $projectIns->searchProject($_GET['projectnaam']);
+    $feedback =  $zoekprojectIns->searchProject($_POST['projectnaam']);
     if ($feedback === true) {
-        
-      return true;
+      header("refresh:1.5;url=overzicht-projecten.php");
+      echo "De resultaten van het projecten"; 
+      exit;
     } else {
         echo $feedback;
     }

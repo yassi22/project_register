@@ -34,7 +34,7 @@ class Project extends DbConfig
       }
    }
 
- // Dit staat tijdelijk in comments hierword nog aangewerkt.
+ // Dit staat tijdelijk in comments hierword nog aangewerkt voor het aanpassen van een project.
    //  public function updateProject($id, $projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
    //  {
 
@@ -193,16 +193,7 @@ class Project extends DbConfig
       $stmt->execute();
    }
  
-
-
- public function searchProject($pr) {
-   $sql = "SELECT * FROM projecten WHERE projectnaam = searchProject";
-   $stmt = $this->connect()->prepare($sql);
-   $stmt->bindParam(":id", $id);
-   $stmt->execute();
-   return $stmt->fetch(PDO::FETCH_OBJ);
-}  
-
+ 
 
 } 
  ?> 

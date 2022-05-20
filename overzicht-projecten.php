@@ -12,8 +12,7 @@ if (isset($_GET['order'])) {
 
   $var1 = $_GET['order'];
 }
-
-
+ 
 
 /* 
      Dit stuk van de code laat zien op welk onderdeel gesorteerd is aan de hand van een Switch statement.
@@ -486,7 +485,7 @@ if (isset($var1)) {
           <h2>Projecten</h2>
           <form method="GET" action="handler/projectVerwerk.php">
             <input class="form-control zoek" type="text" name="search" placeholder="Zoekopdracht">
-            <button type="submit" name="searchProject" value="submit" class="btn zoekknop">Zoeken</button>
+            <button type="submit" name="submit" value="submit" class="btn zoekknop">Zoeken</button>
           </form>
 
         </section>

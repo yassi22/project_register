@@ -22,7 +22,9 @@ $categorieIns = new Categorie();
 
 $categorie_projcetenIns = new Categoriee_projecten();
 
-$schermafbeeldingenIns = new Schermafbeeldingen();
+$schermafbeeldingenIns = new Schermafbeeldingen(); 
+
+$zoekprojectIns = new ZoekProject();
  
 
 ?> 
