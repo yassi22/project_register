@@ -1,6 +1,9 @@
 <?php
 require_once 'backend/autoloader.php';
 
+$projects = $projectIns->getProject($_GET['id']);
+
+
 $diensten = $dienstenIns->getDiensten_Project($_GET['id']);
 
 $categorien = $categorieIns->getCategorie_projecten($_GET['id']);
@@ -126,24 +129,24 @@ $categorien = $categorieIns->getCategorie_projecten($_GET['id']);
                         <div class="col col-12 py-4 px-4">
                             <form method="POST" action="handler/projectVerwerk.php">
                                 <div class="mb-3">
-                                    <label for="projectnaam" id="projectnaam" class="form-label"> <?php echo $project->projectnaam; ?> </label>
-                                    <input type="text" class="form-control" name="projectnaam" required>
+                                    <label for="projectnaam" id="projectnaam" class="form-label"> Projectnaam</label>
+                                    <input type="text" class="form-control" value=" <?php echo $projects->projectnaam; ?>" name="projectnaam" required> </input>
                                 </div>
                                 <div class="mb-3">
                                     <label for="datum" id="datum" class="form-label"> Projectdatum</label>
-                                    <input type="date" class="form-control" name="datum" required>
+                                    <input type="date" class="form-control" value="<?php echo $projects->datum; ?> " name="datum" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="websitelink" id="websitelink" class="form-label"> WebsiteLink </label>
-                                    <input type="text" class="form-control" name="websitelink" required>
+                                    <input type="text" class="form-control" value="<?php echo $projects->website_link; ?> " name="websitelink" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="omschrijving" id="omschrijving" class="form-label"> Omschrijving </label>
-                                    <input type="text" class="form-control" name="omschrijving" required>
+                                    <input type="text" class="form-control" value="<?php echo $projects->omschrijving; ?>" name="omschrijving" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="klantnaam" id="klantnaam" class="form-label"> Klantnaam </label>
-                                    <input type="text" class="form-control" name="klantnaam" required>
+                                    <input type="text" class="form-control" value="<?php echo $projects->klant_id;?>" name="klantnaam" required>
                                 </div>
 
                                 <h2> Diensten </h2>
