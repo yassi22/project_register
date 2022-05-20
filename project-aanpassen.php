@@ -8,6 +8,20 @@ $diensten = $dienstenIns->getDiensten();
 
 $categorien = $categorieIns->getCategorie();
 
+$diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
+  
+var_dump($diensten_project); 
+echo "<br>";
+echo "<br>";
+echo "<br>";
+var_dump($diensten);
+
+if($diensten == $diensten_project){  
+    echo "de diensten hoort bij dit project";
+}else { 
+echo "de dienst hoort niet bij dit project";
+} 
+ 
 
 ?>
 
@@ -153,14 +167,14 @@ $categorien = $categorieIns->getCategorie();
 
                                 <?php foreach ($diensten as $dienst) { ?>
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
+                                        <input class="form-check-input"  type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
                                         <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
                                     </div>
                                 <?php } ?>
                                 <h2> Categorie </h2>
                                 <?php foreach ($categorien as $categorie) { ?>
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
+                                        <input class="form-check-input"  type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
                                         <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
                                     </div>
                                 <?php } ?> 
