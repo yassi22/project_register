@@ -10,7 +10,8 @@ $projects = $projectIns->getProject($_GET['id']);
 
 $diensten = $dienstenIns->getDiensten($_GET['id']); 
 
-$categorieen = $categorieIns->getCategorie($_GET['id']);
+$categorieen = $categorieIns->getCategorie($_GET['id']); 
+
 ?>
 
 

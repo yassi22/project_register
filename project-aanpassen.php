@@ -1,9 +1,9 @@
 <?php
 require_once 'backend/autoloader.php';
 
-$diensten = $dienstenIns->getDiensten();
+$diensten = $dienstenIns->getDiensten($id);
 
-$categorien =  $categorieIns->getCategorie();
+$categorien =  $categorieIns->getCategorie($id);
 
 
 ?>
