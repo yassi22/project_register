@@ -8,7 +8,9 @@ require_once 'backend/autoloader.php';
 
 $projects = $projectIns->getProject($_GET['id']);
 
-$diensten = $dienstenIns->getDiensten($_GET['id']);
+$diensten = $dienstenIns->getDiensten($_GET['id']); 
+
+$categorieen = $categorieIns->getCategorie($_GET['id']);
 ?>
 
 
@@ -180,9 +182,9 @@ $diensten = $dienstenIns->getDiensten($_GET['id']);
 
                             <h4>Categorie</h4>
                             <ul class="details-list mb-4">
-                                <?php foreach ($  as $dienst) { ?>
+                                <?php foreach ($categorieen  as $categorie) { ?>
 
-                                    <li> <?php echo $dienst->diensten_naam; ?> </li>
+                                    <li> <?php echo $categorie->categorie_naam; ?> </li>
 
                                 <?php } ?>
                             </ul>

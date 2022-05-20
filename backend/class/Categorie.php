@@ -5,22 +5,16 @@ require_once 'Dbconfig.php';
 class Categorie extends DbConfig
 {
 
-    public function getCategorie()
+ 
+    public function getCategorie($id)
     {
-        $sql = "SELECT * FROM categorieen";
+        $sql ="SELECT * FROM categorieen INNER JOIN categoriee_projecten on categorie_id = categoriee_projecten.categorieen_categorie_id AND categoriee_projecten.projecten_project_id = :id ";
         $stmt = $this->connect()->prepare($sql);
+        $stmt->bindParam(":id", $id);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_OBJ);
-    }
+    } 
+ 
 
-
-   // public function getCategorie_Projecten()
-   // {
-   //     $sql = "SELECT * FROM diensten INNER JOIN projecten_diensten on diensten_id = projecten_diensten.diensten_diensten_id AND projecten_diensten.projecten_project_id = 4 ";
-    //    $stmt = $this->connect()->prepare($sql);
-    //    $stmt->execute();
-    //    return $stmt->fetchAll(PDO::FETCH_OBJ);
-    //} 
-
-
+ 
 }
