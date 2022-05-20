@@ -126,7 +126,7 @@ $categorien =  $categorieIns->getCategorie($id);
                         <div class="col col-12 py-4 px-4">
                             <form method="POST" action="handler/projectVerwerk.php">
                                 <div class="mb-3">
-                                    <label for="projectnaam" id="projectnaam" class="form-label"> Projectnaam </label>
+                                    <label for="projectnaam" id="projectnaam" class="form-label"> <?php echo $project->projectnaam; ?> </label>
                                     <input type="text" class="form-control" name="projectnaam" required>
                                 </div>
                                 <div class="mb-3">

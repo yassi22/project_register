@@ -69,7 +69,7 @@ class Project extends DbConfig
             //header("Location: posts.php?page=1"); 
             return true;
          } else {
-            throw new Exception("Onderdelen van de ingevoerde project data was niet correct ");
+            throw new Exception("De juiste project gegevens zijn niet ingevoerd");
          }
       } catch (Exception $e) {
          return $e->getMessage();
