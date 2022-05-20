@@ -1,13 +1,13 @@
 <?php
 require_once 'backend/autoloader.php';
 
- 
+
 /* 
 Dit is voor de zoekbalk 
 
-*/ 
+*/
 
- 
+
 
 
 
@@ -86,12 +86,24 @@ if (isset($var1)) {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  
 
   <!-- Load Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
+  <script>
+    function Search(item) {
+      var collection = document.getElementsByClassName("titel");
+      for (i = 0; i < collection.length; i++) {
+        if (((collection[i].innerHTML).toLowerCase()).indexOf(item) > -1) {
+          collection[i].style.display = "block";
+        } else {
+          collection[i].style.display = "none";
+        }
+      }
+    }
+  </script>
 
 </head>
 
@@ -493,10 +505,8 @@ if (isset($var1)) {
       <div class="col-md-9">
         <section class="d-md-flex align-items-center justify-content-between ">
           <h2>Projecten</h2>
-          <form method="GET " action="handler/projectVerwerk.php">
-            <input class="form-control zoek" type="text" name="search" placeholder="Zoekopdracht">
-            <button type="submit" name="SearchProject" value="submit" class="btn zoekknop">Zoeken</button>
-          </form>
+          <input type="text" id="searchBar" oninput="Search((this.value).toLowerCase())" placeholder="Search...">
+
 
         </section>
         <section class="d-md-flex align-items-center   justify-content-between mt-2">
