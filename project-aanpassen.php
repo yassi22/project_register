@@ -12,15 +12,7 @@ $diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
   
  
 
-if($diensten == $diensten_project){    
-    
-    echo '<input class="form-check-input" checked type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>"> ';
 
-}else {  
-    
-    echo '<input class="form-check-input"  type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">';
-
- } 
  
 
 ?>
