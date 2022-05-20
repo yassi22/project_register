@@ -8,7 +8,7 @@ require_once 'backend/autoloader.php';
 
 $projects = $projectIns->getProject($_GET['id']);
 
-
+$diensten = $dienstenIns->getDiensten($_GET['id']);
 ?>
 
 
@@ -171,15 +171,21 @@ $projects = $projectIns->getProject($_GET['id']);
 
                             <h4>Diensten</h4>
                             <ul class="details-list mb-4">
-                                <li> Online betaalmodule </li>
-                                <li> Evenement platform </li>
-                                <li>Online betaalmodule</li>
-                                <li> Toegangscontrole </li>
-                                <li> Badges </li>
+                                <?php foreach ($diensten as $dienst) { ?>
+
+                                    <li> <?php echo $dienst->diensten_naam; ?> </li>
+
+                                <?php } ?>
                             </ul>
 
                             <h4>Categorie</h4>
-                            <p> Congres Online Platform </p>
+                            <ul class="details-list mb-4">
+                                <?php foreach ($  as $dienst) { ?>
+
+                                    <li> <?php echo $dienst->diensten_naam; ?> </li>
+
+                                <?php } ?>
+                            </ul>
                         </div>
                     </div>
                 </div>
