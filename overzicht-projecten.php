@@ -2,7 +2,7 @@
 require_once 'backend/autoloader.php';
 
 
- 
+
 
 
 
@@ -505,7 +505,7 @@ if (isset($var1)) {
       <div class="col-md-9">
         <section class="d-md-flex align-items-center justify-content-between ">
           <h2>Projecten</h2>
-          <input type="text" class="" id="searchBar" oninput="Search((this.value).toLowerCase())" placeholder="ZoekOpdracht">
+          <input type="text" class="form-control zoek" id="searchBar" oninput="Search((this.value).toLowerCase())" placeholder="ZoekOpdracht">
 
 
         </section>
