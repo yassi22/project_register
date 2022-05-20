@@ -2,10 +2,7 @@
 require_once 'backend/autoloader.php';
 
 
-/* 
-Dit is voor de zoekbalk 
-
-*/
+ 
 
 
 
@@ -98,9 +95,11 @@ if (isset($var1)) {
       // var collectie = document.getElementByIdByClassName("card-body");
       for (i = 0; i < collection.length; i++) {
         if (((collection[i].innerHTML).toLowerCase()).indexOf(item) > -1) {
-          collection[i].style.display = "block";
+          collection[i].closest(".col").classList.add('d-flex');
+          collection[i].closest(".col").classList.remove('d-none');
         } else {
-          collection[i].style.display = "none";
+          collection[i].closest(".col").classList.remove('d-flex');
+          collection[i].closest(".col").classList.add('d-none');
         }
       }
     }
@@ -506,7 +505,7 @@ if (isset($var1)) {
       <div class="col-md-9">
         <section class="d-md-flex align-items-center justify-content-between ">
           <h2>Projecten</h2>
-          <input type="text" id="searchBar" oninput="Search((this.value).toLowerCase())" placeholder="Search...">
+          <input type="text" class="" id="searchBar" oninput="Search((this.value).toLowerCase())" placeholder="ZoekOpdracht">
 
 
         </section>
