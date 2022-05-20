@@ -10,17 +10,17 @@ $categorien = $categorieIns->getCategorie();
 
 $diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
   
-var_dump($diensten_project); 
-echo "<br>";
-echo "<br>";
-echo "<br>";
-var_dump($diensten);
+ 
 
-if($diensten == $diensten_project){  
-    echo "de diensten hoort bij dit project";
-}else { 
-echo "de dienst hoort niet bij dit project";
-} 
+if($diensten == $diensten_project){    
+    
+    echo '<input class="form-check-input" checked type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>"> ';
+
+}else {  
+    
+    echo '<input class="form-check-input"  type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">';
+
+ } 
  
 
 ?>
@@ -171,6 +171,7 @@ echo "de dienst hoort niet bij dit project";
                                         <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
                                     </div>
                                 <?php } ?>
+
                                 <h2> Categorie </h2>
                                 <?php foreach ($categorien as $categorie) { ?>
                                     <div class="form-check form-switch">
