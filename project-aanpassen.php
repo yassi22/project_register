@@ -4,9 +4,9 @@ require_once 'backend/autoloader.php';
 $projects = $projectIns->getProject($_GET['id']);
 
 
-$diensten = $dienstenIns->getDiensten_Project($_GET['id']);
+$diensten = $dienstenIns->getDiensten();
 
-$categorien = $categorieIns->getCategorie_projecten($_GET['id']);
+$categorien = $categorieIns->getCategorie();
 
 
 ?>
@@ -123,7 +123,7 @@ $categorien = $categorieIns->getCategorie_projecten($_GET['id']);
                 <h2>Project aanpassen</h2>
             </section>
 
-            <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbo-grote">
+            <div class="jumbotron shadow mb-5 bg-white rounded mt-4 jumbo-grote">
                 <div>
                     <div class="row g-0 details">
                         <div class="col col-12 py-4 px-4">
@@ -163,7 +163,8 @@ $categorien = $categorieIns->getCategorie_projecten($_GET['id']);
                                         <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
                                         <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
                                     </div>
-                                <?php } ?>
+                                <?php } ?> 
+                                <br>
                                 <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Wijzingen opslaan</button>
                             </form>
                         </div>
