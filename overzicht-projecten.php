@@ -1,6 +1,15 @@
 <?php
 require_once 'backend/autoloader.php';
 
+ 
+/* 
+Dit is voor de zoekbalk 
+
+*/ 
+
+ 
+
+
 
 /* 
        Voor het sorteren van projecten word er gebruikt gemaakt 
@@ -12,6 +21,7 @@ if (isset($_GET['order'])) {
 
   $var1 = $_GET['order'];
 }
+
 
 
 /* 

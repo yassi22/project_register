@@ -193,16 +193,7 @@ class Project extends DbConfig
       $stmt->execute();
    }
 
-   public function searchProject($projectnaam)
-   {
-      $sql = "SELECT projectnaam,datum FROM projecten WHERE projectnaam = :projectnaam";
-      $stmt = $this->connect()->prepare($sql);
-      $stmt->bindParam(":projectnaam", $projectnaam);
-      $stmt->execute();
-      return $stmt->fetch(PDO::FETCH_OBJ);
-   }
-  
-
+   
 
 } 
  ?> 
