@@ -8,9 +8,9 @@ require_once 'backend/autoloader.php';
 
 $projects = $projectIns->getProject($_GET['id']);
 
-$diensten = $dienstenIns->getDiensten($_GET['id']); 
+$diensten = $dienstenIns->getDiensten_Project($_GET['id']); 
 
-$categorieen = $categorieIns->getCategorie($_GET['id']); 
+$categorieen = $categorieIns->getCategorie_projecten($_GET['id']); 
 
 ?>
 

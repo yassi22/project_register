@@ -46,7 +46,7 @@ class Project extends DbConfig
             $sql = $sql . " projectnaam = :projectnaam";
          }
 
-         if ($project->description != $des) {
+         if ($project->description != $omschrijving) {
             if ($this->titleBool) {
                $sql = $sql . ",";
             }

@@ -12,7 +12,8 @@ class Diensten extends DbConfig
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
-
+    
+    
 
     public function getDiensten_Project($id)
     {
