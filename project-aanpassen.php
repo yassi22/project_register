@@ -12,9 +12,6 @@ $diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
   
  
 
-
- 
-
 ?>
 
 <!DOCTYPE html>
