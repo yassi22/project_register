@@ -55,13 +55,13 @@ if (isset($var1)) {
 } else {
   $projects = $projectIns->getAllProjects();
 }
- 
 
-  if (isset($_POST['submit'])) {
-  $projects = $projectIns->getFilterProject($jaartal,$diensten,$categorie);
-  } else {
+
+if (isset($_POST['submit'])) {
+  $projects = $projectIns->getFilterProject($jaartal, $dienst, $categorie);
+} else {
   $projects = $projectIns->getAllProjects();
-  } 
+}
 
 
 ?>
@@ -138,79 +138,79 @@ if (isset($var1)) {
 
         <h3 class="fs-6">Jaartal</h3>
         <div class="form-check form-switch">
-          <input class="form-check-input" value="2019" name="2019" type="checkbox" >
+          <input class="form-check-input" name="jaartaal" value="2019" type="checkbox">
           <label class="form-check-label" for="flexSwitchCheckDefault">2019</label>
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="2020" value="2020" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="jaartaal" value="2020">
           <label class="form-check-label" for="flexSwitchCheckDefault">2020</label>
         </div>
 
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="jaartaal" value="2021">
           <label class="form-check-label" for="flexSwitchCheckDefault"> 2021 </label>
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="jaartaal" value="2022">
           <label class="form-check-label" for="flexSwitchCheckDefault"> 2022 </label>
         </div>
         <hr>
 
         <h3 class="fs-6">Diensten</h3>
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Eventwebsite" value="">
           <label class="form-check-label" for="flexSwitchCheckDefault">Eventwebsite</label>
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Evenement platform" value="">
           <label class="form-check-label" for="flexSwitchCheckDefault">Evenement platform</label>
         </div>
 
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Online betaalmodule" value="">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Online betaalmodule </label>
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Event app" value="">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Event app </label>
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Toegangscontrole" value="">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Toegangscontrole </label>
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Lanyards" value="">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Lanyards </label>
         </div>
 
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Hostesses" value="">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Hostesses </label>
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Evaluatie" value="">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Evaluatie </label>
         </div>
 
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Fotoalbum" value="">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Fotoalbum </label>
         </div>
 
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Abstractmodule" value="">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Abstractmodule </label>
         </div>
 
@@ -240,7 +240,9 @@ if (isset($var1)) {
 
 
         <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit" value="submit">Toon resultaten</button>
+
       </form>
+
     </div>
   </div>
 
