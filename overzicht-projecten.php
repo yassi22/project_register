@@ -64,6 +64,8 @@ if (isset($_POST['submit'])) {
 }
 
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -253,83 +255,83 @@ if (isset($_POST['submit'])) {
     <div class="row">
       <div class="col-md-3  d-none d-md-block">
         <h2>Criteria</h2>
-        <form>
+        <form action="overzicht-projecten.php" method="POST">
 
           <h3 class="fs-6">Jaartal</h3>
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" name="jaartaal" value="2019" type="checkbox">
             <label class="form-check-label" for="flexSwitchCheckDefault">2019</label>
           </div>
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="jaartaal" value="2020">
             <label class="form-check-label" for="flexSwitchCheckDefault">2020</label>
           </div>
 
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="jaartaal" value="2021">
             <label class="form-check-label" for="flexSwitchCheckDefault"> 2021 </label>
           </div>
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="jaartaal" value="2022">
             <label class="form-check-label" for="flexSwitchCheckDefault"> 2022 </label>
           </div>
           <hr>
 
           <h3 class="fs-6">Diensten</h3>
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Eventwebsite" value="10">
             <label class="form-check-label" for="flexSwitchCheckDefault">Eventwebsite</label>
           </div>
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Evenement platform" value="9">
             <label class="form-check-label" for="flexSwitchCheckDefault">Evenement platform</label>
           </div>
 
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Online betaalmodule" value="8">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Online betaalmodule </label>
           </div>
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Event app" value="7">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Event app </label>
           </div>
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Toegangscontrole" value="6">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Toegangscontrole </label>
           </div>
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Lanyards" value="1">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Lanyards </label>
           </div>
 
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Hostesses" value="4">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Hostesses </label>
           </div>
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Evaluatie" value="3">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Evaluatie </label>
           </div>
 
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Fotoalbum" value="2">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Fotoalbum </label>
           </div>
 
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Abstractmodule" value="5">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Abstractmodule </label>
           </div>
 
@@ -337,160 +339,143 @@ if (isset($_POST['submit'])) {
 
           <h3 class="fs-6">Categorie</h3>
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Evenement Registratie Platform" value="1">
             <label class="form-check-label" for="flexSwitchCheckDefault">Evenement Registratie Platform</label>
           </div>
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Medisch Congres Platform" value="2">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Medisch Congres Platform</label>
           </div>
 
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Hybride Event Platform" value="4">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Hybride Event Platform </label>
           </div>
 
           <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <input class="form-check-input" type="checkbox" name="Congres Online Platfor" value="3">
             <label class="form-check-label" for="flexSwitchCheckDefault"> Congres Online Platform </label>
           </div>
 
 
-          <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit">Toon resultaten</button>
+          <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit" value="submit">Toon resultaten</button>
+
         </form>
+
 
 
         <div class="col-sm-6 verplaats" style="display: none;">
           <h2>Criteria</h2>
-          <h5 class="text-center">Jaartal</h5>
+          <form action="overzicht-projecten.php" method="POST">
 
-          <ul style->
-            <div class="form-check  form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> 2017 </li>
-              </label>
+            <h3 class="fs-6">Jaartal</h3>
+            <div class="form-check form-switch">
+              <input class="form-check-input" name="jaartaal" value="2019" type="checkbox">
+              <label class="form-check-label" for="flexSwitchCheckDefault">2019</label>
             </div>
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li class="text-center"> 2018 </li>
-              </label>
-            </div>
-
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> 2019 </li>
-              </label>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> 2020 </li>
-              </label>
-            </div>
-
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> 2021 </li>
-              </label>
-            </div>
-
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> 2022 </li>
-              </label>
-            </div>
-
-          </ul>
-
-          <hr>
-
-
-          <h5 class="text-center">Diensten</h5>
-          <ul>
-
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> Online betaal module </li>
-              </label>
-            </div>
-
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> Badges </li>
-              </label>
-            </div>
-
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> E-tickets </li>
-              </label>
-            </div>
-
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> Uitnodigingstraject </li>
-              </label>
-            </div>
-
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> Congres online </li>
-              </label>
+              <input class="form-check-input" type="checkbox" name="jaartaal" value="2020">
+              <label class="form-check-label" for="flexSwitchCheckDefault">2020</label>
             </div>
 
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> Helpdesk </li>
-              </label>
-            </div>
-
-
-          </ul>
-
-          <hr>
-
-          <h5 class="text-center">Categorie</h5>
-          <ul>
-
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> Medische evenementen </li>
-              </label>
+              <input class="form-check-input" type="checkbox" name="jaartaal" value="2021">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> 2021 </label>
             </div>
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> Hybride evenementen </li>
-              </label>
+              <input class="form-check-input" type="checkbox" name="jaartaal" value="2022">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> 2022 </label>
+            </div>
+            <hr>
+
+            <h3 class="fs-6">Diensten</h3>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Eventwebsite" value="10">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Eventwebsite</label>
+            </div>
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Evenement platform" value="9">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Evenement platform</label>
             </div>
 
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">
-                <li> Congress online evenementen </li>
-              </label>
-
+              <input class="form-check-input" type="checkbox" name="Online betaalmodule" value="8">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Online betaalmodule </label>
             </div>
-            <button type="button" class="btn mt-4 text-center resultaat-knop " type="submit">Resultaat</button>
-          </ul>
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Event app" value="7">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Event app </label>
+            </div>
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Toegangscontrole" value="6">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Toegangscontrole </label>
+            </div>
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Lanyards" value="1">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Lanyards </label>
+            </div>
+
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Hostesses" value="4">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Hostesses </label>
+            </div>
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Evaluatie" value="3">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Evaluatie </label>
+            </div>
+
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Fotoalbum" value="2">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Fotoalbum </label>
+            </div>
+
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Abstractmodule" value="5">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Abstractmodule </label>
+            </div>
+
+            <hr>
+
+            <h3 class="fs-6">Categorie</h3>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Evenement Registratie Platform" value="1">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Evenement Registratie Platform</label>
+            </div>
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Medisch Congres Platform" value="2">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Medisch Congres Platform</label>
+            </div>
+
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Hybride Event Platform" value="4">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Hybride Event Platform </label>
+            </div>
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="Congres Online Platfor" value="3">
+              <label class="form-check-label" for="flexSwitchCheckDefault"> Congres Online Platform </label>
+            </div>
+
+
+            <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit" value="submit">Toon resultaten</button>
+
+          </form>
 
 
         </div>
