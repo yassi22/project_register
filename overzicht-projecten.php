@@ -57,8 +57,13 @@ if (isset($var1)) {
 }
  
 
+  if (isset($_POST['submit'])) {
+  $projects = $projectIns->getFilterProject($jaartal,$diensten,$categorie);
+  } else {
+  $projects = $projectIns->getAllProjects();
+  } 
 
- 
+
 ?>
 
 <!DOCTYPE html>
