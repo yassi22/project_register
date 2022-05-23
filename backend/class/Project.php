@@ -194,7 +194,7 @@ class Project extends DbConfig
 
    
  public function getFilterProject($jaartaal,$dienst,$categorie){
-      $sql = "SELECT * FROM projecten ORDER BY created_on DESC";
+      $sql = "SELECT * FROM projecten";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetch(PDO::FETCH_OBJ);
