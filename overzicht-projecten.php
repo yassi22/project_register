@@ -65,6 +65,7 @@ if (isset($_POST['Filter'])) {
   $projecten = $projectIns->getAllProjects();
 } 
 
+var_dump($_POST);
  
 
 ?>
@@ -226,7 +227,7 @@ if (isset($_POST['Filter'])) {
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="Medisch Congres Platform" value="2">
+          <input class="form-check-input" type="checkbox" name="Medisch   Congres Platform" value="2">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Medisch Congres Platform</label>
         </div>
 
@@ -375,7 +376,7 @@ if (isset($_POST['Filter'])) {
 
 
         </section>
-        <section class="d-md-flex align-items-center   justify-content-between mt-2">
+        <section class="d-md-flex align-items-center  justify-content-between mt-2">
           <h4> <?php echo $status; ?> </h4>
           <div class="dropdown">
 
