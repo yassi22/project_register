@@ -368,11 +368,11 @@ if (isset($_POST['submit'])) {
 
         <div class="col-sm-6 verplaats" style="display: none;">
           <h2>Criteria</h2>
-          <form action="overzicht-projecten.php" method="POST">
+          <form action="/overzicht-projecten.php" method="POST">
 
             <h3 class="fs-6">Jaartal</h3>
             <div class="form-check form-switch">
-              <input class="form-check-input" name="jaartaal" value="2019" type="checkbox">
+              <input class="form-check-input" name="jaartaal" value="jaartal" type="checkbox">
               <label class="form-check-label" for="flexSwitchCheckDefault">2019</label>
             </div>
 
@@ -395,56 +395,56 @@ if (isset($_POST['submit'])) {
 
             <h3 class="fs-6">Diensten</h3>
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Eventwebsite" value="10">
+              <input class="form-check-input" type="checkbox" name="dienst" value="10">
               <label class="form-check-label" for="flexSwitchCheckDefault">Eventwebsite</label>
             </div>
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Evenement platform" value="9">
+              <input class="form-check-input" type="checkbox" name="dienst" value="9">
               <label class="form-check-label" for="flexSwitchCheckDefault">Evenement platform</label>
             </div>
 
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Online betaalmodule" value="8">
+              <input class="form-check-input" type="checkbox" name="dienst"" value=" 8">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Online betaalmodule </label>
             </div>
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Event app" value="7">
+              <input class="form-check-input" type="checkbox" name="dienst" value="7">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Event app </label>
             </div>
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Toegangscontrole" value="6">
+              <input class="form-check-input" type="checkbox" name="dienst" value="6">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Toegangscontrole </label>
             </div>
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Lanyards" value="1">
+              <input class="form-check-input" type="checkbox" name="dienst" value=" 1">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Lanyards </label>
             </div>
 
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Hostesses" value="4">
+              <input class="form-check-input" type="checkbox" name="dienst" value="4">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Hostesses </label>
             </div>
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Evaluatie" value="3">
+              <input class="form-check-input" type="checkbox" name="dienst" value="3">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Evaluatie </label>
             </div>
 
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Fotoalbum" value="2">
+              <input class="form-check-input" type="checkbox" name="dienst" value="2">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Fotoalbum </label>
             </div>
 
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Abstractmodule" value="5">
+              <input class="form-check-input" type="checkbox" name="dienst" value="5">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Abstractmodule </label>
             </div>
 
@@ -452,28 +452,28 @@ if (isset($_POST['submit'])) {
 
             <h3 class="fs-6">Categorie</h3>
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Evenement Registratie Platform" value="1">
+              <input class="form-check-input" type="checkbox" name="categorie" value="1">
               <label class="form-check-label" for="flexSwitchCheckDefault">Evenement Registratie Platform</label>
             </div>
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Medisch Congres Platform" value="2">
+              <input class="form-check-input" type="checkbox" name="categorie" value="2">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Medisch Congres Platform</label>
             </div>
 
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Hybride Event Platform" value="4">
+              <input class="form-check-input" type="checkbox" name="categorie" value="4">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Hybride Event Platform </label>
             </div>
 
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="Congres Online Platfor" value="3">
+              <input class="form-check-input" type="checkbox" name="categorie" value=" 3">
               <label class="form-check-label" for="flexSwitchCheckDefault"> Congres Online Platform </label>
             </div>
 
 
-            <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit" value="submit">Toon resultaten</button>
+            <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit" name="submit" value="submit">Toon resultaten</button>
 
           </form>
 
