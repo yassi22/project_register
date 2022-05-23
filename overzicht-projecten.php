@@ -58,12 +58,10 @@ if (isset($var1)) {
 
 
 if (isset($_POST['Filter'])) {
-  $projects = $projectIns->getFilterProject($jaartal, $dienst, $categorie);
+  $projecten = $projectIns->getFilterProject($jaartal, $dienst, $categorie);
 } else {
-  $projects = $projectIns->getAllProjects();
+  $projecten = $projectIns->getAllProjects();
 }
-
-
 
 
 ?>
@@ -368,7 +366,7 @@ if (isset($_POST['Filter'])) {
 
         <div class="col-sm-6 verplaats" style="display: none;">
           <h2>Criteria</h2>
-          <form action="/overzicht-projecten.php" method="POST">
+          <form action=""  method="POST">
 
             <h3 class="fs-6">Jaartal</h3>
             <div class="form-check form-switch">
@@ -473,7 +471,7 @@ if (isset($_POST['Filter'])) {
             </div>
 
 
-            <button type="submit" class="btn mt-4 text-center resultaat-knop" name="Filter" value="submit">Toon resultaten</button>
+            <button type="submit" class="btn mt-4 text-center resultaat-knop" name="Filter" value="filter">Toon resultaten</button>
 
           </form>
 
