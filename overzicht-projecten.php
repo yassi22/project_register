@@ -55,22 +55,10 @@ if (isset($var1)) {
 } else {
   $projects = $projectIns->getAllProjects();
 }
+ 
 
 
-
-// If statment wat nog gebruikt kan worden
-//if (isset($var1) && $var1) {
-//    $projects = $postIns->getPopulairPosts();
-// } if(isset($var1) && $var1){ 
-//    $projects = $postIns->getAlphaPost(); 
-//   } if(isset($var1) && $var1) { 
-//     $projects = $postIns->getRecentPost(); 
-//  } else { 
-//    $projects = $postIns->getAllPost();
-//   }
-
-
-
+ 
 ?>
 
 <!DOCTYPE html>
@@ -141,16 +129,16 @@ if (isset($var1)) {
         toevoegen</a>
 
       <h2>Criteria</h2>
-      <form>
+      <form action="overzicht-projecten.php" method="POST">
 
         <h3 class="fs-6">Jaartal</h3>
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" value="2019" name="2019" type="checkbox" >
           <label class="form-check-label" for="flexSwitchCheckDefault">2019</label>
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="2020" value="2020" role="switch" id="flexSwitchCheckDefault">
           <label class="form-check-label" for="flexSwitchCheckDefault">2020</label>
         </div>
 
@@ -246,7 +234,7 @@ if (isset($var1)) {
         </div>
 
 
-        <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit">Toon resultaten</button>
+        <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit" value="submit">Toon resultaten</button>
       </form>
     </div>
   </div>
