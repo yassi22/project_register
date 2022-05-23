@@ -56,24 +56,13 @@ if (isset($var1)) {
   $projects = $projectIns->getAllProjects();
 }
 
-
-
-          $jaartal = $_POST['jaartaal'];
-
-          $dienst = $_POST['dienst'];
-
-          $categorie = $_POST['Categorie'];
-
-          var_dump($jaartal);
-          var_dump($dienst);
-          var_dump($categorie);
-
+ 
 if (isset($_POST['Filter'])) {
 
-  $projecten = $projectIns->getFilterProject($jaartal, $dienst, $categorie); 
+  $projectIns->getFilterProject($_POST['jaartaal'], $_POST['dienst'], $_POST['Categorie']);
 
 } else {
-  $projecten = $projectIns->getAllProjects();
+   $projectIns->getAllProjects();
 }
 
 
