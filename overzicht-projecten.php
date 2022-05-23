@@ -473,7 +473,7 @@ if (isset($_POST['submit'])) {
             </div>
 
 
-            <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit" name="submit" value="submit">Toon resultaten</button>
+            <button type="submit" class="btn mt-4 text-center resultaat-knop"   name="submit" value="submit">Toon resultaten</button>
 
           </form>
 
