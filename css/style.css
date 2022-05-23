@@ -72,8 +72,7 @@ h4 {
  .zoek { 
      max-width: 320px;
      width: 100%;
-     border-top-right-radius: 0;
-     border-bottom-right-radius: 0;
+     
  }  
  .zoek-klein { 
     max-height: 60px !important;
@@ -314,7 +313,7 @@ max-height: 50px;
 
 input[type=text] {
      
-    background-color: #F4F4F4;
+ 
      border: 1px solid #C8C8C8; 
   } 
 
