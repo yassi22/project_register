@@ -473,7 +473,7 @@ if (isset($_POST['Filter'])) {
 
             <button type="submit" class="btn mt-4 text-center resultaat-knop" name="Filter" value="filter">Toon resultaten</button>
 
-          </form>
+          </form> 
 
 
         </div>
