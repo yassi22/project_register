@@ -218,23 +218,23 @@ if (isset($_POST['submit'])) {
 
         <h3 class="fs-6">Categorie</h3>
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Evenement Registratie Platform" value="1">
           <label class="form-check-label" for="flexSwitchCheckDefault">Evenement Registratie Platform</label>
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Medisch Congres Platform" value="2">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Medisch Congres Platform</label>
         </div>
 
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Hybride Event Platform" value="4">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Hybride Event Platform </label>
         </div>
 
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <input class="form-check-input" type="checkbox" name="Congres Online Platfor" value="3">
           <label class="form-check-label" for="flexSwitchCheckDefault"> Congres Online Platform </label>
         </div>
 
