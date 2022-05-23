@@ -57,7 +57,7 @@ if (isset($var1)) {
 }
 
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['Filter'])) {
   $projects = $projectIns->getFilterProject($jaartal, $dienst, $categorie);
 } else {
   $projects = $projectIns->getAllProjects();
@@ -473,7 +473,7 @@ if (isset($_POST['submit'])) {
             </div>
 
 
-            <button type="submit" class="btn mt-4 text-center resultaat-knop"   name="submit" value="submit">Toon resultaten</button>
+            <button type="submit" class="btn mt-4 text-center resultaat-knop" name="Filter" value="submit">Toon resultaten</button>
 
           </form>
 
