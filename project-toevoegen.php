@@ -95,8 +95,6 @@ $categorien =  $categorieIns->getCategorie();
             <div class="d-flex justify-content-between d-none d-md-block ">
                 <a href="overzicht-projecten.php" class="btn knop justify-content-end   " role="button">Terug naar
                     overzicht</a>
-                <a href="project-aanpassen.php" class="btn   justify-content-end    knop-aanpassen" role="button">Project
-                    aanpassen</a>
                 <button class="btn  x justify-content-end knop-verwijder  " data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
             </div>
 
