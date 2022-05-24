@@ -60,13 +60,16 @@ if (isset($var1)) {
 if (isset($_POST['Filter'])) {
 
   $projectIns->getFilterProject($_POST['datum'], $_POST['diensten'], $_POST['categorie']);
+ 
 
-  var_dump($_POST['datum']);
-  echo "<br>";
-  var_dump($_POST['diensten']); 
-  echo "<br>";
-  var_dump($_POST['categorie']);  
-  
+  // var_dump($projectIns);
+  // echo "<br>";
+  // var_dump($_POST['datum']);
+  // echo "<br>";
+  // var_dump($_POST['diensten']); 
+  // echo "<br>";
+  // var_dump($_POST['categorie']);  
+
 } else {
   $projectIns->getAllProjects();
 }
