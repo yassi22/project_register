@@ -61,7 +61,7 @@ if (isset($_POST['Filter'])) {
 
   $projectIns->getFilterProject($_POST['datum'], $_POST['diensten'], $_POST['categorie']);
  
-
+   print_r($_POST['diensten']);
   // var_dump($projectIns);
   // echo "<br>";
   // var_dump($_POST['datum']);

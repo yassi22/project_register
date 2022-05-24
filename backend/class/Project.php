@@ -195,7 +195,9 @@ class Project extends DbConfig
    
  public function getFilterProject($jaartaal,$dienst,$categorie){
       $sql = "SELECT * FROM projecten INNER JOIN projecten_diensten on projecten_diensten.projecten_project_id = projecten.project_id INNER JOIN categoriee_projecten on categoriee_projecten.projecten_project_id = projecten.project_id
-       WHERE projecten IN ($jaartaal,$dienst,$categorie)";
+        
+       
+        IN ($jaartaal,$dienst,$categorie)";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetch(PDO::FETCH_OBJ);
