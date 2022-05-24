@@ -61,10 +61,9 @@ if (isset($_POST['Filter'])) {
 
   // $projectIns->getFilterProject($_POST['jaartaal'], $_POST['diensten'], $_POST['categorie']);
 
-  var_dump($_POST['diensten']); 
+  var_dump($_POST['diensten']);
   echo "<br>";
-  var_dump($_POST['categorie']);  
-  
+  var_dump($_POST['categorie']);
 } else {
   $projectIns->getAllProjects();
 }
@@ -134,6 +133,8 @@ if (isset($_POST['Filter'])) {
 
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
+
+    <!-- De navigatie hieronder is voor de mobile versie van de applicatie. -->
 
     <div class="offcanvas-body">
       <a href="project-toevoegen.php" class="btn btn-lg knop d-flex mb-4 justify-content-center" role="button">Project
@@ -252,6 +253,7 @@ if (isset($_POST['Filter'])) {
     </div>
   </div>
 
+  <!-- Hier eindigd de mobile navigatie. -->
 
 
   <div class="container">
