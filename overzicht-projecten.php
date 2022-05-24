@@ -61,10 +61,11 @@ if (isset($_POST['Filter'])) {
 
   // $projectIns->getFilterProject($_POST['jaartaal'], $_POST['diensten'], $_POST['categorie']);
 
-  var_dump($_POST['diensten']);
+  var_dump($_POST['datum']);
+  echo "<br>";
+  var_dump($_POST['diensten']); 
   echo "<br>";
   var_dump($_POST['categorie']); 
-
 } else {
   $projectIns->getAllProjects();
 }
@@ -265,26 +266,12 @@ if (isset($_POST['Filter'])) {
         <form action="#" method="POST">
 
           <h3 class="fs-6">Jaartal</h3>
-          <div class="form-check form-switch">
-            <input class="form-check-input" name="jaartaal" value="2019" type="checkbox">
-            <label class="form-check-label" for="flexSwitchCheckDefault">2019</label>
-          </div>
-
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" name="jaartaal" value="2020">
-            <label class="form-check-label" for="flexSwitchCheckDefault">2020</label>
-          </div>
-
-
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" name="jaartaal" value="2021">
-            <label class="form-check-label" for="flexSwitchCheckDefault"> 2021 </label>
-          </div>
-
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" name="jaartaal" value="2022">
-            <label class="form-check-label" for="flexSwitchCheckDefault"> 2022 </label>
-          </div>
+          <?php foreach ($projects as $project) { ?>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="datum[]" value="<?php echo $project->datum; ?>">
+              <label class="form-check-label" for="<?php echo $project->datum; ?>" id="<?php echo $project->datum; ?>"><?php echo $project->datum; ?> </label>
+            </div>
+          <?php } ?>
           <hr>
 
           <h3 class="fs-6">Diensten</h3>
