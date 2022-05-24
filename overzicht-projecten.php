@@ -272,7 +272,7 @@ if (isset($_POST['Filter'])) {
           <h3 class="fs-6">Jaartal</h3>
           <?php foreach ($projects as $project) { ?>
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="datum[]" value="<?php echo $project->datum; ?>">
+              <input class="form-check-input" type="checkbox" name="datum" value="<?php echo $project->datum; ?>">
               <label class="form-check-label" for="<?php echo $project->datum; ?>" id="<?php echo $project->datum; ?>"><?php echo $project->datum; ?> </label>
             </div>
           <?php } ?>
