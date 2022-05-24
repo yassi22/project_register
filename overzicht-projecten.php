@@ -96,7 +96,7 @@ if (isset($_POST['Filter'])) {
   // die;
 } else {
   $projects = $projectIns->getAllProjects();
-  echo 'get all';
+  
 }
 
 if (isset($_POST['Filter'])) {
@@ -130,7 +130,7 @@ if (isset($_POST['Filter'])) {
 
 
   if (isset($var1)) {
-    echo 'sort';
+     
     switch ($var1) {
       case "mostViews":
         $status = "Meest bekeken";
