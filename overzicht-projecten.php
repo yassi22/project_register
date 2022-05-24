@@ -63,7 +63,8 @@ if (isset($_POST['Filter'])) {
 
   var_dump($_POST['diensten']);
   echo "<br>";
-  var_dump($_POST['categorie']);
+  var_dump($_POST['categorie']); 
+
 } else {
   $projectIns->getAllProjects();
 }
