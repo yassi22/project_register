@@ -34,8 +34,8 @@ class Project extends DbConfig
       }
    }
 
-     public function updateProject($id, $projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
-    {
+   public function updateProject($id, $projectnaam, $datum, $websitelink, $omschrijving, $klantnaam)
+   {
 
       try {
          $project = $this->getProject($id);
@@ -192,18 +192,30 @@ class Project extends DbConfig
       $stmt->execute();
    }
 
-   
- public function getFilterProject($jaartaal,$dienst,$categorie){
-      $sql = "SELECT * FROM projecten INNER JOIN projecten_diensten on projecten_diensten.projecten_project_id = projecten.project_id INNER JOIN categoriee_projecten on categoriee_projecten.projecten_project_id = projecten.project_id
-        
-       
-        IN ($jaartaal,$dienst,$categorie)";
+
+   //  public function getFilterProject($jaartal,$dienst,$categorie){
+   //       $sql = "SELECT * FROM projecten 
+   //       INNER JOIN projecten_diensten on projecten_diensten.projecten_project_id = projecten.project_id 
+   //       INNER JOIN categoriee_projecten on categoriee_projecten.projecten_project_id = projecten.project_id
+   //       WHERE projecten.datum = $jaartal
+   //       AND projecten_diensten.diensten_diensten_id IN ($dienst)
+   //       AND categoriee_projecten.categorieen_categorie_id IN ($categorie)";
+   //       $stmt = $this->connect()->prepare($sql);
+   //       $stmt->execute();
+   //       return $stmt->fetch(PDO::FETCH_OBJ);
+   //  }
+
+   public function getFilterProject($dienst)
+   {
+      $sql = " SELECT * FROM projecten AS p
+               LEFT JOIN projecten_diensten AS pd
+               ON p.project_id = pd.projecten_project_id
+               LEFT JOIN diensten AS d
+               ON pd.diensten_diensten_id = d.diensten_id
+               WHERE pd.diensten_diensten_id IN ($dienst)
+               GROUP BY project_id";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
-      return $stmt->fetch(PDO::FETCH_OBJ);
- }
-
-}  
-
-
- ?> 
+      return $stmt->fetchAll(PDO::FETCH_OBJ);
+   }
+}

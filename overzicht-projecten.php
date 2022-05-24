@@ -8,26 +8,41 @@ $categorien =  $categorieIns->getCategorie();
 
 
 
-/* 
+          /* 
        Voor het sorteren van projecten word er gebruikt gemaakt 
        van de $_GET methode op de geselecteerde methode op te halen  
        van uit de URL
       */
 
-if (isset($_GET['order'])) {
-
-  $var1 = $_GET['order'];
-}
-
+          // if (isset($_GET['order'])) {
+          //   $var1 = $_GET['order'];
+          // }
 
 
-/* 
+
+          /* 
      Dit stuk van de code laat zien op welk onderdeel gesorteerd is aan de hand van een Switch statement.
       */
-$status = "Resultaten";
+          // $status = "Resultaten";
 
 
-/* 
+          /*
+ALS er een filter post actie wordt gedaan, dan wil ik projecten die aan de filter criteria voldoen
+ANDERS ALS er een sorteer actie wordt gedaan, dan wil ik projecten gesorteerd hebben
+ANDERS wil ik alle projecten
+
+if( filter ){
+
+}elseif(sorteer){
+
+}else{
+// projecten ophalen
+}
+*/
+
+
+
+          /* 
     Hier onder wordt bepaald of de variabele var1 wel gezet is door middel van een isset in een if statement.
     Daarna wordt er nagekeken of de varaiabel wel gevuld is door middel van een if statement.
     Dan wordt er door de Switch statement heen gelopen om te kijken welke sorteer optie geselecteerd is.
@@ -35,43 +50,109 @@ $status = "Resultaten";
 
       */
 
-if (isset($var1)) {
-  switch ($var1) {
-    case "mostViews":
-      $status = "Meest bekeken";
-      $projects = $projectIns->getPopulairProjects();
-      break;
-    case "sortAlpha":
-      $status = "Alphabetische volgorde";
-      $projects = $projectIns->getAlphaProjects();
-      break;
-    case "sortRecent":
-      $status = "Recent toegevoegd";
-      $projects = $projectIns->getRecentProjects();
-      break;
-    default:
-      $projects = $projectIns->getAllProjects();
-  }
+          // if (isset($var1)) {
+          //   echo 'sort';
+          //   switch ($var1) {
+          //     case "mostViews":
+          //       $status = "Meest bekeken";
+          //       $projects = $projectIns->getPopulairProjects();
+          //       break;
+          //     case "sortAlpha":
+          //       $status = "Alphabetische volgorde";
+          //       $projects = $projectIns->getAlphaProjects();
+          //       break;
+          //     case "sortRecent":
+          //       $status = "Recent toegevoegd";
+          //       $projects = $projectIns->getRecentProjects();
+          //       break;
+          //     default:
+          //       $projects = $projectIns->getAllProjects();
+          //   }
+          // } else {
+          //   $projects = $projectIns->getAllProjects();
+          // }
+          $status = "Resultaten";
+
+if (isset($_POST['Filter'])) {
+  $productgegevens = [];
+
+  $productgegevens['datum'] = isset($_POST['datum']) ? $_POST['datum'] : '';
+  $productgegevens['diensten'] = $_POST['diensten'];
+  $productgegevens['categorie'] = isset($_POST['categorie']) ? $_POST['categorie'] : '';
+
+  // $projectgegevens = ( . "" . $_POST['diensten'] . "" . );
+
+  // echo '<pre>';
+  // print_r($productgegevens);
+  // die;
+
+  // foreach ($projectgegevens as $projectbyte) {
+  //   $categorie_projcetenIns->ADDcategorie();
+  // }
+
+  $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']));
+
+  // var_dump($projects);
+  // die;
 } else {
   $projects = $projectIns->getAllProjects();
+  echo 'get all';
 }
-
 
 if (isset($_POST['Filter'])) {
 
-  $projectIns->getFilterProject($_POST['datum'], $_POST['diensten'], $_POST['categorie']);
- 
-   print_r($_POST['diensten']);
-  // var_dump($projectIns);
-  // echo "<br>";
-  // var_dump($_POST['datum']);
-  // echo "<br>";
-  // var_dump($_POST['diensten']); 
-  // echo "<br>";
-  // var_dump($_POST['categorie']);  
+  $productgegevens = [];
 
+  $productgegevens['datum'] = isset($_POST['datum']) ? $_POST['datum'] : '';
+  $productgegevens['diensten'] = $_POST['diensten'];
+  $productgegevens['categorie'] = isset($_POST['categorie']) ? $_POST['categorie'] : '';
+
+  // $projectgegevens = ( . "" . $_POST['diensten'] . "" . );
+
+  // echo '<pre>';
+  // print_r($productgegevens);
+  // die;
+
+  // foreach ($projectgegevens as $projectbyte) {
+  //   $categorie_projcetenIns->ADDcategorie();
+  // }
+
+  $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']));
+
+  // var_dump($projects);
+  // die;
+
+} elseif (isset($_GET['order'])) {
+
+  $var1 = $_GET['order'];
+
+  $status = "Resultaten";
+
+
+  if (isset($var1)) {
+    echo 'sort';
+    switch ($var1) {
+      case "mostViews":
+        $status = "Meest bekeken";
+        $projects = $projectIns->getPopulairProjects();
+        break;
+      case "sortAlpha":
+        $status = "Alphabetische volgorde";
+        $projects = $projectIns->getAlphaProjects();
+        break;
+      case "sortRecent":
+        $status = "Recent toegevoegd";
+        $projects = $projectIns->getRecentProjects();
+        break;
+      default:
+        $projects = $projectIns->getAllProjects();
+    }
+  } else {
+    $projects = $projectIns->getAllProjects();
+  }
 } else {
-  $projectIns->getAllProjects();
+  // projecten ophalen 
+  $projects = $projectIns->getAllProjects();
 }
 
 
