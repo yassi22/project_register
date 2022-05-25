@@ -123,14 +123,15 @@ if (isset($_POST['Filter'])) {
   // die;
 
 } elseif (isset($_GET['order'])) {
-
+ 
+  //Sorteer optie ophalen uit de url bar
   $var1 = $_GET['order'];
 
   $status = "Resultaten";
 
 
   if (isset($var1)) {
-     
+     //Checken wel sorteer optie gekozen is door middel van een switch statement.
     switch ($var1) {
       case "mostViews":
         $status = "Meest bekeken";
