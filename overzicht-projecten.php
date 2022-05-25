@@ -121,9 +121,7 @@ if (isset($_POST['Filter'])) {
   // foreach ($projectgegevens as $projectbyte) {
   //   $categorie_projcetenIns->ADDcategorie();
   // } 
-
-
- var_dump($productgegevens['diensten']);
+ 
 
  $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']));
 
