@@ -8,25 +8,25 @@ $categorien =  $categorieIns->getCategorie();
 
 
 
-          /* 
+/* 
        Voor het sorteren van projecten word er gebruikt gemaakt 
        van de $_GET methode op de geselecteerde methode op te halen  
        van uit de URL
       */
 
-          // if (isset($_GET['order'])) {
-          //   $var1 = $_GET['order'];
-          // }
+// if (isset($_GET['order'])) {
+//   $var1 = $_GET['order'];
+// }
 
 
 
-          /* 
+/* 
      Dit stuk van de code laat zien op welk onderdeel gesorteerd is aan de hand van een Switch statement.
       */
-          // $status = "Resultaten";
+// $status = "Resultaten";
 
 
-          /*
+/*
 ALS er een filter post actie wordt gedaan, dan wil ik projecten die aan de filter criteria voldoen
 ANDERS ALS er een sorteer actie wordt gedaan, dan wil ik projecten gesorteerd hebben
 ANDERS wil ik alle projecten
@@ -42,7 +42,7 @@ if( filter ){
 
 
 
-          /* 
+/* 
     Hier onder wordt bepaald of de variabele var1 wel gezet is door middel van een isset in een if statement.
     Daarna wordt er nagekeken of de varaiabel wel gevuld is door middel van een if statement.
     Dan wordt er door de Switch statement heen gelopen om te kijken welke sorteer optie geselecteerd is.
@@ -50,28 +50,28 @@ if( filter ){
 
       */
 
-          // if (isset($var1)) {
-          //   echo 'sort';
-          //   switch ($var1) {
-          //     case "mostViews":
-          //       $status = "Meest bekeken";
-          //       $projects = $projectIns->getPopulairProjects();
-          //       break;
-          //     case "sortAlpha":
-          //       $status = "Alphabetische volgorde";
-          //       $projects = $projectIns->getAlphaProjects();
-          //       break;
-          //     case "sortRecent":
-          //       $status = "Recent toegevoegd";
-          //       $projects = $projectIns->getRecentProjects();
-          //       break;
-          //     default:
-          //       $projects = $projectIns->getAllProjects();
-          //   }
-          // } else {
-          //   $projects = $projectIns->getAllProjects();
-          // }
-          $status = "Resultaten";
+// if (isset($var1)) {
+//   echo 'sort';
+//   switch ($var1) {
+//     case "mostViews":
+//       $status = "Meest bekeken";
+//       $projects = $projectIns->getPopulairProjects();
+//       break;
+//     case "sortAlpha":
+//       $status = "Alphabetische volgorde";
+//       $projects = $projectIns->getAlphaProjects();
+//       break;
+//     case "sortRecent":
+//       $status = "Recent toegevoegd";
+//       $projects = $projectIns->getRecentProjects();
+//       break;
+//     default:
+//       $projects = $projectIns->getAllProjects();
+//   }
+// } else {
+//   $projects = $projectIns->getAllProjects();
+// }
+$status = "Resultaten";
 
 // if (isset($_POST['Filter'])) {
 //   $productgegevens = [];
@@ -96,18 +96,14 @@ if( filter ){
 //   // die;
 // } else {
 //   $projects = $projectIns->getAllProjects();
-  
+
 // }
 
 if (isset($_POST['Filter'])) {
 
-  $productgegevens = []; 
+  $productgegevens = [];
 
 
-
-  echo "<br>"; 
-
- 
   $productgegevens['datum'] = isset($_POST['datum']) ? $_POST['datum'] : '';
   $productgegevens['diensten'] = ($_POST['diensten']);
   $productgegevens['categorie'] = ($_POST['categorie']);
@@ -121,15 +117,15 @@ if (isset($_POST['Filter'])) {
   // foreach ($projectgegevens as $projectbyte) {
   //   $categorie_projcetenIns->ADDcategorie();
   // } 
- 
 
- $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']));
+
+  $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']), implode(",", $productgegevens['categorie']));
 
   // var_dump($projects);
   // die; 
 
 } elseif (isset($_GET['order'])) {
- 
+
   //Sorteer optie ophalen uit de url bar
   $var1 = $_GET['order'];
 
@@ -137,7 +133,7 @@ if (isset($_POST['Filter'])) {
 
 
   if (isset($var1)) {
-     //Checken wel sorteer optie gekozen is door middel van een switch statement.
+    //Checken wel sorteer optie gekozen is door middel van een switch statement.
     switch ($var1) {
       case "mostViews":
         $status = "Meest bekeken";
