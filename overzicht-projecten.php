@@ -90,7 +90,7 @@ if (isset($_POST['Filter'])) {
   //   $categorie_projcetenIns->ADDcategorie();
   // }
 
-  $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']));
+  $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']), implode(",", $productgegevens['categorie']));
 
   // var_dump($projects);
   // die;
