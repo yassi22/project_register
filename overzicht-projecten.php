@@ -104,7 +104,7 @@ if (isset($_POST['Filter'])) {
   $productgegevens = [];
 
 
-  $productgegevens['datum'] = isset($_POST['datum']) ? $_POST['datum'] : '';
+  $productgegevens['datum'] = ($_POST['datum']);
   $productgegevens['diensten'] = ($_POST['diensten']);
   $productgegevens['categorie'] = ($_POST['categorie']);
 
@@ -125,13 +125,11 @@ if (isset($_POST['Filter'])) {
   var_dump($productgegevens);
 
    if(empty($productgegevens)){   
-
-   $projects = $projectIns->getAllProjects(); 
-
-     } else { 
-
     $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']), implode(",", $productgegevens['categorie']));
 
+     } else { 
+      
+    $projects = $projectIns->getAllProjects(); 
      }
       
 
