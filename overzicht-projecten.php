@@ -165,6 +165,7 @@ if (isset($_POST['Filter'])) {
   } else {
     $projects = $projectIns->getAllProjects();
   }
+  
 } else {
   // projecten ophalen 
   $projects = $projectIns->getAllProjects();
