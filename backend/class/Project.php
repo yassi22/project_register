@@ -209,18 +209,16 @@ class Project extends DbConfig
    {
       $sql = "SELECT * FROM projecten AS p
             INNER JOIN projecten_diensten AS pd ON p.project_id = pd.projecten_project_id 
-            INNER JOIN categoriee_projecten as cp ON p.project_id = cp.projecten_project_id 
+            LEFT JOIN categoriee_projecten as cp ON p.project_id = cp.projecten_project_id 
             WHERE pd.diensten_diensten_id IN ($dienst) 
-            AND cp.categorieen_categorie_id = $categorie
+            OR cp.categorieen_categorie_id IN ($categorie)
             GROUP BY project_id";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetchAll(PDO::FETCH_OBJ);
    }
 
- 
-
-   
+  
       // $sql = " SELECT * FROM projecten AS p
       //          LEFT JOIN projecten_diensten AS pd
       //          ON p.project_id = pd.projecten_project_id
