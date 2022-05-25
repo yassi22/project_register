@@ -101,11 +101,16 @@ if( filter ){
 
 if (isset($_POST['Filter'])) {
 
-  $productgegevens = [];
+  $productgegevens = []; 
 
+
+
+  echo "<br>"; 
+
+ 
   $productgegevens['datum'] = isset($_POST['datum']) ? $_POST['datum'] : '';
-  $productgegevens['diensten'] = $_POST['diensten'];
-  $productgegevens['categorie'] = isset($_POST['categorie']) ? is_array($_POST['categorie']) : '';
+  $productgegevens['diensten'] = ($_POST['diensten']);
+  $productgegevens['categorie'] = ($_POST['categorie']);
 
   // $projectgegevens = ( . "" . $_POST['diensten'] . "" . );
 
@@ -115,12 +120,15 @@ if (isset($_POST['Filter'])) {
 
   // foreach ($projectgegevens as $projectbyte) {
   //   $categorie_projcetenIns->ADDcategorie();
-  // }
+  // } 
 
-  $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']), implode(",", $productgegevens['categorie']));
+
+ var_dump($productgegevens['diensten']);
+
+ $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']));
 
   // var_dump($projects);
-  // die;
+  // die; 
 
 } elseif (isset($_GET['order'])) {
  

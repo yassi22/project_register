@@ -205,17 +205,18 @@ class Project extends DbConfig
    //       return $stmt->fetch(PDO::FETCH_OBJ);
    //  }
 
-   public function getFilterProject($dienst,$categorie)
+   public function getFilterProject($dienst)
    {
-      $sql = "SELECT * FROM projecten AS p
-            INNER JOIN projecten_diensten AS pd ON p.project_id = pd.projecten_project_id 
-            LEFT JOIN categoriee_projecten as cp ON p.project_id = cp.projecten_project_id 
-            WHERE pd.diensten_diensten_id IN ($dienst) 
-            OR cp.categorieen_categorie_id IN ($categorie)
-            GROUP BY project_id";
+         $sql = " SELECT * FROM projecten AS p
+               LEFT JOIN projecten_diensten AS pd
+               ON p.project_id = pd.projecten_project_id
+               LEFT JOIN diensten AS d
+               ON pd.diensten_diensten_id = d.diensten_id
+               WHERE pd.diensten_diensten_id IN ($dienst)
+               GROUP BY project_id";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
-      return $stmt->fetchAll(PDO::FETCH_OBJ);
+      return $stmt->fetchAll(PDO::FETCH_OBJ); 
    }
 
   
@@ -229,6 +230,18 @@ class Project extends DbConfig
       // $stmt = $this->connect()->prepare($sql);
       // $stmt->execute();
       // return $stmt->fetchAll(PDO::FETCH_OBJ);
+
+
+  // $sql = "SELECT * FROM projecten AS p
+      //       INNER JOIN projecten_diensten AS pd ON p.project_id = pd.projecten_project_id 
+      //       LEFT JOIN categoriee_projecten as cp ON p.project_id = cp.projecten_project_id 
+      //       WHERE pd.diensten_diensten_id IN ($dienst) 
+      //       OR cp.categorieen_categorie_id IN ($categorie)
+      //       GROUP BY project_id";
+      // $stmt = $this->connect()->prepare($sql);
+      // $stmt->execute();
+      // return $stmt->fetchAll(PDO::FETCH_OBJ);
+
 
 
 }
