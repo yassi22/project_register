@@ -105,7 +105,7 @@ if (isset($_POST['Filter'])) {
 
   $productgegevens['datum'] = isset($_POST['datum']) ? $_POST['datum'] : '';
   $productgegevens['diensten'] = $_POST['diensten'];
-  $productgegevens['categorie'] = isset($_POST['categorie']) ? $_POST['categorie'] : '';
+  $productgegevens['categorie'] = isset($_POST['categorie']) ? is_array($_POST['categorie']) : '';
 
   // $projectgegevens = ( . "" . $_POST['diensten'] . "" . );
 
