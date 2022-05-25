@@ -73,7 +73,34 @@ if( filter ){
           // }
           $status = "Resultaten";
 
+// if (isset($_POST['Filter'])) {
+//   $productgegevens = [];
+
+//   $productgegevens['datum'] = isset($_POST['datum']) ? $_POST['datum'] : '';
+//   $productgegevens['diensten'] = $_POST['diensten'];
+//   $productgegevens['categorie'] = isset($_POST['categorie']) ? $_POST['categorie'] : '';
+
+//   // $projectgegevens = ( . "" . $_POST['diensten'] . "" . );
+
+//   // echo '<pre>';
+//   // print_r($productgegevens);
+//   // die;
+
+//   // foreach ($projectgegevens as $projectbyte) {
+//   //   $categorie_projcetenIns->ADDcategorie();
+//   // }
+
+//   $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']), implode(",", $productgegevens['categorie']));
+
+//   // var_dump($projects);
+//   // die;
+// } else {
+//   $projects = $projectIns->getAllProjects();
+  
+// }
+
 if (isset($_POST['Filter'])) {
+
   $productgegevens = [];
 
   $productgegevens['datum'] = isset($_POST['datum']) ? $_POST['datum'] : '';
@@ -91,33 +118,6 @@ if (isset($_POST['Filter'])) {
   // }
 
   $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']), implode(",", $productgegevens['categorie']));
-
-  // var_dump($projects);
-  // die;
-} else {
-  $projects = $projectIns->getAllProjects();
-  
-}
-
-if (isset($_POST['Filter'])) {
-
-  $productgegevens = [];
-
-  $productgegevens['datum'] = isset($_POST['datum']) ? $_POST['datum'] : '';
-  $productgegevens['diensten'] = $_POST['diensten'];
-  $productgegevens['categorie'] = isset($_POST['categorie']) ? $_POST['categorie'] : '';
-
-  // $projectgegevens = ( . "" . $_POST['diensten'] . "" . );
-
-  // echo '<pre>';
-  // print_r($productgegevens);
-  // die;
-
-  // foreach ($projectgegevens as $projectbyte) {
-  //   $categorie_projcetenIns->ADDcategorie();
-  // }
-
-  $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']));
 
   // var_dump($projects);
   // die;
