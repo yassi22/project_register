@@ -116,14 +116,24 @@ if (isset($_POST['Filter'])) {
 
   // foreach ($projectgegevens as $projectbyte) {
   //   $categorie_projcetenIns->ADDcategorie();
-  // }  
+  // }   
  
   //Als er geen filters geselecteerd zijn, wil ik alleen projecten terug willen zien. 
-  //Anders wil ik alle projecten terug zien met de juiste filters
+  //Anders wil ik alle projecten terug zien met de juiste filters 
  
-      $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']), implode(",", $productgegevens['categorie']));
-     
-    
+
+  var_dump($productgegevens);
+
+   if(empty($productgegevens)){   
+
+   $projects = $projectIns->getAllProjects(); 
+
+     } else { 
+
+    $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']), implode(",", $productgegevens['categorie']));
+
+     }
+      
 
   // var_dump($projects);
   // die; 
