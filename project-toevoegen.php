@@ -123,11 +123,10 @@ $categorien =  $categorieIns->getCategorie();
         <div class="offcanvas-body">
 
             <div class="d-flex flex-column">
-                <a href="overzicht-pagina.php" class="btn btn-lg knop d-flex justify-content-center" role="button">Terug
+                <a href="overzicht-projecten.php" class="btn btn-lg knop d-flex justify-content-center" role="button">Terug
                     naar
                     overzicht</a>
-                <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-center knop-aanpassen" role="button">Project
-                    aanpassen</a>
+                 
                 <button class="btn btn-lg d-flex justify-content-center knop-verwijder  " data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
             </div>
 
@@ -147,50 +146,66 @@ $categorien =  $categorieIns->getCategorie();
                     <div class="row g-0 details">
                         <div class="col col-12 py-4 px-4">
                             <form method="POST" action="handler/projectVerwerk.php" enctype="multipart/form-data">
-                                <div class="mb-3">
-                                    <label for="projectnaam" id="projectnaam" class="form-label"> Projectnaam </label>
-                                    <input type="text" class="form-control" name="projectnaam" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="datum" id="datum" class="form-label"> Projectdatum</label>
-                                    <input type="date" class="form-control" name="datum" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="websitelink" id="websitelink" class="form-label"> WebsiteLink </label>
-                                    <input type="text" class="form-control" name="websitelink" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="omschrijving" id="omschrijving" class="form-label"> Omschrijving </label>
-                                    <input type="text" class="form-control" name="omschrijving" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="klantnaam" id="klantnaam" class="form-label"> Klantnaam </label>
-                                    <input type="text" class="form-control" name="klantnaam" required>
-                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10 col-md-8 col-lg-6">
+                                        <div class="mb-3 ">
+                                            <label for="projectnaam" id="projectnaam" class="form-label invoer-naam"> Projectnaam </label>
+                                            <input type="text" class="form-control" name="projectnaam" required placeholder="Vul een projectnaam in">
+                                        </div>
 
-                                <h2> Diensten </h2>
+                                        <div class="mb-3">
+                                            <div style="max-width: 145px;">
+                                                <label for="datum" id="datum" class="form-label invoer-naam"> Projectdatum</label>
+                                                <input type="date" class="form-control" name="datum" required>
+                                            </div>
+                                        </div>
 
-                                <?php foreach ($diensten as $dienst) { ?>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
-                                        <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
-                                    </div>
-                                <?php } ?>
-                                <h2> Categorie </h2>
-                                <?php foreach ($categorien as $categorie) { ?>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
-                                        <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
-                                    </div>
-                                <?php } ?>
-                                <div>
-                                    Select Image Files to Upload:
-                                    <input type="file" name="files[]" multiple>
-                                
-                                    <br>
-                                    <br>
-                                </div>
-                                <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
+
+                                        <label class="invoer-naam label-categorie" for="Projectdatum1">Website link</label>
+
+                                        <div class="input-group mb-3 ">
+
+                                            <span class="input-group-text" id="basic-addon3">https://</span>
+
+                                            <input type="text" class="form-control input-lengte" name="websitelink" aria-describedby="basic-addon3" placeholder="Vul een website link in">
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <label for="omschrijving" id="omschrijving" class="form-label invoer-naam"> Omschrijving </label>
+                                            <textarea class="form-control omschrijf-text" name="omschrijving" placeholder="Vul een omschrijving in" rows="3"></textarea>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="klantnaam" id="klantnaam" class="form-label invoer-naam"> Klantnaam </label>
+                                            <input type="text" class="form-control" name="klantnaam" required placeholder="Vul een klantnaam in">
+                                        </div>
+
+                                        <h2> Diensten </h2>
+
+                                        <?php foreach ($diensten as $dienst) { ?>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
+                                                <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
+                                            </div>
+                                        <?php } ?> 
+                                        <br> 
+                                        <h2> Categorie </h2>
+                                        <?php foreach ($categorien as $categorie) { ?>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
+                                                <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
+                                            </div>
+                                        <?php } ?> 
+                                        <br>
+                                        <div>
+                                            Select Image Files to Upload:
+                                            <input type="file" name="files[]" multiple>
+
+                                            <br>
+                                            <br>
+                                        </div>
+                                        <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
                         </div>
                     </div>
@@ -200,7 +215,7 @@ $categorien =  $categorieIns->getCategorie();
             </div>
         </div>
     </div>
-    </div>
+
 </body>
 
 </html>
