@@ -117,21 +117,20 @@ if (isset($_POST['Filter'])) {
   // foreach ($projectgegevens as $projectbyte) {
   //   $categorie_projcetenIns->ADDcategorie();
   // }   
- 
+
   //Als er geen filters geselecteerd zijn, wil ik alleen projecten terug willen zien. 
   //Anders wil ik alle projecten terug zien met de juiste filters 
- 
+
 
   var_dump($productgegevens);
 
-   if(empty($productgegevens)){   
+  if (empty($productgegevens)) {
     $projects = $projectIns->getFilterProject(implode(",", $productgegevens['diensten']), implode(",", $productgegevens['categorie']));
+  } else {
 
-     } else { 
-      
-    $projects = $projectIns->getAllProjects(); 
-     }
-      
+    $projects = $projectIns->getAllProjects();
+  }
+
 
   // var_dump($projects);
   // die; 
@@ -165,7 +164,6 @@ if (isset($_POST['Filter'])) {
   } else {
     $projects = $projectIns->getAllProjects();
   }
-  
 } else {
   // projecten ophalen 
   $projects = $projectIns->getAllProjects();
@@ -244,112 +242,35 @@ if (isset($_POST['Filter'])) {
         toevoegen</a>
 
       <h2>Criteria</h2>
-      <form action="overzicht-projecten.php" method="POST">
+      <form action="#" method="POST">
 
         <h3 class="fs-6">Jaartal</h3>
-        <div class="form-check form-switch">
-          <input class="form-check-input" name="jaartaal" value="2019" type="checkbox">
-          <label class="form-check-label" for="flexSwitchCheckDefault">2019</label>
-        </div>
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="jaartaal" value="2020">
-          <label class="form-check-label" for="flexSwitchCheckDefault">2020</label>
-        </div>
-
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="jaartaal" value="2021">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> 2021 </label>
-        </div>
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="jaartaal" value="2022">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> 2022 </label>
-        </div>
+        <?php foreach ($projects as $project) { ?>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" name="datum" value="<?php echo $project->datum; ?>">
+            <label class="form-check-label" for="<?php echo $project->datum; ?>" id="<?php echo $project->datum; ?>"><?php echo $project->datum; ?> </label>
+          </div>
+        <?php } ?>
         <hr>
 
         <h3 class="fs-6">Diensten</h3>
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="dienst" value="10">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Eventwebsite</label>
-        </div>
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="dienst" value="9">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Evenement platform</label>
-        </div>
-
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="dienst" value="8">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Online betaalmodule </label>
-        </div>
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="dienst" value="7">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Event app </label>
-        </div>
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="dienst" value="6">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Toegangscontrole </label>
-        </div>
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="dienst" value="1">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Lanyards </label>
-        </div>
-
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="dienst" value="4">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Hostesses </label>
-        </div>
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="dienst" value="3">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Evaluatie </label>
-        </div>
-
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="dienst" value="2">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Fotoalbum </label>
-        </div>
-
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="dienst" value="5">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Abstractmodule </label>
-        </div>
-
+        <?php foreach ($diensten as $dienst) { ?>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
+            <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
+          </div>
+        <?php } ?>
         <hr>
 
         <h3 class="fs-6">Categorie</h3>
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="Categorie" value="1">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Evenement Registratie Platform</label>
-        </div>
+        <?php foreach ($categorien as $categorie) { ?>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
+            <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
+          </div>
+        <?php } ?>
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="Categorie" value="2">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Medisch Congres Platform</label>
-        </div>
-
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="Categorie" value="4">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Hybride Event Platform </label>
-        </div>
-
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="Categorie" value="3">
-          <label class="form-check-label" for="flexSwitchCheckDefault"> Congres Online Platform </label>
-        </div>
-
-
-        <button type="button" class="btn mt-4 text-center resultaat-knop" type="submit" value="submit">Toon resultaten</button>
+        <button type="submit" class="btn mt-4 text-center resultaat-knop" name="Filter" value="filter">Toon resultaten</button>
 
       </form>
 
