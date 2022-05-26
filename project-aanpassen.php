@@ -9,8 +9,8 @@ $diensten = $dienstenIns->getDiensten();
 $categorien = $categorieIns->getCategorie();
 
 $diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
-  
- 
+
+
 
 ?>
 
@@ -77,7 +77,7 @@ $diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
             <div class="d-flex justify-content-between d-none d-md-block ">
                 <a href="overzicht-projecten.php" class="btn knop justify-content-end   " role="button">Terug naar
                     overzicht</a>
-                <a href="project-aanpassen.php" class="btn   justify-content-end    knop-aanpassen" role="button">Project
+                <a href="project-aanpassen.php?id=<?php echo $projects->project_id ?>" class="btn   justify-content-end    knop-aanpassen" role="button">Project
                     aanpassen</a>
                 <button class="btn  x justify-content-end knop-verwijder  " data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
             </div>
@@ -149,14 +149,14 @@ $diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
                                 </div>
                                 <div class="mb-3">
                                     <label for="klantnaam" id="klantnaam" class="form-label"> Klantnaam </label>
-                                    <input type="text" class="form-control" value="<?php echo $projects->klant_id;?>" name="klantnaam" required>
+                                    <input type="text" class="form-control" value="<?php echo $projects->klant_id; ?>" name="klantnaam" required>
                                 </div>
 
                                 <h2> Diensten </h2>
 
                                 <?php foreach ($diensten as $dienst) { ?>
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input"  type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
+                                        <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
                                         <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
                                     </div>
                                 <?php } ?>
@@ -164,10 +164,10 @@ $diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
                                 <h2> Categorie </h2>
                                 <?php foreach ($categorien as $categorie) { ?>
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input"  type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
+                                        <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
                                         <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
                                     </div>
-                                <?php } ?> 
+                                <?php } ?>
                                 <br>
                                 <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Wijzingen opslaan</button>
                             </form>
