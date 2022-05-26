@@ -82,24 +82,59 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
             </div>
         </div>
     </div>
- 
-    
-    <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
+
+
+    <nav class="navbar navbar-expand-sm shadow  bg-white rounded mb-4 ">
         <div class="container-fluid">
-            <a href="overzicht-projecten.php">
+            <a href="overzicht-projecten.php" class="d-none d-md-block">
                 <img alt="logo" class="logo" src="img/logo-activo.jpg">
             </a>
 
-            <div class="d-flex justify-content-between">
-                <a href="overzicht-projecten.php" class="btn btn-lg knop d-flex justify-content-end" role="button">Terug
-                    naar
+            <div class="d-flex justify-content-between d-none d-md-block ">
+                <a href="overzicht-projecten.php" class="btn knop justify-content-end   " role="button">Terug naar
                     overzicht</a>
-                <a href="project-aanpassen.php?id=<?php echo $projects->project_id ?>" class="btn btn-lg d-flex justify-content-end knop-aanpassen" role="button">Project
+                <a href="project-aanpassen.php?id=<?php echo $projects->project_id ?>" class="btn   justify-content-end    knop-aanpassen" role="button">Project
                     aanpassen</a>
-                <button class="btn btn-lg d-flex justify-content-end knop-verwijder d-none d-md-block" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
+                <button class="btn  x justify-content-end knop-verwijder  " data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
             </div>
+
+            <button class="btn btn-link  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <svg width="51" height="42" viewBox="0 0 51 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="51" height="9.33333" rx="4.66667" fill="#4B96D0" />
+                    <rect y="32.6667" width="51" height="9.33333" rx="4.66667" fill="#057494" />
+                    <rect y="16.3333" width="51" height="9.33333" rx="4.66667" fill="#F48424" />
+                </svg>
+            </button>
+
         </div>
     </nav>
+
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <img alt="logo" class="logo" src="img/logo-activo.jpg">
+            </h5>
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <div class="d-flex flex-column">
+                <a href="overzicht-projecten.php" class="btn btn-lg knop d-flex justify-content-center" role="button">Terug
+                    naar
+                    overzicht</a>
+                <a href="aanpas-pagina.php" class="btn btn-lg d-flex justify-content-center knop-aanpassen" role="button">Project
+                    aanpassen</a>
+                <button class="btn btn-lg d-flex justify-content-center knop-verwijder  " data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Project verwijderen</button>
+            </div>
+
+
+        </div>
+    </div>
+
 
 
     <div class="container-fluid">
