@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="JS/preview.image.min.js"></script>
-  <link rel="stylesheet" href="style-test-2.css">
+  <link rel="stylesheet" href="../css/style-test-2.css">
 
   <!-- Load Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

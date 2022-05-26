@@ -8,9 +8,9 @@ require_once 'backend/autoloader.php';
 
 $projects = $projectIns->getProject($_GET['id']);
 
-$diensten = $dienstenIns->getDiensten_Project($_GET['id']); 
+$diensten = $dienstenIns->getDiensten_Project($_GET['id']);
 
-$categorieen = $categorieIns->getCategorie_projecten($_GET['id']); 
+$categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
 
 ?>
 
@@ -82,9 +82,8 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
             </div>
         </div>
     </div>
-
-
-
+ 
+    
     <nav class="navbar navbar-expand-sm shadow p-3 mb-5 bg-white rounded ">
         <div class="container-fluid">
             <a href="overzicht-projecten.php">
