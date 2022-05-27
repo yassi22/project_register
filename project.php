@@ -47,16 +47,17 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centerd ">
             <div class="modal-content border-0 rounded shadow ">
-
+                <div class="modal-header mb-3 ">
+                    <h4 class="modal-title text-center" id="exampleModalLabel">Project verwijderen </h4>
+                    <div class="d-flex justify-content-end ml-4 mt-1">
+                        <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
 
                 <div class="container-lg">
                     <div class="d-flex justify-content-center">
-                        <div class="modal-header mb-3 ">
-                            <h4 class="modal-title text-center" id="exampleModalLabel">Project verwijderen </h4>
-                        </div>
-                        <div class="d-flex justify-content-end ml-4 mt-1">
-                            <button type="button" class="btn-close  " data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
+
+
                     </div>
                 </div>
 
@@ -181,10 +182,10 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
 
                         <div class="col col-6 py-4 px-5">
 
-                            <!--Als de naam van de plaatje al opgehaald, haal dan een nieuwe plaatje op--> 
+                            <!--Als de naam van de plaatje al opgehaald, haal dan een nieuwe plaatje op-->
 
                             <div class=" d-flex p-2">
-                                <div class="col-sm-4 m-2 ml-2"> 
+                                <div class="col-sm-4 m-2 ml-2">
                                     <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
                                         <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
                                 </div>

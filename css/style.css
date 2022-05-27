@@ -328,9 +328,10 @@ input[type=text] {
      border: 1px solid #C8C8C8; 
   }
 
+  textarea.form-control,
   textarea {
-    border: 1px solid #C8C8C8 !important;
-    background-color: #F4F4F4 !important;
+    border: 1px solid #C8C8C8;
+    background-color: #F4F4F4;
     resize: none;
 
   } 
@@ -513,11 +514,14 @@ input[type=text] {
     border: 1px solid #C8C8C8;  
  
    
- } 
- 
-   textarea {
-    border: 1px solid #C8C8C8 !important;
-    background-color: #F4F4F4 !important;
-    resize: none;
+ }
 
-  } 
+  textarea:focus {
+    background-color: #fff;
+    border-color: #86b7fe;
+  }
+
+  .offcanvas-start{ 
+      width: 100%;
+      border-right: none;
+  }
