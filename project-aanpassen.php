@@ -126,50 +126,72 @@ $diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
                 <h2>Project aanpassen</h2>
             </section>
 
-            <div class="jumbotron shadow mb-5 bg-white rounded mt-4 jumbo-grote">
+            <div class="jumbotron shadow mb-5 bg-white rounded mt-4  jumbo-grote">
                 <div>
                     <div class="row g-0 details">
                         <div class="col col-12 py-4 px-4">
-                            <form method="POST" action="handler/projectVerwerk.php">
-                                <div class="mb-3">
-                                    <label for="projectnaam" id="projectnaam" class="form-label"> Projectnaam</label>
-                                    <input type="text" class="form-control" value=" <?php echo $projects->projectnaam; ?>" name="projectnaam" required> </input>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="datum" id="datum" class="form-label"> Projectdatum</label>
-                                    <input type="date" class="form-control" value="<?php echo $projects->datum; ?> " name="datum" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="websitelink" id="websitelink" class="form-label"> WebsiteLink </label>
-                                    <input type="text" class="form-control" value="<?php echo $projects->website_link; ?> " name="websitelink" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="omschrijving" id="omschrijving" class="form-label"> Omschrijving </label>
-                                    <input type="text" class="form-control" value="<?php echo $projects->omschrijving; ?>" name="omschrijving" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="klantnaam" id="klantnaam" class="form-label"> Klantnaam </label>
-                                    <input type="text" class="form-control" value="<?php echo $projects->klant_id; ?>" name="klantnaam" required>
-                                </div>
+                            <form method="POST" action="handler/projectVerwerk.php" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="col-sm-10 col-md-8 col-lg-6">
+                                        <div class="mb-3 ">
+                                            <label for="projectnaam" id="projectnaam" class="form-label invoer-naam"> Projectnaam </label>
+                                            <input type="text" class="form-control" value="<?php echo $projects->projectnaam; ?>" name="projectnaam" required>
+                                        </div>
 
-                                <h2> Diensten </h2>
+                                        <div class="mb-3">
+                                            <div style="max-width: 145px;">
+                                                <label for="datum" id="datum" class="form-label invoer-naam"> Projectdatum</label>
+                                                <input type="date" class="form-control" value="<?php echo $projects->projectnaam; ?> name=" datum" required>
+                                            </div>
+                                        </div>
 
-                                <?php foreach ($diensten as $dienst) { ?>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
-                                        <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
+
+                                        <label class="invoer-naam label-categorie" for="Projectdatum1">Website link</label>
+
+                                        <div class="input-group mb-3 ">
+
+                                            <span class="input-group-text" id="basic-addon3">https://</span>
+
+                                            <input type="text" class="form-control input-lengte" name="websitelink" value=" <?php echo $projects->websitelink; ?>" aria-describedby="basic-addon3">
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <label for="omschrijving" id="omschrijving" class="form-label invoer-naam"> Omschrijving </label>
+                                            <textarea class="form-control omschrijf-text" name="omschrijving" value="<?php echo $projects->omschrijving; ?>" rows=" 3"></textarea>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="klantnaam" id="klantnaam" class="form-label invoer-naam"> Klantnaam </label>
+                                            <input type="text" class="form-control" name="klantnaam" value="<?php echo $projects->klant_id; ?>" required  >
+                                        </div>
+
+                                        <h2> Diensten </h2>
+
+                                        <?php foreach ($diensten as $dienst) { ?>
+                                            <div class=" form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
+                                            <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
+                                        </div>
+                                    <?php } ?>
+                                    <br>
+                                    <h2> Categorie </h2>
+                                    <?php foreach ($categorien as $categorie) { ?>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
+                                            <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
+                                        </div> 
+                                    <?php } ?> 
+
+                                    <br>
+                                    <div>
+                                        Select Image Files to Upload:
+                                        <input type="file" name="files[]" multiple>
+
+                                        <br>
+                                        <br>
                                     </div>
-                                <?php } ?>
-
-                                <h2> Categorie </h2>
-                                <?php foreach ($categorien as $categorie) { ?>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
-                                        <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
-                                    </div>
-                                <?php } ?>
-                                <br>
-                                <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Wijzingen opslaan</button>
+                                    <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
                         </div>
                     </div>
