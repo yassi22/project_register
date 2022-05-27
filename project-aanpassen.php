@@ -158,40 +158,40 @@ $diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
 
                                         <div class="mb-3">
                                             <label for="omschrijving" id="omschrijving" class="form-label invoer-naam"> Omschrijving </label>
-                                            <textarea class="form-control omschrijf-text" name="omschrijving" value="<?php echo $projects->omschrijving; ?>" rows=" 3"></textarea>
+                                            <textarea class="form-control omschrijf-text" name="omschrijving" rows=" 3"><?php echo $projects->omschrijving; ?></textarea>
                                         </div>
 
                                         <div class="mb-3">
                                             <label for="klantnaam" id="klantnaam" class="form-label invoer-naam"> Klantnaam </label>
-                                            <input type="text" class="form-control" name="klantnaam" value="<?php echo $projects->klant_id; ?>" required  >
+                                            <input type="text" class="form-control" name="klantnaam" value="<?php echo $projects->klant_id; ?>" required>
                                         </div>
 
                                         <h2> Diensten </h2>
 
                                         <?php foreach ($diensten as $dienst) { ?>
                                             <div class=" form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
-                                            <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
+                                                <input class="form-check-input" type="checkbox" name="diensten[]" value="<?php echo $dienst->diensten_id; ?>">
+                                                <label class="form-check-label" for="<?php echo $dienst->diensten_naam; ?>" id="<?php echo $dienst->dienst_id; ?>"><?php echo $dienst->diensten_naam; ?> </label>
+                                            </div>
+                                        <?php } ?>
+                                        <br>
+                                        <h2> Categorie </h2>
+                                        <?php foreach ($categorien as $categorie) { ?>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
+                                                <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
+                                            </div>
+                                        <?php } ?>
+
+                                        <br>
+                                        <div>
+                                            Select Image Files to Upload:
+                                            <input type="file" name="files[]" multiple>
+
+                                            <br>
+                                            <br>
                                         </div>
-                                    <?php } ?>
-                                    <br>
-                                    <h2> Categorie </h2>
-                                    <?php foreach ($categorien as $categorie) { ?>
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" name="categorie[]" value="<?php echo $categorie->categorie_id; ?>">
-                                            <label class="form-check-label" for="<?php echo $categorie->categorie_naam; ?>" id="<?php echo $categorie->categorie_id; ?>"><?php echo $categorie->categorie_naam; ?> </label>
-                                        </div> 
-                                    <?php } ?> 
-
-                                    <br>
-                                    <div>
-                                        Select Image Files to Upload:
-                                        <input type="file" name="files[]" multiple>
-
-                                        <br>
-                                        <br>
-                                    </div>
-                                    <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
+                                        <button type="submit" name="addProject" value="Add project" class="btn btn-primary">Toevoegen</button>
                             </form>
                         </div>
                     </div>

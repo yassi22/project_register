@@ -428,7 +428,7 @@ input[type=text] {
     line-height: 26px;
     color: #FFFFFF;  
     width:100%; 
-    max-width: 100px;
+   min-width: 80px;
 } 
 
 .modal-knop-nee { 
