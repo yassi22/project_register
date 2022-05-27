@@ -180,31 +180,31 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
                         </div>
 
                         <div class="col col-6 py-4 px-5">
-                            <?php foreach ($afbeeldingen as $afbeelding) { ?>
+                            
 
                                 <div class=" d-flex p-2">
 
                                     <div class="col-sm-4 m-2 ml-2"> 
-                                        <a data-fancybox="gallery" data-src='img/<?php echo $afbeelding->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-                                            <img src='img/<?php echo $afbeelding->naam ?>' class="rounded plaatje-grote" />
+                                        <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
+                                            <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
                                     </div>
 
 
                                     <div class="col-sm-4 m-2 ml-2">
-                                        <a data-fancybox="gallery" data-src='img/<?php echo $afbeelding->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-                                            <img src='img/<?php echo $afbeelding->naam ?>' class="rounded plaatje-grote" />
+                                        <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
+                                            <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
                                     </div>
 
 
                                     <div class="col-sm-4 m-2 ml-2">
-                                        <a data-fancybox="gallery" data-src='img/<?php echo $afbeelding->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-                                            <img src='img/<?php echo $afbeelding->naam ?>' class="rounded plaatje-grote" />
+                                        <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
+                                            <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
                                     </div>
 
 
                                 </div>
 
-                            <?php } ?>
+                        
 
 
                             <div class="mb-2">

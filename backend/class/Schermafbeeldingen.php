@@ -41,7 +41,7 @@ class Schermafbeeldingen extends DbConfig
       $sql = "SELECT naam FROM schermafbeeldingen WHERE project_id = $id";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
-      return $stmt->fetchAll(PDO::FETCH_OBJ);
+      return $stmt->fetch(PDO::FETCH_OBJ);
    }
 }
 
