@@ -67,7 +67,7 @@ Bij het bewerken van een project kunnen de volgende gegevens worden aangepast:
 - Korte omschrijving
 - Schermafbeeldingen
 
-**Project verwijderen **
+**Project verwijderen**
 
 Het moet vanuit het overzicht van projecten mogelijk zijn om een project te verwijderen. Wanneer deze actie wordt ondernomen moet deze in een tweede stap worden bevestigd om te voorkomen dat er per ongeluk projecten worden verwijderd.
 
