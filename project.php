@@ -8,7 +8,7 @@ require_once 'backend/autoloader.php';
 
 $projects = $projectIns->getProject($_GET['id']);
 
-$afbeelding = $schermafbeeldingenIns->getSchermafbeeldigen($_GET['id']);
+$afbeeldingen = $schermafbeeldingenIns->getSchermafbeeldigen($_GET['id']);
 
 $diensten = $dienstenIns->getDiensten_Project($_GET['id']);
 
@@ -183,25 +183,26 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
                             <div class=" d-flex p-2">
 
                                 <div class="col-sm-4 m-2 ml-2">
-                                    <a data-fancybox="gallery" data-src='img/"<?php echo $afbeeldingen->naam ?>"' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-                                        <img src='img/".<?php echo $afbeeldingen->naam ?>."' class="rounded plaatje-grote" />
-
+                                    <?php foreach ($afbeeldingen as $afbeelding) { ?>
+                                        <a data-fancybox="gallery" data-src='img/"<?php echo $afbeelding->naam ?>"' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
+                                            <img src='img/"<?php echo $afbeelding->naam ?>"' class="rounded plaatje-grote" />
                                 </div>
+                            <?php } ?>
+                            <div class="col-sm-4 m-2">
+                                <a data-fancybox="gallery" data-src="img/H-K-2.png">
+                                    <img src="img/H-K-2.png" class="rounded plaatje-grote" />
+                                </a>
+                            </div>
 
-                                <div class="col-sm-4 m-2">
-                                    <a data-fancybox="gallery" data-src="img/H-K-2.png">
-                                        <img src="img/H-K-2.png" class="rounded plaatje-grote" />
-                                    </a>
-                                </div>
-
-                                <div class="col-sm-4 m-2">
-                                    <a data-fancybox="gallery" data-src="img/H-K-3.png">
-                                        <img src="img/H-K-3.png" class="rounded plaatje-grote" />
-                                    </a>
-                                </div>
+                            <div class="col-sm-4 m-2">
+                                <a data-fancybox="gallery" data-src="img/H-K-3.png">
+                                    <img src="img/H-K-3.png" class="rounded plaatje-grote" />
+                                </a>
+                            </div>
 
                             </div>
 
+                            <?php var_dump($afbeelding); ?>
 
                             <div class="mb-2">
                                 <a class="btn mt-2  bnt-primary download-knop" role="button" href="#">Download
