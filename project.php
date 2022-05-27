@@ -184,8 +184,8 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
 
                                 <div class="col-sm-4 m-2 ml-2">
                                     <a data-fancybox="gallery" data-src='img/"<?php echo $afbeeldingen->naam ?>"' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-                                        <img src='img/"<?php echo $afbeeldingen->naam ?>"' class="rounded plaatje-grote" />
-                                    </a>
+                                        <img src='img/".<?php echo $afbeeldingen->naam ?>."' class="rounded plaatje-grote" />
+
                                 </div>
 
                                 <div class="col-sm-4 m-2">
