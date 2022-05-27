@@ -179,12 +179,12 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
                                 </li>
                             </ul>
                         </div>
-                        
+                         
                         <div class="col col-lg-6 col-sm-12  col-12 py-4 px-5">
 
                             <!--Als de naam van de plaatje al opgehaald, haal dan een nieuwe plaatje op-->
 
-                            <div class=" row d-flex p-2">
+                            <div class="row d-flex">
                                 <div class="col-12 col-md-6 col-lg-4 m-2 ml-2">
                                     <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
                                         <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
