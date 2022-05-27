@@ -147,92 +147,95 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
             </section>
 
             <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbotron-detail">
-               
-                    <div class="row g-0 details">
-                        <div class="col col-lg-6 col-sm-12 col-12   py-4 px-5">
-                            <ul class="ps-0">
-                                <li>
-                                    <p class="text-secondary mb-0">Project naam</p>
-                                    <p><?php echo $projects->projectnaam ?></p>
-                                </li>
-                                <li>
-                                    <p class="text-secondary mb-0">Klantnaam</p>
-                                    <p><?php echo $projects->klant_id ?></p>
-                                </li>
-                                <li>
-                                    <p class="text-secondary mb-0">Project datum</p>
-                                    <p><?php echo $projects->datum ?></p>
-                                </li>
-                                <li>
-                                    <p class="text-secondary mb-0">Website link</p>
-                                    <a href=<?php echo $projects->website_link ?> target="_blank">
-                                        <p><?php echo $projects->website_link ?></p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <p class="text-secondary mb-0">Omschrijving</p>
-                                    <p> <?php echo $projects->omschrijving ?></p>
-                                </li>
-                                <li>
-                                    <p class="text-secondary mb-0">Views</p>
-                                    <p> <?php echo $projects->views ?></p>
-                                </li>
-                            </ul>
-                        </div>
-                         
-                        <div class="col col-lg-6 col-sm-12  col-12 py-4 px-5">
 
-                            <!--Als de naam van de plaatje al opgehaald, haal dan een nieuwe plaatje op-->
+                <div class="row g-0 details">
+                    <div class="col col-lg-6 col-sm-12 col-12   py-4 px-5">
+                        <ul class="ps-0">
+                            <li>
+                                <p class="text-secondary mb-0">Project naam</p>
+                                <p><?php echo $projects->projectnaam ?></p>
+                            </li>
+                            <li>
+                                <p class="text-secondary mb-0">Klantnaam</p>
+                                <p><?php echo $projects->klant_id ?></p>
+                            </li>
+                            <li>
+                                <p class="text-secondary mb-0">Project datum</p>
+                                <p><?php echo $projects->datum ?></p>
+                            </li>
+                            <li>
+                                <p class="text-secondary mb-0">Website link</p>
+                                <a href=<?php echo $projects->website_link ?> target="_blank">
+                                    <p><?php echo $projects->website_link ?></p>
+                                </a>
+                            </li>
+                            <li>
+                                <p class="text-secondary mb-0">Omschrijving</p>
+                                <p> <?php echo $projects->omschrijving ?></p>
+                            </li>
+                            <li>
+                                <p class="text-secondary mb-0">Views</p>
+                                <p> <?php echo $projects->views ?></p>
+                            </li>
+                        </ul>
+                    </div>
 
-                            <div class="row d-flex">
-                                <div class="col-12 col-md-6 col-lg-4 m-2 ml-2">
-                                    <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-                                        <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
-                                </div>
+                    <div class="col col-lg-6 col-sm-12  col-12 py-4 px-5">
 
+                        <!--Als de naam van de plaatje al opgehaald, haal dan een nieuwe plaatje op-->
 
-                                <div class="col-12 col-md-6 col-lg-4 m-2 ml-2">
-                                    <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-                                        <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
-                                </div>
-
-
-                                <div class="col col-12 col-md-6 col-lg-4   m-2 ml-2">
-                                    <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>' data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-                                        <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
-                                </div>
-
-                            </div>
- 
-
-                            <div class="mb-2">
-                                <a class="btn mt-2  bnt-primary download-knop" role="button" href="#">Download
-                                    schermafbeelding</a>
+                        <div class="row g-2 mb-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>'>
+                                    <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
+                                </a>
                             </div>
 
 
-                            <h4>Diensten</h4>
-                            <ul class="details-list mb-4">
-                                <?php foreach ($diensten as $dienst) { ?>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>'>
+                                    <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
+                                </a>
+                            </div>
 
-                                    <li> <?php echo $dienst->diensten_naam; ?> </li>
 
-                                <?php } ?>
-                            </ul>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <a data-fancybox="gallery" data-src='img/<?php echo $afbeeldingen->naam ?>'>
+                                    <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
+                                </a>
+                            </div>
 
-                            <h4>Categorie</h4>
-                            <ul class="details-list mb-4">
-                                <?php foreach ($categorieen  as $categorie) { ?>
-
-                                    <li> <?php echo $categorie->categorie_naam; ?> </li>
-
-                                <?php } ?>
-                            </ul>
                         </div>
+
+
+                        <div class="mb-4">
+                            <a class="btn bnt-primary download-knop" role="button" href="#">Download
+                                schermafbeelding</a>
+                        </div>
+
+
+                        <h4>Diensten</h4>
+                        <ul class="details-list mb-4">
+                            <?php foreach ($diensten as $dienst) { ?>
+
+                                <li> <?php echo $dienst->diensten_naam; ?> </li>
+
+                            <?php } ?>
+                        </ul>
+
+                        <h4>Categorie</h4>
+                        <ul class="details-list mb-4">
+                            <?php foreach ($categorieen  as $categorie) { ?>
+
+                                <li> <?php echo $categorie->categorie_naam; ?> </li>
+
+                            <?php } ?>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
