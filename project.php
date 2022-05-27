@@ -202,7 +202,6 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
                                         <img src='img/<?php echo $afbeeldingen->naam ?>' class="rounded plaatje-grote" />
                                 </div>
 
-
                             </div>
  
 
