@@ -76,6 +76,8 @@ if (isset($_POST['addProject'])) {
 
 
     echo "Het project is aangemaakt";
+    header('Location: overzicht-projecten.php');
+    exit;
 }
 
 //header("refresh:1.5;url=../overzicht-projecten.php");
