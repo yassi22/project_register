@@ -8,6 +8,8 @@ require_once 'backend/autoloader.php';
 
 $projects = $projectIns->getProject($_GET['id']);
 
+$afbeelding = $schermafbeeldingenIns->getSchermafbeeldigen($_GET['id']);
+
 $diensten = $dienstenIns->getDiensten_Project($_GET['id']);
 
 $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
@@ -146,7 +148,7 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
             <div class="jumbotron shadow mb-5 bg-white rounded  mt-4  jumbotron-detail">
                 <div>
                     <div class="row g-0 details">
-                        <div class="col col-6 py-4 px-5">
+                        <div class="col col-6   py-4 px-5">
                             <ul class="ps-0">
                                 <li>
                                     <p class="text-secondary mb-0">Project naam</p>
@@ -176,12 +178,13 @@ $categorieen = $categorieIns->getCategorie_projecten($_GET['id']);
                                 </li>
                             </ul>
                         </div>
+
                         <div class="col col-6 py-4 px-5">
                             <div class=" d-flex p-2">
 
                                 <div class="col-sm-4 m-2 ml-2">
-                                    <a data-fancybox="gallery" data-src="img/H-K-1.png" data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
-                                        <img src="img/H-K-1.png" class="rounded plaatje-grote" />
+                                    <a data-fancybox="gallery" data-src="<?php echo $afbeeldingen->naam ?>" data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
+                                        <img src="<?php echo $afbeeldingen->naam ?>" class="rounded plaatje-grote" />
                                     </a>
                                 </div>
 

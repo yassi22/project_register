@@ -5,7 +5,7 @@ require_once 'Project.php';
 
 class Schermafbeeldingen extends DbConfig
 {
-//  momenteel is dit niet nodig... hier word nog later nog naar gekeken....
+//  Hier word nog naar gekeken en toegepast
 //    public function addSchermafbeelding($naamplaatje, $project_id){ 
 //             try {
 //                 $sql = "INSERT INTO schermafbeeldingen(naam,project_id) 
