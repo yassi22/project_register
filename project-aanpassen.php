@@ -152,7 +152,7 @@ $diensten_project = $dienstenIns->getDiensten_Project($_GET['id']);
 
                                             <span class="input-group-text" id="basic-addon3">https://</span>
 
-                                            <input type="text" class="form-control input-lengte" name="websitelink" value=" <?php echo $projects->websitelink; ?>" aria-describedby="basic-addon3">
+                                            <input type="text" class="form-control input-lengte" name="websitelink" value=" <?php echo $projects->website_link; ?>" aria-describedby="basic-addon3">
                                         </div>
 
 
