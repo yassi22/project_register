@@ -33,16 +33,17 @@ class Schermafbeeldingen extends DbConfig
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetchAll(PDO::FETCH_OBJ);
-   }
+   } 
 
-
+  
    public function getSchermafbeeldigen($id)
    {
       $sql = "SELECT naam FROM schermafbeeldingen WHERE project_id = $id";
       $stmt = $this->connect()->prepare($sql);
       $stmt->execute();
       return $stmt->fetch(PDO::FETCH_OBJ);
-   }
+   } 
+ 
 }
 
 ?> 

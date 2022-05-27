@@ -4,9 +4,10 @@ require_once 'backend/autoloader.php';
 
 $diensten = $dienstenIns->getDiensten();
 
-$categorien =  $categorieIns->getCategorie();
+$categorien =  $categorieIns->getCategorie(); 
 
 
+ 
 
 /* 
        Voor het sorteren van projecten word er gebruikt gemaakt 
