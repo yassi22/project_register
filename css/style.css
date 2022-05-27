@@ -485,3 +485,39 @@ input[type=text] {
        
   }
 
+   input[type="file"] {
+    display: block;
+}  
+
+input[type=text] {
+     
+    background-color: #F4F4F4;
+     border: 1px solid #C8C8C8;  
+ 
+      
+  } 
+
+ 
+  input[type=date] {
+     
+     background-color: #F4F4F4;
+     border: 1px solid #C8C8C8;  
+ 
+      
+  } 
+
+
+  input[type=textarea] {
+     
+    background-color: #F4F4F4;
+    border: 1px solid #C8C8C8;  
+ 
+   
+ } 
+ 
+   textarea {
+    border: 1px solid #C8C8C8 !important;
+    background-color: #F4F4F4 !important;
+    resize: none;
+
+  } 
